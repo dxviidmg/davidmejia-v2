@@ -33,10 +33,10 @@ export function NavBar() {
           <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggle-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link
               href="#home"
               className={
@@ -68,11 +68,9 @@ export function NavBar() {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="#">
-                {" "}
                 <img src={navIcon1} alt="" />
               </a>
               <a href="#">
-                {" "}
                 <img src={navIcon2} alt="" />
               </a>
             </div>
