@@ -6,7 +6,7 @@ export function Banner(){
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
 
-    const titles = ["Fullstack Developer", "Backend Developer", "Django Developer", "Python Developer", "Frontend Developer", "React Developer"]
+    const titles = ["Fullstack Developer", "Data Analyst", "Data Scientist jr"]
 
     const[text, setText] = useState('')
     const [delta, setDelta] = useState (300 - Math.random() * 100)
@@ -47,8 +47,7 @@ export function Banner(){
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline"> Welcome to my portolio</span>
-                        <h1> <span className="wrap">{text}</span></h1>
-                        <p>dfjasdfjlasdfjkl asdfjasdf asdfj asdflasdflasdfj</p>
+                        <h1> Hi, I am David. I am <span className="wrap">{text}</span></h1>
                         <button onClick={()=>console.log('connect')}>Lets connect</button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
