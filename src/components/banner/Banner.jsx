@@ -47,8 +47,7 @@ export function Banner(){
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline"> Welcome to my portolio</span>
-                        <h1> Hi, I am David. I am <span className="wrap">{text}</span></h1>
-                        <button onClick={()=>console.log('connect')}>Lets connect</button>
+                        <h1> Hi, I am David. <br/>I am <span className="wrap">{text}</span></h1>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                     <img src={HeaderImg} alt="header logo"></img>
