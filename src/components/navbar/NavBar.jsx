@@ -4,8 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/img/logo.svg";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
-//import navIcon2 from "../../assets/img/icon";
-import navIcon3 from "../../assets/img/nav-icon3.svg";
 
 export function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -70,13 +68,7 @@ export function NavBar() {
               <a href="#">
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="#">
-                <img src={navIcon1} alt="" />
-              </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>lets connect</span>
-            </button>
           </span>
         </Navbar.Collapse>
       </Container>
