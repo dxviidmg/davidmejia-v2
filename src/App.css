@@ -100,6 +100,8 @@ nav.navbar.scrolled {
 }
 nav.navbar a.navbar-brand {
   width: 9%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -354,4 +356,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
 /*  width: 40%;*/
   z-index: -4;
+}
+
+
+.project-text-company{
+  font-size: 0.7em; 
 }

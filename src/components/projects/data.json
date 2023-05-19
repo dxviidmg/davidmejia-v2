@@ -1,0 +1,97 @@
+[
+    {
+        "name": "Dinero de gobierno",
+        "description": "Web application for management of the bulding and manteince of dinero de gobierno",
+        "period": 2016,
+        "company": "Grupo constructor Carsev",
+        "activities": [
+            "Analisis de requerimietos",
+            "Diseño de la base de datos",
+            "Desarrollo de vistas (CRUD)",
+            "Desarrollo de Templates",
+            "Pruebas",
+            "Despliege"
+        ],
+        "stack": ["django", "python"]
+    },
+    {
+    "name": "TEASIB",
+    "description": "Web application for management of the bulding and manteince of Drinking Fountains",
+    "period": 2017,
+    "company": "Grupo constructor Carsev",
+    "activities": [
+        "Analisis de requerimietos",
+        "Diseño de la base de datos",
+        "Desarrollo de vistas (CRUD)",
+        "Desarrollo de Templates",
+        "Pruebas",
+        "Despliege",
+        "Soporte Tecnico"
+    ],
+    "stack": ["django", "python"]
+},
+
+{
+    "name": "Dinero de gobierno",
+    "description": "Web application for management of the bulding and manteince of dinero de gobierno",
+    "period": 2016,
+    "company": "Grupo constructor Carsev",
+    "activities": [
+        "Analisis de requerimietos",
+        "Diseño de la base de datos",
+        "Desarrollo de vistas (CRUD)",
+        "Desarrollo de Templates",
+        "Pruebas",
+        "Despliege"
+    ],
+    "stack": ["django", "python"]
+},
+{
+"name": "TEASIB",
+"description": "Web application for management of the bulding and manteince of Drinking Fountains",
+"period": 2017,
+"company": "Grupo constructor Carsev",
+"activities": [
+    "Analisis de requerimietos",
+    "Diseño de la base de datos",
+    "Desarrollo de vistas (CRUD)",
+    "Desarrollo de Templates",
+    "Pruebas",
+    "Despliege",
+    "Soporte Tecnico"
+],
+"stack": ["django", "python"]
+},
+{
+    "name": "Dinero de gobierno",
+    "description": "Web application for management of the bulding and manteince of dinero de gobierno",
+    "period": 2016,
+    "company": "Grupo constructor Carsev",
+    "activities": [
+        "Analisis de requerimietos",
+        "Diseño de la base de datos",
+        "Desarrollo de vistas (CRUD)",
+        "Desarrollo de Templates",
+        "Pruebas",
+        "Despliege"
+    ],
+    "stack": ["django", "python"]
+},
+{
+"name": "TEASIB",
+"description": "Web application for management of the bulding and manteince of Drinking Fountains",
+"period": 2017,
+"company": "Grupo constructor Carsev",
+"activities": [
+    "Analisis de requerimietos",
+    "Diseño de la base de datos",
+    "Desarrollo de vistas (CRUD)",
+    "Desarrollo de Templates",
+    "Pruebas",
+    "Despliege",
+    "Soporte Tecnico"
+],
+"stack": ["django", "python"]
+}
+
+]

@@ -25,7 +25,7 @@ export function Banner(){
         let fullText = titles[i]
         let updateText = isDeleting ? fullText.substring(0, text.length - 1): 
         fullText.substring(0, text.length + 1)
-        console.log(updateText)
+/*        console.log(updateText)*/
         setText(updateText)
         if (isDeleting){
             setDelta(prevDelta => prevDelta / 2)
@@ -46,7 +46,7 @@ export function Banner(){
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline"> Welcome to my portolio</span>
+                        <span className=""> Welcome to my portolio</span>
                         <h1> Hi, I am David. <br/>I am <span className="wrap">{text}</span></h1>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
