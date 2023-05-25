@@ -28,7 +28,7 @@ export function NavBar() {
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="logo" />
+          <h1 className="navbar-brand-text">DavidMG</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -65,7 +65,7 @@ export function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/david-mejia-guzman/" target="_blank" rel="noreferrer">
                 <img src={navIcon1} alt="" />
               </a>
             </div>
