@@ -1,97 +1,99 @@
 [
     {
-        "name": "Dinero de gobierno",
-        "description": "Web application for management of the bulding and manteince of dinero de gobierno",
-        "period": 2016,
-        "company": "Grupo constructor Carsev",
+        "name": "Web appication for public financing management",
+        "description": "Development of a web appication for public financing management",
+        "period": "2016-17",
+        "category": ["Web"],
+        "company": {"name": "CITNOVA", "url": "https://citnova.hidalgo.gob.mx/"},
         "activities": [
-            "Analisis de requerimietos",
-            "Diseño de la base de datos",
-            "Desarrollo de vistas (CRUD)",
-            "Desarrollo de Templates",
-            "Pruebas",
-            "Despliege"
+            "Requirements analysis",
+            "Database design",
+            "The development of views, templates and URLs",
+            "Tests with skateholders"
         ],
-        "stack": ["django", "python"]
+        "stack": ["Django", "Python", "Postgresql", "Boostramp", "AWS"]
     },
     {
     "name": "TEASIB",
-    "description": "Web application for management of the bulding and manteince of Drinking Fountains",
-    "period": 2017,
-    "company": "Grupo constructor Carsev",
+    "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
+    "period": "2017-18",
+    "category": ["Web"],
+    "company": {"name": "Grupo Constructor Carsev"},
     "activities": [
-        "Analisis de requerimietos",
-        "Diseño de la base de datos",
-        "Desarrollo de vistas (CRUD)",
-        "Desarrollo de Templates",
-        "Pruebas",
-        "Despliege",
-        "Soporte Tecnico"
+        "Requirements analysis",
+        "Database design",
+        "The development of views, templates and URLs",
+        "Tests with skateholders",
+        "Skateholders Support"
     ],
-    "stack": ["django", "python"]
+    "stack": ["Django", "Python", "Postgresql", "Boostramp", "AWS"]
 },
 
 {
-    "name": "Dinero de gobierno",
-    "description": "Web application for management of the bulding and manteince of dinero de gobierno",
-    "period": 2016,
-    "company": "Grupo constructor Carsev",
+    "name": "Kickstarter campaign success analysis",
+    "description": "Prototype development of a machine learning model to predict the success of a kickstarter campaign",
+    "period": "2018-2019",
+    "category": ["Data science"],
+    "company": {"name": "Plenumsoft", "url": "https://www.plenumsoft.com.mx/"},
     "activities": [
-        "Analisis de requerimietos",
-        "Diseño de la base de datos",
-        "Desarrollo de vistas (CRUD)",
-        "Desarrollo de Templates",
-        "Pruebas",
-        "Despliege"
+        "Data search",
+        "Data clean",
+        "Modeling"
     ],
-    "stack": ["django", "python"]
+    "stack": ["dataiku"]
 },
 {
-"name": "TEASIB",
-"description": "Web application for management of the bulding and manteince of Drinking Fountains",
-"period": 2017,
-"company": "Grupo constructor Carsev",
+"name": "SAAM",
+"description": "Maintenance of a web application for insurance management",
+"period": "2019-2022",
+"category": ["Web"],
+"company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
 "activities": [
-    "Analisis de requerimietos",
-    "Diseño de la base de datos",
-    "Desarrollo de vistas (CRUD)",
-    "Desarrollo de Templates",
-    "Pruebas",
-    "Despliege",
-    "Soporte Tecnico"
+    "Bug fixes",
+    "Performance improvements", 
+    "Code optimization"
 ],
-"stack": ["django", "python"]
+"stack": ["Django", "Python", "Postgresql", "API rest"]
 },
 {
-    "name": "Dinero de gobierno",
-    "description": "Web application for management of the bulding and manteince of dinero de gobierno",
-    "period": 2016,
-    "company": "Grupo constructor Carsev",
+    "name": "Database refactoring for SAAM",
+    "description": "Modify the structure of the database in order to improve quality and performance",
+    "period": "2022",
+    "category": ["Web", "Data Analytics"],
+    "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
     "activities": [
-        "Analisis de requerimietos",
-        "Diseño de la base de datos",
-        "Desarrollo de vistas (CRUD)",
-        "Desarrollo de Templates",
-        "Pruebas",
-        "Despliege"
+        "Exploratory data base analysis",
+        "Planning",
+        "Deleting of useless tables and fields",
+        "Fusion of similar tables or fields",
+        "Implementation of OOP in models and creation of abstract classes"
     ],
-    "stack": ["django", "python"]
-},
-{
-"name": "TEASIB",
-"description": "Web application for management of the bulding and manteince of Drinking Fountains",
-"period": 2017,
-"company": "Grupo constructor Carsev",
-"activities": [
-    "Analisis de requerimietos",
-    "Diseño de la base de datos",
-    "Desarrollo de vistas (CRUD)",
-    "Desarrollo de Templates",
-    "Pruebas",
-    "Despliege",
-    "Soporte Tecnico"
-],
-"stack": ["django", "python"]
-}
+    "stack": ["Django", "Python", "Postgresql", "Pandas", "Jupyter"]
+    },
 
+    {
+        "name": "Report-service for SAAM",
+        "description": "Creation of a microservice for improvement the creation of reports",
+        "period": "2022",
+        "category": ["Web"],
+        "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
+        "activities": [
+            "The development of views, templates and URLs"
+        ],
+        "stack": ["Django", "Python", "Postgresql"]
+        },
+
+    {
+        "name": "Data import for SAAM",
+        "description": "Creation of codebase for data importing",
+        "period": "2019-2021",
+        "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
+        "activities": [
+            "Data analysis",
+            "Coding",
+            "Tests",
+            "Implement in production"
+        ],
+        "stack": ["Django", "Python", "Postgresql", "Pandas"]
+        }
 ]
