@@ -1,21 +1,21 @@
+/************ Custom Font ************/
 @font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Bold.ttf");
   font-weight: 700;
 }
-
 @font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Medium.ttf");
   font-weight: 500;
 }
-
 @font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Book.ttf");
   font-weight: 400;
 }
 
+/************ Default Css ************/
 * {
   margin: 0;
   padding: 0;
@@ -36,23 +36,16 @@ body {
   font-family: "Centra", sans-serif !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p, a, li, button, ul {
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -436,7 +429,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  padding-bottom: 30px;
+  padding: 10px;
 }
 .proj-imgbx::before {
   content: "";
@@ -488,4 +481,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 .tab-content{
   margin-top: 50px;
+}
+
+.proj-bx-txt{
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-brand-text{
+  color: white;
 }
