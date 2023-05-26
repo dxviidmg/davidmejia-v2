@@ -491,3 +491,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .navbar-brand-text{
   color: white;
 }
+
+ul {
+  list-style-type: none;
+}

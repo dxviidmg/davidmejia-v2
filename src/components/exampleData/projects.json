@@ -3,7 +3,7 @@
         "name": "Web appication for public financing management",
         "description": "Development of a web appication for public financing management",
         "period": "2016-17",
-        "category": ["Web"],
+        "categories": ["Web"],
         "company": {"name": "CITNOVA", "url": "https://citnova.hidalgo.gob.mx/"},
         "activities": [
             "Requirements analysis",
@@ -17,7 +17,7 @@
     "name": "TEASIB",
     "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
     "period": "2017-18",
-    "category": ["Web"],
+    "categories": ["Web"],
     "company": {"name": "Grupo Constructor Carsev"},
     "activities": [
         "Requirements analysis",
@@ -33,7 +33,7 @@
     "name": "Kickstarter campaign success analysis",
     "description": "Prototype development of a machine learning model to predict the success of a kickstarter campaign",
     "period": "2018-2019",
-    "category": ["Data science"],
+    "categories": ["Data"],
     "company": {"name": "Plenumsoft", "url": "https://www.plenumsoft.com.mx/"},
     "activities": [
         "Data search",
@@ -46,7 +46,7 @@
 "name": "SAAM",
 "description": "Maintenance of a web application for insurance management",
 "period": "2019-2022",
-"category": ["Web"],
+"categories": ["Web"],
 "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
 "activities": [
     "Bug fixes",
@@ -59,7 +59,7 @@
     "name": "Database refactoring for SAAM",
     "description": "Modify the structure of the database in order to improve quality and performance",
     "period": "2022",
-    "category": ["Web", "Data Analytics"],
+    "categories": ["Web", "Data"],
     "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
     "activities": [
         "Exploratory data base analysis",
@@ -75,7 +75,7 @@
         "name": "Report-service for SAAM",
         "description": "Creation of a microservice for improvement the creation of reports",
         "period": "2022",
-        "category": ["Web"],
+        "categories": ["Web"],
         "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
         "activities": [
             "The development of views, templates and URLs"
@@ -87,6 +87,7 @@
         "name": "Data import for SAAM",
         "description": "Creation of codebase for data importing",
         "period": "2019-2021",
+        "categories": ["Web", "Data"],
         "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
         "activities": [
             "Data analysis",
