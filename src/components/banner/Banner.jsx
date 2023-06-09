@@ -1,5 +1,4 @@
-import { Col, Row, Container } from "react-bootstrap";
-import HeaderImg from '../../assets/img/header-img.svg'
+import { Col, Row, Container, Image } from "react-bootstrap";
 import { useEffect, useState } from "react";
 export function Banner(){
 
@@ -42,18 +41,20 @@ export function Banner(){
 
     }
     return (
-        <section className="banner" id="home">
-            <Container>
-                <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
-                        <span className=""> Welcome to my portolio</span>
-                        <h1> Hi, I am David. <br/>I am <span className="wrap">{text}</span></h1>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                    <img src={HeaderImg} alt="header logo"></img>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+      <section id="banner">
+        <Container className="">
+          <Row className="paddings d-flex align-items-center text-center">
+            <Col md={12} className="">
+            <h1>Hi there, I am David.</h1>
+            <h2>I am {text}</h2>
+            </Col>
+          </Row>
+
+
+
+        </Container>
+        
+
+      </section>
     )
 }
