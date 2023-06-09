@@ -12,23 +12,35 @@ import reactLogo from "../../assets/img/react.svg";
 import colorSharp from "../../assets/img/color-sharp.png";
 import { MultiCarrusel } from "../multicarrusel/MultiCarrusel";
 import skills_by_categories from '../exampleData/skills.json'
-import { SkillsByCategories } from "./SkillsByCategories";
+
+
+
+
+export const SkillsByCategories = () => {
+    return (
+        
 
 
 
 
 
-export const Skills = () => {
-  return (
-    <section className="skill" id="skills">
-      <Container>
-        <Row>
-          <Col xl={12}><h1>Skills</h1></Col>
-          <SkillsByCategories></SkillsByCategories>
+<>
+
+{Object.entries(skills_by_categories).map(([category, skills]) => {
+            return (<Col md={3}>
+              <h3 key={category}>{category}</h3>
+
+              {skills.map((skill, i) => {
+                console.log('toss', typeof skill, skill.name)
+                return (<div>{skill.name} - {skill.experience}</div>)
+              })}
+            </Col>)
+          })}
+
+</>
+        
 
 
-        </Row>
-      </Container>
-    </section>
-  );
-};
+
+    )
+}
