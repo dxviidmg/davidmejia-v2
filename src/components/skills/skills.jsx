@@ -10,8 +10,14 @@ import jsLogo from "../../assets/img/js.svg";
 import reactLogo from "../../assets/img/react.svg";
 
 import colorSharp from "../../assets/img/color-sharp.png";
+import { MultiCarrusel } from "../multicarrusel/MultiCarrusel";
+import skills_by_categories from '../exampleData/skills.json'
+
 
 export const Skills = () => {
+  //  const skills = [{ name: "Python", img: pythonLogo, experience: "7 Years" }, { name: "Django", img: djangoLogo, experience: "7 Years" }, { name: "Postgresql", img: pqslLogo, experience: "4 Years"  }, { name: "API rest", img: apiLogo, experience: "4 Years"  }, { name: "Graphql", img: graphqlLogo, experience: "3 Months"  }, {name: "Js", img: jsLogo, experience: "6 months" }, {name: "React", img: reactLogo, experience: "6 months"}]
+
+  console.log(skills_by_categories)
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -31,52 +37,22 @@ export const Skills = () => {
     <section className="skill" id="skills">
       <Container>
         <Row>
-          <Col>
-            <div className="skills-bx">
-              <h2>Skills</h2>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="skill-slider"
-              >
-                <div className="item">
-                  <img src={pythonLogo} alt="img"></img>
-                  <h5>Python</h5>
-                </div>
+      <Col xl={12}><h1>Skills</h1></Col>
 
-                <div className="item">
-                  <img src={jsLogo} alt="img"></img>
-                  <h5>Javascript</h5>
-                </div>
+            {Object.entries(skills_by_categories).map(([category, skills]) => {
+              return (<Col md={3}>
+                <h3 key={category}>{category}</h3>
 
-                <div className="item">
-                  <img src={djangoLogo} alt="img"></img>
-                  <h5>Django</h5>
-                </div>
+                {skills.map((skill, i) => {
+                  console.log('toss', typeof skill, skill.name)
+                  return (<div>{skill.name} - {skill.experience}</div>)
+                })}
+              </Col>)
 
-                <div className="item">
-                  <img src={reactLogo} alt="img"></img>
-                  <h5>React</h5>
-                </div>
 
-                <div className="item">
-                  <img src={pqslLogo} alt="img"></img>
-                  <h5>Postgresql</h5>
-                </div>
-                <div className="item">
-                  <img src={apiLogo} alt="img"></img>
-                  <h5>django rest framework</h5>
-                </div>
-                <div className="item">
-                  <img src={graphqlLogo} alt="img"></img>
-                  <h5>Graphql</h5>
-                </div>
-              </Carousel>
-            </div>
-          </Col>
+            })}
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   );
 };

@@ -11,9 +11,9 @@ export const About = () => {
       <Container className="">
         <Row className="paddings d-flex align-items-center">
           <Col md={6} className="">
-            <h1 className="text-center">About me</h1>
+            <h2 className="text-center">About me</h2>
             {about.map((e, i) => {
-              return (<p class="text-justify">{e}</p>)
+              return (<p key={i} className="text-justify">{e}</p>)
             })}
           </Col>
           <Col md={1}></Col>

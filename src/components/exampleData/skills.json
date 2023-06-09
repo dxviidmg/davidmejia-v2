@@ -1,0 +1,127 @@
+{
+    "Languajes": [
+        {
+            "name": "Python",
+            "experience": "7 years"
+        },
+        {
+            "name": "Javascript",
+
+            "experience": "7 Months"
+        }
+    ],
+    "Frameworks": [
+        {
+            "name": "Django",
+
+            "experience": "7 years"
+        },
+        {
+            "name": "React",
+
+            "experience": "7 Months"
+        }
+    ],
+    "Databases": [
+        {
+            "name": "Postgresql",
+
+            "experience": "4 years"
+        },
+        {
+            "name": "Mongodb",
+
+            "experience": "2 Months"
+        }
+    ],
+    "Apis": [
+        {
+            "name": "Rest",
+
+            "experience": "4 years"
+        },
+        {
+            "name": "Graphql",
+
+            "experience": "3 Months"
+        }
+    ],
+    "Control Version": [
+        {
+            "name": "Github",
+
+            "experience": "7 years"
+        },
+        {
+            "name": "Bitbucket",
+
+            "experience": "4 Months"
+        }
+    ],
+    "Cloud": [
+        {
+            "name": "AWS",
+
+            "experience": "2 years"
+        },
+        {
+            "name": "GCP",
+
+            "experience": "2 Months"
+        },
+        {
+            "name": "heroku",
+
+            "experience": "7 Months"
+        }
+    ],
+    "For data science": [
+        {
+            "name": "Pandas",
+
+            "experience": "1 year"
+        },
+        {
+            "name": "Jupyter",
+
+            "experience": "1 year"
+        },
+        {
+            "name": "DataIKU",
+
+            "experience": "6 Months"
+        }],
+        "Distributed tasks": [
+            {
+                "name": "Celery",
+    
+                "experience": "6 Months"
+            },
+            {
+                "name": "Redis",
+    
+                "experience": "6 Months"
+            }],
+            "Scrapping": [
+                {
+                    "name": "Selenium",
+        
+                    "experience": "6 Months"
+                },
+                {
+                    "name": "Tweepy",
+        
+                    "experience": "6 Months"
+                }],
+                "Data visualization": [
+                    {
+                        "name": "Matplotlib",
+            
+                        "experience": "6 Months"
+                    },
+                    {
+                        "name": "Chart.js",
+            
+                        "experience": "3 Months"
+                    }]
+}
