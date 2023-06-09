@@ -1,4 +1,3 @@
-import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import pythonLogo from "../../assets/img/python.svg";
@@ -13,20 +12,50 @@ import colorSharp from "../../assets/img/color-sharp.png";
 import { MultiCarrusel } from "../multicarrusel/MultiCarrusel";
 import skills_by_categories from '../exampleData/skills.json'
 import { SkillsByCategories } from "./SkillsByCategories";
+import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
+import projects from "../exampleData/projects.json";
+import { useEffect, useState } from "react";
 
+import {SkillsByExperience} from "./SkillsByExperience"
 
 
 
 
 export const Skills = () => {
   return (
-    <section className="skill" id="skills">
+    <section className="paddings min-height" id="skills">
       <Container>
         <Row>
-          <Col xl={12}><h1>Skills</h1></Col>
-          <SkillsByCategories></SkillsByCategories>
+          <Col className="text-center">
+            <h2 >Skills</h2>
+            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+              <Nav
+                variant="pills"
+                defaultActiveKey="/home"
+                className="nav-pills justify-content-center align-items-center"
+                id="pill-tab"
+              >
+                <Nav.Item>
+                  <Nav.Link eventKey="first">By category</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="second">By expertis</Nav.Link>
+                </Nav.Item>
+              </Nav>
+              <Tab.Content>
+                <Tab.Pane eventKey="first">
+                  <Row>
+                    <SkillsByCategories></SkillsByCategories>
+                  </Row>
+                </Tab.Pane>
 
-
+                <Tab.Pane eventKey="second">
+                  <Row>
+                  </Row>
+                </Tab.Pane>
+              </Tab.Content>
+            </Tab.Container>
+          </Col>
         </Row>
       </Container>
     </section>

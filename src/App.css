@@ -1,5 +1,10 @@
+.min-height{
+  min-height: 90vh;
+}
+
 .paddings{
-  height: 90vh;
+  padding-top: 10vh;
+  padding-bottom: 10VH;
 }
 
 .test1{
@@ -16,4 +21,12 @@
 #banner{
   background-color: black;
   color: aliceblue;
+}
+
+.padding-card{
+  margin-top: 3vh;
+}
+
+#skills{
+  background-color: antiquewhite;
 }

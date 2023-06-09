@@ -11,36 +11,42 @@ import reactLogo from "../../assets/img/react.svg";
 
 import colorSharp from "../../assets/img/color-sharp.png";
 import { MultiCarrusel } from "../multicarrusel/MultiCarrusel";
-import skills_by_categories from '../exampleData/skills.json'
+import skills_by_categories from "../exampleData/skills.json";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
-
-
+const SkillsCard = ({ category, skills }) => {
+  return (
+    <Card className="padding-card">
+      <Card.Header>
+        {" "}
+        <Card.Title>{category}</Card.Title>
+      </Card.Header>
+      <Card.Body>
+        <Card.Text>
+          {skills.map((skill, i) => {
+            return (
+              <div key={i}>
+                {skill.name} - {skill.experience}
+              </div>
+            );
+          })}
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  );
+};
 
 export const SkillsByCategories = () => {
-    return (
-        
-
-
-
-
-
-<>
-
-{Object.entries(skills_by_categories).map(([category, skills]) => {
-            return (<Col md={3}>
-              <h3 key={category}>{category}</h3>
-
-              {skills.map((skill, i) => {
-                console.log('toss', typeof skill, skill.name)
-                return (<div>{skill.name} - {skill.experience}</div>)
-              })}
-            </Col>)
-          })}
-
-</>
-        
-
-
-
-    )
-}
+  return (
+    <Row>
+      {Object.entries(skills_by_categories).map(([category, skills]) => {
+        return (
+          <Col key={category} md={3}>
+            <SkillsCard category={category} skills={skills}></SkillsCard>
+          </Col>
+        );
+      })}
+    </Row>
+  );
+};
