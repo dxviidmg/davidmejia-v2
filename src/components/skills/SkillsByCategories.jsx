@@ -23,15 +23,13 @@ const SkillsCard = ({ category, skills }) => {
         <Card.Title>{category}</Card.Title>
       </Card.Header>
       <Card.Body>
-        <Card.Text>
-          {skills.map((skill, i) => {
+          {skills.map((skill, index) => {
             return (
-              <div key={i}>
+              <Card.Text key={index}>
                 {skill.name} - {skill.experience}
-              </div>
+              </Card.Text>
             );
           })}
-        </Card.Text>
       </Card.Body>
     </Card>
   );
@@ -43,7 +41,7 @@ export const SkillsByCategories = () => {
       {Object.entries(skills_by_categories).map(([category, skills]) => {
         return (
           <Col key={category} md={3}>
-            <SkillsCard category={category} skills={skills}></SkillsCard>
+            <SkillsCard category={category} skills={skills} key={category}></SkillsCard>
           </Col>
         );
       })}

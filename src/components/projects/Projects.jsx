@@ -14,11 +14,12 @@ export const Projects = () => {
 
 
   return (
-    <section className="project" id="projects">
+    <section className="paddings" id="projects">
       <Container>
         <Row>
           <Col>
-            <h1>Projects</h1>
+            <h2 className="text-center">Projects</h2>
+
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
@@ -42,7 +43,7 @@ export const Projects = () => {
                     {projects.map((project, index) => {
                       return (
                         <ProjectCard
-                          index={index}
+                        key={index}
                           project={project}
                         ></ProjectCard>
                       );
@@ -55,7 +56,7 @@ export const Projects = () => {
                     {webProjects.map((project, index) => {
                       return (
                         <ProjectCard
-                          index={index}
+                        key={index}
                           project={project}
                         ></ProjectCard>
                       );
@@ -68,7 +69,7 @@ export const Projects = () => {
                     {dataProjects.map((project, index) => {
                       return (
                         <ProjectCard
-                          index={index}
+                          key={index}
                           project={project}
                         ></ProjectCard>
                       );

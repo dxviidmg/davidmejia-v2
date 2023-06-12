@@ -50,6 +50,7 @@ export const Skills = () => {
                 </Tab.Pane>
 
                 <Tab.Pane eventKey="second">
+                  <SkillsByExperience></SkillsByExperience>
                   <Row>
                   </Row>
                 </Tab.Pane>

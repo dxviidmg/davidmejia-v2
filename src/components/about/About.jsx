@@ -4,7 +4,6 @@ import about from '../exampleData/about.json'
 
 export const About = () => {
   const img = "https://cdn.awsli.com.br/600x450/1601/1601923/produto/129894767/6bba6d6010.jpg"
-  console.log(about)
   return (
     <section>
 
