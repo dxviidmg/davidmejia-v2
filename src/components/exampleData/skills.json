@@ -7,7 +7,8 @@
         {
             "name": "Javascript",
 
-            "experience": "7 Months"
+            "experience": "7 Months",
+            "learning_currently": true
         }
     ],
     "Frameworks": [
@@ -19,7 +20,8 @@
         {
             "name": "React",
 
-            "experience": "7 Months"
+            "experience": "7 Months",
+            "learning_currently": true
         }
     ],
     "Databases": [

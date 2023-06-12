@@ -23,7 +23,7 @@ import {SkillsByExperience} from "./ByExperience/SkillsByExperience"
 
 export const Skills = () => {
   return (
-    <section className="paddings min-height" id="skills">
+    <section className="paddings" id="skills">
       <Container>
         <Row>
           <Col className="text-center">
