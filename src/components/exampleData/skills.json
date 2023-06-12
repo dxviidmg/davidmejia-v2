@@ -70,7 +70,7 @@
             "experience": "2 Months"
         },
         {
-            "name": "heroku",
+            "name": "Heroku",
 
             "experience": "7 Months"
         }
@@ -89,7 +89,7 @@
         {
             "name": "DataIKU",
 
-            "experience": "6 Months"
+            "experience": "2 Months"
         }],
         "Distributed tasks": [
             {
@@ -111,13 +111,13 @@
                 {
                     "name": "Tweepy",
         
-                    "experience": "6 Months"
+                    "experience": "3 Months"
                 }],
                 "Data visualization": [
                     {
                         "name": "Matplotlib",
             
-                        "experience": "6 Months"
+                        "experience": "5 Months"
                     },
                     {
                         "name": "Chart.js",

@@ -11,12 +11,12 @@ import reactLogo from "../../assets/img/react.svg";
 import colorSharp from "../../assets/img/color-sharp.png";
 import { MultiCarrusel } from "../multicarrusel/MultiCarrusel";
 import skills_by_categories from '../exampleData/skills.json'
-import { SkillsByCategories } from "./SkillsByCategories";
+import { SkillListsByCategories } from "./ByCategories/SkillsByCategories";
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projects from "../exampleData/projects.json";
 import { useEffect, useState } from "react";
 
-import {SkillsByExperience} from "./SkillsByExperience"
+import {SkillsByExperience} from "./ByExperience/SkillsByExperience"
 
 
 
@@ -45,7 +45,7 @@ export const Skills = () => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    <SkillsByCategories></SkillsByCategories>
+                    <SkillListsByCategories/>
                   </Row>
                 </Tab.Pane>
 
