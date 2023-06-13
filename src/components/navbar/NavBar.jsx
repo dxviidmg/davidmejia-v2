@@ -42,6 +42,16 @@ export function NavBar() {
               Home
             </Nav.Link>
             <Nav.Link
+              href="#positions"
+              className={
+                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("positions")}
+            >
+              Positions
+            </Nav.Link>
+
+            <Nav.Link
               href="#skills"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
@@ -59,6 +69,27 @@ export function NavBar() {
             >
               Projects
             </Nav.Link>
+
+            <Nav.Link
+              href="#certifications"
+              className={
+                activeLink === "certifications" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("certifications")}
+            >
+              certifications
+            </Nav.Link>
+
+            <Nav.Link
+              href="#papers"
+              className={
+                activeLink === "papers" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("papers")}
+            >
+              Papers
+            </Nav.Link>
+            
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
