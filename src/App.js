@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import { NavBar } from './components/navbar/NavBar';
+import { NavBar } from './components/navbar/Navbar';
 import { Banner } from './components/banner/Banner';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Skills } from './components/skills/skills';
+import { Skills } from './components/skills/Skills';
 import { Projects } from './components/projects/Projects';
-import { Footer } from './components/Footer/footer';
+import { Footer } from './components/footer/Footer';
 import { About } from './components/about/About';
+import { Expirience } from './components/experience/Experience';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NavBar></NavBar>
       <Banner></Banner>
       <About></About>
+      <Expirience></Expirience>
       <Skills></Skills>
       <Projects></Projects>
     </div>

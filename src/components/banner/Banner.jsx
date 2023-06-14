@@ -1,5 +1,7 @@
 import { Col, Row, Container, Image } from "react-bootstrap";
 import { useEffect, useState } from "react";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+
 export function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -8,7 +10,6 @@ export function Banner() {
 
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -29,15 +30,15 @@ export function Banner() {
     /*        console.log(updateText)*/
     setText(updateText);
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta(100);
     }
     if (!isDeleting && updateText === fullText) {
       setIsDeleting(true);
-      setDelta(period);
+      setDelta(3000);
     } else if (isDeleting && updateText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(100);
     }
   };
   return (
@@ -47,6 +48,8 @@ export function Banner() {
           <Col md={12} className="">
             <h1>Hi there, I am David.</h1>
             <h2>I am {text}</h2>
+            <a href="https://www.linkedin.com/in/david-mejia-guzman/"><BsLinkedin className="icon" size={25}/></a>
+            <a href="https://github.com/dxviidmg"><BsGithub className="icon" size={25}/></a>
           </Col>
         </Row>
       </Container>

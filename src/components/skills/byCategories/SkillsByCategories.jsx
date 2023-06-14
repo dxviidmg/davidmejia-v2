@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
-import skills_by_categories from "../../exampleData/skills.json";
-import { SkillsCard } from "./skillCard";
+import skills_by_categories from "../../data/skills.json";
+import { SkillsCard } from "./SkillCard";
 
 
 export const SkillListsByCategories = () => {

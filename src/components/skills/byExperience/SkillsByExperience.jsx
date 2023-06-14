@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import skills_by_categories from "../../exampleData/skills.json";
+import skills_by_categories from "../../data/skills.json";
 import { SkillList } from "./skillList";
 import { Row, Col } from "react-bootstrap";
 
@@ -81,7 +81,7 @@ export const SkillsByExperience = () => {
       </Col>
       <Col md={3}>
         <h3>The most recent</h3>
-        <p>Skills that I have learned the last months</p>
+        <p>Skills that I have learned in the last months</p>
         <SkillList skills={learningSkills} />
       </Col>
 

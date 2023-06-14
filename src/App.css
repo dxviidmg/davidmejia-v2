@@ -30,3 +30,12 @@
 #skills{
   background-color: antiquewhite;
 }
+
+.icon{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#experience{
+  background-color: #EBEDEF;
+}

@@ -9,14 +9,14 @@ import jsLogo from "../../assets/img/js.svg";
 import reactLogo from "../../assets/img/react.svg";
 
 import colorSharp from "../../assets/img/color-sharp.png";
-import { MultiCarrusel } from "../multicarrusel/MultiCarrusel";
-import skills_by_categories from '../exampleData/skills.json'
-import { SkillListsByCategories } from "./ByCategories/SkillsByCategories";
+import { MultiCarrusel } from "../multicarrusel/Multicarrusel";
+import skills_by_categories from '../data/skills.json'
+import { SkillListsByCategories } from "./byCategories/SkillsByCategories";
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
-import projects from "../exampleData/projects.json";
+import projects from "../data/projects.json";
 import { useEffect, useState } from "react";
 
-import {SkillsByExperience} from "./ByExperience/SkillsByExperience"
+import {SkillsByExperience} from "./byExperience/SkillsByExperience"
 
 
 

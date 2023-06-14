@@ -1,17 +1,17 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
-import projects from "../exampleData/projects.json";
+import projects from "../data/projects.json";
 import { ProjectCard } from "./ProjectCards";
 import { useEffect, useState } from "react";
 
 export const Projects = () => {
-  const webProjects = filterProjectsByCategory("Web")
-  const dataProjects = filterProjectsByCategory("Data")
+  const webProjects = filterProjectsByCategory("Web");
+  const dataProjects = filterProjectsByCategory("Data");
 
-  function filterProjectsByCategory(categories){
-    return projects.filter((item) => item.categories && item.categories.includes(categories))
+  function filterProjectsByCategory(categories) {
+    return projects.filter(
+      (item) => item.categories && item.categories.includes(categories)
+    );
   }
-
-
 
   return (
     <section className="paddings" id="projects">
@@ -43,7 +43,7 @@ export const Projects = () => {
                     {projects.map((project, index) => {
                       return (
                         <ProjectCard
-                        key={index}
+                          key={index}
                           project={project}
                         ></ProjectCard>
                       );
@@ -56,7 +56,7 @@ export const Projects = () => {
                     {webProjects.map((project, index) => {
                       return (
                         <ProjectCard
-                        key={index}
+                          key={index}
                           project={project}
                         ></ProjectCard>
                       );
@@ -76,7 +76,6 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-
               </Tab.Content>
             </Tab.Container>
           </Col>
