@@ -11,9 +11,9 @@ export const SkillsCard = ({ category, skills }) => {
         <Card.Body>
             {skills.map((skill, index) => {
               return (
-                <Card.Text key={index}>
+                <li key={index}>
                   {skill.name} - {skill.experience}
-                </Card.Text>
+                </li>
               );
             })}
         </Card.Body>

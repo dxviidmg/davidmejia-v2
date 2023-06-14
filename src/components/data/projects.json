@@ -1,100 +1,259 @@
-[
+[    {
+    "name": "Los Arquetipos de Jung Site",
+    "description": "Development of a site for a rock band",
+    "period": "2016",
+    "categories": [
+        "Web"
+    ],
+    "company": {
+        "name": "CLoud Ware",
+        "url": ""
+    },
+    "activities": [
+        "Requirements analysis",
+        "Database design",
+        "The development of views, templates and URLs"    ],
+    "stack": [
+        "Django",
+        "Python",
+        "Postgresql",
+        "Boostramp"
+    ]
+},
     {
         "name": "Web appication for public financing management",
         "description": "Development of a web appication for public financing management",
         "period": "2016-17",
-        "categories": ["Web"],
-        "company": {"name": "CITNOVA", "url": "https://citnova.hidalgo.gob.mx/"},
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "CITNOVA",
+            "url": "https://citnova.hidalgo.gob.mx/"
+        },
         "activities": [
             "Requirements analysis",
             "Database design",
             "The development of views, templates and URLs",
             "Tests with skateholders"
         ],
-        "stack": ["Django", "Python", "Postgresql", "Boostramp", "AWS"]
+        "stack": [
+            "Django",
+            "Python",
+            "Postgresql",
+            "Boostramp",
+            "AWS"
+        ]
     },
     {
-    "name": "TEASIB",
-    "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
-    "period": "2017-18",
-    "categories": ["Web"],
-    "company": {"name": "Grupo Constructor Carsev"},
-    "activities": [
-        "Requirements analysis",
-        "Database design",
-        "The development of views, templates and URLs",
-        "Tests with skateholders",
-        "Skateholders Support"
-    ],
-    "stack": ["Django", "Python", "Postgresql", "Boostramp", "AWS"]
-},
-
-{
-    "name": "Kickstarter campaign success analysis",
-    "description": "Prototype development of a machine learning model to predict the success of a kickstarter campaign",
-    "period": "2018-2019",
-    "categories": ["Data"],
-    "company": {"name": "Plenumsoft", "url": "https://www.plenumsoft.com.mx/"},
-    "activities": [
-        "Data search",
-        "Data clean",
-        "Modeling"
-    ],
-    "stack": ["dataiku"]
-},
-{
-"name": "SAAM",
-"description": "Maintenance of a web application for insurance management",
-"period": "2019-2022",
-"categories": ["Web"],
-"company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
-"activities": [
-    "Bug fixes",
-    "Performance improvements", 
-    "Code optimization"
-],
-"stack": ["Django", "Python", "Postgresql", "API rest"]
-},
-{
-    "name": "Database refactoring for SAAM",
-    "description": "Modify the structure of the database in order to improve quality and performance",
-    "period": "2022",
-    "categories": ["Web", "Data"],
-    "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
-    "activities": [
-        "Exploratory data base analysis",
-        "Planning",
-        "Deleting of useless tables and fields",
-        "Fusion of similar tables or fields",
-        "Implementation of OOP in models and creation of abstract classes"
-    ],
-    "stack": ["Django", "Python", "Postgresql", "Pandas", "Jupyter"]
+        "name": "TEASIB",
+        "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
+        "period": "2017-18",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Grupo Constructor Carsev"
+        },
+        "activities": [
+            "Requirements analysis",
+            "Database design",
+            "The development of views, templates and URLs",
+            "Tests with skateholders",
+            "Skateholders Support"
+        ],
+        "stack": [
+            "Django",
+            "Python",
+            "Postgresql",
+            "Boostramp",
+            "AWS"
+        ]
     },
-
+    {
+        "name": "Kickstarter campaign success analysis",
+        "description": "Prototype development of a machine learning model to predict the success of a kickstarter campaign",
+        "period": "2018-2019",
+        "categories": [
+            "Data"
+        ],
+        "company": {
+            "name": "Plenumsoft",
+            "url": "https://www.plenumsoft.com.mx/"
+        },
+        "activities": [
+            "Data search",
+            "Data clean",
+            "Modeling"
+        ],
+        "stack": [
+            "dataiku"
+        ]
+    },
+    {
+        "name": "SAAM",
+        "description": "Maintenance of a web application for insurance management",
+        "period": "2019-2022",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "Bug fixes",
+            "Performance improvements",
+            "Code optimization"
+        ],
+        "stack": [
+            "Django",
+            "Python",
+            "Postgresql",
+            "API rest"
+        ]
+    },
+    {
+        "name": "Database refactoring for SAAM",
+        "description": "Modify the structure of the database in order to improve quality and performance",
+        "period": "2022",
+        "categories": [
+            "Web",
+            "Data"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "Exploratory data base analysis",
+            "Planning",
+            "Deleting of useless tables and fields",
+            "Fusion of similar tables or fields",
+            "Implementation of OOP in models and creation of abstract classes"
+        ],
+        "stack": [
+            "Django",
+            "Python",
+            "Postgresql",
+            "Pandas",
+            "Jupyter"
+        ]
+    },
     {
         "name": "Report-service for SAAM",
         "description": "Creation of a microservice for improvement the creation of reports",
         "period": "2022",
-        "categories": ["Web"],
-        "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
         "activities": [
             "The development of views, templates and URLs"
         ],
-        "stack": ["Django", "Python", "Postgresql"]
-        },
-
+        "stack": [
+            "Django",
+            "Python",
+            "Postgresql"
+        ]
+    },
     {
         "name": "Data import for SAAM",
         "description": "Creation of codebase for data importing",
         "period": "2019-2021",
-        "categories": ["Web", "Data"],
-        "company": {"name": "Ixulabs", "url": "https://ixulabs.com/"},
+        "categories": [
+            "Web",
+            "Data"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
         "activities": [
             "Data analysis",
             "Coding",
             "Tests",
             "Implement in production"
         ],
-        "stack": ["Django", "Python", "Postgresql", "Pandas"]
-        }
+        "stack": [
+            "Django",
+            "Python",
+            "Postgresql",
+            "Pandas"
+        ]
+    },
+    {
+        "name": "Web appication for vending machines management",
+        "description": "Development of a web appication for vending machines management",
+        "period": "2022",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Genone Tech",
+            "url": "https://citnova.hidalgo.gob.mx/"
+        },
+        "activities": [
+            "Requirements analysis",
+            "Database design",
+            "The development of views, templates and URLs",
+            "Tests with skateholders",
+            "Deployments"
+        ],
+        "stack": [
+            "Django",
+            "Python",
+            "Postgresql",
+            "Boostramp",
+            "Heroku",
+            "Stripe"
+        ]
+    },
+    {
+        "name": "Cloudwaremx Site",
+        "description": "Development of a site",
+        "period": "2022",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "CLoud Ware",
+            "url": "https://www.cloudwaremx.com/"
+        },
+        "activities": [
+            "Requirements analysis",
+            "Database design",
+            "The development of views, templates and URLs",
+            "Tests with skateholders",
+            "Deployments"
+        ],
+        "stack": [
+            "Django",
+            "Python",
+            "Postgresql",
+            "Boostramp"
+        ]
+    },
+    {
+        "name": "Digy Site",
+        "description": "Development of a site",
+        "period": "2023",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Digy Networks",
+            "url": ""
+        },
+        "activities": [
+            "Requirements analysis",
+            "Deployments"
+        ],
+        "stack": [
+            "React"
+        ]
+    }
 ]
