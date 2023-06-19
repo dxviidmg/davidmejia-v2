@@ -39,6 +39,11 @@
   background-color: #EBEDEF;
 }
 
-section h2{
+h2{
   text-align: center;
+  padding-bottom: 20px;
+}
+
+#skill-tab, #project-tab{
+  padding-bottom: 20px;
 }

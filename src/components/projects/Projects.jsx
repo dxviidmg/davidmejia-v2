@@ -25,7 +25,7 @@ export const Projects = () => {
                 variant="pills"
                 defaultActiveKey="/home"
                 className="nav-pills justify-content-center align-items-center"
-                id="pill-tab"
+                id="project-tab"
               >
                 <Nav.Item>
                   <Nav.Link eventKey="first">All</Nav.Link>

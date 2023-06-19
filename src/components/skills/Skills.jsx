@@ -28,12 +28,12 @@ export const Skills = () => {
         <Row>
           <Col className="text-center">
             <h2 >Skills</h2>
-            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+            <Tab.Container id="skills-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
                 defaultActiveKey="/home"
                 className="nav-pills justify-content-center align-items-center"
-                id="pill-tab"
+                id="skill-tab"
               >
                 <Nav.Item>
                   <Nav.Link eventKey="first">By category</Nav.Link>
