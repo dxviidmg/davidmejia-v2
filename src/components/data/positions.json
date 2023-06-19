@@ -27,7 +27,8 @@
         "position": "Data Sciente Student",
         "period": "November 2018 - May 2019",
         "modality": "Face to face",
-        "location": "Merida, Yuc., Mex"
+        "location": "Merida, Yuc., Mex",
+        "notes": "It was a funded diploma by Plenumsoft and coordinated by Tecnológico Nacional de México"
     },
     {
         "company": {
@@ -36,7 +37,7 @@
         "position": "Full stack Web Developer",
         "period": "May 2017 - November 2018",
         "modality": "Face to face",
-        "location": "Pachuca, Hgo, Mex"
+        "location": "Pachuca, Hgo., Mex"
     },
     {
         "company": {
@@ -46,7 +47,7 @@
         "position": "Full stack Web Developer",
         "period": "November 2017 - May 2018",
         "modality": "Face to face",
-        "location": "Pachuca, Hgo, Mex"
+        "location": "Pachuca, Hgo., Mex"
     },
     {
         "company": {
@@ -56,7 +57,7 @@
         "position": "Researcher assistant",
         "period": "February 2014 - Agust 2014",
         "modality": "Hibrid",
-        "notes": "Professional practices",
-        "location": "Atizapan, EdoMex., Mex"
+        "location": "Atizapan, EdoMex., Mex",
+        "notes": "Professional practices"
     }
 ]

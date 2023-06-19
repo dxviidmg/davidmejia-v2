@@ -48,8 +48,8 @@ export function Banner() {
           <Col md={12} className="">
             <h1>Hi there, I am David.</h1>
             <h2>I am {text}</h2>
-            <a href="https://www.linkedin.com/in/david-mejia-guzman/"><BsLinkedin className="icon" size={25}/></a>
-            <a href="https://github.com/dxviidmg"><BsGithub className="icon" size={25}/></a>
+            <a href="https://www.linkedin.com/in/david-mejia-guzman/" target="_blank" rel="noreferrer"><BsLinkedin className="icon" size={25}/></a>
+            <a href="https://github.com/dxviidmg" target="_blank" rel="noreferrer"><BsGithub className="icon" size={25}/></a>
           </Col>
         </Row>
       </Container>

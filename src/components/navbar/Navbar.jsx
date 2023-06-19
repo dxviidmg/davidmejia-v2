@@ -42,13 +42,22 @@ export function NavBar() {
               Home
             </Nav.Link>
             <Nav.Link
-              href="#positions"
+              href="#about-me"
               className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+                activeLink === "about-me" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("positions")}
+              onClick={() => onUpdateActiveLink("about-me")}
             >
-              Positions
+              About me
+            </Nav.Link>
+            <Nav.Link
+              href="#experience"
+              className={
+                activeLink === "experience" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("experience")}
+            >
+              Experience
             </Nav.Link>
 
             <Nav.Link
@@ -79,25 +88,8 @@ export function NavBar() {
             >
               certifications
             </Nav.Link>
-
-            <Nav.Link
-              href="#papers"
-              className={
-                activeLink === "papers" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("papers")}
-            >
-              Papers
-            </Nav.Link>
             
           </Nav>
-          <span className="navbar-text">
-            <div className="social-icon">
-              <a href="https://www.linkedin.com/in/david-mejia-guzman/" target="_blank" rel="noreferrer">
-                <img src={navIcon1} alt="" />
-              </a>
-            </div>
-          </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Python for Artificial Intelligence",
+        "instution": "Actumlogos",
+        "expedition": "June 2020",
+        "id": "ZAGE-810930-FW2-0005"
+    },
+
+    {
+        "name": "Certified User Level #1",
+        "instution": "DataikuDataiku",
+        "expedition": "May 2019",
+        "expiration": "May 2020",
+        "id": "43606/L1/DMX66"
+    },
+    {
+        "name": "Backend and Servers Path",
+        "instution": "Fixtergeek",
+        "expedition": "March 2017"
+    },
+    {
+        "name": "Backend Django Path",
+        "instution": "Fixtergeek",
+        "expedition": "September 2016"
+    }
+]

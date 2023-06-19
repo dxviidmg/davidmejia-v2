@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import skills_by_categories from "../../data/skills.json";
-import { SkillList } from "./skillList";
+import { SkillList } from "../skillList";
 import { Row, Col } from "react-bootstrap";
+import { SkillsCard } from "../SkillCard";
 
 export const SkillsByExperience = () => {
   const [topSkills, setTopSkills] = useState([]);
@@ -65,24 +66,17 @@ export const SkillsByExperience = () => {
   return (
     <Row>
       <Col md={3}>
-        <h3>My top</h3>
-        <p>Skills that I have used the most of my career</p>
-        <SkillList skills={topSkills} />
+        <SkillsCard title="My top" description="Skills that I have used the most of my career" skills={topSkills}/>
       </Col>
       <Col md={3}>
-        <h3>My medium skills</h3>
-        <p>Skills that I have used between 6 months and 3 years</p>
-        <SkillList skills={mediumSkills} />
+        <SkillsCard title="My medium skills" description="Skills that I have used between 6 months and 3 years" skills={mediumSkills}/>
+
       </Col>
       <Col md={3}>
-        <h3>My low skills</h3>
-        <p>Skills that I have used less them 6 months</p>
-        <SkillList skills={lowSkills} />
+      <SkillsCard title="My low skills" description="Skills that I have used less them 6 months" skills={lowSkills}/>
       </Col>
       <Col md={3}>
-        <h3>The most recent</h3>
-        <p>Skills that I have learned in the last months</p>
-        <SkillList skills={learningSkills} />
+      <SkillsCard title="The most recent" description="Skills that I have learned in the last months" skills={learningSkills}/>
       </Col>
 
     </Row>

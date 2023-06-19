@@ -18,7 +18,7 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2 className="text-center">Projects</h2>
+            <h2>Projects</h2>
 
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav

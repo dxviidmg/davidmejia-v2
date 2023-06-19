@@ -28,7 +28,6 @@
 }
 
 #skills{
-  background-color: antiquewhite;
 }
 
 .icon{
@@ -36,6 +35,10 @@
   margin-right: 10px;
 }
 
-#experience{
+#experience, #projects{
   background-color: #EBEDEF;
+}
+
+section h2{
+  text-align: center;
 }
