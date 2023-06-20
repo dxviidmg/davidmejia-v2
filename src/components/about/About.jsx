@@ -1,5 +1,4 @@
 import { Col, Row, Container, Image } from "react-bootstrap";
-import { useEffect, useState } from "react";
 import about from "../data/about.json";
 
 export const About = () => {
