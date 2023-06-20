@@ -1,7 +1,6 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projects from "../data/projects.json";
 import { ProjectCard } from "./ProjectCards";
-import { useEffect, useState } from "react";
 
 export const Projects = () => {
   const webProjects = filterProjectsByCategory("Web");

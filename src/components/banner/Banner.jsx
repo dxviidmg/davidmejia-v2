@@ -1,4 +1,4 @@
-import { Col, Row, Container, Image } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 

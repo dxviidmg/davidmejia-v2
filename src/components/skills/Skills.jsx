@@ -1,25 +1,7 @@
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import pythonLogo from "../../assets/img/python.svg";
-import djangoLogo from "../../assets/img/django.svg";
-import pqslLogo from "../../assets/img/postgresql.svg";
-import apiLogo from "../../assets/img/api.svg";
-import graphqlLogo from "../../assets/img/graphql.svg";
-import jsLogo from "../../assets/img/js.svg";
-import reactLogo from "../../assets/img/react.svg";
-
-import colorSharp from "../../assets/img/color-sharp.png";
-import { MultiCarrusel } from "../multicarrusel/Multicarrusel";
-import skills_by_categories from '../data/skills.json'
 import { SkillListsByCategories } from "./byCategories/SkillsByCategories";
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
-import projects from "../data/projects.json";
-import { useEffect, useState } from "react";
-
-import {SkillsByExperience} from "./byExperience/SkillsByExperience"
-
-
-
+import { SkillsByExperience } from "./byExperience/SkillsByExperience";
 
 export const Skills = () => {
   return (
@@ -27,7 +9,7 @@ export const Skills = () => {
       <Container>
         <Row>
           <Col className="text-center">
-            <h2 >Skills</h2>
+            <h2>Skills</h2>
             <Tab.Container id="skills-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
@@ -44,14 +26,13 @@ export const Skills = () => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    <SkillListsByCategories/>
+                    <SkillListsByCategories />
                   </Row>
                 </Tab.Pane>
 
                 <Tab.Pane eventKey="second">
                   <SkillsByExperience></SkillsByExperience>
-                  <Row>
-                  </Row>
+                  <Row></Row>
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>

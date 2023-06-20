@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import skills_by_categories from "../../data/skills.json";
-import { SkillList } from "../skillList";
 import { Row, Col } from "react-bootstrap";
 import { SkillsCard } from "../SkillCard";
 
