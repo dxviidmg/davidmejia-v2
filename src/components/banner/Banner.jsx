@@ -43,13 +43,25 @@ export function Banner() {
   };
   return (
     <section id="banner">
-      <Container className="">
+      <Container>
         <Row className="min-height d-flex align-items-center text-center">
-          <Col sm={12} className="">
+          <Col sm={12}>
             <h1>Hi there, I am David.</h1>
             <h2 id="iam">I am {text}</h2>
-            <a href="https://www.linkedin.com/in/david-mejia-guzman/" target="_blank" rel="noreferrer"><BsLinkedin className="icon" size={25}/></a>
-            <a href="https://github.com/dxviidmg" target="_blank" rel="noreferrer"><BsGithub className="icon" size={25}/></a>
+            <a
+              href="https://www.linkedin.com/in/david-mejia-guzman/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin className="icon" size={25} />
+            </a>
+            <a
+              href="https://github.com/dxviidmg"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsGithub className="icon" size={25} />
+            </a>
           </Col>
         </Row>
       </Container>
