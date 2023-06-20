@@ -1,4 +1,3 @@
-import "react-multi-carousel/lib/styles.css";
 import { SkillListsByCategories } from "./byCategories/SkillsByCategories";
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import { SkillsByExperience } from "./byExperience/SkillsByExperience";
