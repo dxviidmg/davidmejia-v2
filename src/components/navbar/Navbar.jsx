@@ -86,7 +86,7 @@ export function NavBar() {
               }
               onClick={() => onUpdateActiveLink("certifications")}
             >
-              certifications
+              Certifications
             </Nav.Link>
             
           </Nav>
