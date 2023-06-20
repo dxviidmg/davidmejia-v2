@@ -23,7 +23,6 @@ export const Projects = () => {
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
-                defaultActiveKey="/home"
                 className="nav-pills justify-content-center align-items-center"
                 id="project-tab"
               >

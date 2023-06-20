@@ -27,12 +27,10 @@
   margin-top: 3vh;
 }
 
-#skills{
-}
-
 .icon{
   margin-left: 10px;
   margin-right: 10px;
+  color: white;
 }
 
 #experience, #projects, footer{
@@ -46,4 +44,17 @@ h2{
 
 #skill-tab, #project-tab{
   padding-bottom: 20px;
+}
+
+#iam {
+  padding-bottom: 5px;
+}
+
+#project-tab .nav-link, #skills .nav-link {
+  background-color: #D6DBDF; /* Replace with your desired color */
+  color: black;
+}
+
+#project-tab .nav-link.active, #skills .nav-link.active {
+  background-color: #ABB2B9; /* Replace with your desired color */
 }

@@ -5,8 +5,8 @@ export function Footer() {
     <footer>
       <Container>
         <Row>
-          <Col xs={12} className="text-center">
-            <p style={{paddingTop: "5px"}}>Powered by me</p>
+          <Col xs={12} className="text-center" style={{marginTop: "5px", marginBottom: "5px"}}>
+            Powered by me
           </Col>
         </Row>
       </Container>

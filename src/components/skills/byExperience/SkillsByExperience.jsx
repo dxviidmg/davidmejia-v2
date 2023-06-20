@@ -21,7 +21,7 @@ export const SkillsByExperience = () => {
 
   const skillList = () => {
     let skills_list = [];
-    let skills_currently_learning    = []
+    let skills_currently_learning = [];
     Object.entries(skills_by_categories).forEach(([category, skills]) => {
       skills.forEach((skill) => {
         const experience_in_days = calculaExperience(skill.experience);
@@ -31,21 +31,18 @@ export const SkillsByExperience = () => {
           experience: skill.experience,
           experience_in_days,
         };
-        if ('learning_currently' in skill){
-          console.log('yes')
-          skills_currently_learning.push(aux)
-        }
-        else {
-          console.log('no')
+        if ("learning_currently" in skill) {
+          console.log("yes");
+          skills_currently_learning.push(aux);
+        } else {
+          console.log("no");
           skills_list.push(aux);
         }
-
       });
     });
 
     skills_list.sort((a, b) => b.experience_in_days - a.experience_in_days);
-    console.log(skills_list)
-
+    console.log(skills_list);
 
     const top_skills = skills_list.slice(0, 5);
     const medium_skills = skills_list.slice(5, 13);
@@ -59,26 +56,39 @@ export const SkillsByExperience = () => {
     setTopSkills(a);
     setMediumSkills(b);
     setLowSkills(c);
-    setLearningSkills(d)
-
+    setLearningSkills(d);
   }, []);
 
   return (
     <Row>
-      <Col md={3}>
-        <SkillsCard title="My top" description="Skills that I have used the most of my career" skills={topSkills}/>
+      <Col sm={12} md={3}>
+        <SkillsCard
+          title="My top"
+          description="Skills that I have used the most of my career"
+          skills={topSkills}
+        />
       </Col>
-      <Col md={3}>
-        <SkillsCard title="My medium skills" description="Skills that I have used between 6 months and 3 years" skills={mediumSkills}/>
-
+      <Col sm={12} md={3}>
+        <SkillsCard
+          title="My medium skills"
+          description="Skills that I have used between 6 months and 3 years"
+          skills={mediumSkills}
+        />
       </Col>
-      <Col md={3}>
-      <SkillsCard title="My low skills" description="Skills that I have used less them 6 months" skills={lowSkills}/>
+      <Col sm={12} md={3}>
+        <SkillsCard
+          title="My low skills"
+          description="Skills that I have used less them 6 months"
+          skills={lowSkills}
+        />
       </Col>
-      <Col md={3}>
-      <SkillsCard title="The most recent" description="Skills that I have learned in the last months" skills={learningSkills}/>
+      <Col sm={12} md={3}>
+        <SkillsCard
+          title="The most recent"
+          description="Skills that I have learned in the last months"
+          skills={learningSkills}
+        />
       </Col>
-
     </Row>
   );
 };

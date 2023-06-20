@@ -8,7 +8,7 @@ export const Certifications = () => {
         <Row>
           {certifications.map((certification, index) => {
             return (
-              <Col md={6}>
+              <Col lg={6}>
                 <h3>
                   {certification.name} by {certification.instution}
                 </h3>
