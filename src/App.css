@@ -1,60 +1,46 @@
-.min-height{
-  min-height: 90vh;
-}
-
-.paddings{
-  padding-top: 10vh;
-  padding-bottom: 10VH;
-}
-
-.test1{
+/* Background test*/
+.test1 {
   background-color: antiquewhite;
 }
 
-.test2{
+.test2 {
   background-color: aquamarine;
 }
-.check{
-  height: 90vh;
-}
 
-#banner{
-  background-color: black;
-  color: aliceblue;
-}
+/* general*/
 
-.padding-card{
-  margin-top: 3vh;
-}
-
-.icon{
-  margin-left: 10px;
-  margin-right: 10px;
-  color: white;
-}
-
-#experience, #projects, footer{
-  background-color: #EBEDEF;
-}
-
-h2{
+h2 {
   text-align: center;
   padding-bottom: 20px;
 }
 
-#skill-tab, #project-tab{
+.paddings {
+  padding-top: 10vh;
+  padding-bottom: 10VH;
+}
+
+/* Background*/
+
+#experience,
+#projects,
+footer {
+  background-color: #EBEDEF;
+}
+
+/* Nav.Link*/
+
+#skill-tab,
+#project-tab {
   padding-bottom: 20px;
 }
 
-#iam {
-  padding-bottom: 5px;
-}
-
-#project-tab .nav-link, #skills .nav-link {
-  background-color: #D6DBDF; /* Replace with your desired color */
+#project-tab .nav-link,
+#skills .nav-link {
+  background-color: #D6DBDF;
   color: black;
 }
 
-#project-tab .nav-link.active, #skills .nav-link.active {
-  background-color: #ABB2B9; /* Replace with your desired color */
+#project-tab .nav-link.active,
+#skills .nav-link.active {
+  background-color: #ABB2B9;
 }

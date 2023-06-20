@@ -1,0 +1,19 @@
+.min-height {
+    min-height: 90vh;
+}
+
+#banner {
+    background-color: black;
+    color: aliceblue;
+
+}
+
+.icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+  }
+
+  #iam {
+    padding-bottom: 5px;
+  }

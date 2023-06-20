@@ -2,6 +2,7 @@ import { Col, Row, Container } from "react-bootstrap";
 import { useEffect, useState, useMemo } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { ParticlesBackground } from "./Particles";
+import './banner.css'
 
 export function Banner() {
   const [loopNum, setLoopNum] = useState(0);
