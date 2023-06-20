@@ -1,6 +1,7 @@
 import { Col, Row, Container } from "react-bootstrap";
 import { useEffect, useState, useMemo } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { ParticlesBackground } from "./Particles";
 
 export function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -43,6 +44,7 @@ export function Banner() {
 
   return (
     <section id="banner">
+      <ParticlesBackground></ParticlesBackground>
       <Container>
         <Row className="min-height d-flex align-items-center text-center">
           <Col sm={12}>
