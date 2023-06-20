@@ -10,7 +10,7 @@ export const Expirience = () => {
         <Row>
           {positions.map((position, index) => {
             return (
-              <Col sm={12} md={6}>
+              <Col sm={12} md={6} key={index}>
                 {" "}
                 <h3>
                   {position.position} in{" "}
