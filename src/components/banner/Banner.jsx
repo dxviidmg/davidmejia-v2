@@ -44,7 +44,7 @@ export function Banner() {
   }, [loopNum, text, isDeleting, delta, titles]);
 
   return (
-    <section id="banner">
+    <section id="banner" style={{ position: "relative"}}>
       <ParticlesBackground></ParticlesBackground>
       <Container>
         <Row className="min-height d-flex align-items-center text-center">
