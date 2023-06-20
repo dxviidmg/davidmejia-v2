@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import skills_by_categories from "../../data/skills.json";
 import { Row, Col } from "react-bootstrap";
 import { SkillsCard } from "../SkillCard";
@@ -18,7 +18,7 @@ export const SkillsByExperience = () => {
     return 30 * unity;
   };
 
-  const skillList = () => {
+  const skillList = useCallback(() => {
     let skills_list = [];
     let skills_currently_learning = [];
     Object.entries(skills_by_categories).forEach(([category, skills]) => {
@@ -31,24 +31,24 @@ export const SkillsByExperience = () => {
           experience_in_days,
         };
         if ("learning_currently" in skill) {
-          console.log("yes");
           skills_currently_learning.push(aux);
         } else {
-          console.log("no");
           skills_list.push(aux);
         }
       });
     });
 
     skills_list.sort((a, b) => b.experience_in_days - a.experience_in_days);
-    console.log(skills_list);
 
     const top_skills = skills_list.slice(0, 5);
     const medium_skills = skills_list.slice(5, 13);
     const low_skills = skills_list.slice(13);
 
     return [top_skills, medium_skills, low_skills, skills_currently_learning];
-  };
+  }, []);
+  
+  
+  
 
   useEffect(() => {
     const [a, b, c, d] = skillList();
@@ -56,7 +56,7 @@ export const SkillsByExperience = () => {
     setMediumSkills(b);
     setLowSkills(c);
     setLearningSkills(d);
-  }, []);
+  }, [skillList]);
 
   return (
     <Row>
