@@ -3,6 +3,7 @@ import { useEffect, useState, useMemo } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { ParticlesBackground } from "./Particles";
 import './banner.css'
+import { NavBar } from "../navbar/Navbar";
 
 export function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -46,6 +47,7 @@ export function Banner() {
   return (
     <section id="banner" style={{ position: "relative"}}>
       <ParticlesBackground></ParticlesBackground>
+      <NavBar></NavBar>
       <Container>
         <Row className="min-height d-flex align-items-center text-center">
           <Col sm={12}>
