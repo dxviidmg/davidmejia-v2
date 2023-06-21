@@ -15,7 +15,17 @@
             "Deployments"
         ],
         "stack": [
-            "React"
+            {
+                "name": "Javascript",
+                "color": "yellow"
+            },
+            {
+                "name": "React",
+                "color": "cyan"
+            },
+            {
+                "name": "Github"
+            }
         ]
     },
     {
@@ -37,10 +47,24 @@
             "Deployments"
         ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql",
-            "Boostramp"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Heroku",
+                "color": "purple"
+            },
+            {
+                "name": "Github"
+            }
         ]
     },
     {
@@ -62,12 +86,44 @@
             "Deployments"
         ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql",
-            "Boostramp",
-            "Heroku",
-            "Stripe"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Heroku",
+                "color": "purple"
+            },
+            {
+                "name": "Chart.js",
+                "icon": "SiChartdotjs",
+                "color": "#fe777b"
+            },
+            {
+                "name": "Stripe",
+
+                "color": "darkblue"
+            },
+            {
+                "name": "Celery",
+
+                "color": "green"
+            },
+            {
+                "name": "Redis",
+
+                "color": "red"
+            },
+            {
+                "name": "Github"
+            }
         ]
     },
     {
@@ -86,9 +142,26 @@
             "Updating scripts"
         ],
         "stack": [
-            "Python",
-            "Pandas",
-            "Jupyter"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Pandas"
+            },
+            {
+                "name": "Jupyter",
+                "color": "orange"
+            },
+            {
+                "name": "Matplotlib",
+                "icon": "SiPython",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
         ]
     },
     {
@@ -108,8 +181,18 @@
             "Test each script"
         ],
         "stack": [
-            "Python",
-            "Postgresql"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Postgresql",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
         ]
     },
     {
@@ -130,10 +213,36 @@
             "Implement in production"
         ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql",
-            "Pandas"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Pandas"
+            },
+            {
+                "name": "Jupyter",
+                "color": "orange"
+            },
+            {
+                "name": "Matplotlib",
+                "icon": "SiPython",
+                "color": "blue"
+            },
+            {
+                "name": "Mongodb",
+                "color": "green"
+            },
+            {
+                "name": "GCP",
+
+                "icon": "SiGooglecloud",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
         ]
     },
     {
@@ -156,11 +265,33 @@
             "Implementation of OOP in models and creation of abstract classes"
         ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql",
-            "Pandas",
-            "Jupyter"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Pandas"
+            },
+            {
+                "name": "Jupyter",
+                "color": "orange"
+            },
+            {
+                "name": "Matplotlib",
+                "icon": "SiPython",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
         ]
     },
     {
@@ -178,12 +309,33 @@
             "The development of views, templates and URLs"
         ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Celery",
+
+                "color": "green"
+            },
+            {
+                "name": "Redis",
+
+                "color": "red"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
         ]
     },
-
     {
         "name": "Medical insurance data scraping",
         "description": "Using selenium, I got all the health insurance quotes from one company.",
@@ -200,11 +352,21 @@
             "Scrapping"
         ],
         "stack": [
-            "Python",
-            "selenium"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Selenium",
+
+                "color": "green"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
         ]
     },
-
     {
         "name": "Data import for SAAM",
         "description": "Creation of codebase for data importing",
@@ -223,13 +385,23 @@
             "Implement in production"
         ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql",
-            "Pandas"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
         ]
     },
-
     {
         "name": "SAAM",
         "description": "Maintenance of a web application for insurance management",
@@ -247,10 +419,26 @@
             "Code optimization"
         ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql",
-            "API rest"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Rest",
+                "color": "gray"
+            },
+            {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
         ]
     },
     {
@@ -270,10 +458,17 @@
             "Modeling"
         ],
         "stack": [
-            "dataiku"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Dataiku",
+
+                "color": "#00b6aa"
+            }
         ]
     },
-
     {
         "name": "TEASIB",
         "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
@@ -292,11 +487,26 @@
             "Skateholders Support"
         ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql",
-            "Boostramp",
-            "AWS"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "AWS",
+
+                "icon": "SiAmazonaws",
+                "color": "orange"
+            },
+            {
+                "name": "Github"
+            }
         ]
     },
     {
@@ -317,14 +527,22 @@
             "Tests with skateholders"
         ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql",
-            "Boostramp",
-            "AWS"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Github"
+            }
         ]
     },
-
     {
         "name": "Los Arquetipos de Jung Website",
         "description": "Development of a website for a rock band",
@@ -339,12 +557,29 @@
         "activities": [
             "Requirements analysis",
             "Database design",
-            "The development of views, templates and URLs"    ],
+            "The development of views, templates and URLs"
+        ],
         "stack": [
-            "Django",
-            "Python",
-            "Postgresql",
-            "Boostramp"
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "AWS",
+
+                "icon": "SiAmazonaws",
+                "color": "orange"
+            },
+            {
+                "name": "Github"
+            }
         ]
     }
 ]
