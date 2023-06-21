@@ -41,8 +41,7 @@
         {
             "name": "Rest",
             "experience": "4 Years",
-            "icon": "SiForestry",
-            "color": "#602426"
+            "color": "gray"
         },
         {
             "name": "Graphql",
@@ -65,12 +64,14 @@
         {
             "name": "AWS",
             "experience": "2 Years",
-            "icon": "SiAmazonaws"
+            "icon": "SiAmazonaws",
+            "color": "orange"
         },
         {
             "name": "GCP",
             "experience": "2 Months",
-            "icon": "SiGooglecloud"
+            "icon": "SiGooglecloud",
+            "color": "blue"
         },
         {
             "name": "Heroku",

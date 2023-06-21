@@ -62,7 +62,7 @@ export const SkillsByExperience = () => {
 
   return (
     <Row>
-        <Col sm={12}>
+        <Col sm={12} className="padding-card">
         <SkillsCard
           title="The most recent"
           description="Skills that I have learned in the last months"
