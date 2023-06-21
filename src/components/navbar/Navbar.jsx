@@ -47,11 +47,11 @@ export function NavBar() {
                   }
                   onClick={() => onUpdateActiveLink(option)}
                 >
-                  <p className="link-text">
+                  <span className="link-text">
                     {index === 0
                       ? "Home"
                       : capitalizeString(option).replace("-", " ")}
-                  </p>
+                  </span>
                 </Nav.Link>
               );
             })}

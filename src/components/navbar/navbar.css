@@ -1,11 +1,13 @@
-.scrolled{
+.scrolled {
     background-color: gray;
     transition: 1s;
     color: red;
 }
 
-.unscrolled{
+.unscrolled {
     transition: 1s;
 }
 
-.link-text{color: white;}
+.link-text {
+    color: white;
+}
