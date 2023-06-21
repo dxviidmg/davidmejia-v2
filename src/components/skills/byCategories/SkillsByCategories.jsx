@@ -9,7 +9,7 @@ export const SkillListsByCategories = () => {
     <Row className="justify-content-center">
       {Object.entries(skills_by_categories).map(([category, skills]) => {
         return (
-          <Col key={category} xs={6} md={3} className="padding-card">
+          <Col key={category} xs={12} sm={6} md={4} lg={3} className="padding-card">
             <SkillsCard
               title={category}
               skills={skills}

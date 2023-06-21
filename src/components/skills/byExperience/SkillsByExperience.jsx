@@ -70,21 +70,21 @@ export const SkillsByExperience = () => {
         />
       </Col>
 
-      <Col sm={12} md={4}>
+      <Col sm={12} md={4} className="padding-card">
         <SkillsCard
           title="My top"
           description="Skills that I have used the most of my career"
           skills={topSkills}
         />
       </Col>
-      <Col sm={12} md={4}>
+      <Col sm={12} md={4} className="padding-card">
         <SkillsCard
           title="My medium skills"
           description="Skills that I have used between 6 months and 3 years"
           skills={mediumSkills}
         />
       </Col>
-      <Col sm={12} md={4}>
+      <Col sm={12} md={4} className="padding-card">
         <SkillsCard
           title="My low skills"
           description="Skills that I have used less them 6 months"

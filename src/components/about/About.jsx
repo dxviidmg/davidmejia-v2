@@ -8,7 +8,7 @@ export const About = () => {
     <section id="about-me">
       <Container>
         <Row className="paddings d-flex align-items-center">
-          <Col md={6}>
+          <Col md={7}>
             <h2>About me</h2>
             {about.map((e, i) => {
               return (
@@ -18,9 +18,8 @@ export const About = () => {
               );
             })}
           </Col>
-          <Col md={1}></Col>
-          <Col md={4} className="text-center">
-            <Image roundedCircle src={img} className="w-100" />
+          <Col xs={12} md={5} className="text-center">
+            <Image roundedCircle src={img} className="w-75" />
           </Col>
         </Row>
       </Container>

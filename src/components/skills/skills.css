@@ -2,3 +2,8 @@
 
     padding-bottom: 20px;
 }
+
+.card:hover {
+    transition: 500ms;
+    transform: translateY(-10px)
+ }
