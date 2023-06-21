@@ -29,6 +29,8 @@ export const SkillsByExperience = () => {
           name: skill.name,
           experience: skill.experience,
           experience_in_days,
+          color: skill.color,
+          icon: skill.icon
         };
         if ("learning_currently" in skill) {
           skills_currently_learning.push(aux);
@@ -60,32 +62,33 @@ export const SkillsByExperience = () => {
 
   return (
     <Row>
-      <Col sm={12} md={3}>
+        <Col sm={12}>
+        <SkillsCard
+          title="The most recent"
+          description="Skills that I have learned in the last months"
+          skills={learningSkills}
+        />
+      </Col>
+
+      <Col sm={12} md={4}>
         <SkillsCard
           title="My top"
           description="Skills that I have used the most of my career"
           skills={topSkills}
         />
       </Col>
-      <Col sm={12} md={3}>
+      <Col sm={12} md={4}>
         <SkillsCard
           title="My medium skills"
           description="Skills that I have used between 6 months and 3 years"
           skills={mediumSkills}
         />
       </Col>
-      <Col sm={12} md={3}>
+      <Col sm={12} md={4}>
         <SkillsCard
           title="My low skills"
           description="Skills that I have used less them 6 months"
           skills={lowSkills}
-        />
-      </Col>
-      <Col sm={12} md={3}>
-        <SkillsCard
-          title="The most recent"
-          description="Skills that I have learned in the last months"
-          skills={learningSkills}
         />
       </Col>
     </Row>
