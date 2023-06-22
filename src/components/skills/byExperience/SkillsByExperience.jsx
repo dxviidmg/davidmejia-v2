@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import skills_by_categories from "../../data/skills.json";
 import { Row, Col } from "react-bootstrap";
-import { SkillsCard } from "../SkillCard";
+import { MyCard } from "../../cards/Card";
 
 export const SkillsByExperience = () => {
   const [topSkills, setTopSkills] = useState([]);
@@ -63,7 +63,7 @@ export const SkillsByExperience = () => {
   return (
     <Row>
         <Col sm={12} className="padding-card">
-        <SkillsCard
+        <MyCard
           title="The most recent"
           description="Skills that I have learned in the last months"
           skills={learningSkills}
@@ -71,21 +71,21 @@ export const SkillsByExperience = () => {
       </Col>
 
       <Col sm={12} md={4} className="padding-card">
-        <SkillsCard
+        <MyCard
           title="My top"
           description="Skills that I have used the most of my career"
           skills={topSkills}
         />
       </Col>
       <Col sm={12} md={4} className="padding-card">
-        <SkillsCard
+        <MyCard
           title="My medium skills"
           description="Skills that I have used between 6 months and 3 years"
           skills={mediumSkills}
         />
       </Col>
       <Col sm={12} md={4} className="padding-card">
-        <SkillsCard
+        <MyCard
           title="My low skills"
           description="Skills that I have used less them 6 months"
           skills={lowSkills}

@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import { NavBar } from './components/navbar/Navbar';
 import { Banner } from './components/banner/Banner';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Skills } from './components/skills/Skills';

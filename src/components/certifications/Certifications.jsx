@@ -1,6 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 import certifications from "../data/certifications.json";
-import Card from "react-bootstrap/Card";
+import { MyCard } from "../cards/Card";
+import { getContentCerfitication } from "./utils";
+
 
 
 export const Certifications = () => {
@@ -12,34 +14,11 @@ export const Certifications = () => {
           {certifications.map((certification, index) => {
             return (
               <Col lg={3} key={index}>
-
-<Card className="h-100 shadow">
-      <Card.Body>
-        <Card.Title>{certification.name} by {certification.instution}</Card.Title>
-        
-
-                          <strong>Expedition: </strong>
-                  {certification.expedition} <br />{" "}
-                  {certification.expiration ? (
-                    <>
-                      <strong>Expiration: </strong>
-                      {certification.expiration}
-                    </>
-                  ) : (
-                    ""
-                  )}
-                  
-                  {certification.id ? (
-                    <>
-                      <strong>id: </strong>
-                      {certification.id}
-                    </>
-                  ) : (
-                    ""
-                  )}{" "}
-      </Card.Body>
-    </Card>
-
+                <MyCard
+                  title={certification.name}
+                  skills={[]}
+                  content={getContentCerfitication(certification)}
+                />
               </Col>
             );
           })}
