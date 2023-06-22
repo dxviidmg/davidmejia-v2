@@ -1,6 +1,7 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projects from "../data/projects.json";
-import { ProjectCard } from "./ProjectCards";
+import { MyCard } from "../cards/Card";
+import { getContentProject } from "./utils";
 
 export const Projects = () => {
   const webProjects = filterProjectsByCategory("Web");
@@ -40,10 +41,11 @@ export const Projects = () => {
                   <Row>
                     {projects.map((project, index) => {
                       return (
-                        <ProjectCard
-                          key={index}
-                          project={project}
-                        ></ProjectCard>
+                        <Col xs={12} md={6} xl={4} key={index} className="padding-card">
+                        <MyCard 
+                        title={project.name}
+                        content={getContentProject(project)}
+                      /></Col>
                       );
                     })}
                   </Row>
@@ -53,10 +55,11 @@ export const Projects = () => {
                   <Row>
                     {webProjects.map((project, index) => {
                       return (
-                        <ProjectCard
-                          key={index}
-                          project={project}
-                        ></ProjectCard>
+                        <Col xs={12} md={6} xl={4} key={index} className="padding-card">
+                        <MyCard 
+                        title={project.name}
+                        content={getContentProject(project)}
+                      /></Col>
                       );
                     })}
                   </Row>
@@ -66,10 +69,11 @@ export const Projects = () => {
                   <Row>
                     {dataProjects.map((project, index) => {
                       return (
-                        <ProjectCard
-                          key={index}
-                          project={project}
-                        ></ProjectCard>
+                        <Col xs={12} md={6} xl={4} key={index} className="padding-card">
+                        <MyCard 
+                        title={project.name}
+                        content={getContentProject(project)}
+                      /></Col>
                       );
                     })}
                   </Row>

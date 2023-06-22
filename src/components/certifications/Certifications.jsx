@@ -16,7 +16,6 @@ export const Certifications = () => {
               <Col lg={3} key={index}>
                 <MyCard
                   title={certification.name}
-                  skills={[]}
                   content={getContentCerfitication(certification)}
                 />
               </Col>

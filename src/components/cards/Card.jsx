@@ -1,7 +1,8 @@
 import Card from "react-bootstrap/Card";
 import { SkillList } from "../skills/skillList";
+import './cards.css'
 
-export const MyCard = ({ title, description, skills, content}) => {
+export const MyCard = ({ title, description, skills=[], content}) => {
   return (
     <Card className="h-100 shadow">
       <Card.Body>
