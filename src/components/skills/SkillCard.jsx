@@ -3,7 +3,7 @@ import { SkillList } from "./skillList";
 
 export const SkillsCard = ({ title, description, skills }) => {
   return (
-    <Card className="h-100">
+    <Card className="h-100 shadow">
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         {description? <Card.Subtitle className="mb-2 text-muted">{description}</Card.Subtitle>: ""}
@@ -12,8 +12,3 @@ export const SkillsCard = ({ title, description, skills }) => {
     </Card>
   );
 };
-
-/*      <h3 className="text-center">{title}</h3>
-      {description? <p>{description}</p>: ""}
-      <SkillList skills={skills} />
-    </div> */

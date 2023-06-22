@@ -19,6 +19,17 @@ h2 {
   padding-bottom: 10VH;
 }
 
+.shadow {
+  transition: 500ms;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+}
+
+.shadow:hover {
+  transition: 500ms;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
 /* Background*/
 
 #experience,
@@ -43,4 +54,9 @@ footer {
 #project-tab .nav-link.active,
 #skills .nav-link.active {
   background-color: #ABB2B9;
+}
+
+.padding-card {
+
+  padding-bottom: 20px;
 }

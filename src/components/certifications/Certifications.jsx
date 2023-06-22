@@ -1,5 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 import certifications from "../data/certifications.json";
+import Card from "react-bootstrap/Card";
+
+
 export const Certifications = () => {
   return (
     <section id="certifications" className="paddings">
@@ -8,12 +11,14 @@ export const Certifications = () => {
         <Row>
           {certifications.map((certification, index) => {
             return (
-              <Col lg={6} key={index}>
-                <h3>
-                  {certification.name} by {certification.instution}
-                </h3>
-                <p>
-                  <strong>Expedition: </strong>
+              <Col lg={3} key={index}>
+
+<Card className="h-100 shadow">
+      <Card.Body>
+        <Card.Title>{certification.name} by {certification.instution}</Card.Title>
+        
+
+                          <strong>Expedition: </strong>
                   {certification.expedition} <br />{" "}
                   {certification.expiration ? (
                     <>
@@ -32,7 +37,9 @@ export const Certifications = () => {
                   ) : (
                     ""
                   )}{" "}
-                </p>
+      </Card.Body>
+    </Card>
+
               </Col>
             );
           })}
