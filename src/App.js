@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { Banner } from './components/sections/banner/Banner';
+import { Skills } from './components/sections/skills/Skills';
+import { Projects } from './components/sections/projects/Projects';
+import { Footer } from './components/commons/footer/Footer';
+import { About } from './components/sections/about/About';
+import { Expirience } from './components/sections/experience/Experience';
+import { Certifications } from './components/sections/certifications/Certifications';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner></Banner>
+      <About></About>
+      <Expirience></Expirience>
+      <Skills></Skills>
+      <Projects></Projects>
+      <Certifications></Certifications>
+      <Footer></Footer>
     </div>
   );
 }

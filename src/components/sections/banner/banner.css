@@ -1,0 +1,26 @@
+.min-height {
+    min-height: 90vh;
+}
+
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ovacen.com/wp-content/uploads/2016/06/574889996_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+
+}
+
+.icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.icon:hover {
+    transition: 500ms;
+    transform: scale(1.7);
+}
+
+#iam {
+    padding-bottom: 5px;
+}

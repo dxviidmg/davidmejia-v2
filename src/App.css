@@ -1,38 +1,51 @@
-.App {
+/* Background test*/
+.test1 {
+  background-color: antiquewhite;
+}
+
+.test2 {
+  background-color: aquamarine;
+}
+
+/* general*/
+
+h2 {
   text-align: center;
+  padding-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.paddings {
+  padding-top: 10vh;
+  padding-bottom: 10VH;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Background*/
+
+#experience,
+#projects,
+footer {
+  background-color: #EBEDEF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Nav.Link*/
+
+#skill-tab,
+#project-tab {
+  padding-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+#project-tab .nav-link,
+#skills .nav-link {
+  background-color: #D6DBDF;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#project-tab .nav-link.active,
+#skills .nav-link.active {
+  background-color: #ABB2B9;
+}
+
+.padding-col {
+
+  padding-bottom: 20px;
 }

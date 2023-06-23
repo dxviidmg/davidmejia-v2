@@ -1,0 +1,143 @@
+{
+    "Languages": [
+        {
+            "name": "Python",
+            "experience": "7 Years",
+            "color": "blue"
+        },
+        {
+            "name": "Javascript",
+            "experience": "7 Months",
+            "color": "yellow",
+            "learning_currently": true
+        }
+    ],
+    "Frameworks": [
+        {
+            "name": "Django",
+            "experience": "7 Years",
+            "color": "green"
+        },
+        {
+            "name": "React",
+            "experience": "7 Months",
+            "color": "cyan",
+            "learning_currently": true
+        }
+    ],
+    "Databases": [
+        {
+            "name": "Postgresql",
+            "experience": "4 Years",
+            "color": "blue"
+        },
+        {
+            "name": "Mongodb",
+            "experience": "2 Months",
+            "color": "green"
+        }
+    ],
+    "Apis": [
+        {
+            "name": "Rest",
+            "experience": "4 Years",
+            "color": "gray"
+        },
+        {
+            "name": "Graphql",
+            "experience": "3 Months",
+            "color": "pink"
+        }
+    ],
+    "Control Version": [
+        {
+            "name": "Github",
+            "experience": "7 Years"
+        },
+        {
+            "name": "Bitbucket",
+            "experience": "3 Years",
+            "color": "blue"
+        }
+    ],
+    "Cloud": [
+        {
+            "name": "AWS",
+            "experience": "2 Years",
+            "icon": "SiAmazonaws",
+            "color": "orange"
+        },
+        {
+            "name": "GCP",
+            "experience": "2 Months",
+            "icon": "SiGooglecloud",
+            "color": "blue"
+        },
+        {
+            "name": "Heroku",
+            "experience": "7 Months",
+            "color": "purple"
+        }
+    ],
+    "For data science": [
+        {
+            "name": "Pandas",
+            "experience": "1 Year"
+        },
+        {
+            "name": "Jupyter",
+            "experience": "1 Year",
+            "color": "orange"
+        },
+        {
+            "name": "Dataiku",
+            "experience": "2 Months",
+            "color": "#00b6aa"
+        }
+    ],
+    "Distributed tasks": [
+        {
+            "name": "Celery",
+            "experience": "6 Months",
+            "color": "green"
+        },
+        {
+            "name": "Redis",
+            "experience": "6 Months",
+            "color": "red"
+        }
+    ],
+    "Scrapping": [
+        {
+            "name": "Selenium",
+            "experience": "6 Months",
+            "color": "green"
+        },
+        {
+            "name": "Tweepy",
+            "experience": "3 Months",
+            "icon": "SiTwitter",
+            "color": "blue"
+        }
+    ],
+    "Data visualization": [
+        {
+            "name": "Matplotlib",
+            "experience": "5 Months",
+            "icon": "SiPython",
+            "color": "blue"
+        },
+        {
+            "name": "Chart.js",
+            "experience": "3 Months",
+            "icon": "SiChartdotjs",
+            "color": "#fe777b"
+        }
+    ],
+    "Payment platform": [
+        {
+            "name": "Stripe",
+            "experience": "2 Months",
+            "color": "darkblue"
+        }    ]
+}

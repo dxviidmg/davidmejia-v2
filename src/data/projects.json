@@ -1,0 +1,614 @@
+[
+    {
+        "name": "Cloudwaremx v2 Website",
+        "description": "Development of a website",
+        "period": "2023",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Digy Networks",
+            "url": ""
+        },
+        "activities": [
+            "Requirements analysis",
+            "Deployments"
+        ],
+        "stack": [
+            {
+                "name": "Javascript",
+                "color": "yellow"
+            },
+            {
+                "name": "React",
+                "color": "cyan"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
+        "name": "Digy Website",
+        "description": "Development of a website",
+        "period": "2023",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Digy Networks",
+            "url": ""
+        },
+        "activities": [
+            "Requirements analysis",
+            "Deployments"
+        ],
+        "stack": [
+            {
+                "name": "Javascript",
+                "color": "yellow"
+            },
+            {
+                "name": "React",
+                "color": "cyan"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
+        "name": "Cloudwaremx Website",
+        "description": "Development of a website",
+        "period": "2022",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "CLoud Ware",
+            "url": "https://www.cloudwaremx.com/"
+        },
+        "activities": [
+            "Requirements analysis",
+            "Database design",
+            "The development of views, templates and URLs",
+            "Tests with skateholders",
+            "Deployments"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Heroku",
+                "color": "purple"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
+        "name": "Vending machines management",
+        "description": "Development of a web appication for vending machines management",
+        "period": "2022",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Genone Tech",
+            "url": "https://citnova.hidalgo.gob.mx/"
+        },
+        "activities": [
+            "Requirements analysis",
+            "Database design",
+            "The development of views, templates and URLs",
+            "Tests with skateholders",
+            "Deployments"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Heroku",
+                "color": "purple"
+            },
+            {
+                "name": "Chart.js",
+                "icon": "SiChartdotjs",
+                "color": "#fe777b"
+            },
+            {
+                "name": "Stripe",
+
+                "color": "darkblue"
+            },
+            {
+                "name": "Celery",
+
+                "color": "green"
+            },
+            {
+                "name": "Redis",
+
+                "color": "red"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
+        "name": "Data car analysis",
+        "description": "I used the data from the previous project to find patterns and errors to get a good sample for a AI model",
+        "period": "2021-2022",
+        "categories": [
+            "Data"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "EDA",
+            "Updating scripts"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Pandas"
+            },
+            {
+                "name": "Jupyter",
+                "color": "orange"
+            },
+            {
+                "name": "Matplotlib",
+                "icon": "SiPython",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "name": "Update scripts for car download",
+        "description": "I improved 10 scripts to dowloand data cars from diferent compamies",
+        "period": "2021-2022",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "To understand legacy code",
+            "Get documents",
+            "Test each script"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Postgresql",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "name": "Analysis of bank data",
+        "description": "Creation of notebooks to understand several data sources of a bank",
+        "period": "2021",
+        "categories": [
+            "Data"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "Data analysis",
+            "Coding",
+            "Tests",
+            "Implement in production"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Pandas"
+            },
+            {
+                "name": "Jupyter",
+                "color": "orange"
+            },
+            {
+                "name": "Matplotlib",
+                "icon": "SiPython",
+                "color": "blue"
+            },
+            {
+                "name": "Mongodb",
+                "color": "green"
+            },
+            {
+                "name": "GCP",
+
+                "icon": "SiGooglecloud",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "name": "Database refactoring for SAAM",
+        "description": "Modify the structure of the database in order to improve quality and performance",
+        "period": "2021",
+        "categories": [
+            "Web",
+            "Data"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "Exploratory data base analysis",
+            "Planning",
+            "Deleting of useless tables and fields",
+            "Fusion of similar tables or fields",
+            "Implementation of OOP in models and creation of abstract classes"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Pandas"
+            },
+            {
+                "name": "Jupyter",
+                "color": "orange"
+            },
+            {
+                "name": "Matplotlib",
+                "icon": "SiPython",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "name": "Report-service for SAAM",
+        "description": "Creation of a microservice for improvement the creation of reports",
+        "period": "2020",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "The development of views, templates and URLs"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Celery",
+
+                "color": "green"
+            },
+            {
+                "name": "Redis",
+
+                "color": "red"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "name": "Medical insurance data scraping",
+        "description": "Using selenium, I got all the health insurance quotes from one company.",
+        "period": "2020",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "Learning selenium",
+            "Scrapping"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Selenium",
+
+                "color": "green"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "name": "Data import for SAAM",
+        "description": "Creation of codebase for data importing",
+        "period": "2019-2021",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "Data analysis",
+            "Coding",
+            "Tests",
+            "Implement in production"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },        {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "name": "SAAM",
+        "description": "Maintenance of a web application for insurance management",
+        "period": "2019-2022",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "activities": [
+            "Bug fixes",
+            "Performance improvements",
+            "Code optimization"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Rest",
+                "color": "gray"
+            },
+            {
+                "name": "Bitbucket",
+
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "name": "Kickstarter campaign success analysis",
+        "description": "Prototype development of a machine learning model to predict the success of a kickstarter campaign",
+        "period": "2018-2019",
+        "categories": [
+            "Data"
+        ],
+        "company": {
+            "name": "Plenumsoft",
+            "url": "https://www.plenumsoft.com.mx/"
+        },
+        "activities": [
+            "Data search",
+            "Data clean",
+            "Modeling"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Dataiku",
+
+                "color": "#00b6aa"
+            }
+        ]
+    },
+    {
+        "name": "TEASIB",
+        "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
+        "period": "2017-18",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Grupo Constructor Carsev"
+        },
+        "activities": [
+            "Requirements analysis",
+            "Database design",
+            "The development of views, templates and URLs",
+            "Tests with skateholders",
+            "Skateholders Support"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "AWS",
+
+                "icon": "SiAmazonaws",
+                "color": "orange"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
+        "name": "Public funds management",
+        "description": "Development of a web appication for public funds management",
+        "period": "2016-17",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "CITNOVA",
+            "url": "https://citnova.hidalgo.gob.mx/"
+        },
+        "activities": [
+            "Requirements analysis",
+            "Database design",
+            "The development of views, templates and URLs",
+            "Tests with skateholders"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
+        "name": "Los Arquetipos de Jung Website",
+        "description": "Development of a website for a rock band",
+        "period": "2016",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "CLoud Ware",
+            "url": ""
+        },
+        "activities": [
+            "Requirements analysis",
+            "Database design",
+            "The development of views, templates and URLs"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "AWS",
+
+                "icon": "SiAmazonaws",
+                "color": "orange"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    }
+]

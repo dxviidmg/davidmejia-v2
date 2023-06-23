@@ -1,0 +1,13 @@
+.scrolled {
+    background-color: gray;
+    transition: 1s;
+    color: red;
+}
+
+.unscrolled {
+    transition: 1s;
+}
+
+.link-text {
+    color: white;
+}

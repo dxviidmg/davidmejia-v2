@@ -1,0 +1,63 @@
+[
+    {
+        "company": {
+            "name": "GenOne Technologies LLC",
+            "url": "https://www.cto.genone.tech/"
+        },
+        "position": "Full Stack Web Developer",
+        "period": "March 2022 - October 2022",
+        "modality": "Remote",
+        "location": "Boston, Ma., USA"
+    },
+    {
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "position": "Backend Web Developer / Data Analyst",
+        "period": "May 2019 - Feb 2022",
+        "modality": "Remote",
+        "location": "CDMX, Mex"
+    },
+    {
+        "company": {
+            "name": "Plenumsoft",
+            "url": "https://www.plenumsoft.com.mx/"
+        },
+        "position": "Data Sciente Student",
+        "period": "November 2018 - May 2019",
+        "modality": "Face to face",
+        "location": "Merida, Yuc., Mex",
+        "notes": "It was a funded diploma by Plenumsoft and coordinated by Tecnológico Nacional de México"
+    },
+    {
+        "company": {
+            "name": "Grupo Constructor CARSEV"
+        },
+        "position": "Full stack Web Developer",
+        "period": "May 2017 - November 2018",
+        "modality": "Face to face",
+        "location": "Pachuca, Hgo., Mex"
+    },
+    {
+        "company": {
+            "name": "CITNOVA",
+            "url": "https://www.mexicoescultura.com/recinto/67822/consejo-de-ciencia-tecnologia-e-innovacion-de-hidalgo-citnova.html"
+        },
+        "position": "Full stack Web Developer",
+        "period": "November 2017 - May 2018",
+        "modality": "Face to face",
+        "location": "Pachuca, Hgo., Mex"
+    },
+    {
+        "company": {
+            "name": "ITESM-CEM",
+            "url": "http://www.cem.itesm.mx/"
+        },
+        "position": "Researcher assistant",
+        "period": "February 2014 - Agust 2014",
+        "modality": "Hibrid",
+        "location": "Atizapan, EdoMex., Mex",
+        "notes": "Professional practices"
+    }
+]
