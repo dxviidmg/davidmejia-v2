@@ -1,13 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import { Banner } from './components/banner/Banner';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Skills } from './components/skills/Skills';
-import { Projects } from './components/projects/Projects';
-import { Footer } from './components/footer/Footer';
-import { About } from './components/about/About';
-import { Expirience } from './components/experience/Experience';
-import { Certifications } from './components/certifications/Certifications';
+
+import { Banner } from './components/sections/banner/Banner';
+import { Skills } from './components/sections/skills/Skills';
+import { Projects } from './components/sections/projects/Projects';
+import { Footer } from './components/commons/footer/Footer';
+import { About } from './components/sections/about/About';
+import { Expirience } from './components/sections/experience/Experience';
+import { Certifications } from './components/sections/certifications/Certifications';
+
 
 function App() {
   return (

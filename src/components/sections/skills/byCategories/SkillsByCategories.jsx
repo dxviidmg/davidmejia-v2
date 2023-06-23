@@ -1,6 +1,6 @@
 import {Row, Col } from "react-bootstrap";
-import skills_by_categories from "../../data/skills.json";
-import { MyCard } from "../../cards/Card";
+import skills_by_categories from "../../../../data/skills.json";
+import { MyCard } from "../../../commons/cards/Card";
 import './../skills.css'
 
 

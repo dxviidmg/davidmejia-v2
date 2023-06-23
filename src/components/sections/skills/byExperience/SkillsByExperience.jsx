@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
-import skills_by_categories from "../../data/skills.json";
+import skills_by_categories from "../../../../data/skills.json";
 import { Row, Col } from "react-bootstrap";
-import { MyCard } from "../../cards/Card";
+import { MyCard } from "../../../commons/cards/Card";
 
 export const SkillsByExperience = () => {
   const [topSkills, setTopSkills] = useState([]);

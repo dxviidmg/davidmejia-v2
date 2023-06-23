@@ -1,5 +1,5 @@
 import { Col, Row, Container, Image } from "react-bootstrap";
-import about from "../data/about.json";
+import about from "./../../../data/about.json";
 
 export const About = () => {
   const img =

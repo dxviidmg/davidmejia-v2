@@ -1,6 +1,6 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
-import projects from "../data/projects.json";
-import { MyCard } from "../cards/Card";
+import projects from "../../../data/projects.json";
+import { MyCard } from "../../commons/cards/Card";
 import { getContentProject } from "./utils";
 
 export const Projects = () => {

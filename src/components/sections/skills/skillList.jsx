@@ -1,4 +1,4 @@
-import { GetCustomIconAndName } from "../icons/Icons";
+import { GetCustomIconAndName } from "../../commons/icons/Icons";
 
 export const SkillList = ({ skills }) => {
   return (

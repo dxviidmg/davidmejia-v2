@@ -1,5 +1,5 @@
 import { Col, Row } from "react-bootstrap";
-import { GetCustomIconAndName } from "../icons/Icons";
+import { GetCustomIconAndName } from "../../commons/icons/Icons";
 
 export const getContentProject = (project) => {
   return (

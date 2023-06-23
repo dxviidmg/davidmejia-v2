@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { ParticlesBackground } from "./Particles";
 import './banner.css'
-import { NavBar } from "./../navbar/Navbar";
+import { NavBar } from "../../commons/navbar/Navbar";
 
 export function Banner() {
   const [loopNum, setLoopNum] = useState(0);

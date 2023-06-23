@@ -1,5 +1,5 @@
 import Card from "react-bootstrap/Card";
-import { SkillList } from "../skills/skillList";
+import { SkillList } from "../../sections/skills/skillList";
 import './cards.css'
 
 export const MyCard = ({ title, description, skills=[], content}) => {

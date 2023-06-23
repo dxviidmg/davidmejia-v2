@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import certifications from "../data/certifications.json";
-import { MyCard } from "../cards/Card";
+import certifications from "../../../data/certifications.json";
+import { MyCard } from "../../commons/cards/Card";
 import { getContentCerfitication } from "./utils";
 
 
