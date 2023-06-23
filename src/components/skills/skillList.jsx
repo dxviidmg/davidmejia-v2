@@ -9,8 +9,3 @@ export const SkillList = ({ skills }) => {
     </ul>
   );
 };
-
-
-/*
-GetCustomIcon name={skill.icon? skill.icon: "Si"+ skill.name} color={skill.color}/>
- */

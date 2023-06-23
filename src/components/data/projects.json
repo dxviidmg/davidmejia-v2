@@ -1,5 +1,34 @@
 [
     {
+        "name": "Cloudwaremx v2 Website",
+        "description": "Development of a website",
+        "period": "2023",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Digy Networks",
+            "url": ""
+        },
+        "activities": [
+            "Requirements analysis",
+            "Deployments"
+        ],
+        "stack": [
+            {
+                "name": "Javascript",
+                "color": "yellow"
+            },
+            {
+                "name": "React",
+                "color": "cyan"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
         "name": "Digy Website",
         "description": "Development of a website",
         "period": "2023",

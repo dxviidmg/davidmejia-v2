@@ -41,7 +41,7 @@ export const Projects = () => {
                   <Row>
                     {projects.map((project, index) => {
                       return (
-                        <Col xs={12} md={6} xl={4} key={index} className="padding-card">
+                        <Col xs={12} md={6} xl={4} key={index} className="padding-col">
                         <MyCard 
                         title={project.name}
                         content={getContentProject(project)}
@@ -55,7 +55,7 @@ export const Projects = () => {
                   <Row>
                     {webProjects.map((project, index) => {
                       return (
-                        <Col xs={12} md={6} xl={4} key={index} className="padding-card">
+                        <Col xs={12} md={6} xl={4} key={index} className="padding-col">
                         <MyCard 
                         title={project.name}
                         content={getContentProject(project)}
@@ -69,7 +69,7 @@ export const Projects = () => {
                   <Row>
                     {dataProjects.map((project, index) => {
                       return (
-                        <Col xs={12} md={6} xl={4} key={index} className="padding-card">
+                        <Col xs={12} md={6} xl={4} key={index} className="padding-col">
                         <MyCard 
                         title={project.name}
                         content={getContentProject(project)}
