@@ -1,9 +1,10 @@
 import { Col, Row, Container, Image } from "react-bootstrap";
 import about from "./../../../data/about.json";
+import './about.css'
+import { Photo } from "./Photo";
+
 
 export const About = () => {
-  const img =
-    "https://cdn.awsli.com.br/600x450/1601/1601923/produto/129894767/6bba6d6010.jpg";
   return (
     <section id="about-me">
       <Container>
@@ -18,8 +19,8 @@ export const About = () => {
               );
             })}
           </Col>
-          <Col xs={12} md={5} className="text-center">
-            <Image roundedCircle src={img} className="w-75" />
+          <Col xs={12} md={5}>
+            <Photo/>
           </Col>
         </Row>
       </Container>

@@ -1,24 +1,23 @@
 export const getContentCerfitication = (certification) => {
-    return (
-      <span>
-        <strong>Expedition: </strong>
-        {certification.expedition} <br />{" "}
-        {certification.expiration ? (
-          <>
-            <strong>Expiration: </strong>
-            {certification.expiration}
-          </>
-        ) : (
-          ""
-        )}
-        {certification.id ? (
-          <>
-            <strong>id: </strong>
-            {certification.id}
-          </>
-        ) : (
-          ""
-        )}{" "}
-      </span>
-    );
-  };
+  return (
+    <span>
+      <strong>Expedition: </strong>
+      {certification.expedition}
+
+      {certification.expiration && (
+        <>
+          <br />
+          <strong>Expiration: </strong>
+          {certification.expiration}
+        </>
+      )}
+      {certification.id && (
+        <>
+          <br />
+          <strong>Credential: </strong>
+          {certification.id}
+        </>
+      )}
+    </span>
+  );
+};
