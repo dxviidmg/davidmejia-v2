@@ -9,7 +9,7 @@ export const getContentProject = (project) => {
       <strong>Stack:</strong>
       <Row>
         {project.stack.map((skill, index) => (
-          <Col lg={4}>
+          <Col xs={5} lg={4}>
             <GetCustomIconAndName
               name={skill.name}
               icon={skill.icon}

@@ -13,7 +13,7 @@ export const Certifications = () => {
         <Row>
           {certifications.map((certification, index) => {
             return (
-              <Col lg={3} key={index}>
+              <Col lg={3} key={index} className="padding-col">
                 <MyCard
                   title={certification.name}
                   content={getContentCerfitication(certification)}
