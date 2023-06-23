@@ -1,4 +1,4 @@
-import { Col, Row, Container, Image } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import about from "./../../../data/about.json";
 import './about.css'
 import { Photo } from "./Photo";
