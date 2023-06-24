@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import certifications from "../../../data/certifications.json";
 import { MyCard } from "../../commons/cards/Card";
-import { getContentCerfitication } from "./utils";
+import { ContentCerfitication } from "./ContentCerfitication";
 
 
 
@@ -16,7 +16,7 @@ export const Certifications = () => {
               <Col lg={3} key={index} className="padding-col">
                 <MyCard
                   title={certification.name}
-                  content={getContentCerfitication(certification)}
+                  content={ContentCerfitication(certification)}
                 />
               </Col>
             );

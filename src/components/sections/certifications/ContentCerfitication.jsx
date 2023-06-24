@@ -1,4 +1,4 @@
-export const getContentCerfitication = (certification) => {
+export const ContentCerfitication = (certification) => {
   return (
     <span>
       <strong>Expedition: </strong>
