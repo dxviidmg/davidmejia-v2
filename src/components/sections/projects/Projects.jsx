@@ -2,6 +2,7 @@ import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projects from "../../../data/projects.json";
 import { MyCard } from "../../commons/cards/Card";
 import { ContentProject } from "./ContentProject";
+import "./projects.css"
 
 export const Projects = () => {
   const webProjects = filterProjectsByCategory("Web");
