@@ -1,5 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import positions from "../../../data/positions.json";
+import './experience.css'
+
 
 export const Expirience = () => {
   return (
