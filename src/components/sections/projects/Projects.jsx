@@ -1,7 +1,7 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projects from "../../../data/projects.json";
 import { MyCard } from "../../commons/cards/Card";
-import { getContentProject } from "./utils";
+import { ContentProject } from "./ContentProject";
 
 export const Projects = () => {
   const webProjects = filterProjectsByCategory("Web");
@@ -44,7 +44,7 @@ export const Projects = () => {
                         <Col xs={12} md={6} xl={4} key={index} className="padding-col">
                         <MyCard 
                         title={project.name}
-                        content={getContentProject(project)}
+                        content={ContentProject(project)}
                       /></Col>
                       );
                     })}
@@ -58,7 +58,7 @@ export const Projects = () => {
                         <Col xs={12} md={6} xl={4} key={index} className="padding-col">
                         <MyCard 
                         title={project.name}
-                        content={getContentProject(project)}
+                        content={ContentProject(project)}
                       /></Col>
                       );
                     })}
@@ -72,7 +72,7 @@ export const Projects = () => {
                         <Col xs={12} md={6} xl={4} key={index} className="padding-col">
                         <MyCard 
                         title={project.name}
-                        content={getContentProject(project)}
+                        content={ContentProject(project)}
                       /></Col>
                       );
                     })}

@@ -6,16 +6,18 @@ import { ContentCerfitication } from "./ContentCerfitication";
 
 
 export const Certifications = () => {
+  
   return (
     <section id="certifications" className="paddings">
       <Container>
         <h2>Certifications</h2>
         <Row>
           {certifications.map((certification, index) => {
+            const title = certification.name + " by " + certification.instution
             return (
               <Col lg={3} key={index} className="padding-col">
                 <MyCard
-                  title={certification.name}
+                  title={title}
                   content={ContentCerfitication(certification)}
                 />
               </Col>
