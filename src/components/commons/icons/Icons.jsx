@@ -4,7 +4,6 @@ import { BsFillGearFill } from "react-icons/bs";
 
 export const GetCustomIcon = ({ name, color }) => {
   let Icon = Icons[name];
-  console.log(name)
   if (name==='SiRest'){
     Icon = BsFillGearFill
   }

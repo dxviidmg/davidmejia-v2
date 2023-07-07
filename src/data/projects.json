@@ -1,5 +1,73 @@
 [
     {
+        "name": "Integration between a chatbot and clientify",
+        "description": "Integration between a chatbot and clientify",
+        "period": "2023",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": ""
+        },
+        "activities": [
+            "Requirements analysis",
+            "Deployments"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Rasa",
+                "color": "purple"
+            },
+            {
+                "name": "Bitbucket",
+                "color": "blue"
+            }
+        ]
+    },
+    {
+        "name": "Interactive Map",
+        "description": "Development of a Interactive Map for a museum",
+        "period": "2023",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": ""
+        },
+        "activities": [
+            "Requirements analysis",
+            "Deployments"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            },
+            {
+                "name": "Typescript",
+                "color": "blue"
+            },
+            {
+                "name": "React",
+                "color": "cyan"
+            },
+            {
+                "name": "Bitbucket",
+                "color": "blue"
+            }
+        ]
+    },
+    {
         "name": "Cloudwaremx v2 Website",
         "description": "Development of a website",
         "period": "2023",
@@ -53,7 +121,8 @@
                 "color": "cyan"
             },
             {
-                "name": "Github"
+                "name": "Bitbucket",
+                "color": "blue"
             }
         ]
     },
@@ -83,7 +152,8 @@
             {
                 "name": "Django",
                 "color": "green"
-            }, {
+            },
+            {
                 "name": "Postgresql",
                 "color": "blue"
             },
@@ -217,9 +287,9 @@
             {
                 "name": "Postgresql",
                 "color": "blue"
-            },        {
+            },
+            {
                 "name": "Bitbucket",
-
                 "color": "blue"
             }
         ]
