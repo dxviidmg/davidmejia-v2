@@ -9,6 +9,12 @@
 
 /* general*/
 
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
 h2 {
   text-align: center;
   padding-bottom: 20px;

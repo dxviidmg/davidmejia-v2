@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import certifications from "../../../data/certifications.json";
 import { MyCard } from "../../commons/cards/Card";
 import { ContentCerfitication } from "./ContentCerfitication";
-
+import "./certifications.css";
 
 
 export const Certifications = () => {
