@@ -1,8 +1,8 @@
 .scrolled {
-    background-color: black;
+    background-color: #453025;
     transition: 2s;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: bold;
 }
 
