@@ -1,4 +1,6 @@
 import { Row, Nav, Tab } from "react-bootstrap";
+import './tabContainer.css'
+
 
 export const TabContainer = ({ classifications, contents }) => {
   return (
