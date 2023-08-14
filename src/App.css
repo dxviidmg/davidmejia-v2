@@ -27,11 +27,13 @@ h2 {
 
 /* Background*/
 
+/*
 #experience,
 #projects,
 footer {
   background-color: #D5D8DC;
 }
+*/
 
 /* Nav.Link*/
 
@@ -40,6 +42,7 @@ footer {
   padding-bottom: 30px;
 }
 
+/*
 #project-tab .nav-link,
 #skills .nav-link {
   background-color: #D6DBDF;
@@ -50,6 +53,7 @@ footer {
 #skills .nav-link.active {
   background-color: #ABB2B9;
 }
+*/
 
 .padding-col {
 
