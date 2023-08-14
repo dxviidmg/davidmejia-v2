@@ -1,26 +1,4 @@
-#contact{
-    background-image: url(../../../assets/back-footer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 5vh;
+#footer{
+    background-color: black;
     color: white;
-}
-
-#copyright{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-}
-.colum img{
-    width: auto;
-    height: 50px;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-
-}
-
-a:hover{
-    color: #CE0E2D;
 }

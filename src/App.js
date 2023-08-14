@@ -18,8 +18,8 @@ function App() {
       <About></About>
       <Expirience></Expirience>
       <Skills></Skills>
-      <Projects></Projects>
       <Certifications></Certifications>
+      <Projects></Projects>
       <Footer></Footer>
     </div>
   );
