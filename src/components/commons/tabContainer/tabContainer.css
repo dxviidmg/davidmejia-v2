@@ -1,0 +1,13 @@
+#contents-tab{
+    margin-bottom: 20px;
+}
+
+#contents-tab .nav-link{
+  background-color: #c0c0c0;
+  color: black;
+  border-radius: 0%;
+}
+
+#contents-tab .nav-link.active {
+  background-color: #a6a6a6;
+}

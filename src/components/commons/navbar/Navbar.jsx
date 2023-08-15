@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./navbar.css";
-import { capitalizeString } from "../../../utils/Utils";
+import { capitalizeString } from "../../../utils/utils";
 
 export function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
