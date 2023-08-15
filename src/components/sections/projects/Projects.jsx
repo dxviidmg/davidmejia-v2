@@ -16,6 +16,7 @@ const ProjectList = ({ category }) => {
             </Col>
           );
         }
+        return null
       })}
     </Row>
   );
