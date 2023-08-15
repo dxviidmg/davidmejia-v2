@@ -3,14 +3,35 @@ import projects from "../../../data/projects.json";
 import { MyCard } from "../../commons/cards/Card";
 import { ContentProject } from "./ContentProject";
 import "./projects.css"
+import { TabContainer } from "../../commons/tabContainer/TabContainer";
 
+
+const ProjectList = ({category}) => {
+  return (
+    <Row>
+    {projects.map((project, index) => {
+      if ((!category) || (category &&  project.categories.includes(category))){
+        return (
+          <Col xs={12} md={6} xl={4} key={index} className="padding-col">
+          <MyCard 
+          title={project.name}
+          content={ContentProject(project)}
+        /></Col>
+        );
+      }
+
+
+    })}
+          </Row>
+  )
+}
 export const Projects = () => {
   const webProjects = filterProjectsByCategory("Web");
   const dataProjects = filterProjectsByCategory("Data");
 
-  function filterProjectsByCategory(categories) {
+  function filterProjectsByCategory(category) {
     return projects.filter(
-      (item) => item.categories && item.categories.includes(categories)
+      (item) => item.categories && item.categories.includes(category)
     );
   }
 
@@ -21,66 +42,8 @@ export const Projects = () => {
           <Col>
             <h2>Projects</h2>
 
-            <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav
-                variant="pills"
-                className="nav-pills justify-content-center align-items-center"
-                id="project-tab"
-              >
-                <Nav.Item>
-                  <Nav.Link eventKey="first">All</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Web</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Data Analytics</Nav.Link>
-                </Nav.Item>
-              </Nav>
-              <Tab.Content>
-                <Tab.Pane eventKey="first">
-                  <Row>
-                    {projects.map((project, index) => {
-                      return (
-                        <Col xs={12} md={6} xl={4} key={index} className="padding-col">
-                        <MyCard 
-                        title={project.name}
-                        content={ContentProject(project)}
-                      /></Col>
-                      );
-                    })}
-                  </Row>
-                </Tab.Pane>
+            <TabContainer classifications = {["All", "Web", "Data"]} contents={[<ProjectList/>, <ProjectList category="Web"/>, <ProjectList category="Data"/>]}></TabContainer>
 
-                <Tab.Pane eventKey="second">
-                  <Row>
-                    {webProjects.map((project, index) => {
-                      return (
-                        <Col xs={12} md={6} xl={4} key={index} className="padding-col">
-                        <MyCard 
-                        title={project.name}
-                        content={ContentProject(project)}
-                      /></Col>
-                      );
-                    })}
-                  </Row>
-                </Tab.Pane>
-
-                <Tab.Pane eventKey="third">
-                  <Row>
-                    {dataProjects.map((project, index) => {
-                      return (
-                        <Col xs={12} md={6} xl={4} key={index} className="padding-col">
-                        <MyCard 
-                        title={project.name}
-                        content={ContentProject(project)}
-                      /></Col>
-                      );
-                    })}
-                  </Row>
-                </Tab.Pane>
-              </Tab.Content>
-            </Tab.Container>
           </Col>
         </Row>
       </Container>

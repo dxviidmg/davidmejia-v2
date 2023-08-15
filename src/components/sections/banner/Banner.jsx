@@ -25,7 +25,7 @@ export function Banner() {
         : fullText.substring(0, text.length + 1);
       setText(updateText);
       if (isDeleting) {
-        setDelta(100);
+        setDelta(50);
       }
       if (!isDeleting && updateText === fullText) {
         setIsDeleting(true);

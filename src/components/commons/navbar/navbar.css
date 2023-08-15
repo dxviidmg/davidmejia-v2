@@ -1,9 +1,9 @@
 .scrolled {
-    background-color: black;
     transition: 2s;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: bold;
+    background-color: #18171c;
 }
 
 .unscrolled {

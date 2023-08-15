@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import skills_by_categories from "../../../../data/skills.json";
 import { Row, Col } from "react-bootstrap";
 import { MyCard } from "../../../commons/cards/Card";
+import './../skills.css'
 
 export const SkillsByExperience = () => {
   const [topSkills, setTopSkills] = useState([]);
