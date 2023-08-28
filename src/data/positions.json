@@ -1,6 +1,16 @@
 [
     {
         "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "position": "Full Stack Web Developer",
+        "period": "June 2022 - Currently",
+        "modality": "Remote",
+        "location": "CDMX, Mex"
+    },
+    {
+        "company": {
             "name": "GenOne Technologies LLC",
             "url": "https://www.cto.genone.tech/"
         },

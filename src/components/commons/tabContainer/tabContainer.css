@@ -3,11 +3,12 @@
 }
 
 #contents-tab .nav-link{
-  background-color: #c0c0c0;
   color: black;
   border-radius: 0%;
+  border: 1px solid black;
 }
 
 #contents-tab .nav-link.active {
-  background-color: #a6a6a6;
+  background-color: #273746;
+  color: white;
 }

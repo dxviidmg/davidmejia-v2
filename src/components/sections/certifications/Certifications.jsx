@@ -10,7 +10,7 @@ export const Certifications = () => {
   return (
     <section id="certifications" className="paddings">
       <Container>
-        <h2>Certifications</h2>
+        <h2 id="certifications-title">Certifications</h2>
         <Row>
           {certifications.map((certification, index) => {
             const title = certification.name + " by " + certification.instution
