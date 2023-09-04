@@ -12,7 +12,7 @@ export const TabContainer = ({ classifications, contents }) => {
       >
         {classifications.map((classification, index) => {
           return (
-            <Nav.Item>
+            <Nav.Item key={index}>
               <Nav.Link eventKey={index}>{classification}</Nav.Link>
             </Nav.Item>
           );
@@ -22,7 +22,7 @@ export const TabContainer = ({ classifications, contents }) => {
       <Tab.Content>
         {contents.map((content, index) => {
           return (
-            <Tab.Pane eventKey={index}>
+            <Tab.Pane key={index} eventKey={index}>
               <Row>{content}</Row>
             </Tab.Pane>
           );
