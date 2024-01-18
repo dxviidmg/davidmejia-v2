@@ -1,5 +1,35 @@
 [
     {
+        "name": "CARSEV Website",
+        "description": "Development of a website",
+        "period": "2024",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Grupo Constructor Carsev",
+            "url": ""
+        },
+        "activities": [
+            "Requirements analysis",
+            "Development",
+            "Deployments"
+        ],
+        "stack": [
+            {
+                "name": "Javascript",
+                "color": "yellow"
+            },
+            {
+                "name": "React",
+                "color": "cyan"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
         "name": "Integration between a chatbot and clientify",
         "description": "Integration between a chatbot and clientify",
         "period": "2023",
