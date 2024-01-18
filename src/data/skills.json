@@ -7,7 +7,7 @@
         },
         {
             "name": "Javascript",
-            "experience": "7 Months",
+            "experience": "1 Year",
             "color": "yellow",
             "learning_currently": true
         }
@@ -20,7 +20,7 @@
         },
         {
             "name": "React",
-            "experience": "7 Months",
+            "experience": "1 Year",
             "color": "cyan",
             "learning_currently": true
         }
@@ -28,7 +28,7 @@
     "Databases": [
         {
             "name": "Postgresql",
-            "experience": "4 Years",
+            "experience": "5 Years",
             "color": "blue"
         },
         {
@@ -40,7 +40,7 @@
     "Apis": [
         {
             "name": "Rest",
-            "experience": "4 Years",
+            "experience": "5 Years",
             "color": "gray"
         },
         {
@@ -56,7 +56,7 @@
         },
         {
             "name": "Bitbucket",
-            "experience": "3 Years",
+            "experience": "4 Years",
             "color": "blue"
         }
     ],
@@ -75,7 +75,7 @@
         },
         {
             "name": "Heroku",
-            "experience": "7 Months",
+            "experience": "2 Years",
             "color": "purple"
         }
     ],
