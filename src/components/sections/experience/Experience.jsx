@@ -15,7 +15,7 @@ export const Expirience = () => {
               <Col sm={12} md={6} key={index}>
                 {" "}
                 <h3>
-                  {position.position} in{" "}
+                  {position.position} at{" "}
                   <a
                     href={position.company.url}
                     target="_blank"
