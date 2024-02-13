@@ -1,5 +1,32 @@
 [
     {
+        "name": "TEASIB v2",
+        "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
+        "period": "2023-24",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Grupo Constructor Carsev"
+        },
+        "activities": [
+            "Development of new interface using ReactJs"
+        ],
+        "stack": [
+            {
+                "name": "Javascript",
+                "color": "yellow"
+            },
+            {
+                "name": "React",
+                "color": "cyan"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
         "name": "CARSEV Website",
         "description": "Development of a website",
         "period": "2024",
