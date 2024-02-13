@@ -1,5 +1,5 @@
 import { SkillListsByCategories } from "./byCategories/SkillsByCategories";
-import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import { SkillsByExperience } from "./byExperience/SkillsByExperience";
 import { TabContainer } from "../../commons/tabContainer/TabContainer";
 

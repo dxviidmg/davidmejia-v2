@@ -1,40 +1,27 @@
-import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import projects from "../../../data/projects.json";
 import { MyCard } from "../../commons/cards/Card";
 import { ContentProject } from "./ContentProject";
-import "./projects.css"
+import "./projects.css";
 import { TabContainer } from "../../commons/tabContainer/TabContainer";
 
-
-const ProjectList = ({category}) => {
+const ProjectList = ({ category }) => {
   return (
     <Row>
-    {projects.map((project, index) => {
-      if ((!category) || (category &&  project.categories.includes(category))){
-        return (
-          <Col xs={12} md={6} xl={4} key={index} className="padding-col">
-          <MyCard 
-          title={project.name}
-          content={ContentProject(project)}
-        /></Col>
-        );
-      }
-
-
-    })}
-          </Row>
-  )
-}
+      {projects.map((project, index) => {
+        if (!category || (category && project.categories.includes(category))) {
+          return (
+            <Col xs={12} md={6} xl={4} key={index} className="padding-col">
+              <MyCard title={project.name} content={ContentProject(project)} />
+            </Col>
+          );
+        }
+        return null
+      })}
+    </Row>
+  );
+};
 export const Projects = () => {
-  const webProjects = filterProjectsByCategory("Web");
-  const dataProjects = filterProjectsByCategory("Data");
-
-  function filterProjectsByCategory(category) {
-    return projects.filter(
-      (item) => item.categories && item.categories.includes(category)
-    );
-  }
-
   return (
     <section className="paddings" id="projects">
       <Container>
@@ -42,8 +29,14 @@ export const Projects = () => {
           <Col>
             <h2>Projects</h2>
 
-            <TabContainer classifications = {["All", "Web", "Data"]} contents={[<ProjectList/>, <ProjectList category="Web"/>, <ProjectList category="Data"/>]}></TabContainer>
-
+            <TabContainer
+              classifications={["All", "Web", "Data"]}
+              contents={[
+                <ProjectList />,
+                <ProjectList category="Web" />,
+                <ProjectList category="Data" />,
+              ]}
+            ></TabContainer>
           </Col>
         </Row>
       </Container>

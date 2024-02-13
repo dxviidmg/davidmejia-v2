@@ -1,6 +1,26 @@
 [
     {
         "company": {
+            "name": "UTEL",
+            "url": "https://utel.edu.mx/"
+        },
+        "position": "Full Stack Web Developer",
+        "period": "January 2024 - Currently",
+        "modality": "Remote",
+        "location": "EdoMex, Mex"
+    },
+    {
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "position": "Full Stack Web Developer",
+        "period": "June 2023 - January 2024",
+        "modality": "Remote",
+        "location": "CDMX, Mex"
+    },
+    {
+        "company": {
             "name": "GenOne Technologies LLC",
             "url": "https://www.cto.genone.tech/"
         },

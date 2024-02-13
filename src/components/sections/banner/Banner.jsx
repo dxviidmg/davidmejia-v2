@@ -1,8 +1,8 @@
 import { Col, Row, Container } from "react-bootstrap";
 import { useEffect, useState, useMemo } from "react";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsFileText } from "react-icons/bs";
 import { ParticlesBackground } from "./Particles";
-import './banner.css'
+import "./banner.css";
 import { NavBar } from "../../commons/navbar/Navbar";
 
 export function Banner() {
@@ -45,7 +45,7 @@ export function Banner() {
   }, [loopNum, text, isDeleting, delta, titles]);
 
   return (
-    <section id="banner" style={{ position: "relative"}}>
+    <section id="banner" style={{ position: "relative" }}>
       <ParticlesBackground></ParticlesBackground>
       <NavBar></NavBar>
       <Container>
@@ -58,14 +58,21 @@ export function Banner() {
               target="_blank"
               rel="noreferrer"
             >
-              <BsLinkedin className="icon" size={25} />
+              <BsLinkedin className="icon" size={40} />
             </a>
             <a
               href="https://github.com/dxviidmg"
               target="_blank"
               rel="noreferrer"
             >
-              <BsGithub className="icon" size={25} />
+              <BsGithub className="icon" size={40} />
+            </a>
+            <a
+              href="https://docs.google.com/document/d/1C4btdRFF8tGugFYtQSfJXbwd-4dGArih1LSq5xKJ5Fg/export?format=pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsFileText className="icon" size={40} />
             </a>
           </Col>
         </Row>
