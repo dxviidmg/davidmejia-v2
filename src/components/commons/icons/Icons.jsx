@@ -15,7 +15,7 @@ export const GetCustomIcon = ({ name, color }) => {
 
 export const GetCustomIconAndName = ({ name, icon, color }) => {
   return (
-    <span>
+    <span style={{fontSize: "14px"}}>
       <GetCustomIcon name={icon? icon: "Si"+ name} color={color}/> {name}
     </span>
   )
