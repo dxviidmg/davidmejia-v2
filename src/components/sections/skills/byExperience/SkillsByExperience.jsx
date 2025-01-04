@@ -43,9 +43,9 @@ export const SkillsByExperience = () => {
 
     skills_list.sort((a, b) => b.experience_in_days - a.experience_in_days);
 
-    const top_skills = skills_list.slice(0, 5);
-    const medium_skills = skills_list.slice(5, 13);
-    const low_skills = skills_list.slice(13);
+    const top_skills = skills_list.slice(0, 7);
+    const medium_skills = skills_list.slice(7, 14);
+    const low_skills = skills_list.slice(14);
 
     return [top_skills, medium_skills, low_skills, skills_currently_learning];
   }, []);
