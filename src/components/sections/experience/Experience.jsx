@@ -8,50 +8,45 @@ export const Experience = () => {
       <Container>
         <h2>Experience</h2>
         <Row>
-          {positions.map((position, index) => {
-            const positionInfo = `${position.position} at ${position.company.name}`;
-
-            const country = position.location.includes("Boston")
+          {positions.map(({ position, company, period, modality, location, logo }, index) => {
+            const positionInfo = `${position} at ${company.name}`;
+            const isUS = location.includes("Boston");
+            const countryFlag = isUS
               ? "https://upload.wikimedia.org/wikipedia/commons/8/88/United-states_flag_icon_round.svg"
               : "https://upload.wikimedia.org/wikipedia/commons/c/c0/Mexico_flag_icon.svg";
+
             return (
               <Col sm={12} md={6} key={index}>
                 <h3>
-                  {position.position}{" "}
-                  {positionInfo.length > 55 ? "" : <br></br>} at{" "}
-                  <a
-                    href={position.company.url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {position.company.name}
+                  {position}{" "}
+                  {positionInfo.length <= 55 && <br />} at{" "}
+                  <a href={company.url} target="_blank" rel="noreferrer">
+                    {company.name}
                   </a>
                 </h3>
                 <Row>
                   <Col sm={12} md={6}>
                     <p>
-                      <strong>Period:</strong> {position.period}
+                      <strong>Period:</strong> {period}
                       <br />
-                      <strong>Modality:</strong> {position.modality}
+                      <strong>Modality:</strong> {modality}
                       <br />
-                      <strong>Location:</strong> {position.location}{" "}
-                      <span>
-                        {" "}
-                        <Image
-                          src={country}
-                          roundedCircle
-                          style={{ height: "22px", paddingBottom: '3px' }}
-                        />
-                      </span>
-                      <br />
+                      <strong>Location:</strong> {location}{" "}
+                      <Image
+                        src={countryFlag}
+                        roundedCircle
+                        style={{ height: "22px", paddingBottom: "3px" }}
+                        alt="Country Flag"
+                      />
                     </p>
                   </Col>
-                  <Col sm={12} md={6} className="">
+                  <Col sm={12} md={6}>
                     <Image
-                      src={position.logo}
+                      src={logo}
                       roundedCircle
                       style={{ height: "70px" }}
                       thumbnail
+                      alt={`${company.name} Logo`}
                     />
                   </Col>
                 </Row>
