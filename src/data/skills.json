@@ -2,12 +2,12 @@
     "Languages": [
         {
             "name": "Python",
-            "experience": "7 Years",
+            "experience": "8 Years",
             "color": "blue"
         },
         {
             "name": "Javascript",
-            "experience": "1 Year",
+            "experience": "2 Year",
             "color": "yellow",
             "learning_currently": true
         }
@@ -15,12 +15,12 @@
     "Frameworks": [
         {
             "name": "Django",
-            "experience": "7 Years",
+            "experience": "8 Years",
             "color": "green"
         },
         {
             "name": "React",
-            "experience": "1 Year",
+            "experience": "2 Year",
             "color": "cyan",
             "learning_currently": true
         }
@@ -28,19 +28,25 @@
     "Databases": [
         {
             "name": "Postgresql",
-            "experience": "5 Years",
+            "experience": "4 Years",
             "color": "blue"
         },
         {
+            "name": "Mysql",
+            "experience": "8 Months",
+            "color": "green",
+            "learning_currently": true
+        },
+        {
             "name": "Mongodb",
-            "experience": "2 Months",
+            "experience": "8 Months",
             "color": "green"
         }
     ],
     "Apis": [
         {
             "name": "Rest",
-            "experience": "5 Years",
+            "experience": "6 Years",
             "color": "gray"
         },
         {
@@ -52,12 +58,18 @@
     "Control Version": [
         {
             "name": "Github",
-            "experience": "7 Years"
+            "experience": "8 Years"
         },
         {
             "name": "Bitbucket",
             "experience": "4 Years",
             "color": "blue"
+        },
+        {
+            "name": "Gitlab",
+            "experience": "1 month",
+            "color": "orange",
+            "learning_currently": true
         }
     ],
     "Cloud": [
@@ -75,18 +87,18 @@
         },
         {
             "name": "Heroku",
-            "experience": "2 Years",
+            "experience": "4 Years",
             "color": "purple"
         }
     ],
     "For data science": [
         {
             "name": "Pandas",
-            "experience": "1 Year"
+            "experience": "2 Year"
         },
         {
             "name": "Jupyter",
-            "experience": "1 Year",
+            "experience": "2 Year",
             "color": "orange"
         },
         {
@@ -139,5 +151,11 @@
             "name": "Stripe",
             "experience": "2 Months",
             "color": "darkblue"
-        }    ]
+        },
+        {
+            "name": "Mercadopago",
+            "experience": "1 Months",
+            "color": "blue",
+            "learning_currently": true
+        }        ]
 }

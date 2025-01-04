@@ -7,7 +7,7 @@ import { Skills } from './components/sections/skills/Skills';
 import { Projects } from './components/sections/projects/Projects';
 import { Footer } from './components/commons/footer/Footer';
 import { About } from './components/sections/about/About';
-import { Expirience } from './components/sections/experience/Experience';
+import { Experience } from './components/sections/experience/Experience';
 import { Certifications } from './components/sections/certifications/Certifications';
 
 
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Banner></Banner>
       <About></About>
-      <Expirience></Expirience>
+      <Experience></Experience>
       <Skills></Skills>
       <Certifications></Certifications>
       <Projects></Projects>
