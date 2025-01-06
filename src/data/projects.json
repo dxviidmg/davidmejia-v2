@@ -1,5 +1,45 @@
 [
     {
+        "name": "SIU",
+        "description": "Maintenance of a web application for online payment",
+        "period": "2024-Currently",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "UTEL",
+            "url": "https://siu-utl.scalahed.com/"
+        },
+        "activities": [
+            "New features",
+            "Bug fixes",
+            "Data manipulation in production"
+        ],
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            }, {
+                "name": "Mysql",
+                "color": "blue"
+            },
+            {
+                "name": "Github",
+
+                "color": "black"
+            },
+            {
+                "name": "Gitlab",
+
+                "color": "orange"
+            }
+        ]
+    },
+    {
         "name": "TEASIB v2",
         "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
         "period": "2023-24",
