@@ -8,7 +8,7 @@ export const Experience = () => {
       <Container>
         <h2>Experience</h2>
         <Row>
-          {positions.map(({ position, company, period, modality, location, logo }, index) => {
+          {positions.map(({ position, company, period, modality, location, logo, lineOfBusiness }, index) => {
             const positionInfo = `${position} at ${company.name}`;
             const isUS = location.includes("Boston");
             const countryFlag = isUS
@@ -16,7 +16,7 @@ export const Experience = () => {
               : "https://upload.wikimedia.org/wikipedia/commons/c/c0/Mexico_flag_icon.svg";
 
             return (
-              <Col sm={12} md={6} key={index}>
+              <Col sm={12} md={6} xxl={4} key={index}>
                 <h3>
                   {position}{" "}
                   {positionInfo.length <= 55 && <br />} at{" "}
@@ -25,9 +25,11 @@ export const Experience = () => {
                   </a>
                 </h3>
                 <Row>
-                  <Col sm={12} md={6}>
+                  <Col sm={12} md={6} xxl={8}>
                     <p>
                       <strong>Period:</strong> {period}
+                      <br />
+                      <strong>Line of business:</strong> {lineOfBusiness}
                       <br />
                       <strong>Modality:</strong> {modality}
                       <br />
@@ -40,11 +42,11 @@ export const Experience = () => {
                       />
                     </p>
                   </Col>
-                  <Col sm={12} md={6}>
+                  <Col sm={12} md={6}  xxl={4}>
                     <Image
                       src={logo}
                       roundedCircle
-                      style={{ height: "70px" }}
+                      style={{ height: "100px" }}
                       thumbnail
                       alt={`${company.name} Logo`}
                     />

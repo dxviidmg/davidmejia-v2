@@ -1,11 +1,14 @@
 [
     {
-        "name": "Python for Artificial Intelligence",
-        "instution": "Actumlogos",
-        "expedition": "June 2020",
-        "id": "ZAGE-810930-FW2-0005"
+        "name": "Backend Django Path",
+        "instution": "Fixtergeek",
+        "expedition": "September 2016"
     },
-
+    {
+        "name": "Backend and Servers Path",
+        "instution": "Fixtergeek",
+        "expedition": "March 2017"
+    },
     {
         "name": "Certified User Level #1",
         "instution": "Dataiku",
@@ -14,13 +17,9 @@
         "id": "43606/L1/DMX66"
     },
     {
-        "name": "Backend and Servers Path",
-        "instution": "Fixtergeek",
-        "expedition": "March 2017"
-    },
-    {
-        "name": "Backend Django Path",
-        "instution": "Fixtergeek",
-        "expedition": "September 2016"
+        "name": "Python for Artificial Intelligence",
+        "instution": "Actumlogos",
+        "expedition": "June 2020",
+        "id": "ZAGE-810930-FW2-0005"
     }
 ]
