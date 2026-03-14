@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import skills from "../../../data/skills.json";
 import { GetCustomIcon } from "../../commons/icons/Icons";
-import { calcExperience } from "../../../utils/utils";
+import { calcExperience } from "../../../utils/dateUtils";
 import { useLang } from "../../../utils/LangContext";
 import "./skills.css";
 
