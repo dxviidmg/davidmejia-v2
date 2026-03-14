@@ -1,6 +1,7 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projects from "../../../data/projects.json";
 import { GetCustomIcon } from "../../commons/icons/Icons";
+import { useLang } from "../../../utils/LangContext";
 import "./projects.css";
 
 const ProjectCard = ({ project }) => (
@@ -34,15 +35,16 @@ const ProjectList = ({ category }) => (
 );
 
 export const Projects = () => {
+  const { t } = useLang();
   return (
     <section className="paddings" id="projects">
       <Container>
-        <h2>Projects</h2>
+        <h2>{t.projects.title}</h2>
         <Tab.Container defaultActiveKey="all">
           <Nav variant="pills" className="justify-content-center project-tabs">
-            <Nav.Item><Nav.Link eventKey="all">All</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link eventKey="web">Web</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link eventKey="data">Data</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link eventKey="all">{t.projects.tabs.all}</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link eventKey="web">{t.projects.tabs.web}</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link eventKey="data">{t.projects.tabs.data}</Nav.Link></Nav.Item>
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="all"><ProjectList /></Tab.Pane>

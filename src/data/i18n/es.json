@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "certifications": "Certificaciones",
+    "projects": "Proyectos"
+  },
+  "banner": {
+    "greeting": "Bienvenido a mi portafolio",
+    "name": "Hola, soy David Mejía",
+    "cta": "Ver mis proyectos",
+    "titles": ["Desarrollador Fullstack", "Analista de Datos", "Científico de Datos Jr"]
+  },
+  "about": {
+    "title": "Sobre mí",
+    "intro": "Ingeniero en TI con más de 8 años de experiencia en diferentes proyectos relacionados con desarrollo web, análisis de datos, ciencia de datos, ETL y despliegue. Mi stack en el backend incluye Python y Django, en el frontend uso HTML, CSS, JS y Bootstrap. También he sido responsable del despliegue en proyectos en la nube donde he utilizado AWS, GCP y Heroku. Además, he trabajado en proyectos relacionados con Inteligencia Artificial y ciencia de datos usando Python, Pandas, ML y Matplotlib.",
+    "intro2": "Me apasionan los retos, disfruto resolver problemas de forma creativa y siempre busco hacer las cosas de la mejor manera. Por esta razón quiero ser parte de un equipo donde pueda compartir mi experiencia y mejorar mis habilidades."
+  },
+  "experience": {
+    "title": "Experiencia"
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "certifications": {
+    "title": "Certificaciones"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "tabs": { "all": "Todos", "web": "Web", "data": "Datos" }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

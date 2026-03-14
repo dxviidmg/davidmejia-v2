@@ -2,18 +2,20 @@ import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { useLang } from "../../../utils/LangContext";
 import "./navbar.css";
 
 const MENU = [
-  { id: "banner", label: "Home" },
-  { id: "about-me", label: "About" },
-  { id: "experience", label: "Experience" },
-  { id: "skills", label: "Skills" },
-  { id: "certifications", label: "Certifications" },
-  { id: "projects", label: "Projects" },
+  { id: "banner", key: "home" },
+  { id: "about-me", key: "about" },
+  { id: "experience", key: "experience" },
+  { id: "skills", key: "skills" },
+  { id: "certifications", key: "certifications" },
+  { id: "projects", key: "projects" },
 ];
 
 export function NavBar() {
+  const { lang, t, toggle } = useLang();
   const [activeLink, setActiveLink] = useState("banner");
   const [scrolled, setScrolled] = useState(false);
 
@@ -31,7 +33,7 @@ export function NavBar() {
           <span className="navbar-toggler-icon" />
         </Navbar.Toggle>
         <Navbar.Collapse id="main-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto align-items-center">
             {MENU.map((item) => (
               <Nav.Link
                 key={item.id}
@@ -39,9 +41,12 @@ export function NavBar() {
                 className={activeLink === item.id ? "nav-link-active" : "nav-link-default"}
                 onClick={() => setActiveLink(item.id)}
               >
-                {item.label}
+                {t.nav[item.key]}
               </Nav.Link>
             ))}
+            <button className="lang-toggle" onClick={toggle}>
+              {lang === "en" ? "ES" : "EN"}
+            </button>
           </Nav>
         </Navbar.Collapse>
       </Container>

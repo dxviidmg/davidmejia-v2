@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
+import { LangProvider } from './utils/LangContext';
 import { Banner } from './components/sections/banner/Banner';
 import { Skills } from './components/sections/skills/Skills';
 import { Projects } from './components/sections/projects/Projects';
@@ -10,18 +10,19 @@ import { About } from './components/sections/about/About';
 import { Experience } from './components/sections/experience/Experience';
 import { Certifications } from './components/sections/certifications/Certifications';
 
-
 function App() {
   return (
-    <div className="App">
-      <Banner></Banner>
-      <About></About>
-      <Experience></Experience>
-      <Skills></Skills>
-      <Certifications></Certifications>
-      <Projects></Projects>
-      <Footer></Footer>
-    </div>
+    <LangProvider>
+      <div className="App">
+        <Banner />
+        <About />
+        <Experience />
+        <Skills />
+        <Certifications />
+        <Projects />
+        <Footer />
+      </div>
+    </LangProvider>
   );
 }
 

@@ -1,8 +1,10 @@
 import { Container } from "react-bootstrap";
 import { BsLinkedin, BsGithub, BsFileText } from "react-icons/bs";
+import { useLang } from "../../../utils/LangContext";
 import "./contact.css";
 
 export function Footer() {
+  const { t } = useLang();
   return (
     <footer id="footer">
       <Container className="text-center">
@@ -17,7 +19,7 @@ export function Footer() {
             <BsFileText />
           </a>
         </div>
-        <p className="footer-copy">© {new Date().getFullYear()} David Mejía. All rights reserved.</p>
+        <p className="footer-copy">© {new Date().getFullYear()} David Mejía. {t.footer.rights}</p>
       </Container>
     </footer>
   );

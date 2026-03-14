@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import positions from "../../../data/positions.json";
+import { useLang } from "../../../utils/LangContext";
 import "./experience.css";
 
 const FLAG = {
@@ -8,10 +9,11 @@ const FLAG = {
 };
 
 export const Experience = () => {
+  const { t } = useLang();
   return (
     <section id="experience" className="paddings">
       <Container>
-        <h2>Experience</h2>
+        <h2>{t.experience.title}</h2>
         <div className="timeline">
           {positions.map((pos, index) => (
             <div className="timeline-item" key={index}>
@@ -26,19 +28,13 @@ export const Experience = () => {
                 <p className="timeline-meta">
                   {pos.period} · {pos.modality} · {pos.location}{" "}
                   {FLAG[pos.country] && (
-                    <img
-                      src={FLAG[pos.country]}
-                      alt={pos.country}
-                      className="country-flag"
-                    />
+                    <img src={FLAG[pos.country]} alt={pos.country} className="country-flag" />
                   )}
                 </p>
                 <p className="timeline-meta">{pos.lineOfBusiness}</p>
                 {pos.highlights && (
                   <ul className="timeline-highlights">
-                    {pos.highlights.map((h, i) => (
-                      <li key={i}>{h}</li>
-                    ))}
+                    {pos.highlights.map((h, i) => <li key={i}>{h}</li>)}
                   </ul>
                 )}
               </div>
