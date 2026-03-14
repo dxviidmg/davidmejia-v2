@@ -15,8 +15,8 @@
   },
   "about": {
     "title": "About me",
-    "intro": "IT Engineer with more than 8 years of experience in different projects related with web development, data analytics data science, ETL and deployment. My stack in the backend side includes Python and Django, in the frontend side is using HTML, CSS, Js and Bootstrap. Also I have been responsible for deployment in some cloud projects where I have used AWS, GCP and Heroku. In addition, I have worked in projects related to Artificial Intelligence or data science where I have used python, pandas, ML, matplotlib.",
-    "intro2": "I am passionate about challenges so I enjoy solving problems creatively and always try to do the things in the best way. For this reason I want to be part of a team where I can share my experience and improve my skills."
+    "intro": "Software Engineer with **9+ years of experience** delivering end-to-end web solutions. Specialized in **Python** and **Django** on the backend, with growing expertise in **React** on the frontend. I've led projects from conception to deployment across industries like **fintech**, **insurance**, **government** and **construction** — both as a **sole developer** and as part of **collaborative teams** where I never stop learning.",
+    "intro2": "My track record includes optimizing data imports by **50%**, refactoring a **140-table database** reducing it by **15%**, processing **10M+ records** in the cloud, and integrating payment gateways like **Stripe**, **MercadoPago** and **Nequi**. I've deployed on **AWS**, **GCP**, **Heroku** and **Render**, and have hands-on experience with **data analysis**, **web scraping** and **machine learning**. I bring ownership, speed and results."
   },
   "experience": {
     "title": "Experience",
@@ -27,7 +27,7 @@
         "modality": "Remote",
         "lineOfBusiness": "Education",
         "highlights": [
-          "Development of new features for the financial area",
+          "Development of new features for the SIU educational payment platform",
           "Applied payment corrections in production databases",
           "Implementation and maintenance of payment gateways",
           "Improved efficiency in payment-related ticket resolution"
@@ -42,6 +42,8 @@
           "Database refactoring and code maintenance",
           "Managed a microservices system and server deployments",
           "Updated a legacy chatbot and integrated it into a React project",
+          "Integrated a Rasa chatbot with Clientify CRM for lead automation",
+          "Developed an interactive map for a museum using TypeScript and React",
           "Web scraping with Selenium and chatbot training with Rasa",
           "Fixed frontend issues in Angular related to Axios HTTP requests"
         ]
@@ -52,7 +54,8 @@
         "lineOfBusiness": "Embedded systems development",
         "highlights": [
           "Database design, endpoint and websocket development",
-          "Code refactoring and deployment management",
+          "Integrated Stripe payment gateway with real-time monitoring using Chart.js",
+          "Code refactoring and deployment management on Heroku",
           "Suggested good practices for the software development life cycle",
           "Proposed and developed own ideas within the projects",
           "Earned the trust to be responsible for deployments"
@@ -63,12 +66,13 @@
         "modality": "Remote",
         "lineOfBusiness": "Software development",
         "highlights": [
-          "Developed the base code for data import",
-          "Reduced by 50% the execution time of data import",
+          "Developed the base code for data import, reducing execution time by 50%",
           "Developed a plan for database refactoring approved by the team and superiors, resulting in a 15% reduction of a 140-table database",
           "Implemented OOP on database models",
-          "Developed a prototype of a microservice",
+          "Developed a prototype of a microservice for asynchronous report generation with Celery and Redis",
+          "Web scraping of medical insurance quotes using Selenium",
           "Worked in an AI team as analyst, ML apprentice and intermediary with development and devops areas",
+          "Analyzed bank data sources on GCP using pandas, MongoDB and Jupyter notebooks",
           "Found a way to process 10 million records in the cloud using pandas and MongoDB"
         ]
       },
@@ -78,7 +82,8 @@
         "lineOfBusiness": "Software development",
         "highlights": [
           "Team leader for a data science project",
-          "Developed a prediction model for Kickstarter campaign success",
+          "Python trainer for the team",
+          "Developed a prediction model for Kickstarter campaign success using DataIKU",
           "Participated in the development of a service prototype with commercial scope"
         ]
       },
@@ -87,7 +92,7 @@
         "modality": "On-site",
         "lineOfBusiness": "Construction",
         "highlights": [
-          "Sole developer of the entire project, from conception and requirements gathering to deployment and maintenance",
+          "Sole developer of the entire project, from conception and requirements gathering to deployment and maintenance on AWS EC2",
           "Implementation and management of technology infrastructure including security cameras, DNS and commercial emails",
           "User training and technical support"
         ]
@@ -121,27 +126,27 @@
     "title": "Projects",
     "tabs": { "all": "All", "web": "Web", "data": "Data" },
     "items": [
-      { "name": "SIU", "description": "Maintenance of a web application for online payment", "company": "UTEL" },
-      { "name": "TEASIB v2", "description": "Development of a web application for the management of construction and maintenance of drinking water fountains", "company": "Grupo Constructor Carsev" },
-      { "name": "CARSEV Website", "description": "Development of a website", "company": "Grupo Constructor Carsev" },
-      { "name": "Integration between a chatbot and Clientify", "description": "Integration between a chatbot and Clientify", "company": "Ixulabs" },
-      { "name": "Interactive Map", "description": "Development of an interactive map for a museum", "company": "Ixulabs" },
-      { "name": "Cloudwaremx v2 Website", "description": "Development of a website", "company": "Digy Networks" },
-      { "name": "Digy Website", "description": "Development of a website", "company": "Digy Networks" },
-      { "name": "Cloudwaremx Website", "description": "Development of a website", "company": "Cloud Ware" },
-      { "name": "Vending machines management", "description": "Development of a web application for vending machines management", "company": "Genone Tech" },
-      { "name": "Data car analysis", "description": "Data analysis to find patterns and errors to get a good sample for an AI model", "company": "Ixulabs" },
-      { "name": "Update scripts for car download", "description": "Improved 10 scripts to download car data from different companies", "company": "Ixulabs" },
-      { "name": "Analysis of bank data", "description": "Creation of notebooks to understand several data sources of a bank", "company": "Ixulabs" },
-      { "name": "Database refactoring for SAAM", "description": "Modification of the database structure to improve quality and performance", "company": "Ixulabs" },
-      { "name": "Report-service for SAAM", "description": "Creation of a microservice to improve report generation", "company": "Ixulabs" },
-      { "name": "Medical insurance data scraping", "description": "Extraction of health insurance quotes from a company using Selenium", "company": "Ixulabs" },
-      { "name": "Data import for SAAM", "description": "Creation of codebase for data importing", "company": "Ixulabs" },
-      { "name": "SAAM", "description": "Maintenance of a web application for insurance management", "company": "Ixulabs" },
-      { "name": "Kickstarter campaign success analysis", "description": "Prototype of a machine learning model to predict the success of a Kickstarter campaign", "company": "Plenumsoft" },
-      { "name": "TEASIB", "description": "Development of a web application for the management of construction and maintenance of drinking water fountains", "company": "Grupo Constructor Carsev" },
-      { "name": "Public funds management", "description": "Development of a web application for public funds management", "company": "CITNOVA" },
-      { "name": "Los Arquetipos de Jung Website", "description": "Development of a website for a rock band", "company": "Independent" }
+      { "name": "SIU", "description": "Maintenance and development of new features for an online payment platform in the education sector", "company": "UTEL" },
+      { "name": "TEASIB v2", "description": "Migration of a drinking water fountain management system to a modern React interface", "company": "Grupo Constructor Carsev" },
+      { "name": "CARSEV Website", "description": "Corporate website for a construction company", "company": "Grupo Constructor Carsev" },
+      { "name": "Chatbot-Clientify Integration", "description": "Integration of a Rasa chatbot with the Clientify CRM to automate lead capture", "company": "Ixulabs" },
+      { "name": "Interactive Map", "description": "Interactive map for a museum allowing visitors to explore exhibits digitally", "company": "Ixulabs" },
+      { "name": "Cloudwaremx v2 Website", "description": "Redesign of a corporate website for a cloud services company", "company": "Digy Networks" },
+      { "name": "Digy Website", "description": "Corporate website for a telecommunications company", "company": "Digy Networks" },
+      { "name": "Cloudwaremx Website", "description": "Corporate website for a cloud services company with admin panel", "company": "Cloud Ware" },
+      { "name": "Vending machines management", "description": "Web application for monitoring and managing vending machines with Stripe payments and real-time charts", "company": "Genone Tech" },
+      { "name": "Data car analysis", "description": "Exploratory data analysis to identify patterns and clean data for training an AI model", "company": "Ixulabs" },
+      { "name": "Car data download scripts", "description": "Optimization of 10 web scraping scripts to download vehicle data from multiple sources", "company": "Ixulabs" },
+      { "name": "Bank data analysis", "description": "Analysis of multiple bank data sources to generate insights and support business decisions", "company": "Ixulabs" },
+      { "name": "Database refactoring for SAAM", "description": "Restructuring of a 140-table database, achieving a 15% reduction while improving quality and performance", "company": "Ixulabs" },
+      { "name": "Report-service for SAAM", "description": "Microservice for asynchronous report generation using Celery and Redis", "company": "Ixulabs" },
+      { "name": "Medical insurance data scraping", "description": "Automated extraction of health insurance quotes using Selenium for competitive analysis", "company": "Ixulabs" },
+      { "name": "Data import for SAAM", "description": "Data import system that reduced execution time by 50% through code optimization", "company": "Ixulabs" },
+      { "name": "SAAM", "description": "Maintenance and optimization of a web platform for insurance management", "company": "Ixulabs" },
+      { "name": "Kickstarter campaign success analysis", "description": "Machine learning model prototype to predict the success of Kickstarter campaigns using DataIKU", "company": "Plenumsoft" },
+      { "name": "TEASIB", "description": "Full development of a web application for managing construction and maintenance of drinking water fountains, deployed on AWS", "company": "Grupo Constructor Carsev" },
+      { "name": "Public funds management", "description": "Web application for tracking and managing government public funds allocation", "company": "CITNOVA" },
+      { "name": "Los Arquetipos de Jung Website", "description": "Website for a rock band with content management and media gallery", "company": "Independent" }
     ]
   },
   "footer": {

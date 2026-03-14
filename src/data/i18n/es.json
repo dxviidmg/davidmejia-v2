@@ -15,8 +15,8 @@
   },
   "about": {
     "title": "Sobre mí",
-    "intro": "Ingeniero en TI con más de 8 años de experiencia en diferentes proyectos relacionados con desarrollo web, análisis de datos, ciencia de datos, ETL y despliegue. Mi stack en el backend incluye Python y Django, en el frontend uso HTML, CSS, JS y Bootstrap. También he sido responsable del despliegue en proyectos en la nube donde he utilizado AWS, GCP y Heroku. Además, he trabajado en proyectos relacionados con Inteligencia Artificial y ciencia de datos usando Python, Pandas, ML y Matplotlib.",
-    "intro2": "Me apasionan los retos, disfruto resolver problemas de forma creativa y siempre busco hacer las cosas de la mejor manera. Por esta razón quiero ser parte de un equipo donde pueda compartir mi experiencia y mejorar mis habilidades."
+    "intro": "Ingeniero de Software con **más de 9 años de experiencia** entregando soluciones web de principio a fin. Especializado en **Python** y **Django** en el backend, con experiencia creciente en **React** en el frontend. He liderado proyectos desde la concepción hasta el despliegue en industrias como **fintech**, **seguros**, **gobierno** y **construcción** — tanto como **único desarrollador** como en **equipos colaborativos** donde nunca dejo de aprender.",
+    "intro2": "Mi trayectoria incluye optimización de importaciones de datos en un **50%**, refactorización de una base de datos de **140 tablas** reduciéndola un **15%**, procesamiento de más de **10M de registros** en la nube, e integración de pasarelas de pago como **Stripe**, **MercadoPago** y **Nequi**. He desplegado en **AWS**, **GCP**, **Heroku** y **Render**, y tengo experiencia práctica en **análisis de datos**, **web scraping** y **machine learning**. Ofrezco responsabilidad, velocidad y resultados."
   },
   "experience": {
     "title": "Experiencia",
@@ -27,7 +27,7 @@
         "modality": "Remoto",
         "lineOfBusiness": "Educación",
         "highlights": [
-          "Desarrollo de nuevas funcionalidades para el área financiera",
+          "Desarrollo de nuevas funcionalidades para la plataforma educativa de pagos SIU",
           "Aplicación de correcciones de pagos en bases de datos en producción",
           "Implementación y mantenimiento de pasarelas de pago",
           "Mejora en la eficiencia de resolución de tickets relacionados con pagos"
@@ -42,6 +42,8 @@
           "Refactorización de base de datos y mantenimiento de código",
           "Gestión de un sistema de microservicios y despliegues en servidor",
           "Actualización de un chatbot legacy e integración en un proyecto React",
+          "Integración de un chatbot Rasa con el CRM Clientify para automatización de leads",
+          "Desarrollo de un mapa interactivo para un museo con TypeScript y React",
           "Web scraping con Selenium y entrenamiento de chatbots con Rasa",
           "Corrección de problemas en el frontend en Angular relacionados con peticiones HTTP de Axios"
         ]
@@ -52,7 +54,8 @@
         "lineOfBusiness": "Desarrollo de sistemas embebidos",
         "highlights": [
           "Diseño de base de datos, desarrollo de endpoints y websockets",
-          "Refactorización de código y gestión de despliegues",
+          "Integración de pasarela de pago Stripe con monitoreo en tiempo real usando Chart.js",
+          "Refactorización de código y gestión de despliegues en Heroku",
           "Sugerí buenas prácticas para el ciclo de vida del desarrollo de software",
           "Propuse y desarrollé mis propias ideas dentro de los proyectos",
           "Gané la confianza para ser responsable de los despliegues"
@@ -63,12 +66,13 @@
         "modality": "Remoto",
         "lineOfBusiness": "Desarrollo de software",
         "highlights": [
-          "Desarrollé el código base para la importación de datos",
-          "Reduje en un 50% el tiempo de ejecución de la importación de datos",
+          "Desarrollé el código base para importación de datos, reduciendo el tiempo de ejecución en un 50%",
           "Desarrollé un plan de refactorización de base de datos aprobado por el equipo y superiores, logrando una reducción del 15% en una base de datos de 140 tablas",
           "Implementé POO en los modelos de base de datos",
-          "Desarrollé un prototipo de microservicio",
+          "Desarrollé un prototipo de microservicio para generación asíncrona de reportes con Celery y Redis",
+          "Web scraping de cotizaciones de seguros médicos usando Selenium",
           "Trabajé en un equipo de IA como analista, aprendiz de ML e intermediario con las áreas de desarrollo y devops",
+          "Análisis de fuentes de datos bancarios en GCP usando pandas, MongoDB y Jupyter notebooks",
           "Encontré una forma de procesar 10 millones de registros en la nube usando pandas y MongoDB"
         ]
       },
@@ -78,7 +82,8 @@
         "lineOfBusiness": "Desarrollo de software",
         "highlights": [
           "Líder de equipo en un proyecto de ciencia de datos",
-          "Desarrollé un modelo de predicción de éxito de campañas de Kickstarter",
+          "Capacitador de Python para el equipo",
+          "Desarrollé un modelo de predicción de éxito de campañas de Kickstarter usando DataIKU",
           "Participé en el desarrollo de un prototipo de servicio con alcance comercial"
         ]
       },
@@ -87,7 +92,7 @@
         "modality": "Presencial",
         "lineOfBusiness": "Construcción",
         "highlights": [
-          "Único desarrollador del proyecto completo, desde la concepción y levantamiento de requerimientos hasta el despliegue y mantenimiento",
+          "Único desarrollador del proyecto completo, desde la concepción y levantamiento de requerimientos hasta el despliegue y mantenimiento en AWS EC2",
           "Implementación y gestión de infraestructura tecnológica incluyendo cámaras de seguridad, DNS y correos comerciales",
           "Capacitación de usuarios y soporte técnico"
         ]
@@ -121,27 +126,27 @@
     "title": "Proyectos",
     "tabs": { "all": "Todos", "web": "Web", "data": "Datos" },
     "items": [
-      { "name": "SIU", "description": "Mantenimiento de una aplicación web para pagos en línea", "company": "UTEL" },
-      { "name": "TEASIB v2", "description": "Desarrollo de una aplicación web para la gestión de construcción y mantenimiento de bebederos de agua potable", "company": "Grupo Constructor Carsev" },
-      { "name": "Sitio web CARSEV", "description": "Desarrollo de un sitio web", "company": "Grupo Constructor Carsev" },
-      { "name": "Integración entre chatbot y Clientify", "description": "Integración entre un chatbot y Clientify", "company": "Ixulabs" },
-      { "name": "Mapa Interactivo", "description": "Desarrollo de un mapa interactivo para un museo", "company": "Ixulabs" },
-      { "name": "Sitio web Cloudwaremx v2", "description": "Desarrollo de un sitio web", "company": "Digy Networks" },
-      { "name": "Sitio web Digy", "description": "Desarrollo de un sitio web", "company": "Digy Networks" },
-      { "name": "Sitio web Cloudwaremx", "description": "Desarrollo de un sitio web", "company": "Cloud Ware" },
-      { "name": "Gestión de máquinas expendedoras", "description": "Desarrollo de una aplicación web para la gestión de máquinas expendedoras", "company": "Genone Tech" },
-      { "name": "Análisis de datos de autos", "description": "Análisis de datos para encontrar patrones y errores para obtener una buena muestra para un modelo de IA", "company": "Ixulabs" },
-      { "name": "Actualización de scripts de descarga de autos", "description": "Mejora de 10 scripts para descargar datos de autos de diferentes empresas", "company": "Ixulabs" },
-      { "name": "Análisis de datos bancarios", "description": "Creación de notebooks para entender diversas fuentes de datos de un banco", "company": "Ixulabs" },
-      { "name": "Refactorización de BD para SAAM", "description": "Modificación de la estructura de la base de datos para mejorar calidad y rendimiento", "company": "Ixulabs" },
-      { "name": "Servicio de reportes para SAAM", "description": "Creación de un microservicio para mejorar la generación de reportes", "company": "Ixulabs" },
-      { "name": "Scraping de seguros médicos", "description": "Extracción de cotizaciones de seguros de salud de una empresa usando Selenium", "company": "Ixulabs" },
-      { "name": "Importación de datos para SAAM", "description": "Creación de código base para la importación de datos", "company": "Ixulabs" },
-      { "name": "SAAM", "description": "Mantenimiento de una aplicación web para la gestión de seguros", "company": "Ixulabs" },
-      { "name": "Análisis de éxito de campañas Kickstarter", "description": "Prototipo de un modelo de machine learning para predecir el éxito de una campaña de Kickstarter", "company": "Plenumsoft" },
-      { "name": "TEASIB", "description": "Desarrollo de una aplicación web para la gestión de construcción y mantenimiento de bebederos de agua potable", "company": "Grupo Constructor Carsev" },
-      { "name": "Gestión de fondos públicos", "description": "Desarrollo de una aplicación web para la gestión de fondos públicos", "company": "CITNOVA" },
-      { "name": "Sitio web Los Arquetipos de Jung", "description": "Desarrollo de un sitio web para una banda de rock", "company": "Independiente" }
+      { "name": "SIU", "description": "Mantenimiento y desarrollo de nuevas funcionalidades para una plataforma de pagos en línea del sector educativo", "company": "UTEL" },
+      { "name": "TEASIB v2", "description": "Migración de un sistema de gestión de bebederos de agua potable a una interfaz moderna en React", "company": "Grupo Constructor Carsev" },
+      { "name": "Sitio web CARSEV", "description": "Sitio web corporativo para una empresa constructora", "company": "Grupo Constructor Carsev" },
+      { "name": "Integración Chatbot-Clientify", "description": "Integración de un chatbot Rasa con el CRM Clientify para automatizar la captura de leads", "company": "Ixulabs" },
+      { "name": "Mapa Interactivo", "description": "Mapa interactivo para un museo que permite a los visitantes explorar exhibiciones digitalmente", "company": "Ixulabs" },
+      { "name": "Sitio web Cloudwaremx v2", "description": "Rediseño del sitio web corporativo de una empresa de servicios en la nube", "company": "Digy Networks" },
+      { "name": "Sitio web Digy", "description": "Sitio web corporativo para una empresa de telecomunicaciones", "company": "Digy Networks" },
+      { "name": "Sitio web Cloudwaremx", "description": "Sitio web corporativo para una empresa de servicios en la nube con panel de administración", "company": "Cloud Ware" },
+      { "name": "Gestión de máquinas expendedoras", "description": "Aplicación web para monitoreo y gestión de máquinas expendedoras con pagos Stripe y gráficas en tiempo real", "company": "Genone Tech" },
+      { "name": "Análisis de datos de autos", "description": "Análisis exploratorio de datos para identificar patrones y limpiar datos para entrenar un modelo de IA", "company": "Ixulabs" },
+      { "name": "Scripts de descarga de datos de autos", "description": "Optimización de 10 scripts de web scraping para descargar datos vehiculares de múltiples fuentes", "company": "Ixulabs" },
+      { "name": "Análisis de datos bancarios", "description": "Análisis de múltiples fuentes de datos bancarios para generar insights y apoyar decisiones de negocio", "company": "Ixulabs" },
+      { "name": "Refactorización de BD para SAAM", "description": "Reestructuración de una base de datos de 140 tablas, logrando una reducción del 15% mejorando calidad y rendimiento", "company": "Ixulabs" },
+      { "name": "Servicio de reportes para SAAM", "description": "Microservicio para generación asíncrona de reportes usando Celery y Redis", "company": "Ixulabs" },
+      { "name": "Scraping de seguros médicos", "description": "Extracción automatizada de cotizaciones de seguros de salud con Selenium para análisis competitivo", "company": "Ixulabs" },
+      { "name": "Importación de datos para SAAM", "description": "Sistema de importación de datos que redujo el tiempo de ejecución en un 50% mediante optimización de código", "company": "Ixulabs" },
+      { "name": "SAAM", "description": "Mantenimiento y optimización de una plataforma web para la gestión de seguros", "company": "Ixulabs" },
+      { "name": "Análisis de éxito de campañas Kickstarter", "description": "Prototipo de modelo de machine learning para predecir el éxito de campañas de Kickstarter usando DataIKU", "company": "Plenumsoft" },
+      { "name": "TEASIB", "description": "Desarrollo completo de una aplicación web para gestión de construcción y mantenimiento de bebederos de agua potable, desplegada en AWS", "company": "Grupo Constructor Carsev" },
+      { "name": "Gestión de fondos públicos", "description": "Aplicación web para el seguimiento y gestión de la asignación de fondos públicos gubernamentales", "company": "CITNOVA" },
+      { "name": "Sitio web Los Arquetipos de Jung", "description": "Sitio web para una banda de rock con gestión de contenido y galería multimedia", "company": "Independiente" }
     ]
   },
   "footer": {
