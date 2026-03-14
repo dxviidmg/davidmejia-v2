@@ -10,7 +10,7 @@ const MAX_MONTHS = 12 * 10;
 export const Skills = () => {
   const { t } = useLang();
   return (
-    <section className="paddings" id="skills">
+    <section className="section-light paddings" id="skills">
       <Container>
         <h2>{t.skills.title}</h2>
         <Row>
@@ -19,8 +19,8 @@ export const Skills = () => {
               (a, b) => calcExperience(b.periods).months - calcExperience(a.periods).months
             );
             return (
-              <Col key={category} xs={12} sm={6} md={4} className="skill-col">
-                <div className="skill-card">
+              <Col key={category} xs={12} sm={6} md={4} className="col-gap">
+                <div className="dark-card">
                   <h5 className="skill-card-title">{category}</h5>
                   {sorted.map((skill, i) => {
                     const { label, months } = calcExperience(skill.periods);

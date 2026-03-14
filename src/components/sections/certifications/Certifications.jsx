@@ -6,13 +6,13 @@ import "./certifications.css";
 export const Certifications = () => {
   const { t } = useLang();
   return (
-    <section id="certifications" className="paddings">
+    <section id="certifications" className="section-light paddings">
       <Container>
         <h2>{t.certifications.title}</h2>
         <Row className="justify-content-center">
           {certifications.map((cert, index) => (
-            <Col sm={6} md={3} key={index} className="cert-col">
-              <div className="cert-card">
+            <Col sm={6} md={3} key={index} className="col-gap">
+              <div className="dark-card dark-card-hover cert-card">
                 <h5 className="cert-name">{cert.name}</h5>
                 <p className="cert-institution">{cert.instution}</p>
                 <p className="cert-date">{cert.expedition}</p>

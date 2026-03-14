@@ -1,10 +1,5 @@
 #projects {
     background-color: #111;
-    color: white;
-}
-
-#projects h2 {
-    color: white;
 }
 
 .project-tabs {
@@ -26,20 +21,8 @@
     border-color: white;
 }
 
-.project-col {
-    margin-bottom: 20px;
-}
-
 .project-card {
-    background: #222;
-    border-radius: 10px;
     padding: 22px;
-    height: 100%;
-    transition: transform 300ms;
-}
-
-.project-card:hover {
-    transform: translateY(-4px);
 }
 
 .project-header {

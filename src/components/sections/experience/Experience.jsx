@@ -11,7 +11,7 @@ const FLAG = {
 export const Experience = () => {
   const { t } = useLang();
   return (
-    <section id="experience" className="paddings">
+    <section id="experience" className="section-dark paddings">
       <Container>
         <h2>{t.experience.title}</h2>
         <div className="timeline">

@@ -5,7 +5,7 @@ import { useLang } from "../../../utils/LangContext";
 import "./projects.css";
 
 const ProjectCard = ({ project, tp }) => (
-  <div className="project-card">
+  <div className="dark-card dark-card-hover project-card">
     <div className="project-header">
       <h5 className="project-name">{tp.name}</h5>
       <span className="project-period">{project.period}</span>
@@ -29,7 +29,7 @@ const ProjectList = ({ category, t }) => (
       .map((project, i) => {
         const idx = projects.indexOf(project);
         return (
-          <Col xs={12} sm={6} lg={4} key={i} className="project-col">
+          <Col xs={12} sm={6} lg={4} key={i} className="col-gap">
             <ProjectCard project={project} tp={t.projects.items[idx]} />
           </Col>
         );
@@ -40,7 +40,7 @@ const ProjectList = ({ category, t }) => (
 export const Projects = () => {
   const { t } = useLang();
   return (
-    <section className="paddings" id="projects">
+    <section className="section-dark paddings" id="projects">
       <Container>
         <h2>{t.projects.title}</h2>
         <Tab.Container defaultActiveKey="all">

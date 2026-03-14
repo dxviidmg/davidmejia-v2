@@ -3,16 +3,63 @@ h2 {
   padding-bottom: 20px;
 }
 
+/* Layout */
 .paddings {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
 
-#skill-tab,
-#project-tab {
-  padding-bottom: 30px;
+/* Sections */
+.section-light {
+  background-color: #f0f0f0;
+  color: #1a1a1a;
 }
 
-.padding-col {
-  padding-bottom: 20px;
+.section-light h2 {
+  color: #1a1a1a;
+}
+
+.section-dark {
+  color: white;
+}
+
+.section-dark h2 {
+  color: white;
+}
+
+/* Reusable dark card */
+.dark-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  color: white;
+}
+
+.dark-card-hover {
+  transition: transform 300ms;
+}
+
+.dark-card-hover:hover {
+  transform: translateY(-4px);
+}
+
+/* Column spacing */
+.col-gap {
+  margin-bottom: 20px;
+}
+
+/* Text utilities */
+.text-justify {
+  text-align: justify;
+}
+
+.text-secondary-dark {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.text-muted-dark {
+  font-size: 0.75rem;
+  color: #666;
 }
