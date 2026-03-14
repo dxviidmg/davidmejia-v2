@@ -18,8 +18,8 @@ function App() {
         <About />
         <Experience />
         <Skills />
-        <Certifications />
         <Projects />
+        <Certifications />
         <Footer />
       </div>
     </LangProvider>

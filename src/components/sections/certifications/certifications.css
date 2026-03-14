@@ -1,6 +1,6 @@
 #certifications {
-    background-color: #111;
-    color: white;
+    background-color: #f0f0f0;
+    color: #1a1a1a;
 }
 
 .cert-col {
@@ -8,7 +8,7 @@
 }
 
 .cert-card {
-    background: #222;
+    background: #1a1a1a;
     border-radius: 10px;
     padding: 24px 20px;
     height: 100%;

@@ -1,5 +1,5 @@
 #projects {
-    background-color: #1a1a1a;
+    background-color: #111;
     color: white;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .project-card {
-    background: #252525;
+    background: #222;
     border-radius: 10px;
     padding: 22px;
     height: 100%;
