@@ -1,6 +1,46 @@
-#certifications{
-    background-color: black;
-}
-#certifications-title{
+#certifications {
+    background-color: #111;
     color: white;
+}
+
+.cert-col {
+    margin-bottom: 20px;
+}
+
+.cert-card {
+    background: #222;
+    border-radius: 10px;
+    padding: 24px 20px;
+    height: 100%;
+    border-top: 3px solid #64ffda;
+    transition: transform 300ms;
+}
+
+.cert-card:hover {
+    transform: translateY(-4px);
+}
+
+.cert-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #eee;
+    margin-bottom: 6px;
+}
+
+.cert-institution {
+    font-size: 0.9rem;
+    color: #64ffda;
+    margin-bottom: 10px;
+}
+
+.cert-date {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 4px;
+}
+
+.cert-meta {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 2px;
 }

@@ -1,26 +1,17 @@
 import { Col, Row, Container } from "react-bootstrap";
 import about from "./../../../data/about.json";
 import './about.css'
-import { Photo } from "./Photo";
-
 
 export const About = () => {
   return (
-    <section id="about-me">
+    <section id="about-me" className="about-section">
       <Container>
-        <Row className="paddings d-flex align-items-center">
-          <Col md={7}>
+        <Row className="paddings">
+          <Col md={12}>
             <h2>About me</h2>
-            {about.map((e, i) => {
-              return (
-                <p key={i} className="text-justify">
-                  {e}
-                </p>
-              );
-            })}
-          </Col>
-          <Col xs={12} md={5}>
-            <Photo/>
+            {about.map((e, i) => (
+              <p key={i} className="text-justify">{e}</p>
+            ))}
           </Col>
         </Row>
       </Container>
