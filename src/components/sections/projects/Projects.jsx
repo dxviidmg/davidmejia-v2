@@ -17,8 +17,9 @@ const ProjectCard = ({ project, tp }) => {
       <p className="project-desc">{tp.description}</p>
       <div className="project-stack">
         {project.stack.map((s, i) => (
-          <span key={i} className="stack-chip" title={s.name}>
+          <span key={i} className="stack-chip">
             <GetCustomIcon name={s.icon || "Si" + s.name} color={s.color} />
+            {s.name}
           </span>
         ))}
       </div>

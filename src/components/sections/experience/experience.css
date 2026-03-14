@@ -1,5 +1,5 @@
 #experience {
-    background-color: #292929;
+    background-color: #000;
 }
 
 .timeline {
@@ -36,7 +36,7 @@
 }
 
 .timeline-card h3 a {
-    color: #ccc;
+    color: #6c9bcf;
     text-decoration: none;
 }
 

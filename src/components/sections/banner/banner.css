@@ -50,13 +50,14 @@
 
 .icon:hover {
     transform: scale(1.4);
+    color: #6c9bcf;
 }
 
 .banner-cta {
     display: inline-block;
     padding: 12px 32px;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #6c9bcf;
+    color: #6c9bcf;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
@@ -65,6 +66,6 @@
 }
 
 .banner-cta:hover {
-    background: white;
+    background: #6c9bcf;
     color: black;
 }

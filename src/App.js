@@ -17,10 +17,15 @@ function App() {
       <div className="App">
         <Banner />
         <About />
+        <hr className="section-divider" />
         <Experience />
+        <hr className="section-divider" />
         <Skills />
+        <hr className="section-divider" />
         <Projects />
+        <hr className="section-divider" />
         <Certifications />
+        <hr className="section-divider" />
         <Footer />
         <a
           href="https://wa.me/525561652599"

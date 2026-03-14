@@ -1,14 +1,18 @@
 import { Container } from "react-bootstrap";
 import { BsLinkedin, BsGithub, BsFileText } from "react-icons/bs";
 import { useLang } from "../../../utils/LangContext";
+import { useInView } from "../../../utils/useInView";
 import "./footer.css";
 
 export function Footer() {
   const { t } = useLang();
+  const [ref, visible] = useInView();
   return (
     <footer id="footer">
-      <Container className="text-center">
-        <div className="footer-icons">
+      <Container className="text-center" ref={ref}>
+        <p className={`footer-contact fade-up ${visible ? "visible" : ""}`}>{t.footer.contact}</p>
+        <a href="https://wa.me/525561652599" target="_blank" rel="noreferrer" className={`footer-cta fade-up stagger-1 ${visible ? "visible" : ""}`}>{t.footer.cta}</a>
+        <div className={`footer-icons fade-up stagger-2 ${visible ? "visible" : ""}`}>
           <a href="https://www.linkedin.com/in/david-mejia-guzman/" target="_blank" rel="noreferrer" title="LinkedIn">
             <BsLinkedin />
           </a>

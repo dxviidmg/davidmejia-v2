@@ -9,6 +9,14 @@ h2 {
   padding-bottom: 10vh;
 }
 
+/* Section divider */
+.section-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #6c9bcf, transparent);
+  border: none;
+  margin: 0;
+}
+
 /* Sections */
 .section-light {
   background-color: #f0f0f0;
