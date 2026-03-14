@@ -2,160 +2,220 @@
     "Languages": [
         {
             "name": "Python",
-            "experience": "8 Years",
-            "color": "blue"
+            "color": "blue",
+            "periods": [{ "start": "2014-03", "end": null }]
         },
         {
             "name": "Javascript",
-            "experience": "2 Year",
             "color": "yellow",
+            "periods": [{ "start": "2024-01", "end": null }],
             "learning_currently": true
         }
     ],
     "Frameworks": [
         {
             "name": "Django",
-            "experience": "8 Years",
-            "color": "green"
+            "color": "green",
+            "periods": [{ "start": "2016-07", "end": null }]
         },
         {
             "name": "React",
-            "experience": "2 Year",
             "color": "cyan",
+            "periods": [{ "start": "2024-01", "end": null }],
+            "learning_currently": true
+        },
+        {
+            "name": "Bootstrap",
+            "color": "purple",
+            "icon": "SiBootstrap",
+            "periods": [
+                { "start": "2017-05", "end": "2018-11" },
+                { "start": "2023-01", "end": "2023-06" },
+                { "start": "2025-01", "end": "2025-12" }
+            ]
+        },
+        {
+            "name": "MUI",
+            "color": "#007FFF",
+            "icon": "SiMui",
+            "periods": [{ "start": "2026-02", "end": null }],
             "learning_currently": true
         }
     ],
     "Databases": [
         {
             "name": "Postgresql",
-            "experience": "4 Years",
-            "color": "blue"
+            "color": "blue",
+            "periods": [
+                { "start": "2017-05", "end": "2018-11" },
+                { "start": "2019-05", "end": "2024-01" }
+            ]
         },
         {
             "name": "Mysql",
-            "experience": "8 Months",
             "color": "green",
-            "learning_currently": true
+            "periods": [{ "start": "2024-01", "end": null }]
+        },
+        {
+            "name": "SQL",
+            "color": "gray",
+            "icon": "SiMysql",
+            "periods": [
+                { "start": "2019-05", "end": "2024-01" },
+                { "start": "2024-01", "end": null }
+            ]
         },
         {
             "name": "Mongodb",
-            "experience": "8 Months",
-            "color": "green"
+            "color": "green",
+            "periods": [{ "start": "2014-02", "end": "2014-08" }]
         }
     ],
     "Apis": [
         {
             "name": "Rest",
-            "experience": "6 Years",
-            "color": "gray"
+            "color": "gray",
+            "periods": [{ "start": "2019-05", "end": null }]
         },
         {
             "name": "Graphql",
-            "experience": "3 Months",
-            "color": "pink"
+            "color": "pink",
+            "periods": [{ "start": "2023-06", "end": "2023-07" }]
         }
     ],
     "Control Version": [
         {
             "name": "Github",
-            "experience": "8 Years"
+            "periods": [{ "start": "2016-07", "end": null }]
         },
         {
             "name": "Bitbucket",
-            "experience": "4 Years",
-            "color": "blue"
+            "color": "blue",
+            "periods": [{ "start": "2019-05", "end": "2024-01" }]
         },
         {
             "name": "Gitlab",
-            "experience": "1 month",
             "color": "orange",
+            "periods": [{ "start": "2025-03", "end": null }],
             "learning_currently": true
         }
     ],
     "Cloud": [
         {
             "name": "AWS",
-            "experience": "2 Years",
             "icon": "SiAmazonaws",
-            "color": "orange"
+            "color": "orange",
+            "periods": [
+                { "start": "2017-05", "end": "2018-11" },
+                { "start": "2019-05", "end": "2024-01" }
+            ]
         },
         {
             "name": "GCP",
-            "experience": "2 Months",
             "icon": "SiGooglecloud",
-            "color": "blue"
+            "color": "blue",
+            "periods": [{ "start": "2022-03", "end": "2022-04" }]
         },
         {
             "name": "Heroku",
-            "experience": "4 Years",
-            "color": "purple"
+            "color": "purple",
+            "periods": [
+                { "start": "2022-03", "end": "2022-10" },
+                { "start": "2024-01", "end": null }
+            ]
+        },
+        {
+            "name": "Render",
+            "color": "#46e3b7",
+            "icon": "SiRender",
+            "periods": [{ "start": "2025-08", "end": null }]
         }
     ],
     "For data science": [
         {
             "name": "Pandas",
-            "experience": "2 Year"
+            "periods": [
+                { "start": "2018-11", "end": "2019-05" },
+                { "start": "2019-05", "end": "2020-01" }
+            ]
         },
         {
             "name": "Jupyter",
-            "experience": "2 Year",
-            "color": "orange"
+            "color": "orange",
+            "periods": [
+                { "start": "2018-11", "end": "2019-05" },
+                { "start": "2019-05", "end": "2020-01" }
+            ]
         },
         {
             "name": "Dataiku",
-            "experience": "2 Months",
-            "color": "#00b6aa"
+            "color": "#00b6aa",
+            "periods": [{ "start": "2019-01", "end": "2019-02" }]
         }
     ],
     "Distributed tasks": [
         {
             "name": "Celery",
-            "experience": "6 Months",
-            "color": "green"
+            "color": "green",
+            "periods": [
+                { "start": "2022-03", "end": "2022-10" },
+                { "start": "2023-06", "end": "2024-01" },
+                { "start": "2024-01", "end": null }
+            ]
         },
         {
             "name": "Redis",
-            "experience": "6 Months",
-            "color": "red"
+            "color": "red",
+            "periods": [
+                { "start": "2022-03", "end": "2022-10" },
+                { "start": "2023-06", "end": "2024-01" },
+                { "start": "2024-01", "end": null }
+            ]
         }
     ],
     "Scrapping": [
         {
             "name": "Selenium",
-            "experience": "6 Months",
-            "color": "green"
+            "color": "green",
+            "periods": [{ "start": "2019-05", "end": "2019-11" }]
         },
         {
             "name": "Tweepy",
-            "experience": "3 Months",
             "icon": "SiTwitter",
-            "color": "blue"
+            "color": "blue",
+            "periods": [{ "start": "2014-02", "end": "2014-05" }]
         }
     ],
     "Data visualization": [
         {
             "name": "Matplotlib",
-            "experience": "5 Months",
             "icon": "SiPython",
-            "color": "blue"
+            "color": "blue",
+            "periods": [{ "start": "2019-05", "end": "2019-11" }]
         },
         {
             "name": "Chart.js",
-            "experience": "3 Months",
             "icon": "SiChartdotjs",
-            "color": "#fe777b"
+            "color": "#fe777b",
+            "periods": [{ "start": "2023-06", "end": "2023-12" }]
         }
     ],
     "Payment platform": [
         {
             "name": "Stripe",
-            "experience": "2 Months",
-            "color": "darkblue"
+            "color": "darkblue",
+            "periods": [{ "start": "2022-06", "end": "2022-07" }]
         },
         {
             "name": "Mercadopago",
-            "experience": "1 Months",
             "color": "blue",
-            "learning_currently": true
-        }        ]
+            "periods": [{ "start": "2026-02", "end": "2026-03" }]
+        },
+        {
+            "name": "Nequi",
+            "color": "#e42386",
+            "icon": "SiNequi",
+            "periods": [{ "start": "2025-12", "end": "2026-03" }]
+        }
+    ]
 }

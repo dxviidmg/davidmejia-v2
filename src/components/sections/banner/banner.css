@@ -1,26 +1,71 @@
 .min-height {
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 #banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/Person-sitting-next-to-a-laptop-that-is-displaying-a-black-background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: aliceblue;
-
-}
-
-.icon {
-    margin-left: 10px;
-    margin-right: 10px;
+    background: linear-gradient(135deg, #000000, #0a0a0a, #111111);
     color: white;
 }
 
-.icon:hover {
-    transition: 500ms;
-    transform: scale(1.7);
+.banner-greeting {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+#banner h1.banner-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
 #iam {
-    padding-bottom: 5px;
+    font-size: 1.8rem;
+    min-height: 2.5em;
+    padding-bottom: 25px;
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.banner-icons {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    margin-left: 12px;
+    margin-right: 12px;
+    color: white;
+    transition: transform 400ms, color 400ms;
+}
+
+.icon:hover {
+    transform: scale(1.4);
+    color: #6c9bcf;
+}
+
+.banner-cta {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 2px solid #6c9bcf;
+    color: #6c9bcf;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 300ms, color 300ms;
+}
+
+.banner-cta:hover {
+    background: #6c9bcf;
+    color: black;
 }

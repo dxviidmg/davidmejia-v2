@@ -1,26 +1,23 @@
 import { Col, Row, Container } from "react-bootstrap";
-import about from "./../../../data/about.json";
+import { useLang } from "../../../utils/LangContext";
+import { useInView } from "../../../utils/useInView";
 import './about.css'
-import { Photo } from "./Photo";
 
+const Bold = ({ text }) => (
+  <span dangerouslySetInnerHTML={{ __html: text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+);
 
 export const About = () => {
+  const { t } = useLang();
+  const [ref, visible] = useInView();
   return (
-    <section id="about-me">
+    <section id="about-me" className="about-section">
       <Container>
-        <Row className="paddings d-flex align-items-center">
-          <Col md={7}>
-            <h2>About me</h2>
-            {about.map((e, i) => {
-              return (
-                <p key={i} className="text-justify">
-                  {e}
-                </p>
-              );
-            })}
-          </Col>
-          <Col xs={12} md={5}>
-            <Photo/>
+        <Row className="paddings" ref={ref}>
+          <Col md={12}>
+            <h2 className={`fade-up ${visible ? "visible" : ""}`}>{t.about.title}</h2>
+            <p className={`text-justify fade-up stagger-1 ${visible ? "visible" : ""}`}><Bold text={t.about.intro} /></p>
+            <p className={`text-justify fade-up stagger-2 ${visible ? "visible" : ""}`}><Bold text={t.about.intro2} /></p>
           </Col>
         </Row>
       </Container>

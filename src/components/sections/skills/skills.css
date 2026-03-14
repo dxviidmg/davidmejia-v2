@@ -1,3 +1,46 @@
-#skills{
-    background-color: #fafafa;
+.skill-card-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #aaa;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+}
+
+.skill-row {
+    margin-bottom: 12px;
+}
+
+.skill-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    font-size: 0.85rem;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: #eee;
+}
+
+.skill-exp {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.skill-bar-bg {
+    height: 4px;
+    background: #444;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    background: #6c9bcf;
+    border-radius: 2px;
+    transition: width 0.6s ease;
 }
