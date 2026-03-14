@@ -61,7 +61,7 @@
 
 .skill-bar-fill {
     height: 100%;
-    background: #64ffda;
+    background: #ffffff;
     border-radius: 2px;
     transition: width 0.6s ease;
 }

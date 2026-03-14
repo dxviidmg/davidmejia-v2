@@ -12,7 +12,7 @@
     border-radius: 10px;
     padding: 24px 20px;
     height: 100%;
-    border-top: 3px solid #64ffda;
+    border-top: 3px solid #ffffff;
     transition: transform 300ms;
 }
 
@@ -29,7 +29,7 @@
 
 .cert-institution {
     font-size: 0.9rem;
-    color: #64ffda;
+    color: #ccc;
     margin-bottom: 10px;
 }
 

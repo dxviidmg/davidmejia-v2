@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import { BsLinkedin, BsGithub, BsFileText } from "react-icons/bs";
 import { useLang } from "../../../utils/LangContext";
-import "./contact.css";
+import "./footer.css";
 
 export function Footer() {
   const { t } = useLang();
