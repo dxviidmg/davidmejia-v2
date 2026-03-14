@@ -19,7 +19,97 @@
     "intro2": "I am passionate about challenges so I enjoy solving problems creatively and always try to do the things in the best way. For this reason I want to be part of a team where I can share my experience and improve my skills."
   },
   "experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "at": "at",
+    "positions": [
+      {
+        "position": "Full Stack Web Developer",
+        "modality": "Remote",
+        "lineOfBusiness": "Education",
+        "highlights": [
+          "Development of new features for the financial area",
+          "Applied payment corrections in production databases",
+          "Implementation and maintenance of payment gateways",
+          "Improved efficiency in payment-related ticket resolution"
+        ]
+      },
+      {
+        "position": "Full Stack Web Developer / DevOps Engineer / Tech Lead",
+        "modality": "Remote",
+        "lineOfBusiness": "Software development",
+        "highlights": [
+          "Led the Faisán project, a SAAM-based platform, as the sole senior developer",
+          "Database refactoring and code maintenance",
+          "Managed a microservices system and server deployments",
+          "Updated a legacy chatbot and integrated it into a React project",
+          "Web scraping with Selenium and chatbot training with Rasa",
+          "Fixed frontend issues in Angular related to Axios HTTP requests"
+        ]
+      },
+      {
+        "position": "Full Stack Web Developer / DevOps Engineer",
+        "modality": "Remote",
+        "lineOfBusiness": "Embedded systems development",
+        "highlights": [
+          "Database design, endpoint and websocket development",
+          "Code refactoring and deployment management",
+          "Suggested good practices for the software development life cycle",
+          "Proposed and developed own ideas within the projects",
+          "Earned the trust to be responsible for deployments"
+        ]
+      },
+      {
+        "position": "Backend Web Developer / Data Scientist Assistant",
+        "modality": "Remote",
+        "lineOfBusiness": "Software development",
+        "highlights": [
+          "Developed the base code for data import",
+          "Reduced by 50% the execution time of data import",
+          "Developed a plan for database refactoring approved by the team and superiors, resulting in a 15% reduction of a 140-table database",
+          "Implemented OOP on database models",
+          "Developed a prototype of a microservice",
+          "Worked in an AI team as analyst, ML apprentice and intermediary with development and devops areas",
+          "Found a way to process 10 million records in the cloud using pandas and MongoDB"
+        ]
+      },
+      {
+        "position": "Data Scientist Intern",
+        "modality": "On-site",
+        "lineOfBusiness": "Software development",
+        "highlights": [
+          "Team leader for a data science project",
+          "Developed a prediction model for Kickstarter campaign success",
+          "Participated in the development of a service prototype with commercial scope"
+        ]
+      },
+      {
+        "position": "Full Stack Web Developer / DevOps Engineer",
+        "modality": "On-site",
+        "lineOfBusiness": "Construction",
+        "highlights": [
+          "Sole developer of the entire project, from conception and requirements gathering to deployment and maintenance",
+          "Implementation and management of technology infrastructure including security cameras, DNS and commercial emails",
+          "User training and technical support"
+        ]
+      },
+      {
+        "position": "Full Stack Web Developer",
+        "modality": "On-site",
+        "lineOfBusiness": "Government",
+        "highlights": [
+          "Sole developer of the entire project, from conception and requirements gathering to deployment and maintenance"
+        ]
+      },
+      {
+        "position": "Researcher Assistant",
+        "modality": "Hybrid",
+        "lineOfBusiness": "Education",
+        "highlights": [
+          "Developed a web application for Twitter data extraction and sentiment analysis",
+          "Learned Python in a self-taught way"
+        ]
+      }
+    ]
   },
   "skills": {
     "title": "Skills"
@@ -29,7 +119,30 @@
   },
   "projects": {
     "title": "Projects",
-    "tabs": { "all": "All", "web": "Web", "data": "Data" }
+    "tabs": { "all": "All", "web": "Web", "data": "Data" },
+    "items": [
+      { "name": "SIU", "description": "Maintenance of a web application for online payment", "company": "UTEL" },
+      { "name": "TEASIB v2", "description": "Development of a web application for the management of construction and maintenance of drinking water fountains", "company": "Grupo Constructor Carsev" },
+      { "name": "CARSEV Website", "description": "Development of a website", "company": "Grupo Constructor Carsev" },
+      { "name": "Integration between a chatbot and Clientify", "description": "Integration between a chatbot and Clientify", "company": "Ixulabs" },
+      { "name": "Interactive Map", "description": "Development of an interactive map for a museum", "company": "Ixulabs" },
+      { "name": "Cloudwaremx v2 Website", "description": "Development of a website", "company": "Digy Networks" },
+      { "name": "Digy Website", "description": "Development of a website", "company": "Digy Networks" },
+      { "name": "Cloudwaremx Website", "description": "Development of a website", "company": "Cloud Ware" },
+      { "name": "Vending machines management", "description": "Development of a web application for vending machines management", "company": "Genone Tech" },
+      { "name": "Data car analysis", "description": "Data analysis to find patterns and errors to get a good sample for an AI model", "company": "Ixulabs" },
+      { "name": "Update scripts for car download", "description": "Improved 10 scripts to download car data from different companies", "company": "Ixulabs" },
+      { "name": "Analysis of bank data", "description": "Creation of notebooks to understand several data sources of a bank", "company": "Ixulabs" },
+      { "name": "Database refactoring for SAAM", "description": "Modification of the database structure to improve quality and performance", "company": "Ixulabs" },
+      { "name": "Report-service for SAAM", "description": "Creation of a microservice to improve report generation", "company": "Ixulabs" },
+      { "name": "Medical insurance data scraping", "description": "Extraction of health insurance quotes from a company using Selenium", "company": "Ixulabs" },
+      { "name": "Data import for SAAM", "description": "Creation of codebase for data importing", "company": "Ixulabs" },
+      { "name": "SAAM", "description": "Maintenance of a web application for insurance management", "company": "Ixulabs" },
+      { "name": "Kickstarter campaign success analysis", "description": "Prototype of a machine learning model to predict the success of a Kickstarter campaign", "company": "Plenumsoft" },
+      { "name": "TEASIB", "description": "Development of a web application for the management of construction and maintenance of drinking water fountains", "company": "Grupo Constructor Carsev" },
+      { "name": "Public funds management", "description": "Development of a web application for public funds management", "company": "CITNOVA" },
+      { "name": "Los Arquetipos de Jung Website", "description": "Development of a website for a rock band", "company": "Independent" }
+    ]
   },
   "footer": {
     "rights": "All rights reserved."

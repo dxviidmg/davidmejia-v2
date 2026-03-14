@@ -19,7 +19,97 @@
     "intro2": "Me apasionan los retos, disfruto resolver problemas de forma creativa y siempre busco hacer las cosas de la mejor manera. Por esta razón quiero ser parte de un equipo donde pueda compartir mi experiencia y mejorar mis habilidades."
   },
   "experience": {
-    "title": "Experiencia"
+    "title": "Experiencia",
+    "at": "en",
+    "positions": [
+      {
+        "position": "Desarrollador Web Full Stack",
+        "modality": "Remoto",
+        "lineOfBusiness": "Educación",
+        "highlights": [
+          "Desarrollo de nuevas funcionalidades para el área financiera",
+          "Aplicación de correcciones de pagos en bases de datos en producción",
+          "Implementación y mantenimiento de pasarelas de pago",
+          "Mejora en la eficiencia de resolución de tickets relacionados con pagos"
+        ]
+      },
+      {
+        "position": "Desarrollador Web Full Stack / Ingeniero DevOps / Líder Técnico",
+        "modality": "Remoto",
+        "lineOfBusiness": "Desarrollo de software",
+        "highlights": [
+          "Lideré el proyecto Faisán, una plataforma basada en SAAM, como único desarrollador senior",
+          "Refactorización de base de datos y mantenimiento de código",
+          "Gestión de un sistema de microservicios y despliegues en servidor",
+          "Actualización de un chatbot legacy e integración en un proyecto React",
+          "Web scraping con Selenium y entrenamiento de chatbots con Rasa",
+          "Corrección de problemas en el frontend en Angular relacionados con peticiones HTTP de Axios"
+        ]
+      },
+      {
+        "position": "Desarrollador Web Full Stack / Ingeniero DevOps",
+        "modality": "Remoto",
+        "lineOfBusiness": "Desarrollo de sistemas embebidos",
+        "highlights": [
+          "Diseño de base de datos, desarrollo de endpoints y websockets",
+          "Refactorización de código y gestión de despliegues",
+          "Sugerí buenas prácticas para el ciclo de vida del desarrollo de software",
+          "Propuse y desarrollé mis propias ideas dentro de los proyectos",
+          "Gané la confianza para ser responsable de los despliegues"
+        ]
+      },
+      {
+        "position": "Desarrollador Web Backend / Asistente de Ciencia de Datos",
+        "modality": "Remoto",
+        "lineOfBusiness": "Desarrollo de software",
+        "highlights": [
+          "Desarrollé el código base para la importación de datos",
+          "Reduje en un 50% el tiempo de ejecución de la importación de datos",
+          "Desarrollé un plan de refactorización de base de datos aprobado por el equipo y superiores, logrando una reducción del 15% en una base de datos de 140 tablas",
+          "Implementé POO en los modelos de base de datos",
+          "Desarrollé un prototipo de microservicio",
+          "Trabajé en un equipo de IA como analista, aprendiz de ML e intermediario con las áreas de desarrollo y devops",
+          "Encontré una forma de procesar 10 millones de registros en la nube usando pandas y MongoDB"
+        ]
+      },
+      {
+        "position": "Pasante de Ciencia de Datos",
+        "modality": "Presencial",
+        "lineOfBusiness": "Desarrollo de software",
+        "highlights": [
+          "Líder de equipo en un proyecto de ciencia de datos",
+          "Desarrollé un modelo de predicción de éxito de campañas de Kickstarter",
+          "Participé en el desarrollo de un prototipo de servicio con alcance comercial"
+        ]
+      },
+      {
+        "position": "Desarrollador Web Full Stack / Ingeniero DevOps",
+        "modality": "Presencial",
+        "lineOfBusiness": "Construcción",
+        "highlights": [
+          "Único desarrollador del proyecto completo, desde la concepción y levantamiento de requerimientos hasta el despliegue y mantenimiento",
+          "Implementación y gestión de infraestructura tecnológica incluyendo cámaras de seguridad, DNS y correos comerciales",
+          "Capacitación de usuarios y soporte técnico"
+        ]
+      },
+      {
+        "position": "Desarrollador Web Full Stack",
+        "modality": "Presencial",
+        "lineOfBusiness": "Gobierno",
+        "highlights": [
+          "Único desarrollador del proyecto completo, desde la concepción y levantamiento de requerimientos hasta el despliegue y mantenimiento"
+        ]
+      },
+      {
+        "position": "Asistente de Investigación",
+        "modality": "Híbrido",
+        "lineOfBusiness": "Educación",
+        "highlights": [
+          "Desarrollé una aplicación web para la extracción de tweets y análisis de sentimientos",
+          "Aprendí Python de forma autodidacta"
+        ]
+      }
+    ]
   },
   "skills": {
     "title": "Habilidades"
@@ -29,7 +119,30 @@
   },
   "projects": {
     "title": "Proyectos",
-    "tabs": { "all": "Todos", "web": "Web", "data": "Datos" }
+    "tabs": { "all": "Todos", "web": "Web", "data": "Datos" },
+    "items": [
+      { "name": "SIU", "description": "Mantenimiento de una aplicación web para pagos en línea", "company": "UTEL" },
+      { "name": "TEASIB v2", "description": "Desarrollo de una aplicación web para la gestión de construcción y mantenimiento de bebederos de agua potable", "company": "Grupo Constructor Carsev" },
+      { "name": "Sitio web CARSEV", "description": "Desarrollo de un sitio web", "company": "Grupo Constructor Carsev" },
+      { "name": "Integración entre chatbot y Clientify", "description": "Integración entre un chatbot y Clientify", "company": "Ixulabs" },
+      { "name": "Mapa Interactivo", "description": "Desarrollo de un mapa interactivo para un museo", "company": "Ixulabs" },
+      { "name": "Sitio web Cloudwaremx v2", "description": "Desarrollo de un sitio web", "company": "Digy Networks" },
+      { "name": "Sitio web Digy", "description": "Desarrollo de un sitio web", "company": "Digy Networks" },
+      { "name": "Sitio web Cloudwaremx", "description": "Desarrollo de un sitio web", "company": "Cloud Ware" },
+      { "name": "Gestión de máquinas expendedoras", "description": "Desarrollo de una aplicación web para la gestión de máquinas expendedoras", "company": "Genone Tech" },
+      { "name": "Análisis de datos de autos", "description": "Análisis de datos para encontrar patrones y errores para obtener una buena muestra para un modelo de IA", "company": "Ixulabs" },
+      { "name": "Actualización de scripts de descarga de autos", "description": "Mejora de 10 scripts para descargar datos de autos de diferentes empresas", "company": "Ixulabs" },
+      { "name": "Análisis de datos bancarios", "description": "Creación de notebooks para entender diversas fuentes de datos de un banco", "company": "Ixulabs" },
+      { "name": "Refactorización de BD para SAAM", "description": "Modificación de la estructura de la base de datos para mejorar calidad y rendimiento", "company": "Ixulabs" },
+      { "name": "Servicio de reportes para SAAM", "description": "Creación de un microservicio para mejorar la generación de reportes", "company": "Ixulabs" },
+      { "name": "Scraping de seguros médicos", "description": "Extracción de cotizaciones de seguros de salud de una empresa usando Selenium", "company": "Ixulabs" },
+      { "name": "Importación de datos para SAAM", "description": "Creación de código base para la importación de datos", "company": "Ixulabs" },
+      { "name": "SAAM", "description": "Mantenimiento de una aplicación web para la gestión de seguros", "company": "Ixulabs" },
+      { "name": "Análisis de éxito de campañas Kickstarter", "description": "Prototipo de un modelo de machine learning para predecir el éxito de una campaña de Kickstarter", "company": "Plenumsoft" },
+      { "name": "TEASIB", "description": "Desarrollo de una aplicación web para la gestión de construcción y mantenimiento de bebederos de agua potable", "company": "Grupo Constructor Carsev" },
+      { "name": "Gestión de fondos públicos", "description": "Desarrollo de una aplicación web para la gestión de fondos públicos", "company": "CITNOVA" },
+      { "name": "Sitio web Los Arquetipos de Jung", "description": "Desarrollo de un sitio web para una banda de rock", "company": "Independiente" }
+    ]
   },
   "footer": {
     "rights": "Todos los derechos reservados."

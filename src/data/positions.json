@@ -1,116 +1,50 @@
 [
     {
         "company": { "name": "UTEL", "url": "https://utel.edu.mx/" },
-        "position": "Backend Web Developer",
-        "period": "January 2024 - Currently",
-        "modality": "Remote",
+        "period": "February 2024 - Present",
         "location": "Naucalpan, EdoMex",
-        "country": "MX",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkAjwk-tXb8Ty3N1CnkGweiNLO3_UOg4eJgppV0l5-mUZKDPKDExqwMzsYGWsb4maqv60&usqp=CAU",
-        "lineOfBusiness": "Education",
-        "highlights": [
-            "Developed and maintained backend services with Python and Django",
-            "Implemented RESTful APIs for internal and external consumers",
-            "Optimized database queries improving response times"
-        ]
+        "country": "MX"
     },
     {
         "company": { "name": "Ixulabs", "url": "https://ixulabs.com/" },
-        "position": "Full Stack Web Developer / DevOps Engineer / Tech Lead",
         "period": "June 2023 - January 2024",
-        "modality": "Remote",
         "location": "CDMX",
-        "country": "MX",
-        "logo": "https://ixulabs.com/favicon.ico",
-        "lineOfBusiness": "Software development",
-        "highlights": [
-            "Led a development team delivering client projects on time",
-            "Managed CI/CD pipelines and cloud infrastructure on AWS",
-            "Full stack development with Django and React"
-        ]
+        "country": "MX"
     },
     {
         "company": { "name": "GenOne Technologies LLC", "url": "https://www.cto.genone.tech/" },
-        "position": "Full Stack Web Developer / DevOps Engineer",
         "period": "March 2022 - October 2022",
-        "modality": "Remote",
         "location": "Boston, Ma.",
-        "country": "US",
-        "logo": "https://www.cto.genone.tech/favicon.ico",
-        "lineOfBusiness": "Embedded systems development",
-        "highlights": [
-            "Built web applications for embedded systems monitoring",
-            "Deployed and managed services on GCP",
-            "Collaborated with a US-based distributed team"
-        ]
+        "country": "US"
     },
     {
         "company": { "name": "Ixulabs", "url": "https://ixulabs.com/" },
-        "position": "Backend Web Developer / Data Scientist Assistant",
-        "period": "May 2019 - Feb 2022",
-        "modality": "Remote",
+        "period": "June 2019 - February 2022",
         "location": "CDMX",
-        "country": "MX",
-        "logo": "https://ixulabs.com/favicon.ico",
-        "lineOfBusiness": "Software development",
-        "highlights": [
-            "Developed data pipelines and ETL processes with Python",
-            "Built predictive models using pandas and scikit-learn",
-            "Backend development with Django REST Framework"
-        ]
+        "country": "MX"
     },
     {
         "company": { "name": "Plenumsoft", "url": "https://www.plenumsoft.com.mx/" },
-        "position": "Data Scientist Intern",
         "period": "November 2018 - May 2019",
-        "modality": "On-site",
         "location": "Merida, Yuc.",
-        "country": "MX",
-        "logo": "https://www.plenumsoft.com.mx/favicon.ico",
-        "lineOfBusiness": "Software development",
-        "highlights": [
-            "Assisted in building ML models for client projects",
-            "Data analysis and visualization with matplotlib"
-        ]
+        "country": "MX"
     },
     {
         "company": { "name": "Grupo Constructor CARSEV", "url": "https://grupocarsev.com/" },
-        "position": "Full Stack Web Developer / DevOps Engineer",
-        "period": "May 2017 - November 2018",
-        "modality": "On-site",
+        "period": "May 2017 - October 2018",
         "location": "Pachuca, Hgo.",
-        "country": "MX",
-        "logo": "https://grupocarsev.com/favicon.ico",
-        "lineOfBusiness": "Construction",
-        "highlights": [
-            "Built internal web tools for project management",
-            "Deployed applications on Heroku"
-        ]
+        "country": "MX"
     },
     {
-        "company": { "name": "CITNOVA", "url": "https://www.mexicoescultura.com/recinto/67822/consejo-de-ciencia-tecnologia-e-innovacion-de-hidalgo-citnova.html" },
-        "position": "Full Stack Web Developer",
-        "period": "November 2017 - May 2018",
-        "modality": "On-site",
+        "company": { "name": "Gobierno del Estado de Hidalgo", "url": "" },
+        "period": "November 2016 - April 2017",
         "location": "Pachuca, Hgo.",
-        "country": "MX",
-        "logo": "",
-        "lineOfBusiness": "Government",
-        "highlights": [
-            "Developed web platforms for government innovation programs"
-        ]
+        "country": "MX"
     },
     {
         "company": { "name": "ITESM-CEM", "url": "http://www.cem.itesm.mx/" },
-        "position": "Researcher Assistant",
         "period": "February 2014 - August 2014",
-        "modality": "Hybrid",
         "location": "Atizapan, EdoMex.",
-        "country": "MX",
-        "logo": "",
-        "lineOfBusiness": "Education",
-        "highlights": [
-            "Supported academic research projects"
-        ]
+        "country": "MX"
     }
 ]
