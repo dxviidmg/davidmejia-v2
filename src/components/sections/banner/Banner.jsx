@@ -46,33 +46,45 @@ export function Banner() {
 
   return (
     <section id="banner" style={{ position: "relative" }}>
-      <ParticlesBackground></ParticlesBackground>
-      <NavBar></NavBar>
+      <ParticlesBackground />
+      <NavBar />
       <Container>
         <Row className="min-height d-flex align-items-center text-center">
           <Col sm={12}>
-            <h1>Hi there, I am David.</h1>
-            <h2 id="iam">I am {text}</h2>
-            <a
-              href="https://www.linkedin.com/in/david-mejia-guzman/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsLinkedin className="icon" size={40} />
-            </a>
-            <a
-              href="https://github.com/dxviidmg"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsGithub className="icon" size={40} />
-            </a>
-            <a
-              href="https://docs.google.com/document/d/1C4btdRFF8tGugFYtQSfJXbwd-4dGArih1LSq5xKJ5Fg/export?format=pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsFileText className="icon" size={40} />
+            <p className="banner-greeting">Welcome to my portfolio</p>
+            <h1 className="banner-name">Hi, I'm David Mejía</h1>
+            <h2 id="iam">
+              {text}
+              <span className="cursor">|</span>
+            </h2>
+            <div className="banner-icons">
+              <a
+                href="https://www.linkedin.com/in/david-mejia-guzman/"
+                target="_blank"
+                rel="noreferrer"
+                title="LinkedIn"
+              >
+                <BsLinkedin className="icon" size={40} />
+              </a>
+              <a
+                href="https://github.com/dxviidmg"
+                target="_blank"
+                rel="noreferrer"
+                title="GitHub"
+              >
+                <BsGithub className="icon" size={40} />
+              </a>
+              <a
+                href="https://docs.google.com/document/d/1C4btdRFF8tGugFYtQSfJXbwd-4dGArih1LSq5xKJ5Fg/export?format=pdf"
+                target="_blank"
+                rel="noreferrer"
+                title="Download CV"
+              >
+                <BsFileText className="icon" size={40} />
+              </a>
+            </div>
+            <a href="#projects" className="banner-cta">
+              View my projects
             </a>
           </Col>
         </Row>
