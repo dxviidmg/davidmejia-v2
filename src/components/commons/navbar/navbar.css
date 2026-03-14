@@ -1,15 +1,38 @@
-.scrolled {
-    transition: 2s;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight: bold;
-    background-color: #18171c;
+.nav-top {
+    transition: background 0.4s;
 }
 
-.unscrolled {
-    transition: 1s;
+.nav-scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    backdrop-filter: blur(8px);
+    transition: background 0.4s;
 }
 
-.link-text {
-    color: white;
+.nav-brand {
+    color: white !important;
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.nav-link-default {
+    color: #aaa !important;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+.nav-link-default:hover {
+    color: white !important;
+}
+
+.nav-link-active {
+    color: white !important;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #64ffda;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3) !important;
 }
