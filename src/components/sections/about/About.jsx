@@ -1,5 +1,6 @@
 import { Col, Row, Container } from "react-bootstrap";
 import { useLang } from "../../../utils/LangContext";
+import { useInView } from "../../../utils/useInView";
 import './about.css'
 
 const Bold = ({ text }) => (
@@ -8,14 +9,15 @@ const Bold = ({ text }) => (
 
 export const About = () => {
   const { t } = useLang();
+  const [ref, visible] = useInView();
   return (
     <section id="about-me" className="about-section">
       <Container>
-        <Row className="paddings">
+        <Row className="paddings" ref={ref}>
           <Col md={12}>
-            <h2>{t.about.title}</h2>
-            <p className="text-justify"><Bold text={t.about.intro} /></p>
-            <p className="text-justify"><Bold text={t.about.intro2} /></p>
+            <h2 className={`fade-up ${visible ? "visible" : ""}`}>{t.about.title}</h2>
+            <p className={`text-justify fade-up stagger-1 ${visible ? "visible" : ""}`}><Bold text={t.about.intro} /></p>
+            <p className={`text-justify fade-up stagger-2 ${visible ? "visible" : ""}`}><Bold text={t.about.intro2} /></p>
           </Col>
         </Row>
       </Container>

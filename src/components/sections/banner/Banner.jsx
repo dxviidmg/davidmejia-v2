@@ -44,13 +44,13 @@ export function Banner() {
       <Container>
         <Row className="min-height d-flex align-items-center text-center">
           <Col sm={12}>
-            <p className="banner-greeting">{t.banner.greeting}</p>
-            <h1 className="banner-name">{t.banner.name}</h1>
-            <h2 id="iam">
+            <p className="banner-greeting banner-enter">{t.banner.greeting}</p>
+            <h1 className="banner-name banner-enter banner-enter-delay-1">{t.banner.name}</h1>
+            <h2 id="iam" className="banner-enter banner-enter-delay-2">
               {text}
               <span className="cursor">|</span>
             </h2>
-            <div className="banner-icons">
+            <div className="banner-icons banner-enter banner-enter-delay-3">
               <a href="https://www.linkedin.com/in/david-mejia-guzman/" target="_blank" rel="noreferrer" title="LinkedIn">
                 <BsLinkedin className="icon" size={40} />
               </a>
@@ -61,7 +61,7 @@ export function Banner() {
                 <BsFileText className="icon" size={40} />
               </a>
             </div>
-            <a href="#projects" className="banner-cta">{t.banner.cta}</a>
+            <a href="#projects" className="banner-cta banner-enter banner-enter-delay-4">{t.banner.cta}</a>
           </Col>
         </Row>
       </Container>

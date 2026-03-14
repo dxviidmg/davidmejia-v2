@@ -88,3 +88,51 @@ h2 {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   color: white;
 }
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+
+/* Banner entrance */
+.banner-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: bannerIn 0.8s ease forwards;
+}
+
+.banner-enter-delay-1 { animation-delay: 0.2s; }
+.banner-enter-delay-2 { animation-delay: 0.4s; }
+.banner-enter-delay-3 { animation-delay: 0.6s; }
+.banner-enter-delay-4 { animation-delay: 0.8s; }
+
+@keyframes bannerIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

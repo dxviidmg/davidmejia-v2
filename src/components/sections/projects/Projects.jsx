@@ -2,25 +2,29 @@ import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projects from "../../../data/projects.json";
 import { GetCustomIcon } from "../../commons/icons/Icons";
 import { useLang } from "../../../utils/LangContext";
+import { useInView } from "../../../utils/useInView";
 import "./projects.css";
 
-const ProjectCard = ({ project, tp }) => (
-  <div className="dark-card dark-card-hover project-card">
-    <div className="project-header">
-      <h5 className="project-name">{tp.name}</h5>
-      <span className="project-period">{project.period}</span>
+const ProjectCard = ({ project, tp }) => {
+  const [ref, visible] = useInView();
+  return (
+    <div ref={ref} className={`dark-card dark-card-hover project-card fade-up ${visible ? "visible" : ""}`}>
+      <div className="project-header">
+        <h5 className="project-name">{tp.name}</h5>
+        <span className="project-period">{project.period}</span>
+      </div>
+      <p className="project-company">{tp.company}</p>
+      <p className="project-desc">{tp.description}</p>
+      <div className="project-stack">
+        {project.stack.map((s, i) => (
+          <span key={i} className="stack-chip" title={s.name}>
+            <GetCustomIcon name={s.icon || "Si" + s.name} color={s.color} />
+          </span>
+        ))}
+      </div>
     </div>
-    <p className="project-company">{tp.company}</p>
-    <p className="project-desc">{tp.description}</p>
-    <div className="project-stack">
-      {project.stack.map((s, i) => (
-        <span key={i} className="stack-chip" title={s.name}>
-          <GetCustomIcon name={s.icon || "Si" + s.name} color={s.color} />
-        </span>
-      ))}
-    </div>
-  </div>
-);
+  );
+};
 
 const ProjectList = ({ category, t }) => (
   <Row>
@@ -39,10 +43,11 @@ const ProjectList = ({ category, t }) => (
 
 export const Projects = () => {
   const { t } = useLang();
+  const [ref, visible] = useInView();
   return (
     <section className="section-dark paddings" id="projects">
       <Container>
-        <h2>{t.projects.title}</h2>
+        <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.projects.title}</h2>
         <Tab.Container defaultActiveKey="all">
           <Nav variant="pills" className="justify-content-center project-tabs">
             <Nav.Item><Nav.Link eventKey="all">{t.projects.tabs.all}</Nav.Link></Nav.Item>
