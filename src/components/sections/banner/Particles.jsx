@@ -38,8 +38,8 @@ export const ParticlesBackground = () => {
             outModes: { default: "out" },
           },
           number: {
-            density: { enable: true, area: 1000 },
-            value: 40,
+            density: { enable: true, area: 1200 },
+            value: 30,
           },
           opacity: { value: 0.4 },
           shape: { type: "circle" },
