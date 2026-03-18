@@ -8,7 +8,7 @@ const CertCard = ({ cert, index }) => {
   const [ref, visible] = useInView();
   return (
     <Col sm={6} md={3} className="col-gap" ref={ref}>
-      <div className={`dark-card dark-card-hover dark-card-scale cert-card fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${index * 0.1}s` }}>
+      <div className={`dark-card dark-card-hover cert-card fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${index * 0.1}s` }}>
         <h5 className="cert-name">{cert.name}</h5>
         <p className="cert-institution">{cert.instution}</p>
         <p className="cert-date">{cert.expedition}</p>
