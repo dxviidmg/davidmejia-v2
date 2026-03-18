@@ -24,7 +24,7 @@ const TimelineItem = ({ pos, tp, at, index }) => {
         <p className="timeline-meta">
           {pos.period} · {tp.modality} · {pos.location}{" "}
           {FLAG[pos.country] && (
-            <img src={FLAG[pos.country]} alt={pos.country} className="country-flag" />
+            <img src={FLAG[pos.country]} alt={pos.country} className="country-flag" width="20" height="20" />
           )}
         </p>
         <p className="timeline-meta">{tp.lineOfBusiness}</p>
