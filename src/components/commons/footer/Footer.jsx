@@ -8,7 +8,7 @@ export function Footer() {
   const { t } = useLang();
   const [ref, visible] = useInView();
   return (
-    <footer id="footer">
+    <footer id="footer" className="section-dark">
       <Container className="text-center" ref={ref}>
         <p className={`footer-contact fade-up ${visible ? "visible" : ""}`}>{t.footer.contact}</p>
         <a href="https://wa.me/525561652599" target="_blank" rel="noreferrer" className={`footer-cta fade-up stagger-1 ${visible ? "visible" : ""}`}>{t.footer.cta}</a>

@@ -12,7 +12,7 @@ export const About = () => {
   const { t } = useLang();
   const [ref, visible] = useInView();
   return (
-    <section id="about-me" className="about-section">
+    <section id="about-me" className="section-light">
       <Container>
         <Row className="paddings" ref={ref}>
           <Col md={12}>
