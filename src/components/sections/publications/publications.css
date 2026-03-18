@@ -1,0 +1,20 @@
+.papers-list {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.papers-list a {
+    color: #6c9bcf;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.papers-list a:hover {
+    color: #4a7fb5;
+}
+
+.paper-meta {
+    display: block;
+    font-size: 0.75rem;
+    color: #666;
+}

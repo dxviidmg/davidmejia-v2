@@ -1,24 +1,20 @@
-#projects {
-    background-color: #111;
-}
-
 .project-tabs {
     margin-bottom: 30px;
     gap: 8px;
 }
 
 .project-tabs .nav-link {
-    color: #aaa;
-    border: 1px solid #444;
+    color: #555;
+    border: 1px solid #ccc;
     border-radius: 20px;
     padding: 6px 20px;
     font-size: 0.85rem;
 }
 
 .project-tabs .nav-link.active {
-    background: white;
-    color: black;
-    border-color: white;
+    background: #1a1a1a;
+    color: white;
+    border-color: #1a1a1a;
 }
 
 .project-card {

@@ -10,6 +10,16 @@
 
 .skill-row {
     margin-bottom: 12px;
+    cursor: default;
+}
+
+.skill-row:hover .skill-name {
+    color: #6c9bcf;
+}
+
+.skill-row:hover .skill-bar-fill {
+    filter: brightness(1.4);
+    box-shadow: 0 0 8px rgba(108, 155, 207, 0.5);
 }
 
 .skill-info {
@@ -23,6 +33,7 @@
 .skill-name {
     font-weight: 600;
     color: #eee;
+    transition: color 200ms;
 }
 
 .skill-exp {
@@ -42,5 +53,5 @@
     height: 100%;
     background: #6c9bcf;
     border-radius: 2px;
-    transition: width 0.6s ease;
+    transition: width 0.6s ease, filter 200ms, box-shadow 200ms;
 }

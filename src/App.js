@@ -11,6 +11,8 @@ const Experience = lazy(() => import('./components/sections/experience/Experienc
 const Skills = lazy(() => import('./components/sections/skills/Skills').then(m => ({ default: m.Skills })));
 const Projects = lazy(() => import('./components/sections/projects/Projects').then(m => ({ default: m.Projects })));
 const Certifications = lazy(() => import('./components/sections/certifications/Certifications').then(m => ({ default: m.Certifications })));
+const Education = lazy(() => import('./components/sections/education/Education').then(m => ({ default: m.Education })));
+const Publications = lazy(() => import('./components/sections/publications/Publications').then(m => ({ default: m.Publications })));
 const Footer = lazy(() => import('./components/commons/footer/Footer').then(m => ({ default: m.Footer })));
 
 function App() {
@@ -25,9 +27,13 @@ function App() {
           <hr className="section-divider" />
           <Skills />
           <hr className="section-divider" />
-          <Projects />
+          <Education />
+          <hr className="section-divider" />
+          <Publications />
           <hr className="section-divider" />
           <Certifications />
+          <hr className="section-divider" />
+          <Projects />
           <hr className="section-divider" />
           <Footer />
         </Suspense>

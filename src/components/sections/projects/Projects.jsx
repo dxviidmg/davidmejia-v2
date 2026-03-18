@@ -46,7 +46,7 @@ export const Projects = () => {
   const { t } = useLang();
   const [ref, visible] = useInView();
   return (
-    <section className="section-dark paddings" id="projects">
+    <section className="section-light paddings" id="projects">
       <Container>
         <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.projects.title}</h2>
         <Tab.Container defaultActiveKey="all">
