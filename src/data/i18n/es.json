@@ -11,12 +11,16 @@
     "greeting": "Bienvenido a mi portafolio",
     "name": "Hola, soy David Mejía",
     "cta": "Ver mis proyectos",
-    "titles": ["Desarrollador Fullstack", "Analista de Datos", "Científico de Datos Jr"]
+    "titles": ["Desarrollador Fullstack", "Analista de Datos", "Científico de Datos Jr"],
+    "stats": [
+      { "value": "+9", "label": "Años de experiencia", "computed": "yearsOfExperience" },
+      { "value": "+20", "label": "Proyectos entregados", "computed": "projectsDelivered" }
+    ]
   },
   "about": {
     "title": "Sobre mí",
-    "intro": "Ingeniero de Software con **más de 9 años de experiencia** entregando soluciones web de principio a fin. Especializado en **Python** y **Django** en el backend, con experiencia creciente en **React** en el frontend. He liderado proyectos desde la concepción hasta el despliegue en industrias como **fintech**, **seguros**, **gobierno** y **construcción** — tanto como **único desarrollador** como en **equipos colaborativos** donde nunca dejo de aprender.",
-    "intro2": "Mi trayectoria incluye optimización de importaciones de datos en un **50%**, refactorización de una base de datos de **140 tablas** reduciéndola un **15%**, procesamiento de más de **10M de registros** en la nube, e integración de pasarelas de pago como **Stripe**, **MercadoPago** y **Nequi**. He desplegado en **AWS**, **GCP**, **Heroku** y **Render**, y tengo experiencia práctica en **análisis de datos**, **web scraping** y **machine learning**. Ofrezco responsabilidad, velocidad y resultados."
+    "intro": "Ingeniero de Software con **más de {years} años de experiencia** entregando soluciones web de principio a fin. Especializado en **Python** y **Django** en el backend, con experiencia creciente en **React** en el frontend. He liderado proyectos desde la concepción hasta el despliegue en industrias como **fintech**, **seguros**, **gobierno** y **construcción** — tanto como **único desarrollador** como en **equipos colaborativos** donde nunca dejo de aprender.",
+    "intro2": "Mi trayectoria incluye optimización de importaciones de datos en un **50%**, refactorización de una base de datos de **140 tablas** reduciéndola un **15%**, procesamiento de más de **10M de registros** en la nube, e integración de pasarelas de pago como **Stripe**, **MercadoPago**, **Nequi** y **Pagatodo**. He desplegado en **AWS**, **GCP**, **Heroku** y **Render**, y tengo experiencia práctica en **análisis de datos**, **web scraping** y **machine learning**. Ofrezco responsabilidad, velocidad y resultados."
   },
   "experience": {
     "title": "Experiencia",
@@ -30,6 +34,10 @@
           "Desarrollo de nuevas funcionalidades para la plataforma educativa de pagos SIU",
           "Aplicación de correcciones de pagos en bases de datos en producción",
           "Implementación y mantenimiento de pasarelas de pago",
+          "Implementación de pasarelas de pago Nequi y Pagatodo",
+          "Actualización de pasarela de pago MercadoPago",
+          "Implementación de conexión SFTP a MercadoPago",
+          "Desarrollo de APIs",
           "Mejora en la eficiencia de resolución de tickets relacionados con pagos"
         ]
       },

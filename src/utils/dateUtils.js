@@ -1,3 +1,5 @@
+export const yearsOfExperience = Math.floor((new Date() - new Date("2016-11-03")) / 31557600000);
+
 export function capitalizeString(str) {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }
