@@ -14,8 +14,8 @@ const SkillCard = ({ category, items, index }) => {
     (a, b) => calcExperience(b.periods).months - calcExperience(a.periods).months
   );
   return (
-    <Col xs={12} sm={6} md={4} className="col-gap" ref={ref}>
-      <div className={`dark-card dark-card-hover fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${index * 0.1}s` }}>
+    <Col xs={12} sm={6} md={4} className={`col-gap fade-up ${visible ? "visible" : ""}`} ref={ref} style={{ transitionDelay: `${index * 0.1}s` }}>
+      <div className="dark-card dark-card-hover">
         <h5 className="skill-card-title">{category}</h5>
         {sorted.map((skill, i) => {
           const { label, months } = calcExperience(skill.periods);
