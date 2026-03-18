@@ -5,22 +5,31 @@
     "experience": "Experiencia",
     "skills": "Habilidades",
     "certifications": "Certificaciones",
-    "projects": "Proyectos"
+    "projects": "Proyectos",
+    "education": "Educación"
   },
   "banner": {
     "greeting": "Bienvenido a mi portafolio",
     "name": "Hola, soy David Mejía",
     "cta": "Ver mis proyectos",
-    "titles": ["Desarrollador Fullstack", "Analista de Datos", "Científico de Datos Jr"],
+    "titles": ["Ingeniero de Software", "Desarrollador Fullstack", "Analista de Datos"],
     "stats": [
       { "value": "+9", "label": "Años de experiencia", "computed": "yearsOfExperience" },
-      { "value": "+20", "label": "Proyectos entregados", "computed": "projectsDelivered" }
+      { "value": "+20", "label": "Proyectos entregados", "computed": "projectsDelivered" },
+      { "value": "8", "label": "Empresas", "computed": "companies" }
     ]
   },
   "about": {
     "title": "Sobre mí",
-    "intro": "Ingeniero de Software con **más de {years} años de experiencia** entregando soluciones web de principio a fin. Especializado en **Python** y **Django** en el backend, con experiencia creciente en **React** en el frontend. He liderado proyectos desde la concepción hasta el despliegue en industrias como **fintech**, **seguros**, **gobierno** y **construcción** — tanto como **único desarrollador** como en **equipos colaborativos** donde nunca dejo de aprender.",
-    "intro2": "Mi trayectoria incluye optimización de importaciones de datos en un **50%**, refactorización de una base de datos de **140 tablas** reduciéndola un **15%**, procesamiento de más de **10M de registros** en la nube, e integración de pasarelas de pago como **Stripe**, **MercadoPago**, **Nequi** y **Pagatodo**. He desplegado en **AWS**, **GCP**, **Heroku** y **Render**, y tengo experiencia práctica en **análisis de datos**, **web scraping** y **machine learning**. Ofrezco responsabilidad, velocidad y resultados."
+    "intro": "Ingeniero de Software con **más de {years} años de experiencia** entregando soluciones web de principio a fin. Especializado en **Python** y **Django** en el backend, con experiencia creciente en **React** en el frontend. He liderado proyectos desde la concepción hasta el despliegue en industrias como **fintech**, **seguros**, **gobierno** y **construcción** — tanto como **único desarrollador** como en **equipos colaborativos**.",
+    "highlights": [
+      "Optimicé importaciones de datos reduciendo tiempos de ejecución en un **50%**",
+      "Reduje un **15%** una base de datos de **140 tablas** — detecté redundancias, fusioné estructuras similares y depuré campos innecesarios para mejorar su calidad y rendimiento",
+      "Procesé más de **10M de registros** en la nube con pandas y MongoDB",
+      "Integré pasarelas de pago como **Stripe**, **MercadoPago**, **Nequi** y **Pagatodo**",
+      "Despliegues en **AWS**, **GCP**, **Heroku** y **Render**"
+    ],
+    "closing": "Ofrezco responsabilidad, velocidad y resultados."
   },
   "experience": {
     "title": "Experiencia",
@@ -33,12 +42,10 @@
         "highlights": [
           "Desarrollo de nuevas funcionalidades para la plataforma educativa de pagos SIU",
           "Aplicación de correcciones de pagos en bases de datos en producción",
-          "Implementación y mantenimiento de pasarelas de pago",
-          "Implementación de pasarelas de pago Nequi y Pagatodo",
-          "Actualización de pasarela de pago MercadoPago",
-          "Implementación de conexión SFTP a MercadoPago",
-          "Desarrollo de APIs",
-          "Mejora en la eficiencia de resolución de tickets relacionados con pagos"
+          "Implementación y actualización de pasarelas de pago: Nequi, Pagatodo y MercadoPago",
+          "Integración de conexión SFTP con MercadoPago para envío de archivos",
+          "Desarrollo de APIs REST para consumo interno y externo",
+          "Agilicé la resolución de tickets de pagos mediante correcciones directas en producción vía shell"
         ]
       },
       {
@@ -47,13 +54,12 @@
         "lineOfBusiness": "Desarrollo de software",
         "highlights": [
           "Lideré el proyecto Faisán, una plataforma basada en SAAM, como único desarrollador senior",
-          "Refactorización de base de datos y mantenimiento de código",
+          "Optimización de vistas y refactorización de código en backend y frontend",
           "Gestión de un sistema de microservicios y despliegues en servidor",
           "Actualización de un chatbot legacy e integración en un proyecto React",
           "Integración de un chatbot Rasa con el CRM Clientify para automatización de leads",
           "Desarrollo de un mapa interactivo para un museo con TypeScript y React",
-          "Web scraping con Selenium y entrenamiento de chatbots con Rasa",
-          "Corrección de problemas en el frontend en Angular relacionados con peticiones HTTP de Axios"
+          "Web scraping con Selenium y entrenamiento de chatbots con Rasa"
         ]
       },
       {
@@ -63,10 +69,7 @@
         "highlights": [
           "Diseño de base de datos, desarrollo de endpoints y websockets",
           "Integración de pasarela de pago Stripe con monitoreo en tiempo real usando Chart.js",
-          "Refactorización de código y gestión de despliegues en Heroku",
-          "Sugerí buenas prácticas para el ciclo de vida del desarrollo de software",
-          "Propuse y desarrollé mis propias ideas dentro de los proyectos",
-          "Gané la confianza para ser responsable de los despliegues"
+          "Refactorización de código y gestión de despliegues en Heroku como responsable único"
         ]
       },
       {
@@ -91,8 +94,7 @@
         "highlights": [
           "Líder de equipo en un proyecto de ciencia de datos",
           "Capacitador de Python para el equipo",
-          "Desarrollé un modelo de predicción de éxito de campañas de Kickstarter usando DataIKU",
-          "Participé en el desarrollo de un prototipo de servicio con alcance comercial"
+          "Desarrollé un modelo de predicción de éxito de campañas de Kickstarter usando DataIKU"
         ]
       },
       {
@@ -136,12 +138,12 @@
     "items": [
       { "name": "SIU", "description": "Mantenimiento y desarrollo de nuevas funcionalidades para una plataforma de pagos en línea del sector educativo", "company": "UTEL" },
       { "name": "TEASIB v2", "description": "Migración de un sistema de gestión de bebederos de agua potable a una interfaz moderna en React", "company": "Grupo Constructor Carsev" },
-      { "name": "Sitio web CARSEV", "description": "Sitio web corporativo para una empresa constructora", "company": "Grupo Constructor Carsev" },
+      { "name": "Sitio web CARSEV", "description": "Sitio web corporativo con portafolio de obras y galería de proyectos para una empresa constructora", "company": "Grupo Constructor Carsev" },
       { "name": "Integración Chatbot-Clientify", "description": "Integración de un chatbot Rasa con el CRM Clientify para automatizar la captura de leads", "company": "Ixulabs" },
       { "name": "Mapa Interactivo", "description": "Mapa interactivo para un museo que permite a los visitantes explorar exhibiciones digitalmente", "company": "Ixulabs" },
       { "name": "Sitio web Cloudwaremx v2", "description": "Rediseño del sitio web corporativo de una empresa de servicios en la nube", "company": "Digy Networks" },
-      { "name": "Sitio web Digy", "description": "Sitio web corporativo para una empresa de telecomunicaciones", "company": "Digy Networks" },
-      { "name": "Sitio web Cloudwaremx", "description": "Sitio web corporativo para una empresa de servicios en la nube con panel de administración", "company": "Cloud Ware" },
+      { "name": "Sitio web Digy", "description": "Sitio web corporativo con catálogo de servicios de telecomunicaciones y formulario de contacto", "company": "Digy Networks" },
+      { "name": "Sitio web Cloudwaremx", "description": "Sitio web con panel de administración para gestionar contenido y servicios en la nube", "company": "Cloud Ware" },
       { "name": "Gestión de máquinas expendedoras", "description": "Aplicación web para monitoreo y gestión de máquinas expendedoras con pagos Stripe y gráficas en tiempo real", "company": "Genone Tech" },
       { "name": "Análisis de datos de autos", "description": "Análisis exploratorio de datos para identificar patrones y limpiar datos para entrenar un modelo de IA", "company": "Ixulabs" },
       { "name": "Scripts de descarga de datos de autos", "description": "Optimización de 10 scripts de web scraping para descargar datos vehiculares de múltiples fuentes", "company": "Ixulabs" },
@@ -156,6 +158,39 @@
       { "name": "Gestión de fondos públicos", "description": "Aplicación web para el seguimiento y gestión de la asignación de fondos públicos gubernamentales", "company": "CITNOVA" },
       { "name": "Sitio web Los Arquetipos de Jung", "description": "Sitio web para una banda de rock con gestión de contenido y galería multimedia", "company": "Independiente" }
     ]
+  },
+  "education": {
+    "title": "Educación",
+    "items": [
+      {
+        "degree": "Ing. en Tecnologías de la Información y Comunicaciones",
+        "institution": "Instituto Tecnológico de Pachuca",
+        "period": "2010 - 2015",
+        "note": "Titulado por tesis"
+      },
+      {
+        "degree": "Diplomado en Inteligencia Artificial",
+        "institution": "TecNM / Plenumsoft",
+        "period": "Nov 2018 - May 2019"
+      }
+    ],
+    "papers": {
+      "title": "Publicaciones",
+      "items": [
+        {
+          "title": "Exploiting Data of the Twitter Social Network Using Sentiment Analysis",
+          "publisher": "Springer",
+          "year": "2017",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-319-49622-1_5"
+        },
+        {
+          "title": "Desarrollo de una aplicación para la extracción de información de Twitter y análisis de sentimientos",
+          "publisher": "ECORFAN",
+          "year": "2015",
+          "url": "https://www.ecorfan.org/bolivia/researchjournals/Tecnologias_de_la_Informacion/vol2num2/Tecnologias_de_la_Informacion_V2_N2_3.pdf"
+        }
+      ]
+    }
   },
   "footer": {
     "contact": "¿Tienes un proyecto en mente? Hablemos.",

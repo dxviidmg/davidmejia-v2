@@ -12,6 +12,7 @@ const MENU = [
   { id: "skills", key: "skills" },
   { id: "certifications", key: "certifications" },
   { id: "projects", key: "projects" },
+  { id: "education", key: "education" },
 ];
 
 export function NavBar() {

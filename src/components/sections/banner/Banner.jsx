@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo, useRef, useCallback } from "react";
 import { Col, Row, Container } from "react-bootstrap";
-import { BsLinkedin, BsGithub, BsFileText } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsFileText, BsEnvelope } from "react-icons/bs";
 import { ParticlesBackground } from "./Particles";
 import { NavBar } from "../../commons/navbar/Navbar";
 import { useLang } from "../../../utils/LangContext";
@@ -86,6 +86,9 @@ export function Banner() {
               </a>
               <a href="https://github.com/dxviidmg" target="_blank" rel="noreferrer" title="GitHub">
                 <BsGithub className="icon" size={40} />
+              </a>
+              <a href="mailto:davidmejia.05@hotmail.com" title="Email">
+                <BsEnvelope className="icon" size={40} />
               </a>
               <a href="https://docs.google.com/document/d/1C4btdRFF8tGugFYtQSfJXbwd-4dGArih1LSq5xKJ5Fg/export?format=pdf" target="_blank" rel="noreferrer" title="Download CV">
                 <BsFileText className="icon" size={40} />

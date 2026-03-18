@@ -18,7 +18,10 @@ export const About = () => {
           <Col md={12}>
             <h2 className={`fade-up ${visible ? "visible" : ""}`}>{t.about.title}</h2>
             <p className={`text-justify fade-up stagger-1 ${visible ? "visible" : ""}`}><Bold text={t.about.intro.replace("{years}", yearsOfExperience)} /></p>
-            <p className={`text-justify fade-up stagger-2 ${visible ? "visible" : ""}`}><Bold text={t.about.intro2} /></p>
+            <ul className={`about-highlights fade-up stagger-2 ${visible ? "visible" : ""}`}>
+              {t.about.highlights.map((h, i) => <li key={i}><Bold text={h} /></li>)}
+            </ul>
+            <p className={`text-justify fade-up stagger-3 ${visible ? "visible" : ""}`}><Bold text={t.about.closing} /></p>
           </Col>
         </Row>
       </Container>
