@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css';
 
 import { LangProvider } from './utils/LangContext';
 import { FaWhatsapp } from 'react-icons/fa';
