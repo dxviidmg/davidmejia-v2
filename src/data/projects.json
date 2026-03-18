@@ -34,9 +34,9 @@
         ]
     },
     {
-        "name": "TEASIB v2",
-        "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
-        "period": "2023-24",
+        "name": "CARSEV Website",
+        "description": "Corporate website with project portfolio and gallery",
+        "period": "2024",
         "categories": [
             "Web"
         ],
@@ -59,9 +59,9 @@
         ]
     },
     {
-        "name": "CARSEV Website",
-        "description": "Corporate website with project portfolio and gallery",
-        "period": "2024",
+        "name": "TEASIB v2",
+        "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
+        "period": "2023-24",
         "categories": [
             "Web"
         ],
@@ -336,6 +336,40 @@
         ]
     },
     {
+        "name": "SAAM",
+        "description": "Maintenance of a web application for insurance management",
+        "period": "2019-2022",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            },
+            {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Rest",
+                "color": "gray"
+            },
+            {
+                "name": "Bitbucket",
+                "color": "blue"
+            }
+        ]
+    },
+    {
         "name": "Analysis of bank data",
         "description": "Creation of notebooks to understand several data sources of a bank",
         "period": "2021",
@@ -422,6 +456,36 @@
         ]
     },
     {
+        "name": "Data import for SAAM",
+        "description": "Creation of codebase for data importing",
+        "period": "2019-2021",
+        "categories": [
+            "Web"
+        ],
+        "company": {
+            "name": "Ixulabs",
+            "url": "https://ixulabs.com/"
+        },
+        "stack": [
+            {
+                "name": "Python",
+                "color": "blue"
+            },
+            {
+                "name": "Django",
+                "color": "green"
+            },
+            {
+                "name": "Postgresql",
+                "color": "blue"
+            },
+            {
+                "name": "Bitbucket",
+                "color": "blue"
+            }
+        ]
+    },
+    {
         "name": "Report-service for SAAM",
         "description": "Creation of a microservice for improvement the creation of reports",
         "period": "2020",
@@ -478,70 +542,6 @@
             {
                 "name": "Selenium",
                 "color": "green"
-            },
-            {
-                "name": "Bitbucket",
-                "color": "blue"
-            }
-        ]
-    },
-    {
-        "name": "Data import for SAAM",
-        "description": "Creation of codebase for data importing",
-        "period": "2019-2021",
-        "categories": [
-            "Web"
-        ],
-        "company": {
-            "name": "Ixulabs",
-            "url": "https://ixulabs.com/"
-        },
-        "stack": [
-            {
-                "name": "Python",
-                "color": "blue"
-            },
-            {
-                "name": "Django",
-                "color": "green"
-            },
-            {
-                "name": "Postgresql",
-                "color": "blue"
-            },
-            {
-                "name": "Bitbucket",
-                "color": "blue"
-            }
-        ]
-    },
-    {
-        "name": "SAAM",
-        "description": "Maintenance of a web application for insurance management",
-        "period": "2019-2022",
-        "categories": [
-            "Web"
-        ],
-        "company": {
-            "name": "Ixulabs",
-            "url": "https://ixulabs.com/"
-        },
-        "stack": [
-            {
-                "name": "Python",
-                "color": "blue"
-            },
-            {
-                "name": "Django",
-                "color": "green"
-            },
-            {
-                "name": "Postgresql",
-                "color": "blue"
-            },
-            {
-                "name": "Rest",
-                "color": "gray"
             },
             {
                 "name": "Bitbucket",

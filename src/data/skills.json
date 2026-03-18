@@ -83,7 +83,7 @@
             "periods": [{ "start": "2023-06", "end": "2023-07" }]
         }
     ],
-    "Control Version": [
+    "Version Control": [
         {
             "name": "Github",
             "periods": [{ "start": "2016-07", "end": null }]
@@ -173,7 +173,7 @@
             ]
         }
     ],
-    "Scrapping": [
+    "Scraping": [
         {
             "name": "Selenium",
             "color": "green",

@@ -13,11 +13,27 @@
     "greeting": "Bienvenido a mi portafolio",
     "name": "Hola, soy David Mejía",
     "cta": "Ver mis proyectos",
-    "titles": ["Ingeniero de Software", "Desarrollador Fullstack", "Analista de Datos"],
+    "titles": [
+      "Ingeniero de Software",
+      "Desarrollador Fullstack",
+      "Analista de Datos"
+    ],
     "stats": [
-      { "value": "+9", "label": "Años de experiencia", "computed": "yearsOfExperience" },
-      { "value": "+20", "label": "Proyectos entregados", "computed": "projectsDelivered" },
-      { "value": "8", "label": "Empresas", "computed": "companies" }
+      {
+        "value": "+9",
+        "label": "Años de experiencia",
+        "computed": "yearsOfExperience"
+      },
+      {
+        "value": "+20",
+        "label": "Proyectos entregados",
+        "computed": "projectsDelivered"
+      },
+      {
+        "value": "8",
+        "label": "Empresas",
+        "computed": "companies"
+      }
     ]
   },
   "about": {
@@ -135,29 +151,117 @@
   },
   "projects": {
     "title": "Proyectos",
-    "tabs": { "all": "Todos", "web": "Web", "data": "Datos" },
+    "tabs": {
+      "all": "Todos",
+      "web": "Web",
+      "data": "Datos"
+    },
     "items": [
-      { "name": "SIU", "description": "Mantenimiento y desarrollo de nuevas funcionalidades para una plataforma de pagos en línea del sector educativo", "company": "UTEL" },
-      { "name": "TEASIB v2", "description": "Migración de un sistema de gestión de bebederos de agua potable a una interfaz moderna en React", "company": "Grupo Constructor Carsev" },
-      { "name": "Sitio web CARSEV", "description": "Sitio web corporativo con portafolio de obras y galería de proyectos para una empresa constructora", "company": "Grupo Constructor Carsev" },
-      { "name": "Integración Chatbot-Clientify", "description": "Integración de un chatbot Rasa con el CRM Clientify para automatizar la captura de leads", "company": "Ixulabs" },
-      { "name": "Mapa Interactivo", "description": "Mapa interactivo para un museo que permite a los visitantes explorar exhibiciones digitalmente", "company": "Ixulabs" },
-      { "name": "Sitio web Cloudwaremx v2", "description": "Rediseño del sitio web corporativo de una empresa de servicios en la nube", "company": "Digy Networks" },
-      { "name": "Sitio web Digy", "description": "Sitio web corporativo con catálogo de servicios de telecomunicaciones y formulario de contacto", "company": "Digy Networks" },
-      { "name": "Sitio web Cloudwaremx", "description": "Sitio web con panel de administración para gestionar contenido y servicios en la nube", "company": "Cloud Ware" },
-      { "name": "Gestión de máquinas expendedoras", "description": "Aplicación web para monitoreo y gestión de máquinas expendedoras con pagos Stripe y gráficas en tiempo real", "company": "Genone Tech" },
-      { "name": "Análisis de datos de autos", "description": "Análisis exploratorio de datos para identificar patrones y limpiar datos para entrenar un modelo de IA", "company": "Ixulabs" },
-      { "name": "Scripts de descarga de datos de autos", "description": "Optimización de 10 scripts de web scraping para descargar datos vehiculares de múltiples fuentes", "company": "Ixulabs" },
-      { "name": "Análisis de datos bancarios", "description": "Análisis de múltiples fuentes de datos bancarios para generar insights y apoyar decisiones de negocio", "company": "Ixulabs" },
-      { "name": "Refactorización de BD para SAAM", "description": "Reestructuración de una base de datos de 140 tablas, logrando una reducción del 15% mejorando calidad y rendimiento", "company": "Ixulabs" },
-      { "name": "Servicio de reportes para SAAM", "description": "Microservicio para generación asíncrona de reportes usando Celery y Redis", "company": "Ixulabs" },
-      { "name": "Scraping de seguros médicos", "description": "Extracción automatizada de cotizaciones de seguros de salud con Selenium para análisis competitivo", "company": "Ixulabs" },
-      { "name": "Importación de datos para SAAM", "description": "Sistema de importación de datos que redujo el tiempo de ejecución en un 50% mediante optimización de código", "company": "Ixulabs" },
-      { "name": "SAAM", "description": "Mantenimiento y optimización de una plataforma web para la gestión de seguros", "company": "Ixulabs" },
-      { "name": "Análisis de éxito de campañas Kickstarter", "description": "Prototipo de modelo de machine learning para predecir el éxito de campañas de Kickstarter usando DataIKU", "company": "Plenumsoft" },
-      { "name": "TEASIB", "description": "Desarrollo completo de una aplicación web para gestión de construcción y mantenimiento de bebederos de agua potable, desplegada en AWS", "company": "Grupo Constructor Carsev" },
-      { "name": "Gestión de fondos públicos", "description": "Aplicación web para el seguimiento y gestión de la asignación de fondos públicos gubernamentales", "company": "CITNOVA" },
-      { "name": "Sitio web Los Arquetipos de Jung", "description": "Sitio web para una banda de rock con gestión de contenido y galería multimedia", "company": "Independiente" }
+      {
+        "name": "SIU",
+        "description": "Mantenimiento y desarrollo de nuevas funcionalidades para una plataforma de pagos en línea del sector educativo",
+        "company": "UTEL"
+      },
+      {
+        "name": "Sitio web CARSEV",
+        "description": "Sitio web corporativo con portafolio de obras y galería de proyectos para una empresa constructora",
+        "company": "Grupo Constructor Carsev"
+      },
+      {
+        "name": "TEASIB v2",
+        "description": "Migración de un sistema de gestión de bebederos de agua potable a una interfaz moderna en React",
+        "company": "Grupo Constructor Carsev"
+      },
+      {
+        "name": "Integración Chatbot-Clientify",
+        "description": "Integración de un chatbot Rasa con el CRM Clientify para automatizar la captura de leads",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "Mapa Interactivo",
+        "description": "Mapa interactivo para un museo que permite a los visitantes explorar exhibiciones digitalmente",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "Sitio web Cloudwaremx v2",
+        "description": "Rediseño del sitio web corporativo de una empresa de servicios en la nube",
+        "company": "Digy Networks"
+      },
+      {
+        "name": "Sitio web Digy",
+        "description": "Sitio web corporativo con catálogo de servicios de telecomunicaciones y formulario de contacto",
+        "company": "Digy Networks"
+      },
+      {
+        "name": "Sitio web Cloudwaremx",
+        "description": "Sitio web con panel de administración para gestionar contenido y servicios en la nube",
+        "company": "Cloud Ware"
+      },
+      {
+        "name": "Gestión de máquinas expendedoras",
+        "description": "Aplicación web para monitoreo y gestión de máquinas expendedoras con pagos Stripe y gráficas en tiempo real",
+        "company": "Genone Tech"
+      },
+      {
+        "name": "Análisis de datos de autos",
+        "description": "Análisis exploratorio de datos para identificar patrones y limpiar datos para entrenar un modelo de IA",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "Scripts de descarga de datos de autos",
+        "description": "Optimización de 10 scripts de web scraping para descargar datos vehiculares de múltiples fuentes",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "SAAM",
+        "description": "Mantenimiento y optimización de una plataforma web para la gestión de seguros",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "Análisis de datos bancarios",
+        "description": "Análisis de múltiples fuentes de datos bancarios para generar insights y apoyar decisiones de negocio",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "Refactorización de BD para SAAM",
+        "description": "Reestructuración de una base de datos de 140 tablas, logrando una reducción del 15% mejorando calidad y rendimiento",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "Importación de datos para SAAM",
+        "description": "Sistema de importación de datos que redujo el tiempo de ejecución en un 50% mediante optimización de código",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "Servicio de reportes para SAAM",
+        "description": "Microservicio para generación asíncrona de reportes usando Celery y Redis",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "Scraping de seguros médicos",
+        "description": "Extracción automatizada de cotizaciones de seguros de salud con Selenium para análisis competitivo",
+        "company": "Ixulabs"
+      },
+      {
+        "name": "Análisis de éxito de campañas Kickstarter",
+        "description": "Prototipo de modelo de machine learning para predecir el éxito de campañas de Kickstarter usando DataIKU",
+        "company": "Plenumsoft"
+      },
+      {
+        "name": "TEASIB",
+        "description": "Desarrollo completo de una aplicación web para gestión de construcción y mantenimiento de bebederos de agua potable, desplegada en AWS",
+        "company": "Grupo Constructor Carsev"
+      },
+      {
+        "name": "Gestión de fondos públicos",
+        "description": "Aplicación web para el seguimiento y gestión de la asignación de fondos públicos gubernamentales",
+        "company": "CITNOVA"
+      },
+      {
+        "name": "Sitio web Los Arquetipos de Jung",
+        "description": "Sitio web para una banda de rock con gestión de contenido y galería multimedia",
+        "company": "Independiente"
+      }
     ]
   },
   "education": {
