@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, useRef, useCallback } from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import { BsLinkedin, BsGithub, BsFileText } from "react-icons/bs";
 import { ParticlesBackground } from "./Particles";
@@ -7,6 +7,34 @@ import { useLang } from "../../../utils/LangContext";
 import { yearsOfExperience } from "../../../utils/dateUtils";
 import projects from "../../../data/projects.json";
 import "./banner.css";
+
+const AnimatedNumber = ({ prefix, target, duration = 1500 }) => {
+  const [count, setCount] = useState(0);
+  const ref = useRef();
+  const started = useRef(false);
+
+  const start = useCallback(() => {
+    if (started.current) return;
+    started.current = true;
+    const steps = 40;
+    const inc = target / steps;
+    let current = 0;
+    const timer = setInterval(() => {
+      current += inc;
+      if (current >= target) { setCount(target); clearInterval(timer); }
+      else setCount(Math.floor(current));
+    }, duration / steps);
+  }, [target, duration]);
+
+  useEffect(() => {
+    const el = ref.current;
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) start(); }, { threshold: 0.5 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [start]);
+
+  return <span ref={ref}>{prefix}{count}</span>;
+};
 
 export function Banner() {
   const { t } = useLang();
@@ -66,15 +94,18 @@ export function Banner() {
             <a href="#projects" className="banner-cta banner-enter banner-enter-delay-4">{t.banner.cta}</a>
             <div className="banner-stats banner-enter banner-enter-delay-4">
               {t.banner.stats.map((s, i) => {
-                let value = s.value;
-                if (s.computed === "yearsOfExperience") value = `+${yearsOfExperience}`;
-                if (s.computed === "projectsDelivered") {
-                  const base = Math.floor(projects.length / 5) * 5;
-                  value = projects.length % 5 ? `+${base}` : `${base}`;
+                let num, prefix = "";
+                if (s.computed === "yearsOfExperience") { num = yearsOfExperience; prefix = "+"; }
+                else if (s.computed === "projectsDelivered") {
+                  num = Math.floor(projects.length / 5) * 5;
+                  prefix = projects.length % 5 ? "+" : "";
+                } else {
+                  const match = s.value.match(/(\+?)(\d+)/);
+                  num = parseInt(match[2]); prefix = match[1];
                 }
                 return (
                   <div key={i} className="banner-stat">
-                    <span className="banner-stat-value">{value}</span>
+                    <span className="banner-stat-value"><AnimatedNumber prefix={prefix} target={num} /></span>
                     <span className="banner-stat-label">{s.label}</span>
                   </div>
                 );

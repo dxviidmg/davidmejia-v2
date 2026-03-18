@@ -42,14 +42,26 @@ h2 {
   padding: 20px;
   height: 100%;
   color: white;
+  border: 1px solid transparent;
 }
 
 .dark-card-hover {
-  transition: transform 300ms;
+  transition: transform 300ms, box-shadow 300ms, border-color 300ms;
 }
 
 .dark-card-hover:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(108, 155, 207, 0.15);
+  border-color: #6c9bcf;
+}
+
+.dark-card-glow {
+  transition: box-shadow 300ms, border-color 300ms;
+}
+
+.dark-card-glow:hover {
+  border-color: #6c9bcf;
+  box-shadow: 0 10px 40px rgba(108, 155, 207, 0.35);
 }
 
 /* Column spacing */
