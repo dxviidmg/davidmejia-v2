@@ -8,7 +8,7 @@ export const Education = () => {
   const { t } = useLang();
   const [ref, visible] = useInView();
   return (
-    <section className="section-light paddings" id="education">
+    <section className="section-dark paddings edu-section" id="education">
       <Container>
         <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.education.title}</h2>
         <Row>
@@ -23,17 +23,6 @@ export const Education = () => {
             </Col>
           ))}
         </Row>
-        <h4 className={`papers-title fade-up ${visible ? "visible" : ""}`}>{t.education.papers.title}</h4>
-        <ul className={`papers-list fade-up ${visible ? "visible" : ""}`}>
-          {t.education.papers.items.map((p, i) => (
-            <li key={i}>
-              <a href={p.url} target="_blank" rel="noreferrer">
-                {p.title} <FaExternalLinkAlt size={10} />
-              </a>
-              <span className="paper-meta">{p.publisher}, {p.year}</span>
-            </li>
-          ))}
-        </ul>
       </Container>
     </section>
   );

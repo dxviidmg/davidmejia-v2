@@ -8,7 +8,7 @@ const CertCard = ({ cert, index }) => {
   const [ref, visible] = useInView();
   return (
     <Col sm={6} md={3} className="col-gap" ref={ref}>
-      <div className={`dark-card dark-card-hover cert-card fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${index * 0.1}s` }}>
+      <div className={`dark-card dark-card-hover fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${index * 0.1}s` }}>
         <h5 className="cert-name">{cert.name}</h5>
         <p className="cert-institution">{cert.institution}</p>
         <p className="cert-date">{cert.expedition}</p>
@@ -23,7 +23,7 @@ export const Certifications = () => {
   const { t } = useLang();
   const [ref, visible] = useInView();
   return (
-    <section id="certifications" className="section-light paddings">
+    <section id="certifications" className="section-dark paddings cert-section">
       <Container>
         <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.certifications.title}</h2>
         <Row className="justify-content-center">

@@ -6,7 +6,8 @@
     "skills": "Skills",
     "certifications": "Certifications",
     "projects": "Projects",
-    "education": "Education"
+    "education": "Education",
+    "publications": "Publications"
   },
   "banner": {
     "greeting": "Welcome to my portfolio",
@@ -178,16 +179,16 @@
       "title": "Publications",
       "items": [
         {
-          "title": "Exploiting Data of the Twitter Social Network Using Sentiment Analysis",
-          "publisher": "Springer",
-          "year": "2017",
-          "url": "https://link.springer.com/chapter/10.1007/978-3-319-49622-1_5"
-        },
-        {
           "title": "Desarrollo de una aplicación para la extracción de información de Twitter y análisis de sentimientos",
           "publisher": "ECORFAN",
           "year": "2015",
           "url": "https://www.ecorfan.org/bolivia/researchjournals/Tecnologias_de_la_Informacion/vol2num2/Tecnologias_de_la_Informacion_V2_N2_3.pdf"
+        },
+        {
+          "title": "Exploiting Data of the Twitter Social Network Using Sentiment Analysis",
+          "publisher": "Springer",
+          "year": "2017",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-319-49622-1_5"
         }
       ]
     }

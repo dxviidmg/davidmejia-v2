@@ -19,7 +19,7 @@ export function Footer() {
           <a href="https://github.com/dxviidmg" target="_blank" rel="noreferrer" title="GitHub">
             <BsGithub />
           </a>
-          <a href="mailto:davidmejia.05@hotmail.com" title="Email">
+          <a href="https://mail.google.com/mail/?view=cm&to=davidmejia.05@hotmail.com" title="Email">
             <BsEnvelope />
           </a>
           <a href="https://docs.google.com/document/d/1C4btdRFF8tGugFYtQSfJXbwd-4dGArih1LSq5xKJ5Fg/export?format=pdf" target="_blank" rel="noreferrer" title="Download CV">

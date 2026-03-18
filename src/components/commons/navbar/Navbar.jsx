@@ -10,9 +10,10 @@ const MENU = [
   { id: "about-me", key: "about" },
   { id: "experience", key: "experience" },
   { id: "skills", key: "skills" },
+  { id: "education", key: "education" },
+  { id: "publications", key: "publications" },
   { id: "certifications", key: "certifications" },
   { id: "projects", key: "projects" },
-  { id: "education", key: "education" },
 ];
 
 export function NavBar() {
