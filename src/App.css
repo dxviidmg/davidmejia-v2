@@ -55,6 +55,15 @@ h2 {
   border-color: #6c9bcf;
 }
 
+.dark-card-glow {
+  transition: box-shadow 300ms, border-color 300ms;
+}
+
+.dark-card-glow:hover {
+  border-color: #6c9bcf;
+  box-shadow: 0 10px 40px rgba(108, 155, 207, 0.35);
+}
+
 /* Column spacing */
 .col-gap {
   margin-bottom: 20px;
