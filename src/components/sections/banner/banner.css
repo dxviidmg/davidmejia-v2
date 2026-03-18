@@ -82,6 +82,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 300ms;
+    cursor: default;
+}
+
+.banner-stat:hover {
+    transform: scale(1.15);
+}
+
+.banner-stat:hover .banner-stat-label {
+    color: #eee;
 }
 
 .banner-stat-value {
@@ -95,4 +105,5 @@
     color: #aaa;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: color 300ms;
 }
