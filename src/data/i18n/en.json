@@ -11,12 +11,16 @@
     "greeting": "Welcome to my portfolio",
     "name": "Hi, I'm David Mejía",
     "cta": "View my projects",
-    "titles": ["Fullstack Developer", "Data Analyst", "Data Scientist Jr"]
+    "titles": ["Fullstack Developer", "Data Analyst", "Data Scientist Jr"],
+    "stats": [
+      { "value": "+9", "label": "Years of experience", "computed": "yearsOfExperience" },
+      { "value": "+20", "label": "Projects delivered", "computed": "projectsDelivered" }
+    ]
   },
   "about": {
     "title": "About me",
-    "intro": "Software Engineer with **9+ years of experience** delivering end-to-end web solutions. Specialized in **Python** and **Django** on the backend, with growing expertise in **React** on the frontend. I've led projects from conception to deployment across industries like **fintech**, **insurance**, **government** and **construction** — both as a **sole developer** and as part of **collaborative teams** where I never stop learning.",
-    "intro2": "My track record includes optimizing data imports by **50%**, refactoring a **140-table database** reducing it by **15%**, processing **10M+ records** in the cloud, and integrating payment gateways like **Stripe**, **MercadoPago** and **Nequi**. I've deployed on **AWS**, **GCP**, **Heroku** and **Render**, and have hands-on experience with **data analysis**, **web scraping** and **machine learning**. I bring ownership, speed and results."
+    "intro": "Software Engineer with **{years}+ years of experience** delivering end-to-end web solutions. Specialized in **Python** and **Django** on the backend, with growing expertise in **React** on the frontend. I've led projects from conception to deployment across industries like **fintech**, **insurance**, **government** and **construction** — both as a **sole developer** and as part of **collaborative teams** where I never stop learning.",
+    "intro2": "My track record includes optimizing data imports by **50%**, refactoring a **140-table database** reducing it by **15%**, processing **10M+ records** in the cloud, and integrating payment gateways like **Stripe**, **MercadoPago**, **Nequi** and **Pagatodo**. I've deployed on **AWS**, **GCP**, **Heroku** and **Render**, and have hands-on experience with **data analysis**, **web scraping** and **machine learning**. I bring ownership, speed and results."
   },
   "experience": {
     "title": "Experience",
@@ -30,6 +34,10 @@
           "Development of new features for the SIU educational payment platform",
           "Applied payment corrections in production databases",
           "Implementation and maintenance of payment gateways",
+          "Implementation of Nequi and Pagatodo payment gateways",
+          "Update of MercadoPago payment gateway",
+          "Implementation of SFTP connection to MercadoPago",
+          "Development of APIs",
           "Improved efficiency in payment-related ticket resolution"
         ]
       },

@@ -69,3 +69,30 @@
     background: #6c9bcf;
     color: black;
 }
+
+.banner-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.banner-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #6c9bcf;
+}
+
+.banner-stat-label {
+    font-size: 0.8rem;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

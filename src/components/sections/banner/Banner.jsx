@@ -4,6 +4,8 @@ import { BsLinkedin, BsGithub, BsFileText } from "react-icons/bs";
 import { ParticlesBackground } from "./Particles";
 import { NavBar } from "../../commons/navbar/Navbar";
 import { useLang } from "../../../utils/LangContext";
+import { yearsOfExperience } from "../../../utils/dateUtils";
+import projects from "../../../data/projects.json";
 import "./banner.css";
 
 export function Banner() {
@@ -62,6 +64,22 @@ export function Banner() {
               </a>
             </div>
             <a href="#projects" className="banner-cta banner-enter banner-enter-delay-4">{t.banner.cta}</a>
+            <div className="banner-stats banner-enter banner-enter-delay-4">
+              {t.banner.stats.map((s, i) => {
+                let value = s.value;
+                if (s.computed === "yearsOfExperience") value = `+${yearsOfExperience}`;
+                if (s.computed === "projectsDelivered") {
+                  const base = Math.floor(projects.length / 5) * 5;
+                  value = projects.length % 5 ? `+${base}` : `${base}`;
+                }
+                return (
+                  <div key={i} className="banner-stat">
+                    <span className="banner-stat-value">{value}</span>
+                    <span className="banner-stat-label">{s.label}</span>
+                  </div>
+                );
+              })}
+            </div>
           </Col>
         </Row>
       </Container>

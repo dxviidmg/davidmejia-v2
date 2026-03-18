@@ -216,6 +216,11 @@
             "color": "#e42386",
             "icon": "SiNequi",
             "periods": [{ "start": "2025-12", "end": "2026-03" }]
+        },
+        {
+            "name": "Pagatodo",
+            "color": "#00a651",
+            "periods": [{ "start": "2026-02", "end": "2026-03" }]
         }
     ]
 }
