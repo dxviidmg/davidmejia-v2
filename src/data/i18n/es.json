@@ -23,10 +23,10 @@
     "title": "Sobre mí",
     "intro": "Ingeniero de Software con **más de {years} años de experiencia** entregando soluciones web de principio a fin. Especializado en **Python** y **Django** en el backend, con experiencia creciente en **React** en el frontend. He liderado proyectos desde la concepción hasta el despliegue en industrias como **fintech**, **seguros**, **gobierno** y **construcción** — tanto como **único desarrollador** como en **equipos colaborativos**.",
     "highlights": [
-      "Optimicé importaciones de datos reduciendo tiempos de ejecución en un **50%**",
-      "Reduje un **15%** una base de datos de **140 tablas** — detecté redundancias, fusioné estructuras similares y depuré campos innecesarios para mejorar su calidad y rendimiento",
-      "Procesé más de **10M de registros** en la nube con pandas y MongoDB",
-      "Integré pasarelas de pago como **Stripe**, **MercadoPago**, **Nequi** y **Pagatodo**",
+      "Optimización de procesos de datos con reducciones de hasta **50%** en tiempos de ejecución",
+      "Reestructuración de bases de datos complejas mejorando calidad y rendimiento",
+      "Procesamiento de datos a gran escala en la nube (**10M+ registros**)",
+      "Integración de múltiples pasarelas de pago en plataformas web",
       "Despliegues en **AWS**, **GCP**, **Heroku** y **Render**"
     ],
     "closing": "Ofrezco responsabilidad, velocidad y resultados."
@@ -116,7 +116,7 @@
         ]
       },
       {
-        "position": "Asistente de Investigación",
+        "position": "Asistente de Investigación (Prácticas Profesionales)",
         "modality": "Híbrido",
         "lineOfBusiness": "Educación",
         "highlights": [

@@ -2,7 +2,7 @@
     {
         "name": "SIU",
         "description": "Maintenance of a web application for online payment",
-        "period": "2024-Currently",
+        "period": "2024-Present",
         "categories": [
             "Web"
         ],
@@ -53,7 +53,8 @@
                 "color": "cyan"
             },
             {
-                "name": "Github"
+                "name": "Github",
+                "color": "black"
             }
         ]
     },
@@ -65,8 +66,7 @@
             "Web"
         ],
         "company": {
-            "name": "Grupo Constructor Carsev",
-            "url": ""
+            "name": "Grupo Constructor Carsev"
         },
         "stack": [
             {
@@ -78,20 +78,20 @@
                 "color": "cyan"
             },
             {
-                "name": "Github"
+                "name": "Github",
+                "color": "black"
             }
         ]
     },
     {
-        "name": "Integration between a chatbot and clientify",
+        "name": "Chatbot-Clientify Integration",
         "description": "Integration between a chatbot and clientify",
         "period": "2023",
         "categories": [
             "Web"
         ],
         "company": {
-            "name": "Ixulabs",
-            "url": ""
+            "name": "Ixulabs"
         },
         "stack": [
             {
@@ -116,8 +116,7 @@
             "Web"
         ],
         "company": {
-            "name": "Ixulabs",
-            "url": ""
+            "name": "Ixulabs"
         },
         "stack": [
             {
@@ -150,8 +149,7 @@
             "Web"
         ],
         "company": {
-            "name": "Digy Networks",
-            "url": ""
+            "name": "Digy Networks"
         },
         "stack": [
             {
@@ -163,7 +161,8 @@
                 "color": "cyan"
             },
             {
-                "name": "Github"
+                "name": "Github",
+                "color": "black"
             }
         ]
     },
@@ -175,8 +174,7 @@
             "Web"
         ],
         "company": {
-            "name": "Digy Networks",
-            "url": ""
+            "name": "Digy Networks"
         },
         "stack": [
             {
@@ -201,7 +199,7 @@
             "Web"
         ],
         "company": {
-            "name": "CLoud Ware",
+            "name": "Cloud Ware",
             "url": "https://www.cloudwaremx.com/"
         },
         "stack": [
@@ -222,20 +220,20 @@
                 "color": "purple"
             },
             {
-                "name": "Github"
+                "name": "Github",
+                "color": "black"
             }
         ]
     },
     {
         "name": "Vending machines management",
-        "description": "Development of a web appication for vending machines management",
+        "description": "Development of a web application for vending machines management",
         "period": "2022",
         "categories": [
             "Web"
         ],
         "company": {
-            "name": "Genone Tech",
-            "url": "https://citnova.hidalgo.gob.mx/"
+            "name": "Genone Tech"
         },
         "stack": [
             {
@@ -272,7 +270,8 @@
                 "color": "red"
             },
             {
-                "name": "Github"
+                "name": "Github",
+                "color": "black"
             }
         ]
     },
@@ -311,8 +310,8 @@
         ]
     },
     {
-        "name": "Update scripts for car download",
-        "description": "I improved 10 scripts to dowloand data cars from diferent compamies",
+        "name": "Car data download scripts",
+        "description": "I improved 10 scripts to download data cars from different companies",
         "period": "2021-2022",
         "categories": [
             "Web"
@@ -601,13 +600,14 @@
                 "color": "orange"
             },
             {
-                "name": "Github"
+                "name": "Github",
+                "color": "black"
             }
         ]
     },
     {
         "name": "Public funds management",
-        "description": "Development of a web appication for public funds management",
+        "description": "Development of a web application for public funds management",
         "period": "2016-17",
         "categories": [
             "Web"
@@ -630,7 +630,8 @@
                 "color": "blue"
             },
             {
-                "name": "Github"
+                "name": "Github",
+                "color": "black"
             }
         ]
     },
@@ -642,8 +643,7 @@
             "Web"
         ],
         "company": {
-            "name": "Independent",
-            "url": ""
+            "name": "Independent"
         },
         "stack": [
             {
@@ -664,7 +664,8 @@
                 "color": "orange"
             },
             {
-                "name": "Github"
+                "name": "Github",
+                "color": "black"
             }
         ]
     }

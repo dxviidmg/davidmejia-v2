@@ -23,11 +23,11 @@
     "title": "About me",
     "intro": "Software Engineer with **{years}+ years of experience** delivering end-to-end web solutions. Specialized in **Python** and **Django** on the backend, with growing expertise in **React** on the frontend. I've led projects from conception to deployment across industries like **fintech**, **insurance**, **government** and **construction** — both as a **sole developer** and as part of **collaborative teams**.",
     "highlights": [
-      "Optimized data imports reducing execution time by **50%**",
-      "Reduced a **140-table** database by **15%** — detected redundancies, merged similar structures and cleaned up unnecessary fields to improve quality and performance",
-      "Processed **10M+ records** in the cloud with pandas and MongoDB",
-      "Integrated payment gateways like **Stripe**, **MercadoPago**, **Nequi** and **Pagatodo**",
-      "Deployed on **AWS**, **GCP**, **Heroku** and **Render**"
+      "Data process optimization with up to **50%** reduction in execution time",
+      "Restructuring of complex databases improving quality and performance",
+      "Large-scale data processing in the cloud (**10M+ records**)",
+      "Integration of multiple payment gateways into web platforms",
+      "Deployments on **AWS**, **GCP**, **Heroku** and **Render**"
     ],
     "closing": "I bring ownership, speed and results."
   },
@@ -116,7 +116,7 @@
         ]
       },
       {
-        "position": "Researcher Assistant",
+        "position": "Researcher Assistant (Professional Internship)",
         "modality": "Hybrid",
         "lineOfBusiness": "Education",
         "highlights": [

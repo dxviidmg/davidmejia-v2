@@ -3,7 +3,7 @@
         {
             "name": "Python",
             "color": "blue",
-            "periods": [{ "start": "2014-03", "end": null }]
+            "periods": [{ "start": "2016-11", "end": null }]
         },
         {
             "name": "Javascript",
@@ -68,7 +68,7 @@
         {
             "name": "Mongodb",
             "color": "green",
-            "periods": [{ "start": "2014-02", "end": "2014-08" }]
+            "periods": [{ "start": "2021-01", "end": "2021-03" }]
         }
     ],
     "Apis": [
@@ -178,12 +178,6 @@
             "name": "Selenium",
             "color": "green",
             "periods": [{ "start": "2019-05", "end": "2019-11" }]
-        },
-        {
-            "name": "Tweepy",
-            "icon": "SiTwitter",
-            "color": "blue",
-            "periods": [{ "start": "2014-02", "end": "2014-05" }]
         }
     ],
     "Data visualization": [

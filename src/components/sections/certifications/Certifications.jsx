@@ -10,7 +10,7 @@ const CertCard = ({ cert, index }) => {
     <Col sm={6} md={3} className="col-gap" ref={ref}>
       <div className={`dark-card dark-card-hover cert-card fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${index * 0.1}s` }}>
         <h5 className="cert-name">{cert.name}</h5>
-        <p className="cert-institution">{cert.instution}</p>
+        <p className="cert-institution">{cert.institution}</p>
         <p className="cert-date">{cert.expedition}</p>
         {cert.expiration && <p className="cert-meta">Expires: {cert.expiration}</p>}
         {cert.id && <p className="cert-meta">ID: {cert.id}</p>}
