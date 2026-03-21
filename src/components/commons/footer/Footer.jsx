@@ -11,18 +11,18 @@ export function Footer() {
     <footer id="footer" className="section-dark">
       <Container className="text-center" ref={ref}>
         <p className={`footer-contact fade-up ${visible ? "visible" : ""}`}>{t.footer.contact}</p>
-        <a href="https://wa.me/525561652599" target="_blank" rel="noreferrer" className={`footer-cta fade-up stagger-1 ${visible ? "visible" : ""}`}>{t.footer.cta}</a>
+        <a href={`https://wa.me/${process.env.REACT_APP_WHATSAPP}`} target="_blank" rel="noreferrer" className={`footer-cta fade-up stagger-1 ${visible ? "visible" : ""}`}>{t.footer.cta}</a>
         <div className={`footer-icons fade-up stagger-2 ${visible ? "visible" : ""}`}>
-          <a href="https://www.linkedin.com/in/david-mejia-guzman/" target="_blank" rel="noreferrer" title="LinkedIn">
+          <a href={process.env.REACT_APP_LINKEDIN} target="_blank" rel="noreferrer" title="LinkedIn">
             <BsLinkedin />
           </a>
-          <a href="https://github.com/dxviidmg" target="_blank" rel="noreferrer" title="GitHub">
+          <a href={process.env.REACT_APP_GITHUB} target="_blank" rel="noreferrer" title="GitHub">
             <BsGithub />
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&to=davidmejia.05@hotmail.com" title="Email">
+          <a href={`https://mail.google.com/mail/?view=cm&to=${process.env.REACT_APP_EMAIL}`} title="Email">
             <BsEnvelope />
           </a>
-          <a href="https://docs.google.com/document/d/1C4btdRFF8tGugFYtQSfJXbwd-4dGArih1LSq5xKJ5Fg/export?format=pdf" target="_blank" rel="noreferrer" title="Download CV">
+          <a href={process.env.REACT_APP_CV_URL} target="_blank" rel="noreferrer" title="Download CV">
             <BsFileText />
           </a>
         </div>

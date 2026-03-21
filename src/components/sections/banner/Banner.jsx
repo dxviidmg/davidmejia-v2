@@ -81,16 +81,16 @@ export function Banner() {
               <span className="cursor">|</span>
             </h2>
             <div className="banner-icons banner-enter banner-enter-delay-3">
-              <a href="https://www.linkedin.com/in/david-mejia-guzman/" target="_blank" rel="noreferrer" title="LinkedIn">
+              <a href={process.env.REACT_APP_LINKEDIN} target="_blank" rel="noreferrer" title="LinkedIn">
                 <BsLinkedin className="icon" size={40} />
               </a>
-              <a href="https://github.com/dxviidmg" target="_blank" rel="noreferrer" title="GitHub">
+              <a href={process.env.REACT_APP_GITHUB} target="_blank" rel="noreferrer" title="GitHub">
                 <BsGithub className="icon" size={40} />
               </a>
-              <a href="https://mail.google.com/mail/?view=cm&to=davidmejia.05@hotmail.com" title="Email">
+              <a href={`https://mail.google.com/mail/?view=cm&to=${process.env.REACT_APP_EMAIL}`} title="Email">
                 <BsEnvelope className="icon" size={40} />
               </a>
-              <a href="https://docs.google.com/document/d/1C4btdRFF8tGugFYtQSfJXbwd-4dGArih1LSq5xKJ5Fg/export?format=pdf" target="_blank" rel="noreferrer" title="Download CV">
+              <a href={process.env.REACT_APP_CV_URL} target="_blank" rel="noreferrer" title="Download CV">
                 <BsFileText className="icon" size={40} />
               </a>
             </div>
