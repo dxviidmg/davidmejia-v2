@@ -144,7 +144,20 @@
     ]
   },
   "skills": {
-    "title": "Habilidades"
+    "title": "Habilidades",
+    "categories": {
+      "Languages": "Lenguajes",
+      "Frameworks": "Frameworks",
+      "UI": "UI",
+      "Databases": "Bases de datos",
+      "Apis": "APIs",
+      "Version Control": "Control de versiones",
+      "Cloud": "Nube",
+      "Distributed tasks": "Tareas distribuidas",
+      "Data": "Datos",
+      "Payment platform": "Plataformas de pago",
+      "Tools": "Herramientas"
+    }
   },
   "certifications": {
     "title": "Certificaciones"
