@@ -12,7 +12,7 @@ const Skills = lazy(() => import('./components/sections/skills/Skills').then(m =
 const Projects = lazy(() => import('./components/sections/projects/Projects').then(m => ({ default: m.Projects })));
 const Certifications = lazy(() => import('./components/sections/certifications/Certifications').then(m => ({ default: m.Certifications })));
 const Education = lazy(() => import('./components/sections/education/Education').then(m => ({ default: m.Education })));
-const Publications = lazy(() => import('./components/sections/publications/Publications').then(m => ({ default: m.Publications })));
+const Services = lazy(() => import('./components/sections/services/Services').then(m => ({ default: m.Services })));
 const Footer = lazy(() => import('./components/commons/footer/Footer').then(m => ({ default: m.Footer })));
 
 function App() {
@@ -23,17 +23,17 @@ function App() {
         <Suspense fallback={null}>
           <About />
           <hr className="section-divider" />
+          <Services />
+          <hr className="section-divider" />
           <Experience />
           <hr className="section-divider" />
           <Skills />
           <hr className="section-divider" />
+          <Projects />
+          <hr className="section-divider" />
           <Education />
           <hr className="section-divider" />
-          <Publications />
-          <hr className="section-divider" />
           <Certifications />
-          <hr className="section-divider" />
-          <Projects />
           <hr className="section-divider" />
           <Footer />
         </Suspense>

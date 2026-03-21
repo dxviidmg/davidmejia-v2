@@ -21,7 +21,7 @@ export const Certifications = () => {
   const { t } = useLang();
   const [ref, visible] = useInView();
   return (
-    <section id="certifications" className="section-dark paddings">
+    <section id="certifications" className="section-light paddings">
       <Container>
         <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.certifications.title}</h2>
         <Row className="justify-content-center">

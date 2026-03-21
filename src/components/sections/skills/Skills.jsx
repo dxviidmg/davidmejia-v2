@@ -41,7 +41,7 @@ export const Skills = () => {
   const { t } = useLang();
   const [ref, visible] = useInView();
   return (
-    <section className="section-light paddings" id="skills">
+    <section className="section-dark paddings" id="skills">
       <Container>
         <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.skills.title}</h2>
         <Row>

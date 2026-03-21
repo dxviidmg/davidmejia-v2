@@ -42,7 +42,7 @@ export const Experience = () => {
   const { t } = useLang();
   const [ref, visible] = useInView();
   return (
-    <section id="experience" className="section-dark paddings">
+    <section id="experience" className="section-light paddings">
       <Container>
         <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.experience.title}</h2>
         <div className="timeline">

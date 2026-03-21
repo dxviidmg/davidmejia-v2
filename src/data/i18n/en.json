@@ -7,7 +7,7 @@
     "certifications": "Certifications",
     "projects": "Projects",
     "education": "Education",
-    "publications": "Publications"
+    "services": "Services"
   },
   "banner": {
     "greeting": "Welcome to my portfolio",
@@ -278,22 +278,32 @@
         "institution": "TecNM / Plenumsoft",
         "period": "Nov 2018 - May 2019"
       }
-    ],
-    "papers": {
-      "title": "Publications",
-      "items": [
-        {
-          "title": "Desarrollo de una aplicación para la extracción de información de Twitter y análisis de sentimientos",
-          "publisher": "ECORFAN",
-          "year": "2015"
-        },
-        {
-          "title": "Exploiting Data of the Twitter Social Network Using Sentiment Analysis",
-          "publisher": "Springer",
-          "year": "2017"
-        }
-      ]
-    }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "icon": "FaCode",
+        "name": "Full Stack Web Development",
+        "description": "End-to-end web applications with Python, Django and React"
+      },
+      {
+        "icon": "FaServer",
+        "name": "APIs & Microservices",
+        "description": "REST API design and microservices architecture"
+      },
+      {
+        "icon": "FaDatabase",
+        "name": "Databases",
+        "description": "Database design, optimization and migration"
+      },
+      {
+        "icon": "FaCloud",
+        "name": "Cloud Deployment",
+        "description": "Setup and deployment on AWS, GCP, Heroku and Render"
+      }
+    ]
   },
   "footer": {
     "contact": "Got a project in mind? Let's talk.",
