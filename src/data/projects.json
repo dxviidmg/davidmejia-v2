@@ -1,6 +1,6 @@
 [
     {
-        "name": "SIU",
+        "name": "University management platform",
         "description": "Maintenance of a web application for online payment",
         "period": "2024-Present",
         "categories": [
@@ -8,7 +8,7 @@
         ],
         "company": {
             "name": "UTEL",
-            "url": "https://siu-utl.scalahed.com/"
+            "url": ""
         },
         "stack": [
             {
@@ -59,7 +59,7 @@
         ]
     },
     {
-        "name": "TEASIB v2",
+        "name": "School water fountain management v2",
         "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
         "period": "2023-24",
         "categories": [
@@ -336,7 +336,7 @@
         ]
     },
     {
-        "name": "SAAM",
+        "name": "Insurance platform",
         "description": "Maintenance of a web application for insurance management",
         "period": "2019-2022",
         "categories": [
@@ -413,7 +413,7 @@
         ]
     },
     {
-        "name": "Database refactoring for SAAM",
+        "name": "Database refactoring for insurance platform",
         "description": "Modify the structure of the database in order to improve quality and performance",
         "period": "2021",
         "categories": [
@@ -456,7 +456,7 @@
         ]
     },
     {
-        "name": "Data import for SAAM",
+        "name": "Data import for insurance platform",
         "description": "Creation of codebase for data importing",
         "period": "2019-2021",
         "categories": [
@@ -486,7 +486,7 @@
         ]
     },
     {
-        "name": "Report-service for SAAM",
+        "name": "Report-service for insurance platform",
         "description": "Creation of a microservice for improvement the creation of reports",
         "period": "2020",
         "categories": [
@@ -572,7 +572,7 @@
         ]
     },
     {
-        "name": "TEASIB",
+        "name": "School water fountain management",
         "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
         "period": "2017-18",
         "categories": [
