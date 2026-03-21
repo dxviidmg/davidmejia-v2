@@ -2,49 +2,49 @@
     {
         "company": { "name": "UTEL", "url": "https://utel.edu.mx/" },
         "period": "February 2024 - Present",
-        "location": "Naucalpan, EdoMex",
+        "location": "México",
         "country": "MX"
     },
     {
         "company": { "name": "Ixulabs", "url": "https://ixulabs.com/" },
         "period": "June 2023 - January 2024",
-        "location": "CDMX",
+        "location": "México",
         "country": "MX"
     },
     {
         "company": { "name": "GenOne Technologies LLC", "url": "https://www.cto.genone.tech/" },
         "period": "March 2022 - October 2022",
-        "location": "Boston, Ma.",
+        "location": "USA",
         "country": "US"
     },
     {
         "company": { "name": "Ixulabs", "url": "https://ixulabs.com/" },
         "period": "June 2019 - February 2022",
-        "location": "CDMX",
+        "location": "México",
         "country": "MX"
     },
     {
         "company": { "name": "Plenumsoft", "url": "https://www.plenumsoft.com.mx/" },
         "period": "November 2018 - May 2019",
-        "location": "Merida, Yuc.",
+        "location": "México",
         "country": "MX"
     },
     {
         "company": { "name": "Grupo Constructor CARSEV", "url": "https://grupocarsev.com/" },
         "period": "May 2017 - October 2018",
-        "location": "Pachuca, Hgo.",
+        "location": "México",
         "country": "MX"
     },
     {
         "company": { "name": "Gobierno del Estado de Hidalgo", "url": "" },
         "period": "November 2016 - April 2017",
-        "location": "Pachuca, Hgo.",
+        "location": "México",
         "country": "MX"
     },
     {
         "company": { "name": "ITESM-CEM", "url": "http://www.cem.itesm.mx/" },
         "period": "February 2014 - August 2014",
-        "location": "Atizapan, EdoMex.",
+        "location": "México",
         "country": "MX"
     }
 ]

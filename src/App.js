@@ -38,7 +38,7 @@ function App() {
           <Footer />
         </Suspense>
         <a
-          href="https://wa.me/525561652599"
+          href={`https://wa.me/${process.env.REACT_APP_WHATSAPP}`}
           target="_blank"
           rel="noreferrer"
           className="whatsapp-float"
