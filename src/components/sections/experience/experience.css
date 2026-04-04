@@ -1,7 +1,7 @@
 .timeline {
     position: relative;
     padding-left: 30px;
-    border-left: 2px solid #555;
+    border-left: 2px solid #ccc;
 }
 
 .timeline-item {
@@ -15,15 +15,16 @@
     top: 5px;
     width: 14px;
     height: 14px;
-    background: white;
+    background: #1a1a1a;
     border-radius: 50%;
-    border: 2px solid #555;
+    border: 2px solid #ccc;
 }
 
 .timeline-card {
-    background: #333;
+    background: #1a1a1a;
     border-radius: 8px;
     padding: 20px;
+    color: white;
 }
 
 .timeline-card h3 {

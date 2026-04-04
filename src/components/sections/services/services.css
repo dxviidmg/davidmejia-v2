@@ -1,0 +1,20 @@
+.service-card {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #6c9bcf;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 0.85rem;
+  color: #aaa;
+}

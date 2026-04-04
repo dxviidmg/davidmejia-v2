@@ -3,12 +3,22 @@
         {
             "name": "Python",
             "color": "blue",
-            "periods": [{ "start": "2016-11", "end": null }]
+            "periods": [
+                {
+                    "start": "2016-11",
+                    "end": null
+                }
+            ]
         },
         {
             "name": "Javascript",
             "color": "yellow",
-            "periods": [{ "start": "2024-01", "end": null }],
+            "periods": [
+                {
+                    "start": "2024-01",
+                    "end": null
+                }
+            ],
             "learning_currently": true
         }
     ],
@@ -16,29 +26,22 @@
         {
             "name": "Django",
             "color": "green",
-            "periods": [{ "start": "2016-07", "end": null }]
+            "periods": [
+                {
+                    "start": "2016-07",
+                    "end": null
+                }
+            ]
         },
         {
             "name": "React",
             "color": "cyan",
-            "periods": [{ "start": "2024-01", "end": null }],
-            "learning_currently": true
-        },
-        {
-            "name": "Bootstrap",
-            "color": "purple",
-            "icon": "SiBootstrap",
             "periods": [
-                { "start": "2017-05", "end": "2018-11" },
-                { "start": "2023-01", "end": "2023-06" },
-                { "start": "2025-01", "end": "2025-12" }
-            ]
-        },
-        {
-            "name": "MUI",
-            "color": "#007FFF",
-            "icon": "SiMui",
-            "periods": [{ "start": "2026-02", "end": null }],
+                {
+                    "start": "2024-01",
+                    "end": null
+                }
+            ],
             "learning_currently": true
         }
     ],
@@ -47,57 +50,35 @@
             "name": "Postgresql",
             "color": "blue",
             "periods": [
-                { "start": "2017-05", "end": "2018-11" },
-                { "start": "2019-05", "end": "2024-01" }
+                {
+                    "start": "2017-05",
+                    "end": "2018-11"
+                },
+                {
+                    "start": "2019-05",
+                    "end": "2024-01"
+                }
             ]
         },
         {
             "name": "Mysql",
             "color": "green",
-            "periods": [{ "start": "2024-01", "end": null }]
-        },
-        {
-            "name": "SQL",
-            "color": "gray",
-            "icon": "SiMysql",
             "periods": [
-                { "start": "2019-05", "end": "2024-01" },
-                { "start": "2024-01", "end": null }
+                {
+                    "start": "2024-01",
+                    "end": null
+                }
             ]
         },
         {
             "name": "Mongodb",
             "color": "green",
-            "periods": [{ "start": "2021-01", "end": "2021-03" }]
-        }
-    ],
-    "Apis": [
-        {
-            "name": "Rest",
-            "color": "gray",
-            "periods": [{ "start": "2019-05", "end": null }]
-        },
-        {
-            "name": "Graphql",
-            "color": "pink",
-            "periods": [{ "start": "2023-06", "end": "2023-07" }]
-        }
-    ],
-    "Version Control": [
-        {
-            "name": "Github",
-            "periods": [{ "start": "2016-07", "end": null }]
-        },
-        {
-            "name": "Bitbucket",
-            "color": "blue",
-            "periods": [{ "start": "2019-05", "end": "2024-01" }]
-        },
-        {
-            "name": "Gitlab",
-            "color": "orange",
-            "periods": [{ "start": "2025-03", "end": null }],
-            "learning_currently": true
+            "periods": [
+                {
+                    "start": "2021-01",
+                    "end": "2021-03"
+                }
+            ]
         }
     ],
     "Cloud": [
@@ -106,51 +87,126 @@
             "icon": "SiAmazonaws",
             "color": "orange",
             "periods": [
-                { "start": "2017-05", "end": "2018-11" },
-                { "start": "2019-05", "end": "2024-01" }
+                {
+                    "start": "2017-05",
+                    "end": "2018-11"
+                },
+                {
+                    "start": "2019-05",
+                    "end": "2024-01"
+                }
             ]
         },
         {
             "name": "GCP",
             "icon": "SiGooglecloud",
             "color": "blue",
-            "periods": [{ "start": "2022-03", "end": "2022-04" }]
+            "periods": [
+                {
+                    "start": "2022-03",
+                    "end": "2022-04"
+                }
+            ]
         },
         {
             "name": "Heroku",
             "color": "purple",
             "periods": [
-                { "start": "2022-03", "end": "2022-10" },
-                { "start": "2024-01", "end": null }
+                {
+                    "start": "2022-03",
+                    "end": "2022-10"
+                },
+                {
+                    "start": "2024-01",
+                    "end": null
+                }
             ]
         },
         {
             "name": "Render",
             "color": "#46e3b7",
             "icon": "SiRender",
-            "periods": [{ "start": "2025-08", "end": null }]
+            "periods": [
+                {
+                    "start": "2025-08",
+                    "end": null
+                }
+            ]
         }
     ],
-    "For data science": [
+    "Apis": [
         {
-            "name": "Pandas",
+            "name": "Rest",
+            "color": "gray",
             "periods": [
-                { "start": "2018-11", "end": "2019-05" },
-                { "start": "2019-05", "end": "2020-01" }
+                {
+                    "start": "2019-05",
+                    "end": null
+                }
             ]
         },
         {
-            "name": "Jupyter",
+            "name": "Graphql",
+            "color": "pink",
+            "periods": [
+                {
+                    "start": "2023-06",
+                    "end": "2023-07"
+                }
+            ]
+        },
+        {
+            "name": "Websockets",
+            "color": "purple",
+            "icon": "SiSocketdotio",
+            "periods": [
+                {
+                    "start": "2022-03",
+                    "end": "2022-10"
+                }
+            ]
+        }
+    ],
+    "Version Control": [
+        {
+            "name": "Git",
             "color": "orange",
             "periods": [
-                { "start": "2018-11", "end": "2019-05" },
-                { "start": "2019-05", "end": "2020-01" }
+                {
+                    "start": "2016-07",
+                    "end": null
+                }
             ]
         },
         {
-            "name": "Dataiku",
-            "color": "#00b6aa",
-            "periods": [{ "start": "2019-01", "end": "2019-02" }]
+            "name": "Github",
+            "periods": [
+                {
+                    "start": "2016-07",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "Bitbucket",
+            "color": "blue",
+            "periods": [
+                {
+                    "start": "2019-05",
+                    "end": "2024-01"
+                }
+            ]
+        },
+        {
+            "name": "Gitlab",
+            "color": "orange",
+            "periods": [
+                {
+                    "start": "2025-03",
+                    "end": null
+                }
+            ],
+            "learning_currently": true
         }
     ],
     "Distributed tasks": [
@@ -158,63 +214,226 @@
             "name": "Celery",
             "color": "green",
             "periods": [
-                { "start": "2022-03", "end": "2022-10" },
-                { "start": "2023-06", "end": "2024-01" },
-                { "start": "2024-01", "end": null }
+                {
+                    "start": "2022-03",
+                    "end": "2022-10"
+                },
+                {
+                    "start": "2023-06",
+                    "end": "2024-01"
+                },
+                {
+                    "start": "2024-01",
+                    "end": null
+                }
             ]
         },
         {
             "name": "Redis",
             "color": "red",
             "periods": [
-                { "start": "2022-03", "end": "2022-10" },
-                { "start": "2023-06", "end": "2024-01" },
-                { "start": "2024-01", "end": null }
+                {
+                    "start": "2022-03",
+                    "end": "2022-10"
+                },
+                {
+                    "start": "2023-06",
+                    "end": "2024-01"
+                },
+                {
+                    "start": "2024-01",
+                    "end": null
+                }
             ]
-        }
-    ],
-    "Scraping": [
-        {
-            "name": "Selenium",
-            "color": "green",
-            "periods": [{ "start": "2019-05", "end": "2019-11" }]
-        }
-    ],
-    "Data visualization": [
-        {
-            "name": "Matplotlib",
-            "icon": "SiPython",
-            "color": "blue",
-            "periods": [{ "start": "2019-05", "end": "2019-11" }]
-        },
-        {
-            "name": "Chart.js",
-            "icon": "SiChartdotjs",
-            "color": "#fe777b",
-            "periods": [{ "start": "2023-06", "end": "2023-12" }]
         }
     ],
     "Payment platform": [
         {
             "name": "Stripe",
             "color": "darkblue",
-            "periods": [{ "start": "2022-06", "end": "2022-07" }]
+            "periods": [
+                {
+                    "start": "2022-06",
+                    "end": "2022-07"
+                }
+            ]
         },
         {
             "name": "Mercadopago",
             "color": "blue",
-            "periods": [{ "start": "2026-02", "end": "2026-03" }]
+            "periods": [
+                {
+                    "start": "2026-02",
+                    "end": "2026-03"
+                }
+            ]
         },
         {
             "name": "Nequi",
             "color": "#e42386",
             "icon": "SiNequi",
-            "periods": [{ "start": "2025-12", "end": "2026-03" }]
+            "periods": [
+                {
+                    "start": "2025-12",
+                    "end": "2026-03"
+                }
+            ]
         },
         {
             "name": "Pagatodo",
             "color": "#00a651",
-            "periods": [{ "start": "2026-02", "end": "2026-03" }]
+            "periods": [
+                {
+                    "start": "2026-02",
+                    "end": "2026-03"
+                }
+            ]
+        }
+    ],
+    "UI": [
+        {
+            "name": "Bootstrap",
+            "color": "purple",
+            "icon": "SiBootstrap",
+            "periods": [
+                {
+                    "start": "2017-05",
+                    "end": "2018-11"
+                },
+                {
+                    "start": "2023-01",
+                    "end": "2023-06"
+                },
+                {
+                    "start": "2025-01",
+                    "end": "2025-12"
+                }
+            ]
+        },
+        {
+            "name": "MUI",
+            "color": "#007FFF",
+            "icon": "SiMui",
+            "periods": [
+                {
+                    "start": "2026-02",
+                    "end": null
+                }
+            ],
+            "learning_currently": true
+        }
+    ],
+    "Data": [
+        {
+            "name": "Pandas",
+            "periods": [
+                {
+                    "start": "2018-11",
+                    "end": "2019-05"
+                },
+                {
+                    "start": "2019-05",
+                    "end": "2020-01"
+                }
+            ]
+        },
+        {
+            "name": "Jupyter",
+            "color": "orange",
+            "periods": [
+                {
+                    "start": "2018-11",
+                    "end": "2019-05"
+                },
+                {
+                    "start": "2019-05",
+                    "end": "2020-01"
+                }
+            ]
+        },
+        {
+            "name": "Dataiku",
+            "color": "#00b6aa",
+            "periods": [
+                {
+                    "start": "2019-01",
+                    "end": "2019-02"
+                }
+            ]
+        },
+        {
+            "name": "Selenium",
+            "color": "green",
+            "periods": [
+                {
+                    "start": "2019-05",
+                    "end": "2019-11"
+                }
+            ]
+        },
+        {
+            "name": "Matplotlib",
+            "icon": "SiPython",
+            "color": "blue",
+            "periods": [
+                {
+                    "start": "2019-05",
+                    "end": "2019-11"
+                }
+            ]
+        },
+        {
+            "name": "Chart.js",
+            "icon": "SiChartdotjs",
+            "color": "#fe777b",
+            "periods": [
+                {
+                    "start": "2023-06",
+                    "end": "2023-12"
+                }
+            ]
+        }
+    ],
+    "Tools": [
+        {
+            "name": "Linux",
+            "color": "yellow",
+            "periods": [
+                {
+                    "start": "2016-11",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "Postman",
+            "color": "orange",
+            "periods": [
+                {
+                    "start": "2019-06",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "Jira",
+            "color": "blue",
+            "periods": [
+                {
+                    "start": "2024-02",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "Rasa",
+            "color": "purple",
+            "periods": [
+                {
+                    "start": "2023-06",
+                    "end": "2023-07"
+                }
+            ]
         }
     ]
 }

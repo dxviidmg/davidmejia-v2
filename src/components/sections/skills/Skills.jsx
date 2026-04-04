@@ -8,7 +8,7 @@ import "./skills.css";
 
 const MAX_MONTHS = 12 * 10;
 
-const SkillCard = ({ category, items, index }) => {
+const SkillCard = ({ category, label, items, index }) => {
   const [ref, visible] = useInView();
   const sorted = [...items].sort(
     (a, b) => calcExperience(b.periods).months - calcExperience(a.periods).months
@@ -16,7 +16,7 @@ const SkillCard = ({ category, items, index }) => {
   return (
     <Col xs={12} sm={6} md={4} className="col-gap" ref={ref}>
       <div className={`dark-card dark-card-glow fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${index * 0.1}s` }}>
-        <h5 className="skill-card-title">{category}</h5>
+        <h5 className="skill-card-title">{label}</h5>
         {sorted.map((skill, i) => {
           const { label, months } = calcExperience(skill.periods);
           return (
@@ -41,12 +41,12 @@ export const Skills = () => {
   const { t } = useLang();
   const [ref, visible] = useInView();
   return (
-    <section className="section-light paddings" id="skills">
+    <section className="section-dark paddings" id="skills">
       <Container>
         <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.skills.title}</h2>
         <Row>
           {Object.entries(skills).map(([category, items], i) => (
-            <SkillCard key={category} category={category} items={items} index={i} />
+            <SkillCard key={category} category={category} label={t.skills.categories[category] || category} items={items} index={i} />
           ))}
         </Row>
       </Container>

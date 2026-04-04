@@ -8,12 +8,12 @@ import "./navbar.css";
 const MENU = [
   { id: "banner", key: "home" },
   { id: "about-me", key: "about" },
+  { id: "services", key: "services" },
   { id: "experience", key: "experience" },
   { id: "skills", key: "skills" },
-  { id: "education", key: "education" },
-  { id: "publications", key: "publications" },
-  { id: "certifications", key: "certifications" },
   { id: "projects", key: "projects" },
+  { id: "education", key: "education" },
+  { id: "certifications", key: "certifications" },
 ];
 
 export function NavBar() {
