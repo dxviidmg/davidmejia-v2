@@ -1,11 +1,14 @@
 import * as Icons from "react-icons/si";
-import { BsFillGearFill } from "react-icons/bs";
+import { BsFillGearFill, BsCashCoin } from "react-icons/bs";
 
 
 export const GetCustomIcon = ({ name, color }) => {
   let Icon = Icons[name];
-  if (name==='SiRest'){
+  if (name==='SiAPIREST' || name==='SiRest'){
     Icon = BsFillGearFill
+  }
+  if (name==='BsCashCoin'){
+    Icon = BsCashCoin
   }
   if (!Icon || name === undefined) {
     Icon = Icons["SiConventionalcommits"];
