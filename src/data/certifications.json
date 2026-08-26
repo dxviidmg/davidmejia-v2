@@ -1,5 +1,10 @@
 [
     {
+        "name": "RESTful API with Python using Django REST Framework",
+        "institution": "Udemy",
+        "expedition": "2021"
+    },
+    {
         "name": "Python for Artificial Intelligence",
         "institution": "Actumlogos",
         "expedition": "June 2020"

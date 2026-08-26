@@ -15,7 +15,9 @@
     "cta": "Ver mis proyectos",
     "titles": [
       "Ingeniero de Software",
-      "Desarrollador Fullstack",
+      "Desarrollador Full Stack",
+      "Ingeniero Backend",
+      "Desarrollador Python/Django",
       "Analista de Datos"
     ],
     "stats": [
@@ -38,12 +40,12 @@
   },
   "about": {
     "title": "Sobre mí",
-    "intro": "Ingeniero de Software con **más de {years} años de experiencia** entregando soluciones web de principio a fin. Especializado en **Python** y **Django** en el backend, con experiencia creciente en **React** en el frontend. He liderado proyectos desde la concepción hasta el despliegue en industrias como **fintech**, **seguros**, **gobierno** y **construcción** — tanto como **único desarrollador** como en **equipos colaborativos**.",
+    "intro": "Ingeniero de Software con **más de {years} años de experiencia** entregando soluciones web de principio a fin. Especializado en **Python** y **Django** en el backend, con experiencia creciente en **React** en el frontend. He liderado proyectos desde la concepción hasta el despliegue en industrias como **educación**, **seguros**, **gobierno** y **construcción** — tanto como **único desarrollador** como en **equipos colaborativos**.",
     "highlights": [
-      "Optimización de procesos de datos con reducciones de hasta **50%** en tiempos de ejecución",
+      "Optimización de ETL con reducciones de hasta **50%** en tiempos de ejecución",
       "Reestructuración de bases de datos complejas mejorando calidad y rendimiento",
       "Procesamiento de datos a gran escala en la nube (**10M+ registros**)",
-      "Integración de múltiples pasarelas de pago en plataformas web",
+      "Integración de **5 pasarelas de pago** y **2 bancos** en plataformas web (Mercado Pago, PayU, Nequi, Efecty, Stripe, Banco Pichincha, Pagatodo)",
       "Despliegues en **AWS**, **GCP**, **Heroku** y **Render**"
     ],
     "closing": "Ofrezco responsabilidad, velocidad y resultados."
@@ -53,16 +55,17 @@
     "at": "en",
     "positions": [
       {
-        "position": "Desarrollador Web Full Stack",
+        "position": "Desarrollador Web Backend",
         "modality": "Remoto",
-        "lineOfBusiness": "Educación",
+        "lineOfBusiness": "Finanzas / Educación",
         "highlights": [
-          "Desarrollo de nuevas funcionalidades para la plataforma educativa de pagos",
-          "Aplicación de correcciones de pagos",
-          "Implementación y actualización de pasarelas de pago: Nequi, Pagatodo y MercadoPago",
-          "Integración de conexión SFTP con MercadoPago para envío de archivos",
-          "Desarrollo de APIs REST para consumo interno y externo",
-          "Agilicé la resolución de tickets de pagos"
+          "Desarrollo y mantenimiento de los módulos financieros de una plataforma educativa con ~80,000 alumnos activos",
+          "Desarrollo y mantenimiento de integraciones con pasarelas de pago: Mercado Pago, Nequi, PayU, Banco Pichincha y Efecty, mediante APIs REST, webhooks, SFTP y procesos daemon",
+          "Automatización de procesos de recepción, validación y aplicación de pagos, incluyendo pagos en efectivo, cobros automáticos y domiciliación",
+          "Implementación de pagos a meses sin intereses (MSI) mediante PayU",
+          "Automatización de intercambio de información de adeudos con Mercado Pago mediante archivos CSV y SFTP",
+          "Mecanismos de prevención de transacciones duplicadas",
+          "Análisis y corrección de información transaccional sobre un histórico de ~23 millones de pagos registrados"
         ]
       },
       {
@@ -150,7 +153,7 @@
       "Frameworks": "Frameworks",
       "UI": "UI",
       "Databases": "Bases de datos",
-      "Apis": "APIs",
+      "Communication protocols": "Protocolos de comunicación",
       "Version Control": "Control de versiones",
       "Cloud": "Nube",
       "Distributed tasks": "Tareas distribuidas",

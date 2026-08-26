@@ -5,7 +5,7 @@
             "color": "blue",
             "periods": [
                 {
-                    "start": "2016-11",
+                    "start": "2016-07",
                     "end": null
                 }
             ]
@@ -34,6 +34,21 @@
             ]
         },
         {
+            "name": "FastAPI",
+            "color": "#009485",
+            "icon": "SiFastapi",
+            "periods": [
+                {
+                    "start": "2023-06",
+                    "end": "2023-07"
+                },
+                {
+                    "start": "2025-06",
+                    "end": "2025-07"
+                }
+            ]
+        },
+        {
             "name": "React",
             "color": "cyan",
             "periods": [
@@ -43,6 +58,25 @@
                 }
             ],
             "learning_currently": true
+        },
+        {
+            "name": "Django REST Framework",
+            "color": "red",
+            "icon": "SiDjango",
+            "periods": [
+                {
+                    "start": "2019-05",
+                    "end": "2022-02"
+                },
+                {
+                    "start": "2022-03",
+                    "end": "2022-10"
+                },
+                {
+                    "start": "2024-01",
+                    "end": "2026-08"
+                }
+            ]
         }
     ],
     "Databases": [
@@ -62,7 +96,7 @@
         },
         {
             "name": "Mysql",
-            "color": "green",
+            "color": "#00758F",
             "periods": [
                 {
                     "start": "2024-01",
@@ -134,10 +168,11 @@
             ]
         }
     ],
-    "Apis": [
+    "Communication protocols": [
         {
-            "name": "Rest",
+            "name": "API REST",
             "color": "gray",
+            "icon": "SiRest",
             "periods": [
                 {
                     "start": "2019-05",
@@ -205,8 +240,7 @@
                     "start": "2025-03",
                     "end": null
                 }
-            ],
-            "learning_currently": true
+            ]
         }
     ],
     "Distributed tasks": [
@@ -250,7 +284,7 @@
     "Payment platform": [
         {
             "name": "Stripe",
-            "color": "darkblue",
+            "color": "#635BFF",
             "periods": [
                 {
                     "start": "2022-06",
@@ -263,15 +297,26 @@
             "color": "blue",
             "periods": [
                 {
-                    "start": "2026-02",
-                    "end": "2026-03"
+                    "start": "2024-01",
+                    "end": "2026-08"
+                }
+            ]
+        },
+        {
+            "name": "PayU",
+            "color": "#A6C307",
+            "icon": "BsCashCoin",
+            "periods": [
+                {
+                    "start": "2026-06",
+                    "end": "2026-08"
                 }
             ]
         },
         {
             "name": "Nequi",
             "color": "#e42386",
-            "icon": "SiNequi",
+            "icon": "BsCashCoin",
             "periods": [
                 {
                     "start": "2025-12",
@@ -281,11 +326,23 @@
         },
         {
             "name": "Pagatodo",
-            "color": "#00a651",
+            "color": "#003DA5",
+            "icon": "BsCashCoin",
             "periods": [
                 {
                     "start": "2026-02",
                     "end": "2026-03"
+                }
+            ]
+        },
+        {
+            "name": "Efecty",
+            "color": "#FFD100",
+            "icon": "BsCashCoin",
+            "periods": [
+                {
+                    "start": "2025-01",
+                    "end": "2026-08"
                 }
             ]
         }
@@ -326,6 +383,20 @@
     "Data": [
         {
             "name": "Pandas",
+            "periods": [
+                {
+                    "start": "2018-11",
+                    "end": "2019-05"
+                },
+                {
+                    "start": "2019-05",
+                    "end": "2020-01"
+                }
+            ]
+        },
+        {
+            "name": "Numpy",
+            "color": "blue",
             "periods": [
                 {
                     "start": "2018-11",
@@ -432,6 +503,50 @@
                 {
                     "start": "2023-06",
                     "end": "2023-07"
+                }
+            ]
+        },
+        {
+            "name": "Tweepy",
+            "color": "blue",
+            "icon": "SiTwitter",
+            "periods": [
+                {
+                    "start": "2014-01",
+                    "end": "2014-12"
+                }
+            ]
+        },
+        {
+            "name": "SFTP",
+            "color": "gray",
+            "icon": "SiFiles",
+            "periods": [
+                {
+                    "start": "2026-02",
+                    "end": "2026-08"
+                }
+            ]
+        },
+        {
+            "name": "Filezilla",
+            "color": "#BF0000",
+            "icon": "SiFilezilla",
+            "periods": [
+                {
+                    "start": "2026-02",
+                    "end": "2026-08"
+                }
+            ]
+        },
+        {
+            "name": "Kiro",
+            "color": "#9046ff",
+            "icon": "SiGhostery",
+            "periods": [
+                {
+                    "start": "2026-01",
+                    "end": null
                 }
             ]
         }

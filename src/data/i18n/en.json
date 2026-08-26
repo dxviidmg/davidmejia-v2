@@ -15,7 +15,9 @@
     "cta": "View my projects",
     "titles": [
       "Software Engineer",
-      "Fullstack Developer",
+      "Full Stack Web Developer",
+      "Backend Engineer",
+      "Python/Django Developer",
       "Data Analyst"
     ],
     "stats": [
@@ -38,12 +40,12 @@
   },
   "about": {
     "title": "About me",
-    "intro": "Software Engineer with **{years}+ years of experience** delivering end-to-end web solutions. Specialized in **Python** and **Django** on the backend, with growing expertise in **React** on the frontend. I've led projects from conception to deployment across industries like **fintech**, **insurance**, **government** and **construction** — both as a **sole developer** and as part of **collaborative teams**.",
+    "intro": "Software Engineer with **{years}+ years of experience** delivering end-to-end web solutions. Specialized in **Python** and **Django** on the backend, with growing expertise in **React** on the frontend. I've led projects from conception to deployment across industries like **education**, **insurance**, **government** and **construction** — both as a **sole developer** and as part of **collaborative teams**.",
     "highlights": [
-      "Data process optimization with up to **50%** reduction in execution time",
+      "ETL optimization with up to **50%** reduction in execution time",
       "Restructuring of complex databases improving quality and performance",
       "Large-scale data processing in the cloud (**10M+ records**)",
-      "Integration of multiple payment gateways into web platforms",
+      "Integration of **5 payment gateways** and **2 banks** into web platforms (Mercado Pago, PayU, Nequi, Efecty, Stripe, Banco Pichincha, Pagatodo)",
       "Deployments on **AWS**, **GCP**, **Heroku** and **Render**"
     ],
     "closing": "I bring ownership, speed and results."
@@ -53,16 +55,17 @@
     "at": "at",
     "positions": [
       {
-        "position": "Full Stack Web Developer",
+        "position": "Backend Web Developer",
         "modality": "Remote",
-        "lineOfBusiness": "Education",
+        "lineOfBusiness": "Finance / Education",
         "highlights": [
-          "Development of new features for the educational payment platform",
-          "Applied payment corrections",
-          "Implementation and update of payment gateways: Nequi, Pagatodo and MercadoPago",
-          "SFTP integration with MercadoPago for file transfer",
-          "Development of REST APIs for internal and external consumption",
-          "Streamlined payment ticket resolution"
+          "Development and maintenance of financial modules for an educational platform with ~80,000 active students",
+          "Development and maintenance of integrations with payment gateways: Mercado Pago, Nequi, PayU, Banco Pichincha and Efecty, via REST APIs, webhooks, SFTP and daemon processes",
+          "Automation of payment reception, validation and application processes, including cash payments, automatic charges and direct debit",
+          "Implementation of monthly installments without interest (MSI) via PayU",
+          "Automation of debt information exchange with Mercado Pago via CSV files and SFTP",
+          "Duplicate transaction prevention mechanisms",
+          "Analysis and correction of transactional data over a history of ~23 million registered payments"
         ]
       },
       {
@@ -150,7 +153,7 @@
       "Frameworks": "Frameworks",
       "UI": "UI",
       "Databases": "Databases",
-      "Apis": "APIs",
+      "Communication protocols": "Communication Protocols",
       "Version Control": "Version Control",
       "Cloud": "Cloud",
       "Distributed tasks": "Distributed Tasks",

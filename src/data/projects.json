@@ -19,8 +19,45 @@
                 "color": "green"
             },
             {
+                "name": "Django REST Framework",
+                "color": "red",
+                "icon": "SiDjango"
+            },
+            {
                 "name": "Mysql",
+                "color": "#00758F"
+            },
+            {
+                "name": "Celery",
+                "color": "green"
+            },
+            {
+                "name": "Redis",
+                "color": "red"
+            },
+            {
+                "name": "Mercadopago",
                 "color": "blue"
+            },
+            {
+                "name": "PayU",
+                "color": "#A6C307",
+                "icon": "BsCashCoin"
+            },
+            {
+                "name": "Nequi",
+                "color": "#e42386",
+                "icon": "BsCashCoin"
+            },
+            {
+                "name": "Efecty",
+                "color": "#FFD100",
+                "icon": "BsCashCoin"
+            },
+            {
+                "name": "SFTP",
+                "color": "gray",
+                "icon": "SiFiles"
             },
             {
                 "name": "Github",
@@ -257,7 +294,7 @@
             },
             {
                 "name": "Stripe",
-                "color": "darkblue"
+                "color": "#635BFF"
             },
             {
                 "name": "Celery",
@@ -355,8 +392,9 @@
                 "color": "blue"
             },
             {
-                "name": "Rest",
-                "color": "gray"
+                "name": "API REST",
+                "color": "gray",
+                "icon": "SiRest"
             },
             {
                 "name": "Bitbucket",
