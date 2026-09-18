@@ -37,7 +37,7 @@ const AnimatedNumber = ({ prefix, target, duration = 1500 }) => {
 };
 
 export function Banner() {
-  const { t } = useLang();
+  const { t, cvUrl } = useLang();
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -90,7 +90,7 @@ export function Banner() {
               <a href={`https://mail.google.com/mail/?view=cm&to=${process.env.REACT_APP_EMAIL}`} title="Email">
                 <BsEnvelope className="icon" size={40} />
               </a>
-              <a href={process.env.REACT_APP_CV_URL} target="_blank" rel="noreferrer" title="Download CV">
+              <a href={cvUrl} target="_blank" rel="noreferrer" title="Download CV">
                 <BsFileText className="icon" size={40} />
               </a>
             </div>
