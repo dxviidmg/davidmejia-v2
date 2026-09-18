@@ -21,7 +21,6 @@ export const About = () => {
             <ul className={`about-highlights fade-up stagger-2 ${visible ? "visible" : ""}`}>
               {t.about.highlights.map((h, i) => <li key={i}><Bold text={h} /></li>)}
             </ul>
-            <p className={`text-justify fade-up stagger-3 ${visible ? "visible" : ""}`}><Bold text={t.about.closing} /></p>
           </Col>
         </Row>
       </Container>
