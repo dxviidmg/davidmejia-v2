@@ -16,10 +16,7 @@ const TimelineItem = ({ pos, tp, at, index }) => {
       <div className="timeline-dot" />
       <div className="timeline-card">
         <h3>
-          {tp.position} {at}{" "}
-          <a href={pos.company.url} target="_blank" rel="noreferrer">
-            {pos.company.name}
-          </a>
+          {tp.position} {at} {pos.company.name}
         </h3>
         <p className="timeline-meta">
           {pos.period} · {tp.modality} · {pos.location}{" "}

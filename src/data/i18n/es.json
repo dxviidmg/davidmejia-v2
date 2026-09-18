@@ -14,10 +14,11 @@
     "name": "Hola, soy David Mejía",
     "cta": "Ver mis proyectos",
     "titles": [
-      "Ingeniero de Software",
+      "Backend Engineer",
+      "Senior Software Engineer",
+      "Desarrollador Python",
+      "Desarrollador Django",
       "Desarrollador Full Stack",
-      "Ingeniero Backend",
-      "Desarrollador Python/Django",
       "Analista de Datos"
     ],
     "stats": [
@@ -39,100 +40,98 @@
     ]
   },
   "about": {
-    "title": "Sobre mí",
-    "intro": "Ingeniero de Software con **más de {years} años de experiencia** entregando soluciones web de principio a fin. Especializado en **Python** y **Django** en el backend, con experiencia creciente en **React** en el frontend. He liderado proyectos desde la concepción hasta el despliegue en industrias como **educación**, **seguros**, **gobierno** y **construcción** — tanto como **único desarrollador** como en **equipos colaborativos**.",
+    "title": "Resumen Profesional",
+    "intro": "Ingeniero de Software Senior con **10 años de experiencia** en desarrollo backend y sistemas web, especializado en **Python**, **Django**, **Django REST Framework**, **REST APIs**, **bases de datos** e **integraciones de sistemas**. He desarrollado y mantenido sistemas transaccionales para **educación**, **seguros**, **finanzas** y **gobierno**, incluyendo plataformas con aproximadamente **80,000 alumnos** y **23 millones de pagos históricos**.",
     "highlights": [
-      "Optimización de ETL con reducciones de hasta **50%** en tiempos de ejecución",
-      "Reestructuración de bases de datos complejas mejorando calidad y rendimiento",
-      "Procesamiento de datos a gran escala en la nube (**10M+ registros**)",
-      "Integración de **5 pasarelas de pago** y **2 bancos** en plataformas web (Mercado Pago, PayU, Nequi, Efecty, Stripe, Banco Pichincha, Pagatodo)",
-      "Despliegues en **AWS**, **GCP**, **Heroku** y **Render**"
-    ],
-    "closing": "Ofrezco responsabilidad, velocidad y resultados."
+      "Especializado en **integraciones de pagos**, **optimización de bases de datos**, **procesamiento asíncrono**, **modernización de sistemas legacy**, **microservicios** y **automatización de procesos**",
+      "Experiencia adicional en **React**, **AWS**, **GCP**, **PostgreSQL**, **MySQL**, **MongoDB**, **Celery** y **Redis**"
+    ]
   },
   "experience": {
-    "title": "Experiencia",
-    "at": "en",
+    "title": "Experiencia Profesional",
+    "at": "—",
     "positions": [
+      {
+        "position": "Desarrollador Web Backend, Departamento de Finanzas",
+        "modality": "Remoto",
+        "lineOfBusiness": "Naucalpan, Estado de México, México",
+        "highlights": [
+          "Desarrollé funcionalidades backend para los módulos financieros de una plataforma utilizada por aproximadamente 80,000 alumnos activos, utilizando Python, Django y MySQL para soportar operaciones académicas y financieras",
+          "Integré múltiples proveedores de pago y servicios financieros, desarrollando conexiones con Mercado Pago, Nequi, PayU, Banco Pichincha y Efecty mediante APIs, SFTP, CSV y procesos daemon",
+          "Implementé la integración de Nequi de extremo a extremo, desarrollando el flujo para iniciar pagos, recibir confirmaciones del proveedor y aplicar automáticamente las transacciones a los registros financieros de los alumnos",
+          "Implementé pagos a meses sin intereses mediante PayU, incorporando un nuevo Account ID y configurando los plazos disponibles en el checkout",
+          "Automatiqué procesos de gestión y conciliación de pagos, integrando intercambio de información mediante CSV/SFTP con Mercado Pago y Efecty para reducir intervención manual en operaciones financieras",
+          "Resolví incidencias sobre un histórico de aproximadamente 23 millones de transacciones desde 2019, desarrollando herramientas internas en Python para identificar, corregir y aplicar transacciones no procesadas",
+          "Participé en code reviews y despliegues, colaborando con equipos técnicos y funcionales para identificar inconsistencias y mantener la operación de los sistemas financieros"
+        ]
+      },
+      {
+        "position": "Desarrollador Web Full Stack / Líder Técnico",
+        "modality": "Remoto",
+        "lineOfBusiness": "Ciudad de México, México",
+        "highlights": [
+          "Recuperé la operación de una plataforma legacy del sector asegurador, actualizando Python, Django y dependencias y adaptando la aplicación a una nueva instancia de ejecución",
+          "Restauré la operación de 7 microservicios existentes, identificando configuraciones, dependencias y problemas de integración para incorporarlos a la plataforma",
+          "Refactoricé componentes backend para separar lógica de negocio de las vistas, mejorando la estructura y mantenibilidad del código existente",
+          "Reduje aproximadamente 67% el tiempo de ejecución de consultas, optimizando queries e índices de PostgreSQL sobre una base de aproximadamente 200,000 registros y 1.5 GB",
+          "Lideré técnicamente la recuperación y evolución de la plataforma, tomando decisiones de implementación sobre backend, infraestructura e integración de componentes existentes"
+        ]
+      },
       {
         "position": "Desarrollador Web Backend",
         "modality": "Remoto",
-        "lineOfBusiness": "Finanzas / Educación",
+        "lineOfBusiness": "Boston, Massachusetts, EE. UU.",
         "highlights": [
-          "Desarrollo y mantenimiento de los módulos financieros de una plataforma educativa con ~80,000 alumnos activos",
-          "Desarrollo y mantenimiento de integraciones con pasarelas de pago: Mercado Pago, Nequi, PayU, Banco Pichincha y Efecty, mediante APIs REST, webhooks, SFTP y procesos daemon",
-          "Automatización de procesos de recepción, validación y aplicación de pagos, incluyendo pagos en efectivo, cobros automáticos y domiciliación",
-          "Implementación de pagos a meses sin intereses (MSI) mediante PayU",
-          "Automatización de intercambio de información de adeudos con Mercado Pago mediante archivos CSV y SFTP",
-          "Mecanismos de prevención de transacciones duplicadas",
-          "Análisis y corrección de información transaccional sobre un histórico de ~23 millones de pagos registrados"
+          "Refactoricé las APIs backend de un MVP para gestión de máquinas expendedoras, utilizando Python y Django para mejorar la organización y funcionamiento del sistema",
+          "Implementé comunicación bidireccional en tiempo real mediante WebSockets, conectando backend y máquinas para gestionar comandos, ventas, inventario y eventos operativos",
+          "Implementé procesamiento asíncrono con Celery y Redis, soportando la comunicación entre WebSockets y los componentes backend",
+          "Optimicé la integración de Stripe Checkout, adaptando el backend para procesar pagos dentro de la plataforma",
+          "Participé en el diseño de la arquitectura de comunicación entre máquinas, backend y frontend Angular, definiendo la interacción entre los componentes del sistema",
+          "Administré despliegues y configuración de la aplicación en Heroku, operando backend y procesos asíncronos necesarios para producción"
         ]
       },
       {
-        "position": "Desarrollador Web Full Stack / Ingeniero DevOps / Líder Técnico",
+        "position": "Desarrollador Web Backend / Analista de Datos",
         "modality": "Remoto",
-        "lineOfBusiness": "Desarrollo de software",
+        "lineOfBusiness": "Ciudad de México, México",
         "highlights": [
-          "Lideré una plataforma de seguros como único desarrollador senior",
-          "Optimización de vistas y refactorización de código en backend y frontend",
-          "Gestión de un sistema de microservicios y despliegues en servidor",
-          "Actualización de un chatbot legacy e integración en un proyecto React",
-          "Integración de un chatbot Rasa con el CRM Clientify para automatización de leads",
-          "Desarrollo de un mapa interactivo para un museo con TypeScript y React",
-          "Web scraping con Selenium y entrenamiento de chatbots con Rasa"
+          "Mantuve y evolucioné un sistema legacy para agencias de seguros, desarrollando funcionalidades con Python, Django, Django REST Framework y PostgreSQL para administrar clientes, pólizas, pagos, siniestros y comisiones",
+          "Reduje aproximadamente 66% el tiempo de procesos de importación, optimizando scripts de Python para transformar y cargar datos desde archivos Excel y CSV, pasando de aproximadamente 24 a 8 horas",
+          "Rediseñé el modelo de datos durante una iniciativa de refactorización de 6 meses, identificando estructuras obsoletas y reduciendo la base de datos de 140 a 120 tablas (aproximadamente 14%)",
+          "Procesé y normalicé aproximadamente 10 millones de registros en MongoDB, desarrollando soluciones de web scraping y preparación de datos para proyectos de seguros y Machine Learning",
+          "Resolví problemas recurrentes de rendimiento, memoria y lógica de negocio, analizando queries y componentes interdependientes dentro de un sistema legacy",
+          "Automatiqué procesos de transformación y validación de datos, integrando información proveniente de diferentes sistemas y fuentes externas"
         ]
       },
       {
-        "position": "Desarrollador Web Full Stack / Ingeniero DevOps",
-        "modality": "Remoto",
-        "lineOfBusiness": "Desarrollo de sistemas embebidos",
-        "highlights": [
-          "Diseño de base de datos, desarrollo de endpoints y websockets",
-          "Integración de pasarela de pago Stripe con monitoreo en tiempo real usando Chart.js",
-          "Refactorización de código y gestión de despliegues en Heroku como responsable único"
-        ]
-      },
-      {
-        "position": "Desarrollador Web Backend / Asistente de Ciencia de Datos",
-        "modality": "Remoto",
-        "lineOfBusiness": "Desarrollo de software",
-        "highlights": [
-          "Desarrollé el código base para importación de datos, reduciendo el tiempo de ejecución en un 50%",
-          "Desarrollé un plan de refactorización de base de datos aprobado por el equipo y superiores, logrando una reducción del 15% en una base de datos de 140 tablas",
-          "Implementé POO en los modelos de base de datos",
-          "Desarrollé un prototipo de microservicio para generación asíncrona de reportes con Celery y Redis",
-          "Web scraping de cotizaciones de seguros médicos usando Selenium",
-          "Trabajé en un equipo de IA como analista, aprendiz de ML e intermediario con las áreas de desarrollo y devops",
-          "Análisis de fuentes de datos bancarios en GCP usando pandas, MongoDB y Jupyter notebooks",
-          "Encontré una forma de procesar 10 millones de registros en la nube usando pandas y MongoDB"
-        ]
-      },
-      {
-        "position": "Pasante de Ciencia de Datos",
+        "position": "Trainee de Ciencia de Datos y AI",
         "modality": "Presencial",
-        "lineOfBusiness": "Desarrollo de software",
+        "lineOfBusiness": "Mérida, Yucatán, México",
         "highlights": [
-          "Líder de equipo en un proyecto de ciencia de datos",
-          "Capacitador de Python para el equipo",
-          "Desarrollé un modelo de predicción de éxito de campañas de Kickstarter usando DataIKU"
+          "Desarrollé modelos analíticos para predecir el éxito o fracaso de campañas de Kickstarter, aplicando preparación de datos, clustering y análisis de similitud con Python y Dataiku",
+          "Procesé y analicé datasets para proyectos de Data Science y Machine Learning, aplicando técnicas de análisis exploratorio y transformación de datos"
         ]
       },
       {
-        "position": "Desarrollador Web Full Stack / Ingeniero DevOps",
+        "position": "Desarrollador Web Full Stack / Coordinador de Tecnología",
         "modality": "Presencial",
-        "lineOfBusiness": "Construcción",
+        "lineOfBusiness": "Pachuca, Hidalgo, México",
         "highlights": [
-          "Único desarrollador del proyecto completo, desde la concepción y levantamiento de requerimientos hasta el despliegue y mantenimiento en AWS EC2",
-          "Implementación y gestión de infraestructura tecnológica incluyendo cámaras de seguridad, DNS y correos comerciales",
-          "Capacitación de usuarios y soporte técnico"
+          "Diseñé y desarrollé una plataforma utilizada por 45 empleados para gestionar aproximadamente 1,500 sistemas de bebederos escolares, implementando backend, frontend y modelo de datos con Python, Django y PostgreSQL",
+          "Desarrollé módulos para gestionar escuelas, expedientes, construcción, operación, mantenimiento e incidencias, centralizando el seguimiento operativo del proyecto",
+          "Implementé gestión documental e incidencias, permitiendo registrar avances y adjuntar documentos Word, PDF y fotografías para supervisión y comprobación",
+          "Desplegué la plataforma en AWS y administré servidores Linux, DNS y correo institucional, manteniendo la infraestructura necesaria para su operación"
         ]
       },
       {
         "position": "Desarrollador Web Full Stack",
         "modality": "Presencial",
-        "lineOfBusiness": "Gobierno",
+        "lineOfBusiness": "Pachuca, Hidalgo, México",
         "highlights": [
-          "Único desarrollador del proyecto completo, desde la concepción y levantamiento de requerimientos hasta el despliegue y mantenimiento"
+          "Desarrollé de forma autónoma una aplicación para control presupuestal, transformando requerimientos del área financiera en funcionalidades con Python, Django y PostgreSQL",
+          "Diseñé el modelo de datos y desarrollé módulos para ingresos, egresos, saldos, fondos y periodos, proporcionando herramientas para seguimiento presupuestal",
+          "Implementé consultas, reportes y balances, facilitando el análisis de disponibilidad presupuestal",
+          "Desplegué la aplicación en infraestructura gubernamental, configurando Linux, PostgreSQL y los componentes necesarios para su operación"
         ]
       },
       {
@@ -147,23 +146,47 @@
     ]
   },
   "skills": {
-    "title": "Habilidades",
+    "title": "Competencias Clave",
     "categories": {
-      "Languages": "Lenguajes",
-      "Frameworks": "Frameworks",
-      "UI": "UI",
+      "Backend": "Backend",
+      "Frontend": "Frontend",
       "Databases": "Bases de datos",
-      "Communication protocols": "Protocolos de comunicación",
-      "Version Control": "Control de versiones",
-      "Cloud": "Nube",
-      "Distributed tasks": "Tareas distribuidas",
-      "Data": "Datos",
-      "Payment platform": "Plataformas de pago",
+      "Integrations": "Integraciones",
+      "Payments": "Pagos",
+      "Cloud & DevOps": "Cloud & DevOps",
+      "Processing": "Procesamiento",
       "Tools": "Herramientas"
     }
   },
   "certifications": {
-    "title": "Certificaciones"
+    "title": "Cursos y Certificaciones",
+    "items": [
+      {
+        "name": "RESTful API with Python using Django REST Framework",
+        "institution": "Udemy",
+        "year": "2021"
+      },
+      {
+        "name": "Python for Artificial Intelligence",
+        "institution": "Actumlogos",
+        "year": "June 2020"
+      },
+      {
+        "name": "Dataiku DSS — Level 1 Certified User",
+        "institution": "Dataiku",
+        "year": "May 2019"
+      },
+      {
+        "name": "Backend and Servers Path",
+        "institution": "Fixtergeek",
+        "year": "March 2017"
+      },
+      {
+        "name": "Backend Django Path",
+        "institution": "Fixtergeek",
+        "year": "September 2016"
+      }
+    ]
   },
   "projects": {
     "title": "Proyectos",
@@ -284,15 +307,15 @@
     "title": "Educación",
     "items": [
       {
-        "degree": "Ing. en Tecnologías de la Información y Comunicaciones",
-        "institution": "TecNM",
+        "degree": "Ingeniería en Tecnologías de la Información y Comunicaciones",
+        "institution": "Instituto Tecnológico de Pachuca",
         "period": "2010 - 2015",
         "note": "Titulado por tesis"
       },
       {
-        "degree": "Diplomado en Inteligencia Artificial",
-        "institution": "TecNM / Plenumsoft",
-        "period": "Nov 2018 - May 2019"
+        "degree": "Diplomado en Data Science & Artificial Intelligence",
+        "institution": "Plenumsoft",
+        "period": "2018 - 2019"
       }
     ]
   },

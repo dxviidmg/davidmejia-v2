@@ -14,10 +14,11 @@
     "name": "Hi, I'm David Mejía",
     "cta": "View my projects",
     "titles": [
-      "Software Engineer",
-      "Full Stack Web Developer",
       "Backend Engineer",
-      "Python/Django Developer",
+      "Senior Software Engineer",
+      "Python Developer",
+      "Django Developer",
+      "Full Stack Developer",
       "Data Analyst"
     ],
     "stats": [
@@ -39,104 +40,102 @@
     ]
   },
   "about": {
-    "title": "About me",
-    "intro": "Software Engineer with **{years}+ years of experience** delivering end-to-end web solutions. Specialized in **Python** and **Django** on the backend, with growing expertise in **React** on the frontend. I've led projects from conception to deployment across industries like **education**, **insurance**, **government** and **construction** — both as a **sole developer** and as part of **collaborative teams**.",
+    "title": "Professional Summary",
+    "intro": "Senior Software Engineer with **10 years of experience** in backend and web systems development, specializing in **Python**, **Django**, **Django REST Framework**, **REST APIs**, **databases**, and **system integrations**. I have developed and maintained transactional systems for **education**, **insurance**, **finance**, and **government**, including platforms serving approximately **80,000 students** and **23 million historical payments**.",
     "highlights": [
-      "ETL optimization with up to **50%** reduction in execution time",
-      "Restructuring of complex databases improving quality and performance",
-      "Large-scale data processing in the cloud (**10M+ records**)",
-      "Integration of **5 payment gateways** and **2 banks** into web platforms (Mercado Pago, PayU, Nequi, Efecty, Stripe, Banco Pichincha, Pagatodo)",
-      "Deployments on **AWS**, **GCP**, **Heroku** and **Render**"
-    ],
-    "closing": "I bring ownership, speed and results."
+      "Specialized in **payment integrations**, **database optimization**, **asynchronous processing**, **legacy system modernization**, **microservices**, and **process automation**",
+      "Additional experience with **React**, **AWS**, **GCP**, **PostgreSQL**, **MySQL**, **MongoDB**, **Celery**, and **Redis**"
+    ]
   },
   "experience": {
-    "title": "Experience",
-    "at": "at",
+    "title": "Professional Experience",
+    "at": "—",
     "positions": [
+      {
+        "position": "Backend Web Developer, Finance Department",
+        "modality": "Remote",
+        "lineOfBusiness": "Naucalpan, State of Mexico, Mexico",
+        "highlights": [
+          "Developed backend functionality for financial modules used by approximately 80,000 active students, using Python, Django, and MySQL to support academic and financial operations",
+          "Integrated multiple payment providers and financial services, developing connections with Mercado Pago, Nequi, PayU, Banco Pichincha, and Efecty through APIs, SFTP, CSV, and daemon processes",
+          "Implemented Nequi payment integration end-to-end, developing the workflow to initiate payments, receive provider confirmations, and automatically apply transactions to student financial records",
+          "Implemented interest-free installment payments through PayU, incorporating a new Account ID and configuring the available payment terms during checkout",
+          "Automated payment management and reconciliation processes, integrating CSV/SFTP data exchanges with Mercado Pago and Efecty to reduce manual intervention in financial operations",
+          "Resolved payment-related incidents across a historical database of approximately 23 million transactions since 2019, developing internal Python tools to identify, correct, and apply unprocessed transactions",
+          "Participated in code reviews and deployments, collaborating with technical and functional teams to identify inconsistencies and maintain financial system operations"
+        ]
+      },
+      {
+        "position": "Full Stack Web Developer / Technical Lead",
+        "modality": "Remote",
+        "lineOfBusiness": "Mexico City, Mexico",
+        "highlights": [
+          "Restored the operation of a legacy insurance platform, upgrading Python, Django, and dependencies and adapting the application to a new runtime environment",
+          "Restored 7 existing microservices, identifying configuration, dependency, and integration issues required to incorporate them back into the platform",
+          "Refactored backend components to separate business logic from views, improving the structure and maintainability of the existing codebase",
+          "Reduced query execution time by approximately 67%, optimizing PostgreSQL queries and indexes on a database containing approximately 200,000 records and 1.5 GB of data",
+          "Provided technical leadership for the recovery and evolution of the platform, making implementation decisions across backend, infrastructure, and component integration"
+        ]
+      },
       {
         "position": "Backend Web Developer",
         "modality": "Remote",
-        "lineOfBusiness": "Finance / Education",
+        "lineOfBusiness": "Boston, Massachusetts, USA",
         "highlights": [
-          "Development and maintenance of financial modules for an educational platform with ~80,000 active students",
-          "Development and maintenance of integrations with payment gateways: Mercado Pago, Nequi, PayU, Banco Pichincha and Efecty, via REST APIs, webhooks, SFTP and daemon processes",
-          "Automation of payment reception, validation and application processes, including cash payments, automatic charges and direct debit",
-          "Implementation of monthly installments without interest (MSI) via PayU",
-          "Automation of debt information exchange with Mercado Pago via CSV files and SFTP",
-          "Duplicate transaction prevention mechanisms",
-          "Analysis and correction of transactional data over a history of ~23 million registered payments"
+          "Refactored backend APIs for a vending machine management MVP, using Python and Django to improve the organization and operation of the system",
+          "Implemented real-time bidirectional communication using WebSockets, connecting the backend with vending machines to manage commands, sales, inventory, and operational events",
+          "Implemented asynchronous processing with Celery and Redis, supporting WebSocket communication and backend processes",
+          "Optimized the Stripe Checkout integration, adapting the backend to process payments within the platform",
+          "Contributed to the communication architecture between vending machines, backend, and Angular frontend, defining interactions between system components",
+          "Managed application deployments and configuration on Heroku, operating the backend and asynchronous processes required for production"
         ]
       },
       {
-        "position": "Full Stack Web Developer / DevOps Engineer / Tech Lead",
+        "position": "Backend Web Developer / Data Analyst",
         "modality": "Remote",
-        "lineOfBusiness": "Software development",
+        "lineOfBusiness": "Mexico City, Mexico",
         "highlights": [
-          "Led an insurance platform as the sole senior developer",
-          "Optimized views and refactored code across backend and frontend",
-          "Managed a microservices system and server deployments",
-          "Updated a legacy chatbot and integrated it into a React project",
-          "Integrated a Rasa chatbot with Clientify CRM for lead automation",
-          "Developed an interactive map for a museum using TypeScript and React",
-          "Web scraping with Selenium and chatbot training with Rasa"
+          "Maintained and evolved a legacy insurance management system, developing functionality with Python, Django, Django REST Framework, and PostgreSQL to manage customers, policies, payments, claims, and commissions",
+          "Reduced data import processing time by approximately 66%, optimizing Python scripts for transforming and loading Excel and CSV data, reducing processing time from approximately 24 to 8 hours",
+          "Redesigned the data model during a 6-month refactoring initiative, identifying obsolete structures and reducing the database from 140 to 120 tables, approximately 14%",
+          "Processed and normalized approximately 10 million MongoDB records, developing web scraping and data preparation solutions for insurance and Machine Learning projects",
+          "Resolved recurring performance, memory, and business logic issues, analyzing slow queries and highly interdependent components within a legacy system",
+          "Automated data transformation and validation processes, integrating information from different systems and external data sources"
         ]
       },
       {
-        "position": "Full Stack Web Developer / DevOps Engineer",
-        "modality": "Remote",
-        "lineOfBusiness": "Embedded systems development",
-        "highlights": [
-          "Database design, endpoint and websocket development",
-          "Integrated Stripe payment gateway with real-time monitoring using Chart.js",
-          "Code refactoring and deployment management on Heroku as sole responsible"
-        ]
-      },
-      {
-        "position": "Backend Web Developer / Data Scientist Assistant",
-        "modality": "Remote",
-        "lineOfBusiness": "Software development",
-        "highlights": [
-          "Developed the base code for data import, reducing execution time by 50%",
-          "Developed a plan for database refactoring approved by the team and superiors, resulting in a 15% reduction of a 140-table database",
-          "Implemented OOP on database models",
-          "Developed a prototype of a microservice for asynchronous report generation with Celery and Redis",
-          "Web scraping of medical insurance quotes using Selenium",
-          "Worked in an AI team as analyst, ML apprentice and intermediary with development and devops areas",
-          "Analyzed bank data sources on GCP using pandas, MongoDB and Jupyter notebooks",
-          "Found a way to process 10 million records in the cloud using pandas and MongoDB"
-        ]
-      },
-      {
-        "position": "Data Scientist Intern",
+        "position": "Data Science & AI Trainee",
         "modality": "On-site",
-        "lineOfBusiness": "Software development",
+        "lineOfBusiness": "Mérida, Yucatán, Mexico",
         "highlights": [
-          "Team leader for a data science project",
-          "Python trainer for the team",
-          "Developed a prediction model for Kickstarter campaign success using DataIKU"
+          "Developed analytical models to predict the success or failure of Kickstarter campaigns, applying data preparation, clustering, and similarity analysis using Python and Dataiku",
+          "Processed and analyzed datasets for Data Science and Machine Learning projects, applying exploratory data analysis and data transformation techniques"
         ]
       },
       {
-        "position": "Full Stack Web Developer / DevOps Engineer",
+        "position": "Full Stack Web Developer / Technology Coordinator",
         "modality": "On-site",
-        "lineOfBusiness": "Construction",
+        "lineOfBusiness": "Pachuca, Hidalgo, Mexico",
         "highlights": [
-          "Sole developer of the entire project, from conception and requirements gathering to deployment and maintenance on AWS EC2",
-          "Implementation and management of technology infrastructure including security cameras, DNS and commercial emails",
-          "User training and technical support"
+          "Designed and developed a platform used by 45 employees to manage approximately 1,500 school drinking-water systems, implementing the backend, frontend, and data model with Python, Django, and PostgreSQL",
+          "Developed modules for managing schools, records, construction, operations, maintenance, and incidents, centralizing project tracking and operational management",
+          "Implemented document and incident management, enabling users to track progress and attach Word documents, PDFs, and photographs for supervision and verification",
+          "Deployed the platform on AWS and administered Linux servers, DNS, and institutional email, maintaining the infrastructure required for system operation"
         ]
       },
       {
         "position": "Full Stack Web Developer",
         "modality": "On-site",
-        "lineOfBusiness": "Government",
+        "lineOfBusiness": "Pachuca, Hidalgo, Mexico",
         "highlights": [
-          "Sole developer of the entire project, from conception and requirements gathering to deployment and maintenance"
+          "Independently developed a budget management application, translating financial department requirements into web functionality using Python, Django, and PostgreSQL",
+          "Designed the data model and developed modules for revenue, expenses, balances, funds, and periods, providing tools for budget monitoring",
+          "Implemented queries, reports, and financial balances, enabling users to monitor budget availability",
+          "Deployed the application on government infrastructure, configuring Linux, PostgreSQL, and the components required for production operation"
         ]
       },
       {
-        "position": "Researcher Assistant (Professional Internship)",
+        "position": "Research Assistant (Professional Internship)",
         "modality": "Hybrid",
         "lineOfBusiness": "Education",
         "highlights": [
@@ -147,23 +146,47 @@
     ]
   },
   "skills": {
-    "title": "Skills",
+    "title": "Core Skills",
     "categories": {
-      "Languages": "Languages",
-      "Frameworks": "Frameworks",
-      "UI": "UI",
+      "Backend": "Backend",
+      "Frontend": "Frontend",
       "Databases": "Databases",
-      "Communication protocols": "Communication Protocols",
-      "Version Control": "Version Control",
-      "Cloud": "Cloud",
-      "Distributed tasks": "Distributed Tasks",
-      "Data": "Data",
-      "Payment platform": "Payment Platforms",
+      "Integrations": "Integrations",
+      "Payments": "Payments",
+      "Cloud & DevOps": "Cloud & DevOps",
+      "Processing": "Processing",
       "Tools": "Tools"
     }
   },
   "certifications": {
-    "title": "Certifications"
+    "title": "Courses and Certifications",
+    "items": [
+      {
+        "name": "RESTful API with Python using Django REST Framework",
+        "institution": "Udemy",
+        "year": "2021"
+      },
+      {
+        "name": "Remote Python Course for Artificial Intelligence",
+        "institution": "Actumlogos",
+        "year": "June 2020"
+      },
+      {
+        "name": "Dataiku DSS — Level 1 Certified User",
+        "institution": "Dataiku",
+        "year": "May 2019"
+      },
+      {
+        "name": "Backend and Servers Path",
+        "institution": "FixterGeek",
+        "year": "March 2017"
+      },
+      {
+        "name": "Backend Path",
+        "institution": "FixterGeek",
+        "year": "2016"
+      }
+    ]
   },
   "projects": {
     "title": "Projects",
@@ -285,14 +308,14 @@
     "items": [
       {
         "degree": "B.Eng. in Information and Communication Technologies",
-        "institution": "TecNM",
+        "institution": "Instituto Tecnológico de Pachuca",
         "period": "2010 - 2015",
         "note": "Graduated with thesis"
       },
       {
-        "degree": "Diploma in Artificial Intelligence",
-        "institution": "TecNM / Plenumsoft",
-        "period": "Nov 2018 - May 2019"
+        "degree": "Diploma in Data Science & Artificial Intelligence",
+        "institution": "Plenumsoft",
+        "period": "2018 - 2019"
       }
     ]
   },
