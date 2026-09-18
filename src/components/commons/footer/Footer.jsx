@@ -5,7 +5,7 @@ import { useInView } from "../../../utils/useInView";
 import "./footer.css";
 
 export function Footer() {
-  const { t } = useLang();
+  const { t, cvUrl } = useLang();
   const [ref, visible] = useInView();
   return (
     <footer id="footer" className="section-dark">
@@ -22,7 +22,7 @@ export function Footer() {
           <a href={`https://mail.google.com/mail/?view=cm&to=${process.env.REACT_APP_EMAIL}`} title="Email">
             <BsEnvelope />
           </a>
-          <a href={process.env.REACT_APP_CV_URL} target="_blank" rel="noreferrer" title="Download CV">
+          <a href={cvUrl} target="_blank" rel="noreferrer" title="Download CV">
             <BsFileText />
           </a>
         </div>
