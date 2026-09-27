@@ -1,27 +1,5 @@
 .project-tabs {
-    display: inline-flex;
-    gap: 32px;
     margin-bottom: 48px;
-    border-bottom: 1px solid var(--line);
-}
-
-.project-tabs .nav-link {
-    padding: 0 0 14px;
-    color: var(--text-2);
-    font-size: 0.95rem;
-    font-weight: 600;
-    border-radius: 0;
-    transition: color 200ms;
-}
-
-.project-tabs .nav-link:hover {
-    color: var(--text);
-}
-
-.project-tabs .nav-link.active {
-    color: var(--text);
-    background: none;
-    box-shadow: inset 0 -2px 0 var(--accent);
 }
 
 .project-card {

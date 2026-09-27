@@ -1,13 +1,17 @@
 import { useState } from "react";
-import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import projects from "../../../data/projects.json";
 import { TechIcon } from "../../commons/icons/Icons";
 import { useLang } from "../../../utils/LangContext";
 import { useInView } from "../../../utils/useInView";
 import { SectionHeader } from "../../commons/section/SectionHeader";
+import { Tabs } from "../../commons/tabs/Tabs";
 import "./projects.css";
 
 const INITIAL_COUNT = 6;
+
+// Tab id -> category in projects.json (null = all)
+const FILTERS = { all: null, web: "Web", data: "Data" };
 
 const ProjectCard = ({ project, tp, index }) => {
   const [ref, visible] = useInView();
@@ -60,22 +64,20 @@ const ProjectList = ({ category, t }) => {
 
 export const Projects = () => {
   const { t } = useLang();
+  const [filter, setFilter] = useState("all");
   return (
     <section className="section" id="projects">
       <Container>
         <SectionHeader index={4} eyebrow={t.nav.projects} title={t.projects.title} />
-        <Tab.Container defaultActiveKey="all">
-          <Nav className="project-tabs">
-            <Nav.Item><Nav.Link eventKey="all">{t.projects.tabs.all}</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link eventKey="web">{t.projects.tabs.web}</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link eventKey="data">{t.projects.tabs.data}</Nav.Link></Nav.Item>
-          </Nav>
-          <Tab.Content>
-            <Tab.Pane eventKey="all"><ProjectList t={t} /></Tab.Pane>
-            <Tab.Pane eventKey="web"><ProjectList category="Web" t={t} /></Tab.Pane>
-            <Tab.Pane eventKey="data"><ProjectList category="Data" t={t} /></Tab.Pane>
-          </Tab.Content>
-        </Tab.Container>
+        <Tabs
+          className="project-tabs"
+          label={t.projects.title}
+          tabs={Object.keys(FILTERS).map((id) => ({ id, label: t.projects.tabs[id] }))}
+          active={filter}
+          onChange={setFilter}
+        />
+        {/* One list; the key resets "show all" when the filter changes */}
+        <ProjectList key={filter} category={FILTERS[filter]} t={t} />
       </Container>
     </section>
   );
