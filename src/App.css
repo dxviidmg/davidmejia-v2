@@ -1,148 +1,216 @@
-h2 {
-  text-align: center;
-  padding-bottom: 20px;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
 
-/* Layout */
-.paddings {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+/* Declared here (after Bootstrap is imported) so it wins over Bootstrap's body defaults */
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  background: var(--bg);
+  color: var(--text);
 }
 
-/* Section divider */
-.section-divider {
-  height: 3px;
-  background: linear-gradient(90deg, transparent, #6c9bcf, transparent);
-  border: none;
-  margin: 0;
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  letter-spacing: -0.035em;
 }
 
-/* Sections */
+/* Sections: full-bleed bands that alternate black / white, no borders between them */
+.section {
+  position: relative;
+  background: var(--bg);
+  color: var(--text);
+  padding: 144px 0;
+}
+
+/* Light section: same components, inverted tokens.
+   #A1A1AA and #3B82F6 are too light for text on white, so text uses darker steps of the same hues. */
 .section-light {
-  background-color: #f0f0f0;
-  color: #1a1a1a;
+  --bg: #FFFFFF;
+  --line: #E4E4E7;
+  --line-strong: #D4D4D8;
+  --text: #0A0A0A;
+  --text-2: #52525B;
+  --text-3: #71717A;
+  --ghost: #A1A1AA;
+  --accent-text: #2563EB;
+  --accent-hover: #1D4ED8;
+  background: var(--bg);
+  color: var(--text);
 }
 
-.section-light h2 {
-  color: #1a1a1a;
+/* Accent on a phrase's closing punctuation (see AccentEnd) */
+.accent-end {
+    color: var(--accent);
 }
 
-.section-dark {
-  background-color: #000;
-  color: white;
+/* Section header: "01 — Sobre mí" + title */
+.section-header {
+  margin-bottom: 72px;
 }
 
-.section-dark h2 {
-  color: white;
+.section-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 16px;
 }
 
-/* Card text utilities */
+.section-eyebrow .num {
+  color: var(--accent-text);
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1;
+  margin: 0;
+  color: var(--text);
+}
+
+/* Title rises from a mask; eyebrow fades; a short blue rule draws in underneath */
+.section-title-mask {
+  display: block;
+  overflow: hidden;
+  padding-top: 0.14em;
+  margin-top: -0.14em;
+}
+
+.section-title-inner {
+  display: block;
+  transform: translateY(105%);
+  transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s;
+}
+
+.section-header .section-eyebrow {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.section-rule {
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin-top: 28px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.5s;
+}
+
+.section-header.visible .section-title-inner,
+.section-header.visible .section-rule {
+  transform: none;
+}
+
+.section-header.visible .section-eyebrow {
+  opacity: 1;
+}
+
+/* Items: no floating boxes, just a hairline on top */
+.card-dm {
+  border-top: 1px solid var(--line);
+  padding: 28px 0 0;
+  height: 100%;
+  color: var(--text);
+}
+
 .card-title-light {
   font-size: 1rem;
-  font-weight: 700;
-  color: #eee;
+  font-weight: 600;
+  color: var(--text);
   margin-bottom: 4px;
 }
 
 .card-subtitle {
-  font-size: 0.85rem;
-  color: #aaa;
+  font-size: 0.9rem;
+  color: var(--text-2);
   margin-bottom: 4px;
 }
 
-.card-accent {
+.card-meta {
   font-size: 0.8rem;
-  color: #6c9bcf;
+  color: var(--text-3);
 }
 
-.card-muted {
-  display: block;
+/* Chips */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 10px;
   font-size: 0.75rem;
-  color: #777;
-  margin-top: 4px;
+  color: var(--text-2);
 }
 
-/* Reusable dark card */
-.dark-card {
-  background: #1a1a1a;
-  border-radius: 10px;
-  padding: 20px;
-  height: 100%;
-  color: white;
-  border: 1px solid transparent;
+/* Buttons */
+.btn-dm {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 200ms, border-color 200ms, color 200ms;
 }
 
-.dark-card-hover {
-  transition: transform 300ms, box-shadow 300ms, border-color 300ms, background 300ms;
+.btn-dm:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--on-accent);
 }
 
-.dark-card-hover:hover {
-  transform: translateY(-6px);
-  background: #242424;
-  box-shadow: 0 8px 24px rgba(108, 155, 207, 0.15);
-  border-color: #6c9bcf;
+.btn-dm-ghost {
+  background: transparent;
+  border-color: var(--line-strong);
+  color: var(--text);
 }
 
-
-.dark-card-glow {
-  transition: transform 300ms, box-shadow 300ms, border-color 300ms, background 300ms;
+.btn-dm-ghost:hover {
+  background: transparent;
+  border-color: var(--accent);
+  color: var(--accent-text);
 }
 
-.dark-card-glow:hover {
-  transform: translateY(-6px);
-  background: #242424;
+.link-more {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-text);
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+.link-more:hover {
+  color: var(--accent-hover);
 }
 
 /* Column spacing */
 .col-gap {
-  margin-bottom: 20px;
-}
-
-/* Text utilities */
-.text-justify {
-  text-align: justify;
-}
-
-.text-secondary-dark {
-  font-size: 0.85rem;
-  color: #aaa;
-}
-
-.text-muted-dark {
-  font-size: 0.75rem;
-  color: #666;
-}
-
-/* WhatsApp floating button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 56px;
-  height: 56px;
-  background: #25d366;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 300ms, box-shadow 300ms;
-  z-index: 1000;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-  color: white;
+  margin-bottom: 40px;
 }
 
 /* Animations */
 .fade-up {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .fade-up.visible {
@@ -152,8 +220,8 @@ h2 {
 
 .fade-left {
   opacity: 0;
-  transform: translateX(-30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateX(-24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .fade-left.visible {
@@ -161,27 +229,40 @@ h2 {
   transform: translateX(0);
 }
 
-.stagger-1 { transition-delay: 0.1s; }
-.stagger-2 { transition-delay: 0.2s; }
-.stagger-3 { transition-delay: 0.3s; }
-.stagger-4 { transition-delay: 0.4s; }
-.stagger-5 { transition-delay: 0.5s; }
-
 /* Banner entrance */
 .banner-enter {
   opacity: 0;
-  transform: translateY(20px);
-  animation: bannerIn 0.8s ease forwards;
+  transform: translateY(16px);
+  animation: bannerIn 1s ease forwards;
 }
 
-.banner-enter-delay-1 { animation-delay: 0.2s; }
-.banner-enter-delay-2 { animation-delay: 0.4s; }
-.banner-enter-delay-3 { animation-delay: 0.6s; }
-.banner-enter-delay-4 { animation-delay: 0.8s; }
+.banner-enter-delay-2 { animation-delay: 0.5s; }
+.banner-enter-delay-3 { animation-delay: 0.8s; }
 
 @keyframes bannerIn {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-title-inner, .section-rule {
+    transform: none;
+  }
+
+  .section-header .section-eyebrow {
+    opacity: 1;
+  }
+
+  .fade-up, .fade-left, .banner-enter {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 96px 0;
   }
 }

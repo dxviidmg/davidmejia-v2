@@ -1,50 +1,84 @@
+import { useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import positions from "../../../data/positions.json";
 import { useLang } from "../../../utils/LangContext";
-import { useInView } from "../../../utils/useInView";
+import { useScroll } from "../../../utils/useScroll";
+import { SectionHeader } from "../../commons/section/SectionHeader";
+import { WorkMap } from "./WorkMap";
+import { getOrganization } from "../../../utils/organizations";
+import { LogoPlate } from "../../commons/logo/LogoPlate";
+import { formatPeriod } from "../../../utils/dateUtils";
+import { Reveal } from "../../commons/reveal/Reveal";
 import "./experience.css";
 
-const FLAG = {
-  MX: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Mexico_flag_icon.svg",
-  US: "https://upload.wikimedia.org/wikipedia/commons/8/88/United-states_flag_icon_round.svg",
-};
+const VISIBLE_HIGHLIGHTS = 3;
 
-const TimelineItem = ({ pos, tp, at, index }) => {
-  const [ref, visible] = useInView();
+const TimelineItem = ({ pos, tp, t, lang }) => {
+  const [expanded, setExpanded] = useState(false);
+  const highlights = tp.highlights || [];
+  const shown = expanded ? highlights : highlights.slice(0, VISIBLE_HIGHLIGHTS);
+  const hidden = highlights.length - VISIBLE_HIGHLIGHTS;
+  const org = getOrganization(pos.company);
   return (
-    <div className={`timeline-item fade-left ${visible ? "visible" : ""}`} ref={ref} style={{ transitionDelay: `${index * 0.1}s` }}>
+    <Reveal as="article" direction="left" className={`timeline-item ${pos.end ? "" : "is-current"}`}>
       <div className="timeline-dot" />
-      <div className="timeline-card">
-        <h3>
-          {tp.position} {at} {pos.company.name}
+      <div className="timeline-head">
+        <LogoPlate logo={org.logo} name={org.name} className="timeline-logo" />
+        <p className="timeline-period">{formatPeriod(pos.start, pos.end, lang, t.experience.present)}</p>
+        <h3 className="timeline-company">
+          {org.url ? (
+            <a href={org.url} target="_blank" rel="noreferrer">{org.name}<span className="timeline-link-icon" aria-hidden="true">↗</span></a>
+          ) : org.name}
         </h3>
-        <p className="timeline-meta">
-          {pos.period} · {tp.modality} · {pos.location}{" "}
-          {FLAG[pos.country] && (
-            <img src={FLAG[pos.country]} alt={pos.country} className="country-flag" width="20" height="20" />
-          )}
-        </p>
-        <p className="timeline-meta">{tp.lineOfBusiness}</p>
-        {tp.highlights && (
-          <ul className="timeline-highlights">
-            {tp.highlights.map((h, i) => <li key={i}>{h}</li>)}
-          </ul>
-        )}
+        <p className="timeline-position">{tp.position}</p>
+        <p className="timeline-industry"><span>{t.experience.industryLabel}</span> {tp.industry}</p>
+        <p className="timeline-meta">{tp.modality} · {tp.location}</p>
       </div>
-    </div>
+      {shown.length === 0 && !pos.end && (
+        <div className="timeline-body">
+          <p className="timeline-note">{t.experience.justStarted}<span className="timeline-cursor" /></p>
+        </div>
+      )}
+      {shown.length > 0 && (
+        <div className="timeline-body">
+          <ul className="timeline-highlights">
+            {shown.map((h, i) => <li key={i}>{h}</li>)}
+          </ul>
+          {hidden > 0 && (
+            <button className="link-more" onClick={() => setExpanded(!expanded)} aria-expanded={expanded}>
+              {expanded ? `− ${t.experience.showLess}` : `+ ${t.experience.showMore} (${hidden})`}
+            </button>
+          )}
+        </div>
+      )}
+    </Reveal>
   );
 };
 
+// Draws the blue timeline spine as the section scrolls past the middle of the viewport
+const useScrollProgress = () => {
+  const ref = useRef(null);
+  useScroll(() => {
+    const el = ref.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const progress = Math.min(Math.max((window.innerHeight * 0.6 - rect.top) / rect.height, 0), 1);
+    el.style.setProperty("--progress", progress);
+  });
+  return ref;
+};
+
 export const Experience = () => {
-  const { t } = useLang();
-  const [ref, visible] = useInView();
+  const { t, lang } = useLang();
+  const timelineRef = useScrollProgress();
   return (
-    <section id="experience" className="section-light paddings">
+    <section id="experience" className="section">
       <Container>
-        <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.experience.title}</h2>
-        <div className="timeline">
+        <SectionHeader id="experience" title={t.experience.title} />
+        <WorkMap t={t} />
+        <div className="timeline" ref={timelineRef}>
           {positions.map((pos, index) => (
-            <TimelineItem key={index} pos={pos} tp={t.experience.positions[index]} at={t.experience.at} index={index} />
+            <TimelineItem key={index} pos={pos} tp={t.experience.positions[index]} t={t} lang={lang} />
           ))}
         </div>
       </Container>

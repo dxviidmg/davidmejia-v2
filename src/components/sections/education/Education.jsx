@@ -1,25 +1,50 @@
 import { Container, Row, Col } from "react-bootstrap";
+import certifications from "../../../data/certifications.json";
 import { useLang } from "../../../utils/LangContext";
-import { useInView } from "../../../utils/useInView";
+import { SectionHeader } from "../../commons/section/SectionHeader";
+import { getOrganization } from "../../../utils/organizations";
+import { LogoPlate } from "../../commons/logo/LogoPlate";
+import { Reveal } from "../../commons/reveal/Reveal";
+import { formatMonth } from "../../../utils/dateUtils";
+import "./education.css";
+
+
+const EntryList = ({ title, entries, delay = 0 }) => {
+  return (
+    <Reveal delay={delay}>
+      <h3 className="edu-heading">{title}</h3>
+      <ul className="edu-list">
+        {entries.map((e, i) => (
+          <li key={i} className="edu-item">
+            <LogoPlate logo={getOrganization(e.subtitle).logo} name={e.subtitle} fixed />
+            <div className="edu-text">
+              <p className="card-title-light">{e.title}</p>
+              <p className="card-subtitle">{e.subtitle}</p>
+              {e.note && <p className="card-meta mb-0">{e.note}</p>}
+            </div>
+            <span className="card-meta edu-date">{e.date}</span>
+          </li>
+        ))}
+      </ul>
+    </Reveal>
+  );
+};
 
 export const Education = () => {
-  const { t } = useLang();
-  const [ref, visible] = useInView();
+  const { t, lang } = useLang();
+  const degrees = t.education.items.map((item) => ({
+    title: item.degree, subtitle: item.institution, date: item.period, note: item.note,
+  }));
+  const certs = certifications.map((c) => ({
+    title: c.name, subtitle: c.institution, date: formatMonth(c.date, lang), note: c.id && `ID: ${c.id}`,
+  }));
   return (
-    <section className="section-dark paddings" id="education">
+    <section className="section section-light" id="education">
       <Container>
-        <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.education.title}</h2>
-        <Row>
-          {t.education.items.map((item, i) => (
-            <Col xs={12} sm={6} key={i} className="col-gap">
-              <div className={`dark-card dark-card-hover fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${i * 0.1}s` }}>
-                <h5 className="card-title-light">{item.degree}</h5>
-                <p className="card-subtitle">{item.institution}</p>
-                <span className="card-accent">{item.period}</span>
-                {item.note && <span className="card-muted">{item.note}</span>}
-              </div>
-            </Col>
-          ))}
+        <SectionHeader id="education" title={t.education.section} />
+        <Row className="g-5">
+          <Col lg={5}><EntryList title={t.education.title} entries={degrees} /></Col>
+          <Col lg={7}><EntryList title={t.certifications.title} entries={certs} delay={0.1} /></Col>
         </Row>
       </Container>
     </section>

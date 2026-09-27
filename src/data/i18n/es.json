@@ -1,60 +1,52 @@
 {
   "nav": {
-    "home": "Inicio",
     "about": "Sobre mí",
     "experience": "Experiencia",
     "skills": "Habilidades",
-    "certifications": "Certificaciones",
     "projects": "Proyectos",
-    "education": "Educación",
-    "services": "Servicios"
+    "education": "Formación",
+    "contact": "Contacto"
   },
   "banner": {
-    "greeting": "Bienvenido a mi portafolio",
-    "name": "Hola, soy David Mejía",
-    "cta": "Ver mis proyectos",
-    "titles": [
-      "Backend Engineer",
-      "Senior Software Engineer",
-      "Desarrollador Python",
-      "Desarrollador Django",
-      "Desarrollador Full Stack",
-      "Analista de Datos"
-    ],
-    "stats": [
-      {
-        "value": "+9",
-        "label": "Años de experiencia",
-        "computed": "yearsOfExperience"
-      },
-      {
-        "value": "+20",
-        "label": "Proyectos entregados",
-        "computed": "projectsDelivered"
-      },
-      {
-        "value": "8",
-        "label": "Empresas",
-        "computed": "companies"
-      }
-    ]
+    "label": "Desarrollador Full Stack — Entropia, CDMX",
+    "name": "David Mejía",
+    "quiet": "Backend sólido,",
+    "loud": "producto completo.",
+    "lead": "{years} años construyendo sistemas transaccionales: integraciones de pago, APIs y bases de datos para educación, seguros, finanzas y gobierno. Hoy desarrollo producto full stack con Python, Django y React en Entropia.",
+    "ctaCv": "Descargar CV",
+    "scroll": "Scroll",
+    "ctaEmail": "E-mail",
+    "ctaWhatsapp": "WhatsApp"
   },
   "about": {
     "title": "Resumen Profesional",
-    "intro": "Ingeniero de Software Senior con **10 años de experiencia** en desarrollo backend y sistemas web, especializado en **Python**, **Django**, **Django REST Framework**, **REST APIs**, **bases de datos** e **integraciones de sistemas**. He desarrollado y mantenido sistemas transaccionales para **educación**, **seguros**, **finanzas** y **gobierno**, incluyendo plataformas con aproximadamente **80,000 alumnos** y **23 millones de pagos históricos**.",
+    "intro": "Ingeniero de Software Senior con **{years} años de experiencia** en desarrollo backend y sistemas web, especializado en **Python**, **Django**, **Django REST Framework**, **REST APIs**, **bases de datos** e **integraciones de sistemas**. He desarrollado y mantenido sistemas transaccionales para **educación**, **seguros**, **finanzas** y **gobierno**, incluyendo plataformas con aproximadamente **80,000 alumnos** y **23 millones de pagos históricos**. Actualmente trabajo como **Desarrollador Full Stack** en **Entropia**.",
     "highlights": [
       "Especializado en **integraciones de pagos**, **optimización de bases de datos**, **procesamiento asíncrono**, **modernización de sistemas legacy**, **microservicios** y **automatización de procesos**",
       "Experiencia adicional en **React**, **AWS**, **GCP**, **PostgreSQL**, **MySQL**, **MongoDB**, **Celery** y **Redis**"
-    ]
+    ],
+    "stats": {
+      "years": "años de experiencia",
+      "companies": "empresas",
+      "projects": "proyectos",
+      "countries": "países"
+    }
   },
   "experience": {
     "title": "Experiencia Profesional",
-    "at": "—",
     "positions": [
       {
-        "position": "Desarrollador Web Backend, Departamento de Finanzas",
+        "position": "Desarrollador Full Stack",
+        "industry": "Inteligencia artificial",
         "modality": "Remoto",
-        "lineOfBusiness": "Naucalpan, Estado de México, México",
+        "location": "Ciudad de México, México",
+        "highlights": []
+      },
+      {
+        "position": "Desarrollador Web Backend, Departamento de Finanzas",
+        "industry": "Educación en línea",
+        "modality": "Remoto",
+        "location": "Naucalpan, Estado de México, México",
         "highlights": [
           "Desarrollé funcionalidades backend para los módulos financieros de una plataforma utilizada por aproximadamente 80,000 alumnos activos, utilizando Python, Django y MySQL para soportar operaciones académicas y financieras",
           "Integré múltiples proveedores de pago y servicios financieros, desarrollando conexiones con Mercado Pago, Nequi, PayU, Banco Pichincha y Efecty mediante APIs, SFTP, CSV y procesos daemon",
@@ -67,8 +59,9 @@
       },
       {
         "position": "Desarrollador Web Full Stack / Líder Técnico",
+        "industry": "Desarrollo de software · seguros",
         "modality": "Remoto",
-        "lineOfBusiness": "Ciudad de México, México",
+        "location": "Ciudad de México, México",
         "highlights": [
           "Recuperé la operación de una plataforma legacy del sector asegurador, actualizando Python, Django y dependencias y adaptando la aplicación a una nueva instancia de ejecución",
           "Restauré la operación de 7 microservicios existentes, identificando configuraciones, dependencias y problemas de integración para incorporarlos a la plataforma",
@@ -79,8 +72,9 @@
       },
       {
         "position": "Desarrollador Web Backend",
+        "industry": "Servicios de TI",
         "modality": "Remoto",
-        "lineOfBusiness": "Boston, Massachusetts, EE. UU.",
+        "location": "Boston, Massachusetts, EE. UU.",
         "highlights": [
           "Refactoricé las APIs backend de un MVP para gestión de máquinas expendedoras, utilizando Python y Django para mejorar la organización y funcionamiento del sistema",
           "Implementé comunicación bidireccional en tiempo real mediante WebSockets, conectando backend y máquinas para gestionar comandos, ventas, inventario y eventos operativos",
@@ -92,8 +86,9 @@
       },
       {
         "position": "Desarrollador Web Backend / Analista de Datos",
+        "industry": "Desarrollo de software · seguros",
         "modality": "Remoto",
-        "lineOfBusiness": "Ciudad de México, México",
+        "location": "Ciudad de México, México",
         "highlights": [
           "Mantuve y evolucioné un sistema legacy para agencias de seguros, desarrollando funcionalidades con Python, Django, Django REST Framework y PostgreSQL para administrar clientes, pólizas, pagos, siniestros y comisiones",
           "Reduje aproximadamente 66% el tiempo de procesos de importación, optimizando scripts de Python para transformar y cargar datos desde archivos Excel y CSV, pasando de aproximadamente 24 a 8 horas",
@@ -105,8 +100,9 @@
       },
       {
         "position": "Trainee de Ciencia de Datos y AI",
+        "industry": "Software y ciencia de datos",
         "modality": "Presencial",
-        "lineOfBusiness": "Mérida, Yucatán, México",
+        "location": "Mérida, Yucatán, México",
         "highlights": [
           "Desarrollé modelos analíticos para predecir el éxito o fracaso de campañas de Kickstarter, aplicando preparación de datos, clustering y análisis de similitud con Python y Dataiku",
           "Procesé y analicé datasets para proyectos de Data Science y Machine Learning, aplicando técnicas de análisis exploratorio y transformación de datos"
@@ -114,8 +110,9 @@
       },
       {
         "position": "Desarrollador Web Full Stack / Coordinador de Tecnología",
+        "industry": "Construcción",
         "modality": "Presencial",
-        "lineOfBusiness": "Pachuca, Hidalgo, México",
+        "location": "Pachuca, Hidalgo, México",
         "highlights": [
           "Diseñé y desarrollé una plataforma utilizada por 45 empleados para gestionar aproximadamente 1,500 sistemas de bebederos escolares, implementando backend, frontend y modelo de datos con Python, Django y PostgreSQL",
           "Desarrollé módulos para gestionar escuelas, expedientes, construcción, operación, mantenimiento e incidencias, centralizando el seguimiento operativo del proyecto",
@@ -125,8 +122,9 @@
       },
       {
         "position": "Desarrollador Web Full Stack",
+        "industry": "Gobierno · ciencia y tecnología",
         "modality": "Presencial",
-        "lineOfBusiness": "Pachuca, Hidalgo, México",
+        "location": "Pachuca, Hidalgo, México",
         "highlights": [
           "Desarrollé de forma autónoma una aplicación para control presupuestal, transformando requerimientos del área financiera en funcionalidades con Python, Django y PostgreSQL",
           "Diseñé el modelo de datos y desarrollé módulos para ingresos, egresos, saldos, fondos y periodos, proporcionando herramientas para seguimiento presupuestal",
@@ -136,14 +134,82 @@
       },
       {
         "position": "Asistente de Investigación (Prácticas Profesionales)",
+        "industry": "Educación · investigación",
         "modality": "Híbrido",
-        "lineOfBusiness": "Educación",
+        "location": "Atizapán, Estado de México, México",
         "highlights": [
           "Desarrollé una aplicación web para la extracción de tweets y análisis de sentimientos",
           "Aprendí Python de forma autodidacta"
         ]
       }
-    ]
+    ],
+    "showMore": "Ver más",
+    "showLess": "Ver menos",
+    "present": "Hoy",
+    "justStarted": "Recién empezando. Pronto habrá más que contar.",
+    "industryLabel": "Giro",
+    "map": {
+      "title": "Mapa de trabajo",
+      "hint": "Pasa el cursor o toca un punto para ver el detalle.",
+      "mexico": "México",
+      "americas": "Continente",
+      "views": {
+        "work": {
+          "tab": "Donde he trabajado",
+          "desc": "Lugares donde he trabajado, en persona o a distancia."
+        },
+        "visits": {
+          "tab": "Visitas de trabajo",
+          "desc": "Lugares a los que he ido físicamente por trabajo, fuera de mi oficina."
+        },
+        "team": {
+          "tab": "Equipos",
+          "desc": "De dónde son las personas con las que he colaborado."
+        }
+      },
+      "notes": {
+        "onsite": "presencial",
+        "hybrid": "híbrido",
+        "training": "capacitaciones",
+        "visits": "visitas frecuentes",
+        "remote": "remoto"
+      },
+      "countries": {
+        "MX": "México",
+        "US": "Estados Unidos",
+        "CO": "Colombia",
+        "AR": "Argentina"
+      },
+      "cities": {
+        "pachuca": "Pachuca",
+        "merida": "Mérida",
+        "atizapan": "Atizapán",
+        "naucalpan": "Naucalpan",
+        "tuxtla": "Tuxtla Gutiérrez",
+        "oaxaca": "Oaxaca",
+        "durango": "Durango",
+        "zacatecas": "Zacatecas",
+        "puebla": "Puebla",
+        "slp": "San Luis Potosí",
+        "morelia": "Morelia",
+        "monterrey": "Monterrey",
+        "boston": "Boston",
+        "austin": "Austin",
+        "cdmx": "Ciudad de México",
+        "buenosaires": "Buenos Aires",
+        "medellin": "Medellín",
+        "zumpango": "Zumpango",
+        "guadalajara": "Guadalajara"
+      },
+      "cityOne": "ciudad",
+      "cityMany": "ciudades",
+      "inOne": "en",
+      "countryMany": "países",
+      "kinds": {
+        "onsite": "Presencial",
+        "remote": "Remoto"
+      }
+    }
   },
   "skills": {
     "title": "Competencias Clave",
@@ -159,34 +225,7 @@
     }
   },
   "certifications": {
-    "title": "Cursos y Certificaciones",
-    "items": [
-      {
-        "name": "RESTful API with Python using Django REST Framework",
-        "institution": "Udemy",
-        "year": "2021"
-      },
-      {
-        "name": "Python for Artificial Intelligence",
-        "institution": "Actumlogos",
-        "year": "June 2020"
-      },
-      {
-        "name": "Dataiku DSS — Level 1 Certified User",
-        "institution": "Dataiku",
-        "year": "May 2019"
-      },
-      {
-        "name": "Backend and Servers Path",
-        "institution": "Fixtergeek",
-        "year": "March 2017"
-      },
-      {
-        "name": "Backend Django Path",
-        "institution": "Fixtergeek",
-        "year": "September 2016"
-      }
-    ]
+    "title": "Cursos y Certificaciones"
   },
   "projects": {
     "title": "Proyectos",
@@ -301,7 +340,9 @@
         "description": "Sitio web para una banda de rock con gestión de contenido y galería multimedia",
         "company": "Independiente"
       }
-    ]
+    ],
+    "showAll": "Ver todos",
+    "showLess": "Ver menos"
   },
   "education": {
     "title": "Educación",
@@ -309,44 +350,20 @@
       {
         "degree": "Ingeniería en Tecnologías de la Información y Comunicaciones",
         "institution": "Instituto Tecnológico de Pachuca",
-        "period": "2010 - 2015",
+        "period": "2010 – 2015",
         "note": "Titulado por tesis"
       },
       {
         "degree": "Diplomado en Data Science & Artificial Intelligence",
         "institution": "Plenumsoft",
-        "period": "2018 - 2019"
+        "period": "2018 – 2019"
       }
-    ]
-  },
-  "services": {
-    "title": "Servicios",
-    "items": [
-      {
-        "icon": "FaCode",
-        "name": "Desarrollo Web Full Stack",
-        "description": "Aplicaciones web completas con Python, Django y React"
-      },
-      {
-        "icon": "FaServer",
-        "name": "APIs y Microservicios",
-        "description": "Diseño e implementación de APIs REST y arquitecturas de microservicios"
-      },
-      {
-        "icon": "FaDatabase",
-        "name": "Bases de Datos",
-        "description": "Diseño, optimización y migración de bases de datos"
-      },
-      {
-        "icon": "FaCloud",
-        "name": "Despliegue en la Nube",
-        "description": "Configuración y despliegue en AWS, GCP, Heroku y Render"
-      }
-    ]
+    ],
+    "section": "Formación"
   },
   "footer": {
-    "contact": "¿Tienes un proyecto en mente? Hablemos.",
-    "cta": "Contáctame",
-    "rights": "Todos los derechos reservados."
+    "contact": "¿Construimos algo juntos?",
+    "ctaEmail": "Mándame un e-mail",
+    "ctaWhatsapp": "Mándame un WhatsApp"
   }
 }

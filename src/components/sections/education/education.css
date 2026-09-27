@@ -1,0 +1,39 @@
+.edu-heading {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-3);
+    margin-bottom: 8px;
+}
+
+.edu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.edu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.edu-text {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.edu-date {
+    white-space: nowrap;
+    align-self: baseline;
+}
+
+@media (max-width: 575px) {
+    .edu-item {
+        gap: 14px;
+    }
+}

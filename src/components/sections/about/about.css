@@ -1,8 +1,72 @@
-.about-highlights {
-    padding-left: 20px;
-    line-height: 1.8;
+.about-body {
+    color: var(--text-2);
 }
 
-.about-highlights li::marker {
-    color: #6c9bcf;
+.about-body strong {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    line-height: 1.75;
+    margin-bottom: 28px;
+}
+
+.about-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.75;
+}
+
+.about-highlights li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+}
+
+.about-highlights li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.75em;
+    width: 12px;
+    height: 1px;
+    background: var(--accent);
+}
+
+/* Right column: career numbers */
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 32px;
+    margin: 0;
+}
+
+.about-stat {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px 0 28px;
+    border-top: 1px solid var(--line-strong);
+}
+
+.about-stat-value {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    color: var(--text);
+    margin: 0 0 12px;
+}
+
+.about-stat:first-child .about-stat-value {
+    color: var(--accent);
+}
+
+.about-stat-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-3);
 }

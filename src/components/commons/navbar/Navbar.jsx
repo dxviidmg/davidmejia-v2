@@ -1,52 +1,41 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useLang } from "../../../utils/LangContext";
+import { useScroll } from "../../../utils/useScroll";
+import { LogoMark } from "../logo/Logo";
+import { SECTIONS } from "../../../sections";
 import "./navbar.css";
-
-const MENU = [
-  { id: "banner", key: "home" },
-  { id: "about-me", key: "about" },
-  { id: "services", key: "services" },
-  { id: "experience", key: "experience" },
-  { id: "skills", key: "skills" },
-  { id: "projects", key: "projects" },
-  { id: "education", key: "education" },
-  { id: "certifications", key: "certifications" },
-];
 
 export function NavBar() {
   const { lang, t, toggle } = useLang();
-  const [activeLink, setActiveLink] = useState("banner");
+  const [activeLink, setActiveLink] = useState(null);
   const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  useScroll(() => setScrolled(window.scrollY > 50));
 
   return (
-    <Navbar fixed="top" expand="md" className={scrolled ? "nav-scrolled" : "nav-top"}>
+    <Navbar fixed="top" expand="md" variant="dark" className={scrolled ? "nav-scrolled" : "nav-top"}>
       <Container>
-        <Navbar.Brand href="#banner" className="nav-brand">DM</Navbar.Brand>
-        <Navbar.Toggle aria-controls="main-nav">
-          <span className="navbar-toggler-icon" />
-        </Navbar.Toggle>
+        <Navbar.Brand href="#banner" className="nav-brand">
+          <LogoMark size={18} className="nav-logo" />
+          <span>David Mejía</span>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="main-nav" />
         <Navbar.Collapse id="main-nav">
-          <Nav className="ms-auto align-items-center">
-            {MENU.map((item) => (
+          <Nav className="ms-auto align-items-md-center">
+            {SECTIONS.map((item) => (
               <Nav.Link
                 key={item.id}
                 href={`#${item.id}`}
-                className={activeLink === item.id ? "nav-link-active" : "nav-link-default"}
+                className={activeLink === item.id ? "nav-link-dm active" : "nav-link-dm"}
                 onClick={() => setActiveLink(item.id)}
               >
-                {t.nav[item.key]}
+                {t.nav[item.nav]}
               </Nav.Link>
             ))}
-            <button className="lang-toggle" onClick={toggle}>
+            <button className="lang-toggle" onClick={toggle} aria-label="Change language">
               {lang === "en" ? "ES" : "EN"}
             </button>
           </Nav>

@@ -1,0 +1,36 @@
+{
+    "views": {
+        "work": [
+            { "city": "pachuca", "region": "MX-HID", "companies": ["CITNOVA", "CARSEV"], "kind": "onsite" },
+            { "city": "merida", "region": "MX-YUC", "companies": ["Plenumsoft"], "kind": "onsite" },
+            { "city": "atizapan", "region": "MX-MEX", "companies": ["ITESM"], "kind": "onsite", "note": "hybrid" },
+            { "city": "cdmx", "region": "MX-DIF", "companies": ["Entropia", "Ixulabs"], "kind": "remote" },
+            { "city": "naucalpan", "region": "MX-MEX", "companies": ["UTEL"], "kind": "remote" },
+            { "city": "boston", "region": "US", "companies": ["GenOne"], "kind": "remote" }
+        ],
+        "visits": [
+            { "city": "cdmx", "region": "MX-DIF", "note": "visits" },
+            { "city": "tuxtla", "region": "MX-CHP", "note": "training" },
+            { "city": "oaxaca", "region": "MX-OAX", "note": "training" },
+            { "city": "durango", "region": "MX-DUR", "note": "training" },
+            { "city": "zacatecas", "region": "MX-ZAC", "note": "training" },
+            { "city": "puebla", "region": "MX-PUE", "note": "training" },
+            { "city": "slp", "region": "MX-SLP", "note": "training" }
+        ],
+        "team": [
+            { "city": "merida", "region": "MX-YUC" },
+            { "city": "pachuca", "region": "MX-HID" },
+            { "city": "cdmx", "region": "MX-DIF" },
+            { "city": "guadalajara", "region": "MX-JAL" },
+            { "city": "morelia", "region": "MX-MIC" },
+            { "city": "monterrey", "region": "MX-NLE" },
+            { "city": "tuxtla", "region": "MX-CHP" },
+            { "city": "zumpango", "region": "MX-MEX" },
+            { "city": "atizapan", "region": "MX-MEX" },
+            { "city": "boston", "region": "US" },
+            { "city": "austin", "region": "US" },
+            { "city": "medellin", "region": "CO" },
+            { "city": "buenosaires", "region": "AR" }
+        ]
+    }
+}

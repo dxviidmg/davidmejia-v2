@@ -1,32 +1,37 @@
 import { Container } from "react-bootstrap";
-import { BsLinkedin, BsGithub, BsFileText, BsEnvelope } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsEnvelope, BsWhatsapp } from "react-icons/bs";
 import { useLang } from "../../../utils/LangContext";
-import { useInView } from "../../../utils/useInView";
+import { LogoMark } from "../logo/Logo";
+import { CONTACT } from "../../../utils/contact";
+import { Reveal } from "../reveal/Reveal";
+import { SectionEyebrow } from "../section/SectionHeader";
+import { AccentEnd } from "../text/AccentEnd";
 import "./footer.css";
 
 export function Footer() {
-  const { t, cvUrl } = useLang();
-  const [ref, visible] = useInView();
+  const { t } = useLang();
   return (
-    <footer id="footer" className="section-dark">
-      <Container className="text-center" ref={ref}>
-        <p className={`footer-contact fade-up ${visible ? "visible" : ""}`}>{t.footer.contact}</p>
-        <a href={`https://wa.me/${process.env.REACT_APP_WHATSAPP}`} target="_blank" rel="noreferrer" className={`footer-cta fade-up stagger-1 ${visible ? "visible" : ""}`}>{t.footer.cta}</a>
-        <div className={`footer-icons fade-up stagger-2 ${visible ? "visible" : ""}`}>
-          <a href={process.env.REACT_APP_LINKEDIN} target="_blank" rel="noreferrer" title="LinkedIn">
-            <BsLinkedin />
+    <footer id="footer" className="section">
+      <Container>
+        <Reveal as="p"><SectionEyebrow id="footer" /></Reveal>
+        <Reveal as="h2" className="footer-contact" delay={0.1}><AccentEnd text={t.footer.contact} /></Reveal>
+        <Reveal className="footer-actions" delay={0.2}>
+          <a href={CONTACT.email} target="_blank" rel="noreferrer" className="btn-dm">
+            <BsEnvelope /> {t.footer.ctaEmail}
           </a>
-          <a href={process.env.REACT_APP_GITHUB} target="_blank" rel="noreferrer" title="GitHub">
-            <BsGithub />
+          <a href={CONTACT.whatsapp} target="_blank" rel="noreferrer" className="btn-dm btn-dm-ghost">
+            <BsWhatsapp className="social-whatsapp" /> {t.footer.ctaWhatsapp}
           </a>
-          <a href={`https://mail.google.com/mail/?view=cm&to=${process.env.REACT_APP_EMAIL}`} title="Email">
-            <BsEnvelope />
-          </a>
-          <a href={cvUrl} target="_blank" rel="noreferrer" title="Download CV">
-            <BsFileText />
-          </a>
+        </Reveal>
+        <div className="footer-bottom">
+          <span className="footer-brand"><LogoMark size={18} className="nav-logo" /> © {new Date().getFullYear()} David Mejía</span>
+          <div className="footer-icons">
+            <a href={CONTACT.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="social-linkedin"><BsLinkedin /></a>
+            <a href={CONTACT.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="social-github"><BsGithub /></a>
+            <a href={CONTACT.email} target="_blank" rel="noreferrer" aria-label="Email"><BsEnvelope /></a>
+            <a href={CONTACT.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="social-whatsapp"><BsWhatsapp /></a>
+          </div>
         </div>
-        <p className="footer-copy">© {new Date().getFullYear()} David Mejía. {t.footer.rights}</p>
       </Container>
     </footer>
   );

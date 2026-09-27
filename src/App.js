@@ -3,16 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
 import { LangProvider } from './utils/LangContext';
-import { FaWhatsapp } from 'react-icons/fa';
 import { Banner } from './components/sections/banner/Banner';
+import { Marquee } from './components/commons/marquee/Marquee';
+import { WhatsAppFloat } from './components/commons/whatsapp/WhatsAppFloat';
 
 const About = lazy(() => import('./components/sections/about/About').then(m => ({ default: m.About })));
 const Experience = lazy(() => import('./components/sections/experience/Experience').then(m => ({ default: m.Experience })));
 const Skills = lazy(() => import('./components/sections/skills/Skills').then(m => ({ default: m.Skills })));
 const Projects = lazy(() => import('./components/sections/projects/Projects').then(m => ({ default: m.Projects })));
-const Certifications = lazy(() => import('./components/sections/certifications/Certifications').then(m => ({ default: m.Certifications })));
 const Education = lazy(() => import('./components/sections/education/Education').then(m => ({ default: m.Education })));
-const Services = lazy(() => import('./components/sections/services/Services').then(m => ({ default: m.Services })));
 const Footer = lazy(() => import('./components/commons/footer/Footer').then(m => ({ default: m.Footer })));
 
 function App() {
@@ -20,32 +19,16 @@ function App() {
     <LangProvider>
       <div className="App">
         <Banner />
+        <Marquee />
         <Suspense fallback={null}>
           <About />
-          <hr className="section-divider" />
-          <Services />
-          <hr className="section-divider" />
           <Experience />
-          <hr className="section-divider" />
           <Skills />
-          <hr className="section-divider" />
           <Projects />
-          <hr className="section-divider" />
           <Education />
-          <hr className="section-divider" />
-          <Certifications />
-          <hr className="section-divider" />
           <Footer />
         </Suspense>
-        <a
-          href={`https://wa.me/${process.env.REACT_APP_WHATSAPP}`}
-          target="_blank"
-          rel="noreferrer"
-          className="whatsapp-float"
-          aria-label="Chat on WhatsApp"
-        >
-          <FaWhatsapp />
-        </a>
+        <WhatsAppFloat />
       </div>
     </LangProvider>
   );

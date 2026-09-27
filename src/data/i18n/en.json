@@ -1,60 +1,52 @@
 {
   "nav": {
-    "home": "Home",
     "about": "About",
     "experience": "Experience",
     "skills": "Skills",
-    "certifications": "Certifications",
     "projects": "Projects",
     "education": "Education",
-    "services": "Services"
+    "contact": "Contact"
   },
   "banner": {
-    "greeting": "Welcome to my portfolio",
-    "name": "Hi, I'm David Mejía",
-    "cta": "View my projects",
-    "titles": [
-      "Backend Engineer",
-      "Senior Software Engineer",
-      "Python Developer",
-      "Django Developer",
-      "Full Stack Developer",
-      "Data Analyst"
-    ],
-    "stats": [
-      {
-        "value": "+9",
-        "label": "Years of experience",
-        "computed": "yearsOfExperience"
-      },
-      {
-        "value": "+20",
-        "label": "Projects delivered",
-        "computed": "projectsDelivered"
-      },
-      {
-        "value": "8",
-        "label": "Companies",
-        "computed": "companies"
-      }
-    ]
+    "label": "Full Stack Developer — Entropia, Mexico City",
+    "name": "David Mejía",
+    "quiet": "Solid backend,",
+    "loud": "complete product.",
+    "lead": "{years} years building transactional systems: payment integrations, APIs and databases for education, insurance, finance and government. Today I build full stack product with Python, Django and React at Entropia.",
+    "ctaCv": "Download CV",
+    "scroll": "Scroll",
+    "ctaEmail": "Email",
+    "ctaWhatsapp": "WhatsApp"
   },
   "about": {
     "title": "Professional Summary",
-    "intro": "Senior Software Engineer with **10 years of experience** in backend and web systems development, specializing in **Python**, **Django**, **Django REST Framework**, **REST APIs**, **databases**, and **system integrations**. I have developed and maintained transactional systems for **education**, **insurance**, **finance**, and **government**, including platforms serving approximately **80,000 students** and **23 million historical payments**.",
+    "intro": "Senior Software Engineer with **{years} years of experience** in backend and web systems development, specializing in **Python**, **Django**, **Django REST Framework**, **REST APIs**, **databases**, and **system integrations**. I have developed and maintained transactional systems for **education**, **insurance**, **finance**, and **government**, including platforms serving approximately **80,000 students** and **23 million historical payments**. Currently working as a **Full Stack Developer** at **Entropia**.",
     "highlights": [
       "Specialized in **payment integrations**, **database optimization**, **asynchronous processing**, **legacy system modernization**, **microservices**, and **process automation**",
       "Additional experience with **React**, **AWS**, **GCP**, **PostgreSQL**, **MySQL**, **MongoDB**, **Celery**, and **Redis**"
-    ]
+    ],
+    "stats": {
+      "years": "years of experience",
+      "companies": "companies",
+      "projects": "projects",
+      "countries": "countries"
+    }
   },
   "experience": {
     "title": "Professional Experience",
-    "at": "—",
     "positions": [
       {
-        "position": "Backend Web Developer, Finance Department",
+        "position": "Full Stack Developer",
+        "industry": "Artificial intelligence",
         "modality": "Remote",
-        "lineOfBusiness": "Naucalpan, State of Mexico, Mexico",
+        "location": "Mexico City, Mexico",
+        "highlights": []
+      },
+      {
+        "position": "Backend Web Developer, Finance Department",
+        "industry": "Online education",
+        "modality": "Remote",
+        "location": "Naucalpan, State of Mexico, Mexico",
         "highlights": [
           "Developed backend functionality for financial modules used by approximately 80,000 active students, using Python, Django, and MySQL to support academic and financial operations",
           "Integrated multiple payment providers and financial services, developing connections with Mercado Pago, Nequi, PayU, Banco Pichincha, and Efecty through APIs, SFTP, CSV, and daemon processes",
@@ -67,8 +59,9 @@
       },
       {
         "position": "Full Stack Web Developer / Technical Lead",
+        "industry": "Software development · insurance",
         "modality": "Remote",
-        "lineOfBusiness": "Mexico City, Mexico",
+        "location": "Mexico City, Mexico",
         "highlights": [
           "Restored the operation of a legacy insurance platform, upgrading Python, Django, and dependencies and adapting the application to a new runtime environment",
           "Restored 7 existing microservices, identifying configuration, dependency, and integration issues required to incorporate them back into the platform",
@@ -79,8 +72,9 @@
       },
       {
         "position": "Backend Web Developer",
+        "industry": "IT services",
         "modality": "Remote",
-        "lineOfBusiness": "Boston, Massachusetts, USA",
+        "location": "Boston, Massachusetts, USA",
         "highlights": [
           "Refactored backend APIs for a vending machine management MVP, using Python and Django to improve the organization and operation of the system",
           "Implemented real-time bidirectional communication using WebSockets, connecting the backend with vending machines to manage commands, sales, inventory, and operational events",
@@ -92,8 +86,9 @@
       },
       {
         "position": "Backend Web Developer / Data Analyst",
+        "industry": "Software development · insurance",
         "modality": "Remote",
-        "lineOfBusiness": "Mexico City, Mexico",
+        "location": "Mexico City, Mexico",
         "highlights": [
           "Maintained and evolved a legacy insurance management system, developing functionality with Python, Django, Django REST Framework, and PostgreSQL to manage customers, policies, payments, claims, and commissions",
           "Reduced data import processing time by approximately 66%, optimizing Python scripts for transforming and loading Excel and CSV data, reducing processing time from approximately 24 to 8 hours",
@@ -105,8 +100,9 @@
       },
       {
         "position": "Data Science & AI Trainee",
+        "industry": "Software & data science",
         "modality": "On-site",
-        "lineOfBusiness": "Mérida, Yucatán, Mexico",
+        "location": "Mérida, Yucatán, Mexico",
         "highlights": [
           "Developed analytical models to predict the success or failure of Kickstarter campaigns, applying data preparation, clustering, and similarity analysis using Python and Dataiku",
           "Processed and analyzed datasets for Data Science and Machine Learning projects, applying exploratory data analysis and data transformation techniques"
@@ -114,8 +110,9 @@
       },
       {
         "position": "Full Stack Web Developer / Technology Coordinator",
+        "industry": "Construction",
         "modality": "On-site",
-        "lineOfBusiness": "Pachuca, Hidalgo, Mexico",
+        "location": "Pachuca, Hidalgo, Mexico",
         "highlights": [
           "Designed and developed a platform used by 45 employees to manage approximately 1,500 school drinking-water systems, implementing the backend, frontend, and data model with Python, Django, and PostgreSQL",
           "Developed modules for managing schools, records, construction, operations, maintenance, and incidents, centralizing project tracking and operational management",
@@ -125,8 +122,9 @@
       },
       {
         "position": "Full Stack Web Developer",
+        "industry": "Government · science & technology",
         "modality": "On-site",
-        "lineOfBusiness": "Pachuca, Hidalgo, Mexico",
+        "location": "Pachuca, Hidalgo, Mexico",
         "highlights": [
           "Independently developed a budget management application, translating financial department requirements into web functionality using Python, Django, and PostgreSQL",
           "Designed the data model and developed modules for revenue, expenses, balances, funds, and periods, providing tools for budget monitoring",
@@ -136,14 +134,82 @@
       },
       {
         "position": "Research Assistant (Professional Internship)",
+        "industry": "Education · research",
         "modality": "Hybrid",
-        "lineOfBusiness": "Education",
+        "location": "Atizapán, State of Mexico, Mexico",
         "highlights": [
           "Developed a web application for Twitter data extraction and sentiment analysis",
           "Learned Python in a self-taught way"
         ]
       }
-    ]
+    ],
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "present": "Present",
+    "justStarted": "Just getting started. More to tell soon.",
+    "industryLabel": "Industry",
+    "map": {
+      "title": "Work map",
+      "hint": "Hover or tap a point to see the details.",
+      "mexico": "Mexico",
+      "americas": "Americas",
+      "views": {
+        "work": {
+          "tab": "Where I've worked",
+          "desc": "Places where I've worked, in person or remotely."
+        },
+        "visits": {
+          "tab": "Work trips",
+          "desc": "Places I've gone to in person for work, outside my own office."
+        },
+        "team": {
+          "tab": "Teams",
+          "desc": "Where the people I've worked with are from."
+        }
+      },
+      "notes": {
+        "onsite": "on-site",
+        "hybrid": "hybrid",
+        "training": "training sessions",
+        "visits": "frequent visits",
+        "remote": "remote"
+      },
+      "countries": {
+        "MX": "Mexico",
+        "US": "United States",
+        "CO": "Colombia",
+        "AR": "Argentina"
+      },
+      "cities": {
+        "pachuca": "Pachuca",
+        "merida": "Mérida",
+        "atizapan": "Atizapán",
+        "naucalpan": "Naucalpan",
+        "tuxtla": "Tuxtla Gutiérrez",
+        "oaxaca": "Oaxaca",
+        "durango": "Durango",
+        "zacatecas": "Zacatecas",
+        "puebla": "Puebla",
+        "slp": "San Luis Potosí",
+        "morelia": "Morelia",
+        "monterrey": "Monterrey",
+        "boston": "Boston",
+        "austin": "Austin",
+        "cdmx": "Mexico City",
+        "buenosaires": "Buenos Aires",
+        "medellin": "Medellín",
+        "zumpango": "Zumpango",
+        "guadalajara": "Guadalajara"
+      },
+      "cityOne": "city",
+      "cityMany": "cities",
+      "inOne": "in",
+      "countryMany": "countries",
+      "kinds": {
+        "onsite": "On-site",
+        "remote": "Remote"
+      }
+    }
   },
   "skills": {
     "title": "Core Skills",
@@ -159,34 +225,7 @@
     }
   },
   "certifications": {
-    "title": "Courses and Certifications",
-    "items": [
-      {
-        "name": "RESTful API with Python using Django REST Framework",
-        "institution": "Udemy",
-        "year": "2021"
-      },
-      {
-        "name": "Remote Python Course for Artificial Intelligence",
-        "institution": "Actumlogos",
-        "year": "June 2020"
-      },
-      {
-        "name": "Dataiku DSS — Level 1 Certified User",
-        "institution": "Dataiku",
-        "year": "May 2019"
-      },
-      {
-        "name": "Backend and Servers Path",
-        "institution": "FixterGeek",
-        "year": "March 2017"
-      },
-      {
-        "name": "Backend Path",
-        "institution": "FixterGeek",
-        "year": "2016"
-      }
-    ]
+    "title": "Courses and Certifications"
   },
   "projects": {
     "title": "Projects",
@@ -301,7 +340,9 @@
         "description": "Website for a rock band with content management and media gallery",
         "company": "Independent"
       }
-    ]
+    ],
+    "showAll": "Show all",
+    "showLess": "Show less"
   },
   "education": {
     "title": "Education",
@@ -309,44 +350,20 @@
       {
         "degree": "B.Eng. in Information and Communication Technologies",
         "institution": "Instituto Tecnológico de Pachuca",
-        "period": "2010 - 2015",
+        "period": "2010 – 2015",
         "note": "Graduated with thesis"
       },
       {
         "degree": "Diploma in Data Science & Artificial Intelligence",
         "institution": "Plenumsoft",
-        "period": "2018 - 2019"
+        "period": "2018 – 2019"
       }
-    ]
-  },
-  "services": {
-    "title": "Services",
-    "items": [
-      {
-        "icon": "FaCode",
-        "name": "Full Stack Web Development",
-        "description": "End-to-end web applications with Python, Django and React"
-      },
-      {
-        "icon": "FaServer",
-        "name": "APIs & Microservices",
-        "description": "REST API design and microservices architecture"
-      },
-      {
-        "icon": "FaDatabase",
-        "name": "Databases",
-        "description": "Database design, optimization and migration"
-      },
-      {
-        "icon": "FaCloud",
-        "name": "Cloud Deployment",
-        "description": "Setup and deployment on AWS, GCP, Heroku and Render"
-      }
-    ]
+    ],
+    "section": "Education"
   },
   "footer": {
-    "contact": "Got a project in mind? Let's talk.",
-    "cta": "Get in touch",
-    "rights": "All rights reserved."
+    "contact": "Shall we build something together?",
+    "ctaEmail": "Send me an email",
+    "ctaWhatsapp": "Message me on WhatsApp"
   }
 }

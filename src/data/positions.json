@@ -1,74 +1,56 @@
 [
     {
-        "company": {
-            "name": "UTEL",
-            "url": "https://utel.edu.mx"
-        },
-        "period": "Ene 2024 – Ago 2026",
-        "location": "Naucalpan, Estado de México",
+        "company": "Entropia",
+        "start": "2026-09",
+        "end": null,
         "country": "MX"
     },
     {
-        "company": {
-            "name": "Ixulabs",
-            "url": "https://ixulabs.com"
-        },
-        "period": "Jun 2023 – Ene 2024",
-        "location": "Ciudad de México",
+        "company": "UTEL",
+        "start": "2024-01",
+        "end": "2026-08",
         "country": "MX"
     },
     {
-        "company": {
-            "name": "GenOne Technologies LLC",
-            "url": "https://genonetechnologies.com"
-        },
-        "period": "Mar 2022 – Oct 2022",
-        "location": "Boston, Massachusetts",
+        "company": "Ixulabs",
+        "start": "2023-06",
+        "end": "2024-01",
+        "country": "MX"
+    },
+    {
+        "company": "GenOne Technologies LLC",
+        "start": "2022-03",
+        "end": "2022-10",
         "country": "US"
     },
     {
-        "company": {
-            "name": "Ixulabs",
-            "url": "https://ixulabs.com"
-        },
-        "period": "May 2019 – Feb 2022",
-        "location": "Ciudad de México",
+        "company": "Ixulabs",
+        "start": "2019-05",
+        "end": "2022-02",
         "country": "MX"
     },
     {
-        "company": {
-            "name": "Plenumsoft",
-            "url": "https://plenumsoft.com"
-        },
-        "period": "Nov 2018 – May 2019",
-        "location": "Mérida",
+        "company": "Plenumsoft",
+        "start": "2018-11",
+        "end": "2019-05",
         "country": "MX"
     },
     {
-        "company": {
-            "name": "Grupo Constructor CARSEV",
-            "url": "https://carsev.com"
-        },
-        "period": "May 2017 – Nov 2018",
-        "location": "Pachuca",
+        "company": "Grupo Constructor CARSEV",
+        "start": "2017-05",
+        "end": "2018-11",
         "country": "MX"
     },
     {
-        "company": {
-            "name": "Gobierno del Estado de Hidalgo - CITNOVA",
-            "url": "https://citnova.hidalgo.gob.mx"
-        },
-        "period": "Nov 2016 – May 2017",
-        "location": "Pachuca",
+        "company": "Gobierno del Estado de Hidalgo - CITNOVA",
+        "start": "2016-11",
+        "end": "2017-05",
         "country": "MX"
     },
     {
-        "company": {
-            "name": "ITESM-CEM",
-            "url": "https://cefir.itesm.mx"
-        },
-        "period": "2014",
-        "location": "México",
+        "company": "ITESM-CEM",
+        "start": "2014",
+        "end": "2014",
         "country": "MX"
     }
 ]
