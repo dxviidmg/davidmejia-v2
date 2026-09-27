@@ -67,7 +67,7 @@ export const Projects = () => {
   return (
     <section className="section" id="projects">
       <Container>
-        <SectionHeader index={4} eyebrow={t.nav.projects} title={t.projects.title} />
+        <SectionHeader id="projects" title={t.projects.title} />
         <Tabs
           className="project-tabs"
           label={t.projects.title}

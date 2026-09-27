@@ -24,7 +24,7 @@ export const About = () => {
   return (
     <section id="about-me" className="section section-light">
       <Container>
-        <SectionHeader index={1} eyebrow={t.nav.about} title={t.about.title} />
+        <SectionHeader id="about-me" title={t.about.title} />
         <Row className="g-5 align-items-start">
           <Col lg={7} className="about-body">
             <Reveal as="p" className="about-intro"><Bold text={t.about.intro.replace("{years}", yearsOfExperience)} /></Reveal>

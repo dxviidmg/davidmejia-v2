@@ -73,7 +73,7 @@ export const Experience = () => {
   return (
     <section id="experience" className="section">
       <Container>
-        <SectionHeader index={2} eyebrow={t.nav.experience} title={t.experience.title} />
+        <SectionHeader id="experience" title={t.experience.title} />
         <WorkMap t={t} />
         <div className="timeline" ref={timelineRef}>
           {positions.map((pos, index) => (

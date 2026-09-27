@@ -5,16 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import { useLang } from "../../../utils/LangContext";
 import { useScroll } from "../../../utils/useScroll";
 import { LogoMark } from "../logo/Logo";
+import { SECTIONS } from "../../../sections";
 import "./navbar.css";
-
-const MENU = [
-  { id: "about-me", key: "about" },
-  { id: "experience", key: "experience" },
-  { id: "skills", key: "skills" },
-  { id: "projects", key: "projects" },
-  { id: "education", key: "education" },
-  { id: "footer", key: "contact" },
-];
 
 export function NavBar() {
   const { lang, t, toggle } = useLang();
@@ -33,14 +25,14 @@ export function NavBar() {
         <Navbar.Toggle aria-controls="main-nav" />
         <Navbar.Collapse id="main-nav">
           <Nav className="ms-auto align-items-md-center">
-            {MENU.map((item) => (
+            {SECTIONS.map((item) => (
               <Nav.Link
                 key={item.id}
                 href={`#${item.id}`}
                 className={activeLink === item.id ? "nav-link-dm active" : "nav-link-dm"}
                 onClick={() => setActiveLink(item.id)}
               >
-                {t.nav[item.key]}
+                {t.nav[item.nav]}
               </Nav.Link>
             ))}
             <button className="lang-toggle" onClick={toggle} aria-label="Change language">

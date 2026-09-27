@@ -40,7 +40,7 @@ export const Education = () => {
   return (
     <section className="section section-light" id="education">
       <Container>
-        <SectionHeader index={5} eyebrow={t.nav.education} title={t.education.section} />
+        <SectionHeader id="education" title={t.education.section} />
         <Row className="g-5">
           <Col lg={5}><EntryList title={t.education.title} entries={degrees} /></Col>
           <Col lg={7}><EntryList title={t.certifications.title} entries={certs} delay={0.1} /></Col>

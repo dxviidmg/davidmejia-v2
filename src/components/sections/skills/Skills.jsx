@@ -42,7 +42,7 @@ export const Skills = () => {
   return (
     <section className="section section-light" id="skills">
       <Container>
-        <SectionHeader index={3} eyebrow={t.nav.skills} title={t.skills.title} />
+        <SectionHeader id="skills" title={t.skills.title} />
         <Row>
           {Object.entries(skills).map(([category, items], i) => (
             <SkillCard key={category} label={t.skills.categories[category] || category} items={items} index={i} />
