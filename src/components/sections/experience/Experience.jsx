@@ -6,12 +6,10 @@ import { useInView } from "../../../utils/useInView";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { WorkMap } from "./WorkMap";
 import { getOrganization } from "../../../utils/organizations";
+import { LogoPlate } from "../../commons/logo/LogoPlate";
 import "./experience.css";
 
 const VISIBLE_HIGHLIGHTS = 3;
-
-// Fallback when a company has no logo: "Grupo Constructor CARSEV" -> "GC"
-const initials = (name) => name.split(/\s+/).filter((w) => w.length > 2).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
 
 const TimelineItem = ({ pos, tp, t, index }) => {
   const [ref, visible] = useInView();
@@ -24,11 +22,7 @@ const TimelineItem = ({ pos, tp, t, index }) => {
     <article className={`timeline-item fade-left ${visible ? "visible" : ""} ${index === 0 ? "is-current" : ""}`} ref={ref}>
       <div className="timeline-dot" />
       <div className="timeline-head">
-        <div className="timeline-logo" aria-hidden="true">
-          {org.logo
-            ? <img src={process.env.PUBLIC_URL + org.logo} alt="" loading="lazy" />
-            : <span className="timeline-logo-initials">{initials(org.name)}</span>}
-        </div>
+        <LogoPlate logo={org.logo} name={org.name} className="timeline-logo" />
         <p className="timeline-period">{pos.current ? `${pos.period} ${t.experience.present}` : pos.period}</p>
         <h3 className="timeline-company">
           {org.url ? (

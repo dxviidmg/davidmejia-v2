@@ -1,0 +1,53 @@
+.logo-plate {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    min-width: 52px;
+    max-width: 180px;
+    padding: 10px 12px;
+    background: #FFFFFF;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.logo-plate img {
+    display: block;
+    height: 32px;
+    width: auto;
+    max-width: 156px;
+    object-fit: contain;
+}
+
+.logo-plate-fixed {
+    width: 88px;
+    height: 48px;
+    padding: 8px;
+}
+
+.logo-plate-fixed img {
+    height: auto;
+    max-width: 100%;
+    max-height: 30px;
+}
+
+.logo-plate-initials {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #0A0A0A;
+}
+
+@media (max-width: 575px) {
+    .logo-plate-fixed {
+        width: 56px;
+        height: 40px;
+        padding: 6px;
+    }
+
+    .logo-plate-fixed img {
+        max-height: 24px;
+    }
+}

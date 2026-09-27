@@ -4,9 +4,9 @@ import { useLang } from "../../../utils/LangContext";
 import { useInView } from "../../../utils/useInView";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { getOrganization } from "../../../utils/organizations";
+import { LogoPlate } from "../../commons/logo/LogoPlate";
 import "./education.css";
 
-const logoFor = (institution) => getOrganization(institution).logo;
 
 const EntryList = ({ title, entries, delay = 0 }) => {
   const [ref, visible] = useInView();
@@ -16,9 +16,7 @@ const EntryList = ({ title, entries, delay = 0 }) => {
       <ul className="edu-list">
         {entries.map((e, i) => (
           <li key={i} className="edu-item">
-            <span className="edu-logo" aria-hidden="true">
-              {logoFor(e.subtitle) && <img src={process.env.PUBLIC_URL + logoFor(e.subtitle)} alt="" loading="lazy" />}
-            </span>
+            <LogoPlate logo={getOrganization(e.subtitle).logo} name={e.subtitle} fixed />
             <div className="edu-text">
               <p className="card-title-light">{e.title}</p>
               <p className="card-subtitle">{e.subtitle}</p>

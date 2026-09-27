@@ -49,35 +49,8 @@
     box-shadow: 0 0 0 5px rgba(59, 130, 246, 0.2);
 }
 
-/* Company logo on a small white plate so every logo reads on the black section */
 .timeline-logo {
-    display: inline-flex;
-    align-items: center;
-    height: 52px;
-    min-width: 52px;
-    max-width: 180px;
-    padding: 10px 12px;
     margin-bottom: 20px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-
-.timeline-logo img {
-    display: block;
-    height: 32px;
-    width: auto;
-    max-width: 156px;
-    object-fit: contain;
-}
-
-.timeline-logo-initials {
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: #0A0A0A;
 }
 
 .timeline-period {
