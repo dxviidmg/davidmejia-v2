@@ -11,7 +11,6 @@ const Experience = lazy(() => import('./components/sections/experience/Experienc
 const Skills = lazy(() => import('./components/sections/skills/Skills').then(m => ({ default: m.Skills })));
 const Projects = lazy(() => import('./components/sections/projects/Projects').then(m => ({ default: m.Projects })));
 const Education = lazy(() => import('./components/sections/education/Education').then(m => ({ default: m.Education })));
-const Services = lazy(() => import('./components/sections/services/Services').then(m => ({ default: m.Services })));
 const Footer = lazy(() => import('./components/commons/footer/Footer').then(m => ({ default: m.Footer })));
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
         <Marquee />
         <Suspense fallback={null}>
           <About />
-          <Services />
           <Experience />
           <Skills />
           <Projects />

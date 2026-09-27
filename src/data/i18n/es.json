@@ -393,30 +393,5 @@
     "contact": "¿Tienes un proyecto en mente? Hablemos.",
     "cta": "Contáctame",
     "rights": "Todos los derechos reservados."
-  },
-  "services": {
-    "title": "Servicios",
-    "items": [
-      {
-        "icon": "FaCode",
-        "name": "Desarrollo Web Full Stack",
-        "description": "Aplicaciones web completas con Python, Django y React"
-      },
-      {
-        "icon": "FaServer",
-        "name": "APIs y Microservicios",
-        "description": "Diseño e implementación de APIs REST y arquitecturas de microservicios"
-      },
-      {
-        "icon": "FaDatabase",
-        "name": "Bases de Datos",
-        "description": "Diseño, optimización y migración de bases de datos"
-      },
-      {
-        "icon": "FaCloud",
-        "name": "Despliegue en la Nube",
-        "description": "Configuración y despliegue en AWS, GCP, Heroku y Render"
-      }
-    ]
   }
 }

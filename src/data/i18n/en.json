@@ -393,30 +393,5 @@
     "contact": "Got a project in mind? Let's talk.",
     "cta": "Get in touch",
     "rights": "All rights reserved."
-  },
-  "services": {
-    "title": "Services",
-    "items": [
-      {
-        "icon": "FaCode",
-        "name": "Full Stack Web Development",
-        "description": "End-to-end web applications with Python, Django and React"
-      },
-      {
-        "icon": "FaServer",
-        "name": "APIs & Microservices",
-        "description": "REST API design and microservices architecture"
-      },
-      {
-        "icon": "FaDatabase",
-        "name": "Databases",
-        "description": "Database design, optimization and migration"
-      },
-      {
-        "icon": "FaCloud",
-        "name": "Cloud Deployment",
-        "description": "Setup and deployment on AWS, GCP, Heroku and Render"
-      }
-    ]
   }
 }
