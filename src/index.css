@@ -1,6 +1,57 @@
+:root {
+  /* Surfaces (dark is the default; .section-light inverts these tokens) */
+  --bg: #0A0A0A;
+  --line: #27272A;
+  --line-strong: #3F3F46;
+
+  /* Text */
+  --text: #FFFFFF;
+  --text-2: #A1A1AA;
+  --text-3: #A1A1AA;
+  --ghost: #52525B; /* only for display-size text */
+
+  /* Electric blue: the only strong color, used for accents only */
+  --accent: #3B82F6;        /* fills, rules, dots, indicators */
+  --accent-text: #3B82F6;   /* links and small text (5.4:1 on black) */
+  --accent-hover: #60A5FA;
+  --on-accent: #0A0A0A;     /* text on blue fills: white fails contrast on #3B82F6 */
+
+  --font-sans: 'Manrope', system-ui, sans-serif;
+
+  --radius: 4px;
+}
+
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-feature-settings: "tnum" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+a {
+  color: var(--accent-text);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
 }
