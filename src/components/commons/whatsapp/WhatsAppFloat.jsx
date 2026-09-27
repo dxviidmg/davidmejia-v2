@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { useLang } from "../../../utils/LangContext";
+import { CONTACT } from "../../../utils/contact";
 import "./whatsapp.css";
 
 // Visible between the hero and the contact section: both already have their own WhatsApp link
@@ -23,7 +24,7 @@ export const WhatsAppFloat = () => {
 
   return (
     <a
-      href={`https://wa.me/${process.env.REACT_APP_WHATSAPP}`}
+      href={CONTACT.whatsapp}
       target="_blank"
       rel="noreferrer"
       className={`whatsapp-float ${shown ? "is-shown" : ""}`}

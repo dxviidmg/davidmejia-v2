@@ -4,6 +4,7 @@ import { BsLinkedin, BsGithub, BsEnvelope, BsWhatsapp } from "react-icons/bs";
 import { NavBar } from "../../commons/navbar/Navbar";
 import { useLang } from "../../../utils/LangContext";
 import { yearsOfExperience } from "../../../utils/dateUtils";
+import { CONTACT } from "../../../utils/contact";
 import "./banner.css";
 
 export function Banner() {
@@ -25,9 +26,6 @@ export function Banner() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => { window.removeEventListener("scroll", onScroll); cancelAnimationFrame(frame); };
   }, []);
-
-  const email = `https://mail.google.com/mail/?view=cm&to=${process.env.REACT_APP_EMAIL}`;
-  const whatsapp = `https://wa.me/${process.env.REACT_APP_WHATSAPP}`;
 
   return (
     <section id="banner">
@@ -53,8 +51,8 @@ export function Banner() {
           <p className="banner-lead">{t.banner.lead.replace("{years}", yearsOfExperience)}</p>
           <div className="banner-actions">
             <a href={cvUrl} target="_blank" rel="noreferrer" className="btn-dm">{t.banner.ctaCv} ↓</a>
-            <a href={email} target="_blank" rel="noreferrer" className="banner-link"><BsEnvelope /> {t.banner.ctaEmail}</a>
-            <a href={whatsapp} target="_blank" rel="noreferrer" className="banner-link"><BsWhatsapp className="social-whatsapp" /> {t.banner.ctaWhatsapp}</a>
+            <a href={CONTACT.email} target="_blank" rel="noreferrer" className="banner-link"><BsEnvelope /> {t.banner.ctaEmail}</a>
+            <a href={CONTACT.whatsapp} target="_blank" rel="noreferrer" className="banner-link"><BsWhatsapp className="social-whatsapp" /> {t.banner.ctaWhatsapp}</a>
           </div>
         </div>
       </Container>
@@ -65,8 +63,8 @@ export function Banner() {
           {t.banner.scroll}
         </a>
         <span className="banner-social">
-          <a href={process.env.REACT_APP_LINKEDIN} target="_blank" rel="noreferrer"><BsLinkedin className="social-linkedin" /> LinkedIn ↗</a>
-          <a href={process.env.REACT_APP_GITHUB} target="_blank" rel="noreferrer"><BsGithub className="social-github" /> GitHub ↗</a>
+          <a href={CONTACT.linkedin} target="_blank" rel="noreferrer"><BsLinkedin className="social-linkedin" /> LinkedIn ↗</a>
+          <a href={CONTACT.github} target="_blank" rel="noreferrer"><BsGithub className="social-github" /> GitHub ↗</a>
         </span>
       </Container>
     </section>
