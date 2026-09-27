@@ -4,6 +4,7 @@ import './App.css';
 
 import { LangProvider } from './utils/LangContext';
 import { Banner } from './components/sections/banner/Banner';
+import { Marquee } from './components/commons/marquee/Marquee';
 
 const About = lazy(() => import('./components/sections/about/About').then(m => ({ default: m.About })));
 const Experience = lazy(() => import('./components/sections/experience/Experience').then(m => ({ default: m.Experience })));
@@ -19,6 +20,7 @@ function App() {
     <LangProvider>
       <div className="App">
         <Banner />
+        <Marquee />
         <Suspense fallback={null}>
           <About />
           <Services />
