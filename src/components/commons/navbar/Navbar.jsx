@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useLang } from "../../../utils/LangContext";
+import { useScroll } from "../../../utils/useScroll";
 import { LogoMark } from "../logo/Logo";
 import "./navbar.css";
 
@@ -20,11 +21,7 @@ export function NavBar() {
   const [activeLink, setActiveLink] = useState(null);
   const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  useScroll(() => setScrolled(window.scrollY > 50));
 
   return (
     <Navbar fixed="top" expand="md" variant="dark" className={scrolled ? "nav-scrolled" : "nav-top"}>

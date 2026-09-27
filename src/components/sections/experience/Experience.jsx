@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import positions from "../../../data/positions.json";
 import { useLang } from "../../../utils/LangContext";
 import { useInView } from "../../../utils/useInView";
+import { useScroll } from "../../../utils/useScroll";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { WorkMap } from "./WorkMap";
 import { getOrganization } from "../../../utils/organizations";
@@ -57,25 +58,13 @@ const TimelineItem = ({ pos, tp, t, index }) => {
 // Draws the blue timeline spine as the section scrolls past the middle of the viewport
 const useScrollProgress = () => {
   const ref = useRef(null);
-  useEffect(() => {
+  useScroll(() => {
     const el = ref.current;
     if (!el) return;
-    let frame;
-    const update = () => {
-      const rect = el.getBoundingClientRect();
-      const progress = Math.min(Math.max((window.innerHeight * 0.6 - rect.top) / rect.height, 0), 1);
-      el.style.setProperty("--progress", progress);
-    };
-    const onScroll = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(update); };
-    update();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-      cancelAnimationFrame(frame);
-    };
-  }, []);
+    const rect = el.getBoundingClientRect();
+    const progress = Math.min(Math.max((window.innerHeight * 0.6 - rect.top) / rect.height, 0), 1);
+    el.style.setProperty("--progress", progress);
+  });
   return ref;
 };
 

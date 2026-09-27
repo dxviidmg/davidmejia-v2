@@ -1,10 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { Container } from "react-bootstrap";
 import { BsLinkedin, BsGithub, BsEnvelope, BsWhatsapp } from "react-icons/bs";
 import { NavBar } from "../../commons/navbar/Navbar";
 import { useLang } from "../../../utils/LangContext";
 import { yearsOfExperience } from "../../../utils/dateUtils";
 import { CONTACT } from "../../../utils/contact";
+import { useScroll } from "../../../utils/useScroll";
 import "./banner.css";
 
 export function Banner() {
@@ -12,20 +13,11 @@ export function Banner() {
   const ghostRef = useRef(null);
 
   // Slow parallax on the ghost number while the hero is on screen
-  useEffect(() => {
+  useScroll(() => {
+    if (!ghostRef.current || window.scrollY > window.innerHeight * 1.2) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let frame;
-    const onScroll = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        if (ghostRef.current && window.scrollY < window.innerHeight * 1.2) {
-          ghostRef.current.style.setProperty("--parallax", `${window.scrollY * 0.35}px`);
-        }
-      });
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => { window.removeEventListener("scroll", onScroll); cancelAnimationFrame(frame); };
-  }, []);
+    ghostRef.current.style.setProperty("--parallax", `${window.scrollY * 0.35}px`);
+  });
 
   return (
     <section id="banner">
