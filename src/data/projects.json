@@ -1,697 +1,479 @@
 [
     {
-        "name": "University management platform",
-        "description": "Maintenance of a web application for online payment",
         "period": "2024-2026",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "UTEL"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Django REST Framework",
-                "color": "red",
-                "icon": "SiDjango"
+                "name": "Django REST Framework"
             },
             {
-                "name": "Mysql",
-                "color": "#00758F"
+                "name": "Mysql"
             },
             {
-                "name": "Celery",
-                "color": "green"
+                "name": "Celery"
             },
             {
-                "name": "Redis",
-                "color": "red"
+                "name": "Redis"
             },
             {
-                "name": "Mercadopago",
-                "color": "blue"
+                "name": "Mercadopago"
             },
             {
-                "name": "PayU",
-                "color": "#A6C307",
-                "icon": "BsCashCoin"
+                "name": "PayU"
             },
             {
-                "name": "Nequi",
-                "color": "#e42386",
-                "icon": "BsCashCoin"
+                "name": "Nequi"
             },
             {
-                "name": "Efecty",
-                "color": "#FFD100",
-                "icon": "BsCashCoin"
+                "name": "Efecty"
             },
             {
-                "name": "SFTP",
-                "color": "gray",
-                "icon": "SiFiles"
+                "name": "SFTP"
             },
             {
-                "name": "Github",
-                "color": "black"
+                "name": "Github"
             },
             {
-                "name": "Gitlab",
-                "color": "orange"
+                "name": "Gitlab"
             }
         ]
     },
     {
-        "name": "CARSEV Website",
-        "description": "Corporate website with project portfolio and gallery",
         "period": "2024",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Grupo Constructor Carsev"
-        },
         "stack": [
             {
-                "name": "Javascript",
-                "color": "yellow"
+                "name": "Javascript"
             },
             {
-                "name": "React",
-                "color": "cyan"
+                "name": "React"
             },
             {
-                "name": "Github",
-                "color": "black"
+                "name": "Github"
             }
         ]
     },
     {
-        "name": "School water fountain management v2",
-        "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
         "period": "2023-24",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Grupo Constructor Carsev"
-        },
         "stack": [
             {
-                "name": "Javascript",
-                "color": "yellow"
+                "name": "Javascript"
             },
             {
-                "name": "React",
-                "color": "cyan"
+                "name": "React"
             },
             {
-                "name": "Github",
-                "color": "black"
+                "name": "Github"
             }
         ]
     },
     {
-        "name": "Chatbot-Clientify Integration",
-        "description": "Integration between a chatbot and clientify",
         "period": "2023",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Rasa",
-                "color": "purple"
+                "name": "Rasa"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Interactive Map",
-        "description": "Development of a Interactive Map for a museum",
         "period": "2023",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Typescript",
-                "color": "blue"
+                "name": "Typescript"
             },
             {
-                "name": "React",
-                "color": "cyan"
+                "name": "React"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Cloudwaremx v2 Website",
-        "description": "Redesign of a corporate website for cloud services",
         "period": "2023",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Digy Networks"
-        },
         "stack": [
             {
-                "name": "Javascript",
-                "color": "yellow"
+                "name": "Javascript"
             },
             {
-                "name": "React",
-                "color": "cyan"
+                "name": "React"
             },
             {
-                "name": "Github",
-                "color": "black"
+                "name": "Github"
             }
         ]
     },
     {
-        "name": "Digy Website",
-        "description": "Corporate website with service catalog and contact form",
         "period": "2023",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Digy Networks"
-        },
         "stack": [
             {
-                "name": "Javascript",
-                "color": "yellow"
+                "name": "Javascript"
             },
             {
-                "name": "React",
-                "color": "cyan"
+                "name": "React"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Cloudwaremx Website",
-        "description": "Website with admin panel for managing content and cloud services",
         "period": "2022",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Cloud Ware"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
-                "name": "Heroku",
-                "color": "purple"
+                "name": "Heroku"
             },
             {
-                "name": "Github",
-                "color": "black"
+                "name": "Github"
             }
         ]
     },
     {
-        "name": "Vending machines management",
-        "description": "Development of a web application for vending machines management",
         "period": "2022",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Genone Tech"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
-                "name": "Heroku",
-                "color": "purple"
+                "name": "Heroku"
             },
             {
-                "name": "Chart.js",
-                "icon": "SiChartdotjs",
-                "color": "#fe777b"
+                "name": "Chart.js"
             },
             {
-                "name": "Stripe",
-                "color": "#635BFF"
+                "name": "Stripe"
             },
             {
-                "name": "Celery",
-                "color": "green"
+                "name": "Celery"
             },
             {
-                "name": "Redis",
-                "color": "red"
+                "name": "Redis"
             },
             {
-                "name": "Github",
-                "color": "black"
+                "name": "Github"
             }
         ]
     },
     {
-        "name": "Data car analysis",
-        "description": "I used the data from the previous project to find patterns and errors to get a good sample for a AI model",
         "period": "2021-2022",
         "categories": [
             "Data"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
                 "name": "Pandas"
             },
             {
-                "name": "Jupyter",
-                "color": "orange"
+                "name": "Jupyter"
             },
             {
-                "name": "Matplotlib",
-                "icon": "SiPython",
-                "color": "blue"
+                "name": "Matplotlib"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Car data download scripts",
-        "description": "I improved 10 scripts to download data cars from different companies",
         "period": "2021-2022",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Insurance platform",
-        "description": "Maintenance of a web application for insurance management",
         "period": "2019-2022",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
-                "name": "API REST",
-                "color": "gray",
-                "icon": "SiRest"
+                "name": "API REST"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Analysis of bank data",
-        "description": "Creation of notebooks to understand several data sources of a bank",
         "period": "2021",
         "categories": [
             "Data"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
                 "name": "Pandas"
             },
             {
-                "name": "Jupyter",
-                "color": "orange"
+                "name": "Jupyter"
             },
             {
-                "name": "Matplotlib",
-                "icon": "SiPython",
-                "color": "blue"
+                "name": "Matplotlib"
             },
             {
-                "name": "Mongodb",
-                "color": "green"
+                "name": "Mongodb"
             },
             {
-                "name": "GCP",
-                "icon": "SiGooglecloud",
-                "color": "blue"
+                "name": "GCP"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Database refactoring for insurance platform",
-        "description": "Modify the structure of the database in order to improve quality and performance",
         "period": "2021",
         "categories": [
             "Web",
             "Data"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
                 "name": "Pandas"
             },
             {
-                "name": "Jupyter",
-                "color": "orange"
+                "name": "Jupyter"
             },
             {
-                "name": "Matplotlib",
-                "icon": "SiPython",
-                "color": "blue"
+                "name": "Matplotlib"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Data import for insurance platform",
-        "description": "Creation of codebase for data importing",
         "period": "2019-2021",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Report-service for insurance platform",
-        "description": "Creation of a microservice for improvement the creation of reports",
         "period": "2020",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
-                "name": "Celery",
-                "color": "green"
+                "name": "Celery"
             },
             {
-                "name": "Redis",
-                "color": "red"
+                "name": "Redis"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Medical insurance data scraping",
-        "description": "Using selenium, I got all the health insurance quotes from one company.",
         "period": "2020",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Ixulabs"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Selenium",
-                "color": "green"
+                "name": "Selenium"
             },
             {
-                "name": "Bitbucket",
-                "color": "blue"
+                "name": "Bitbucket"
             }
         ]
     },
     {
-        "name": "Kickstarter campaign success analysis",
-        "description": "Prototype development of a machine learning model to predict the success of a kickstarter campaign",
         "period": "2018-2019",
         "categories": [
             "Data"
         ],
-        "company": {
-            "name": "Plenumsoft"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Dataiku",
-                "color": "#00b6aa"
+                "name": "Dataiku"
             }
         ]
     },
     {
-        "name": "School water fountain management",
-        "description": "Development of a web application for the management of construction and maintenance of Drinking Water Fountains",
         "period": "2017-18",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Grupo Constructor Carsev"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
-                "name": "AWS",
-                "icon": "SiAmazonaws",
-                "color": "orange"
+                "name": "AWS"
             },
             {
-                "name": "Github",
-                "color": "black"
+                "name": "Github"
             }
         ]
     },
     {
-        "name": "Public funds management",
-        "description": "Development of a web application for public funds management",
         "period": "2016-17",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "CITNOVA"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
-                "name": "Github",
-                "color": "black"
+                "name": "Github"
             }
         ]
     },
     {
-        "name": "Los Arquetipos de Jung Website",
-        "description": "Development of a website for a rock band",
         "period": "2016",
         "categories": [
             "Web"
         ],
-        "company": {
-            "name": "Independent"
-        },
         "stack": [
             {
-                "name": "Python",
-                "color": "blue"
+                "name": "Python"
             },
             {
-                "name": "Django",
-                "color": "green"
+                "name": "Django"
             },
             {
-                "name": "Postgresql",
-                "color": "blue"
+                "name": "Postgresql"
             },
             {
-                "name": "AWS",
-                "icon": "SiAmazonaws",
-                "color": "orange"
+                "name": "AWS"
             },
             {
-                "name": "Github",
-                "color": "black"
+                "name": "Github"
             }
         ]
     }

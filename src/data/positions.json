@@ -3,63 +3,54 @@
         "company": "Entropia",
         "start": "2026-09",
         "end": null,
-        "location": "Ciudad de México",
         "country": "MX"
     },
     {
         "company": "UTEL",
         "start": "2024-01",
         "end": "2026-08",
-        "location": "Naucalpan, Estado de México",
         "country": "MX"
     },
     {
         "company": "Ixulabs",
         "start": "2023-06",
         "end": "2024-01",
-        "location": "Ciudad de México",
         "country": "MX"
     },
     {
         "company": "GenOne Technologies LLC",
         "start": "2022-03",
         "end": "2022-10",
-        "location": "Boston, Massachusetts",
         "country": "US"
     },
     {
         "company": "Ixulabs",
         "start": "2019-05",
         "end": "2022-02",
-        "location": "Ciudad de México",
         "country": "MX"
     },
     {
         "company": "Plenumsoft",
         "start": "2018-11",
         "end": "2019-05",
-        "location": "Mérida",
         "country": "MX"
     },
     {
         "company": "Grupo Constructor CARSEV",
         "start": "2017-05",
         "end": "2018-11",
-        "location": "Pachuca",
         "country": "MX"
     },
     {
         "company": "Gobierno del Estado de Hidalgo - CITNOVA",
         "start": "2016-11",
         "end": "2017-05",
-        "location": "Pachuca",
         "country": "MX"
     },
     {
         "company": "ITESM-CEM",
         "start": "2014",
         "end": "2014",
-        "location": "México",
         "country": "MX"
     }
 ]

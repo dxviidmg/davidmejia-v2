@@ -32,7 +32,7 @@ const TimelineItem = ({ pos, tp, t, lang }) => {
         </h3>
         <p className="timeline-position">{tp.position}</p>
         <p className="timeline-industry"><span>{t.experience.industryLabel}</span> {tp.industry}</p>
-        <p className="timeline-meta">{tp.modality} · {tp.lineOfBusiness}</p>
+        <p className="timeline-meta">{tp.modality} · {tp.location}</p>
       </div>
       {shown.length === 0 && !pos.end && (
         <div className="timeline-body">

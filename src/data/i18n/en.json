@@ -34,20 +34,19 @@
   },
   "experience": {
     "title": "Professional Experience",
-    "at": "—",
     "positions": [
       {
         "position": "Full Stack Developer",
         "industry": "Artificial intelligence",
         "modality": "Remote",
-        "lineOfBusiness": "Mexico City, Mexico",
+        "location": "Mexico City, Mexico",
         "highlights": []
       },
       {
         "position": "Backend Web Developer, Finance Department",
         "industry": "Online education",
         "modality": "Remote",
-        "lineOfBusiness": "Naucalpan, State of Mexico, Mexico",
+        "location": "Naucalpan, State of Mexico, Mexico",
         "highlights": [
           "Developed backend functionality for financial modules used by approximately 80,000 active students, using Python, Django, and MySQL to support academic and financial operations",
           "Integrated multiple payment providers and financial services, developing connections with Mercado Pago, Nequi, PayU, Banco Pichincha, and Efecty through APIs, SFTP, CSV, and daemon processes",
@@ -62,7 +61,7 @@
         "position": "Full Stack Web Developer / Technical Lead",
         "industry": "Software development · insurance",
         "modality": "Remote",
-        "lineOfBusiness": "Mexico City, Mexico",
+        "location": "Mexico City, Mexico",
         "highlights": [
           "Restored the operation of a legacy insurance platform, upgrading Python, Django, and dependencies and adapting the application to a new runtime environment",
           "Restored 7 existing microservices, identifying configuration, dependency, and integration issues required to incorporate them back into the platform",
@@ -75,7 +74,7 @@
         "position": "Backend Web Developer",
         "industry": "IT services",
         "modality": "Remote",
-        "lineOfBusiness": "Boston, Massachusetts, USA",
+        "location": "Boston, Massachusetts, USA",
         "highlights": [
           "Refactored backend APIs for a vending machine management MVP, using Python and Django to improve the organization and operation of the system",
           "Implemented real-time bidirectional communication using WebSockets, connecting the backend with vending machines to manage commands, sales, inventory, and operational events",
@@ -89,7 +88,7 @@
         "position": "Backend Web Developer / Data Analyst",
         "industry": "Software development · insurance",
         "modality": "Remote",
-        "lineOfBusiness": "Mexico City, Mexico",
+        "location": "Mexico City, Mexico",
         "highlights": [
           "Maintained and evolved a legacy insurance management system, developing functionality with Python, Django, Django REST Framework, and PostgreSQL to manage customers, policies, payments, claims, and commissions",
           "Reduced data import processing time by approximately 66%, optimizing Python scripts for transforming and loading Excel and CSV data, reducing processing time from approximately 24 to 8 hours",
@@ -103,7 +102,7 @@
         "position": "Data Science & AI Trainee",
         "industry": "Software & data science",
         "modality": "On-site",
-        "lineOfBusiness": "Mérida, Yucatán, Mexico",
+        "location": "Mérida, Yucatán, Mexico",
         "highlights": [
           "Developed analytical models to predict the success or failure of Kickstarter campaigns, applying data preparation, clustering, and similarity analysis using Python and Dataiku",
           "Processed and analyzed datasets for Data Science and Machine Learning projects, applying exploratory data analysis and data transformation techniques"
@@ -113,7 +112,7 @@
         "position": "Full Stack Web Developer / Technology Coordinator",
         "industry": "Construction",
         "modality": "On-site",
-        "lineOfBusiness": "Pachuca, Hidalgo, Mexico",
+        "location": "Pachuca, Hidalgo, Mexico",
         "highlights": [
           "Designed and developed a platform used by 45 employees to manage approximately 1,500 school drinking-water systems, implementing the backend, frontend, and data model with Python, Django, and PostgreSQL",
           "Developed modules for managing schools, records, construction, operations, maintenance, and incidents, centralizing project tracking and operational management",
@@ -125,7 +124,7 @@
         "position": "Full Stack Web Developer",
         "industry": "Government · science & technology",
         "modality": "On-site",
-        "lineOfBusiness": "Pachuca, Hidalgo, Mexico",
+        "location": "Pachuca, Hidalgo, Mexico",
         "highlights": [
           "Independently developed a budget management application, translating financial department requirements into web functionality using Python, Django, and PostgreSQL",
           "Designed the data model and developed modules for revenue, expenses, balances, funds, and periods, providing tools for budget monitoring",
@@ -137,7 +136,7 @@
         "position": "Research Assistant (Professional Internship)",
         "industry": "Education · research",
         "modality": "Hybrid",
-        "lineOfBusiness": "Education",
+        "location": "Education",
         "highlights": [
           "Developed a web application for Twitter data extraction and sentiment analysis",
           "Learned Python in a self-taught way"
@@ -226,34 +225,7 @@
     }
   },
   "certifications": {
-    "title": "Courses and Certifications",
-    "items": [
-      {
-        "name": "RESTful API with Python using Django REST Framework",
-        "institution": "Udemy",
-        "year": "2021"
-      },
-      {
-        "name": "Remote Python Course for Artificial Intelligence",
-        "institution": "Actumlogos",
-        "year": "June 2020"
-      },
-      {
-        "name": "Dataiku DSS — Level 1 Certified User",
-        "institution": "Dataiku",
-        "year": "May 2019"
-      },
-      {
-        "name": "Backend and Servers Path",
-        "institution": "FixterGeek",
-        "year": "March 2017"
-      },
-      {
-        "name": "Backend Path",
-        "institution": "FixterGeek",
-        "year": "2016"
-      }
-    ]
+    "title": "Courses and Certifications"
   },
   "projects": {
     "title": "Projects",

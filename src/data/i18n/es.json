@@ -34,20 +34,19 @@
   },
   "experience": {
     "title": "Experiencia Profesional",
-    "at": "—",
     "positions": [
       {
         "position": "Desarrollador Full Stack",
         "industry": "Inteligencia artificial",
         "modality": "Remoto",
-        "lineOfBusiness": "Ciudad de México, México",
+        "location": "Ciudad de México, México",
         "highlights": []
       },
       {
         "position": "Desarrollador Web Backend, Departamento de Finanzas",
         "industry": "Educación en línea",
         "modality": "Remoto",
-        "lineOfBusiness": "Naucalpan, Estado de México, México",
+        "location": "Naucalpan, Estado de México, México",
         "highlights": [
           "Desarrollé funcionalidades backend para los módulos financieros de una plataforma utilizada por aproximadamente 80,000 alumnos activos, utilizando Python, Django y MySQL para soportar operaciones académicas y financieras",
           "Integré múltiples proveedores de pago y servicios financieros, desarrollando conexiones con Mercado Pago, Nequi, PayU, Banco Pichincha y Efecty mediante APIs, SFTP, CSV y procesos daemon",
@@ -62,7 +61,7 @@
         "position": "Desarrollador Web Full Stack / Líder Técnico",
         "industry": "Desarrollo de software · seguros",
         "modality": "Remoto",
-        "lineOfBusiness": "Ciudad de México, México",
+        "location": "Ciudad de México, México",
         "highlights": [
           "Recuperé la operación de una plataforma legacy del sector asegurador, actualizando Python, Django y dependencias y adaptando la aplicación a una nueva instancia de ejecución",
           "Restauré la operación de 7 microservicios existentes, identificando configuraciones, dependencias y problemas de integración para incorporarlos a la plataforma",
@@ -75,7 +74,7 @@
         "position": "Desarrollador Web Backend",
         "industry": "Servicios de TI",
         "modality": "Remoto",
-        "lineOfBusiness": "Boston, Massachusetts, EE. UU.",
+        "location": "Boston, Massachusetts, EE. UU.",
         "highlights": [
           "Refactoricé las APIs backend de un MVP para gestión de máquinas expendedoras, utilizando Python y Django para mejorar la organización y funcionamiento del sistema",
           "Implementé comunicación bidireccional en tiempo real mediante WebSockets, conectando backend y máquinas para gestionar comandos, ventas, inventario y eventos operativos",
@@ -89,7 +88,7 @@
         "position": "Desarrollador Web Backend / Analista de Datos",
         "industry": "Desarrollo de software · seguros",
         "modality": "Remoto",
-        "lineOfBusiness": "Ciudad de México, México",
+        "location": "Ciudad de México, México",
         "highlights": [
           "Mantuve y evolucioné un sistema legacy para agencias de seguros, desarrollando funcionalidades con Python, Django, Django REST Framework y PostgreSQL para administrar clientes, pólizas, pagos, siniestros y comisiones",
           "Reduje aproximadamente 66% el tiempo de procesos de importación, optimizando scripts de Python para transformar y cargar datos desde archivos Excel y CSV, pasando de aproximadamente 24 a 8 horas",
@@ -103,7 +102,7 @@
         "position": "Trainee de Ciencia de Datos y AI",
         "industry": "Software y ciencia de datos",
         "modality": "Presencial",
-        "lineOfBusiness": "Mérida, Yucatán, México",
+        "location": "Mérida, Yucatán, México",
         "highlights": [
           "Desarrollé modelos analíticos para predecir el éxito o fracaso de campañas de Kickstarter, aplicando preparación de datos, clustering y análisis de similitud con Python y Dataiku",
           "Procesé y analicé datasets para proyectos de Data Science y Machine Learning, aplicando técnicas de análisis exploratorio y transformación de datos"
@@ -113,7 +112,7 @@
         "position": "Desarrollador Web Full Stack / Coordinador de Tecnología",
         "industry": "Construcción",
         "modality": "Presencial",
-        "lineOfBusiness": "Pachuca, Hidalgo, México",
+        "location": "Pachuca, Hidalgo, México",
         "highlights": [
           "Diseñé y desarrollé una plataforma utilizada por 45 empleados para gestionar aproximadamente 1,500 sistemas de bebederos escolares, implementando backend, frontend y modelo de datos con Python, Django y PostgreSQL",
           "Desarrollé módulos para gestionar escuelas, expedientes, construcción, operación, mantenimiento e incidencias, centralizando el seguimiento operativo del proyecto",
@@ -125,7 +124,7 @@
         "position": "Desarrollador Web Full Stack",
         "industry": "Gobierno · ciencia y tecnología",
         "modality": "Presencial",
-        "lineOfBusiness": "Pachuca, Hidalgo, México",
+        "location": "Pachuca, Hidalgo, México",
         "highlights": [
           "Desarrollé de forma autónoma una aplicación para control presupuestal, transformando requerimientos del área financiera en funcionalidades con Python, Django y PostgreSQL",
           "Diseñé el modelo de datos y desarrollé módulos para ingresos, egresos, saldos, fondos y periodos, proporcionando herramientas para seguimiento presupuestal",
@@ -137,7 +136,7 @@
         "position": "Asistente de Investigación (Prácticas Profesionales)",
         "industry": "Educación · investigación",
         "modality": "Híbrido",
-        "lineOfBusiness": "Educación",
+        "location": "Educación",
         "highlights": [
           "Desarrollé una aplicación web para la extracción de tweets y análisis de sentimientos",
           "Aprendí Python de forma autodidacta"
@@ -226,34 +225,7 @@
     }
   },
   "certifications": {
-    "title": "Cursos y Certificaciones",
-    "items": [
-      {
-        "name": "RESTful API with Python using Django REST Framework",
-        "institution": "Udemy",
-        "year": "2021"
-      },
-      {
-        "name": "Python for Artificial Intelligence",
-        "institution": "Actumlogos",
-        "year": "June 2020"
-      },
-      {
-        "name": "Dataiku DSS — Level 1 Certified User",
-        "institution": "Dataiku",
-        "year": "May 2019"
-      },
-      {
-        "name": "Backend and Servers Path",
-        "institution": "Fixtergeek",
-        "year": "March 2017"
-      },
-      {
-        "name": "Backend Django Path",
-        "institution": "Fixtergeek",
-        "year": "September 2016"
-      }
-    ]
+    "title": "Cursos y Certificaciones"
   },
   "projects": {
     "title": "Proyectos",
