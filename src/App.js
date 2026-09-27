@@ -5,6 +5,7 @@ import './App.css';
 import { LangProvider } from './utils/LangContext';
 import { Banner } from './components/sections/banner/Banner';
 import { Marquee } from './components/commons/marquee/Marquee';
+import { WhatsAppFloat } from './components/commons/whatsapp/WhatsAppFloat';
 
 const About = lazy(() => import('./components/sections/about/About').then(m => ({ default: m.About })));
 const Experience = lazy(() => import('./components/sections/experience/Experience').then(m => ({ default: m.Experience })));
@@ -27,6 +28,7 @@ function App() {
           <Education />
           <Footer />
         </Suspense>
+        <WhatsAppFloat />
       </div>
     </LangProvider>
   );
