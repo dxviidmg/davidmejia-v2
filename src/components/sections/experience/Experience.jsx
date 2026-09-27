@@ -2,25 +2,24 @@ import { useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import positions from "../../../data/positions.json";
 import { useLang } from "../../../utils/LangContext";
-import { useInView } from "../../../utils/useInView";
 import { useScroll } from "../../../utils/useScroll";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { WorkMap } from "./WorkMap";
 import { getOrganization } from "../../../utils/organizations";
 import { LogoPlate } from "../../commons/logo/LogoPlate";
+import { Reveal } from "../../commons/reveal/Reveal";
 import "./experience.css";
 
 const VISIBLE_HIGHLIGHTS = 3;
 
 const TimelineItem = ({ pos, tp, t, index }) => {
-  const [ref, visible] = useInView();
   const [expanded, setExpanded] = useState(false);
   const highlights = tp.highlights || [];
   const shown = expanded ? highlights : highlights.slice(0, VISIBLE_HIGHLIGHTS);
   const hidden = highlights.length - VISIBLE_HIGHLIGHTS;
   const org = getOrganization(pos.company);
   return (
-    <article className={`timeline-item fade-left ${visible ? "visible" : ""} ${index === 0 ? "is-current" : ""}`} ref={ref}>
+    <Reveal as="article" direction="left" className={`timeline-item ${index === 0 ? "is-current" : ""}`}>
       <div className="timeline-dot" />
       <div className="timeline-head">
         <LogoPlate logo={org.logo} name={org.name} className="timeline-logo" />
@@ -51,7 +50,7 @@ const TimelineItem = ({ pos, tp, t, index }) => {
           )}
         </div>
       )}
-    </article>
+    </Reveal>
   );
 };
 

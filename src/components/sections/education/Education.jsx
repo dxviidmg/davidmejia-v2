@@ -1,17 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap";
 import certifications from "../../../data/certifications.json";
 import { useLang } from "../../../utils/LangContext";
-import { useInView } from "../../../utils/useInView";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { getOrganization } from "../../../utils/organizations";
 import { LogoPlate } from "../../commons/logo/LogoPlate";
+import { Reveal } from "../../commons/reveal/Reveal";
 import "./education.css";
 
 
 const EntryList = ({ title, entries, delay = 0 }) => {
-  const [ref, visible] = useInView();
   return (
-    <div ref={ref} className={`fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${delay}s` }}>
+    <Reveal delay={delay}>
       <h3 className="edu-heading">{title}</h3>
       <ul className="edu-list">
         {entries.map((e, i) => (
@@ -26,7 +25,7 @@ const EntryList = ({ title, entries, delay = 0 }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </Reveal>
   );
 };
 

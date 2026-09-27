@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import projects from "../../../data/projects.json";
 import { TechIcon } from "../../commons/icons/Icons";
 import { useLang } from "../../../utils/LangContext";
-import { useInView } from "../../../utils/useInView";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { Tabs } from "../../commons/tabs/Tabs";
+import { Reveal } from "../../commons/reveal/Reveal";
 import "./projects.css";
 
 const INITIAL_COUNT = 6;
@@ -14,9 +14,8 @@ const INITIAL_COUNT = 6;
 const FILTERS = { all: null, web: "Web", data: "Data" };
 
 const ProjectCard = ({ project, tp, index }) => {
-  const [ref, visible] = useInView();
   return (
-    <div ref={ref} className={`card-dm project-card fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${(index % 3) * 0.12}s` }}>
+    <Reveal className="card-dm project-card" delay={(index % 3) * 0.12}>
       <div className="project-header">
         <p className="project-company">{tp.company}</p>
         <span className="card-meta">{project.period}</span>
@@ -31,7 +30,7 @@ const ProjectCard = ({ project, tp, index }) => {
           </span>
         ))}
       </div>
-    </div>
+    </Reveal>
   );
 };
 

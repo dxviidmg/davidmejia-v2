@@ -3,20 +3,19 @@ import skills from "../../../data/skills.json";
 import { TechIcon } from "../../commons/icons/Icons";
 import { calcExperience } from "../../../utils/dateUtils";
 import { useLang } from "../../../utils/LangContext";
-import { useInView } from "../../../utils/useInView";
 import { SectionHeader } from "../../commons/section/SectionHeader";
+import { Reveal } from "../../commons/reveal/Reveal";
 import "./skills.css";
 
 const MAX_MONTHS = 12 * 10;
 
 const SkillCard = ({ label, items, index }) => {
-  const [ref, visible] = useInView();
   const sorted = [...items].sort(
     (a, b) => calcExperience(b.periods).months - calcExperience(a.periods).months
   );
   return (
-    <Col xs={12} sm={6} lg={3} className="col-gap" ref={ref}>
-      <div className={`card-dm fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${(index % 4) * 0.08}s` }}>
+    <Col xs={12} sm={6} lg={3} className="col-gap">
+      <Reveal className="card-dm" delay={(index % 4) * 0.08}>{(visible) => (<>
         <h3 className="skill-card-title">{label}</h3>
         {sorted.map((skill, i) => {
           const { label, months } = calcExperience(skill.periods);
@@ -33,7 +32,7 @@ const SkillCard = ({ label, items, index }) => {
             </div>
           );
         })}
-      </div>
+      </>)}</Reveal>
     </Col>
   );
 };

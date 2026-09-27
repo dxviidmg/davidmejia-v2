@@ -1,8 +1,8 @@
 import { useState } from "react";
 import maps from "../../../data/geo/maps.json";
 import places from "../../../data/places.json";
-import { useInView } from "../../../utils/useInView";
 import { Tabs } from "../../commons/tabs/Tabs";
+import { Reveal } from "../../commons/reveal/Reveal";
 import "./workmap.css";
 
 // One question per view, one unit (the city) everywhere
@@ -71,7 +71,6 @@ const MapFigure = ({ map, entries, radius, caption, active, onSelect, label, onl
 
 export const WorkMap = ({ t }) => {
   const m = t.experience.map;
-  const [ref, visible] = useInView();
   const [view, setView] = useState(VIEWS[0]);
   const [active, setActive] = useState(null);
   const entries = places.views[view];
@@ -98,7 +97,7 @@ export const WorkMap = ({ t }) => {
   const selectView = (v) => { setView(v); setActive(null); };
 
   return (
-    <div ref={ref} className={`work-map fade-up ${visible ? "visible" : ""}`}>
+    <Reveal className="work-map">
       <h3 className="work-map-title">{m.title}</h3>
 
       <Tabs
@@ -140,6 +139,6 @@ export const WorkMap = ({ t }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </Reveal>
   );
 };
