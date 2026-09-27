@@ -390,8 +390,8 @@
     "section": "Formación"
   },
   "footer": {
-    "contact": "¿Tienes un proyecto en mente? Hablemos.",
-    "cta": "Contáctame",
-    "rights": "Todos los derechos reservados."
+    "contact": "¿Construimos algo juntos?",
+    "ctaEmail": "Mándame un e-mail",
+    "ctaWhatsapp": "Mándame un WhatsApp"
   }
 }

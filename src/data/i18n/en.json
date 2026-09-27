@@ -390,8 +390,8 @@
     "section": "Education"
   },
   "footer": {
-    "contact": "Got a project in mind? Let's talk.",
-    "cta": "Get in touch",
-    "rights": "All rights reserved."
+    "contact": "Shall we build something together?",
+    "ctaEmail": "Send me an email",
+    "ctaWhatsapp": "Message me on WhatsApp"
   }
 }
