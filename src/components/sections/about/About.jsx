@@ -8,9 +8,8 @@ import positions from "../../../data/positions.json";
 import projects from "../../../data/projects.json";
 import './about.css'
 
-const Bold = ({ text }) => (
-  <span dangerouslySetInnerHTML={{ __html: text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
-);
+// "**Python**" -> <strong>Python</strong>, built as React nodes instead of injected HTML
+const Bold = ({ text }) => text.split(/\*\*(.*?)\*\*/g).map((part, i) => (i % 2 ? <strong key={i}>{part}</strong> : part));
 
 const STATS = [
   { key: "years", value: yearsOfExperience, prefix: "+" },
