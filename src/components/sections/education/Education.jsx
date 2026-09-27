@@ -5,6 +5,7 @@ import { SectionHeader } from "../../commons/section/SectionHeader";
 import { getOrganization } from "../../../utils/organizations";
 import { LogoPlate } from "../../commons/logo/LogoPlate";
 import { Reveal } from "../../commons/reveal/Reveal";
+import { formatMonth } from "../../../utils/dateUtils";
 import "./education.css";
 
 
@@ -30,12 +31,12 @@ const EntryList = ({ title, entries, delay = 0 }) => {
 };
 
 export const Education = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const degrees = t.education.items.map((item) => ({
     title: item.degree, subtitle: item.institution, date: item.period, note: item.note,
   }));
   const certs = certifications.map((c) => ({
-    title: c.name, subtitle: c.institution, date: c.expedition, note: c.id && `ID: ${c.id}`,
+    title: c.name, subtitle: c.institution, date: formatMonth(c.date, lang), note: c.id && `ID: ${c.id}`,
   }));
   return (
     <section className="section section-light" id="education">

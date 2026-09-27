@@ -1,56 +1,64 @@
 [
     {
         "company": "Entropia",
-        "period": "Sep 2026 –",
-        "current": true,
+        "start": "2026-09",
+        "end": null,
         "location": "Ciudad de México",
         "country": "MX"
     },
     {
         "company": "UTEL",
-        "period": "Ene 2024 – Ago 2026",
+        "start": "2024-01",
+        "end": "2026-08",
         "location": "Naucalpan, Estado de México",
         "country": "MX"
     },
     {
         "company": "Ixulabs",
-        "period": "Jun 2023 – Ene 2024",
+        "start": "2023-06",
+        "end": "2024-01",
         "location": "Ciudad de México",
         "country": "MX"
     },
     {
         "company": "GenOne Technologies LLC",
-        "period": "Mar 2022 – Oct 2022",
+        "start": "2022-03",
+        "end": "2022-10",
         "location": "Boston, Massachusetts",
         "country": "US"
     },
     {
         "company": "Ixulabs",
-        "period": "May 2019 – Feb 2022",
+        "start": "2019-05",
+        "end": "2022-02",
         "location": "Ciudad de México",
         "country": "MX"
     },
     {
         "company": "Plenumsoft",
-        "period": "Nov 2018 – May 2019",
+        "start": "2018-11",
+        "end": "2019-05",
         "location": "Mérida",
         "country": "MX"
     },
     {
         "company": "Grupo Constructor CARSEV",
-        "period": "May 2017 – Nov 2018",
+        "start": "2017-05",
+        "end": "2018-11",
         "location": "Pachuca",
         "country": "MX"
     },
     {
         "company": "Gobierno del Estado de Hidalgo - CITNOVA",
-        "period": "Nov 2016 – May 2017",
+        "start": "2016-11",
+        "end": "2017-05",
         "location": "Pachuca",
         "country": "MX"
     },
     {
         "company": "ITESM-CEM",
-        "period": "2014",
+        "start": "2014",
+        "end": "2014",
         "location": "México",
         "country": "MX"
     }

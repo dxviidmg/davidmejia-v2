@@ -7,23 +7,24 @@ import { SectionHeader } from "../../commons/section/SectionHeader";
 import { WorkMap } from "./WorkMap";
 import { getOrganization } from "../../../utils/organizations";
 import { LogoPlate } from "../../commons/logo/LogoPlate";
+import { formatPeriod } from "../../../utils/dateUtils";
 import { Reveal } from "../../commons/reveal/Reveal";
 import "./experience.css";
 
 const VISIBLE_HIGHLIGHTS = 3;
 
-const TimelineItem = ({ pos, tp, t, index }) => {
+const TimelineItem = ({ pos, tp, t, lang }) => {
   const [expanded, setExpanded] = useState(false);
   const highlights = tp.highlights || [];
   const shown = expanded ? highlights : highlights.slice(0, VISIBLE_HIGHLIGHTS);
   const hidden = highlights.length - VISIBLE_HIGHLIGHTS;
   const org = getOrganization(pos.company);
   return (
-    <Reveal as="article" direction="left" className={`timeline-item ${index === 0 ? "is-current" : ""}`}>
+    <Reveal as="article" direction="left" className={`timeline-item ${pos.end ? "" : "is-current"}`}>
       <div className="timeline-dot" />
       <div className="timeline-head">
         <LogoPlate logo={org.logo} name={org.name} className="timeline-logo" />
-        <p className="timeline-period">{pos.current ? `${pos.period} ${t.experience.present}` : pos.period}</p>
+        <p className="timeline-period">{formatPeriod(pos.start, pos.end, lang, t.experience.present)}</p>
         <h3 className="timeline-company">
           {org.url ? (
             <a href={org.url} target="_blank" rel="noreferrer">{org.name}<span className="timeline-link-icon" aria-hidden="true">↗</span></a>
@@ -33,7 +34,7 @@ const TimelineItem = ({ pos, tp, t, index }) => {
         <p className="timeline-industry"><span>{t.experience.industryLabel}</span> {tp.industry}</p>
         <p className="timeline-meta">{tp.modality} · {tp.lineOfBusiness}</p>
       </div>
-      {shown.length === 0 && pos.current && (
+      {shown.length === 0 && !pos.end && (
         <div className="timeline-body">
           <p className="timeline-note">{t.experience.justStarted}<span className="timeline-cursor" /></p>
         </div>
@@ -68,7 +69,7 @@ const useScrollProgress = () => {
 };
 
 export const Experience = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const timelineRef = useScrollProgress();
   return (
     <section id="experience" className="section">
@@ -77,7 +78,7 @@ export const Experience = () => {
         <WorkMap t={t} />
         <div className="timeline" ref={timelineRef}>
           {positions.map((pos, index) => (
-            <TimelineItem key={index} pos={pos} tp={t.experience.positions[index]} t={t} index={index} />
+            <TimelineItem key={index} pos={pos} tp={t.experience.positions[index]} t={t} lang={lang} />
           ))}
         </div>
       </Container>

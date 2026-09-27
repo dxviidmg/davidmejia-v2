@@ -20,3 +20,19 @@ export function calcExperience(periods) {
     }
     return { label: `${totalMonths}m`, months: totalMonths };
 }
+
+const LOCALES = { es: "es-MX", en: "en-US" };
+
+// "2024-01" -> "Ene 2024" / "Jan 2024"; a bare year ("2014") stays as is
+export function formatMonth(value, lang) {
+    const [year, month] = value.split("-").map(Number);
+    if (!month) return String(year);
+    const text = new Intl.DateTimeFormat(LOCALES[lang], { month: "short", year: "numeric" }).format(new Date(year, month - 1, 1));
+    return capitalizeString(text.replace(".", ""));
+}
+
+// ("2024-01", "2026-08") -> "Ene 2024 – Ago 2026"; no end -> "… – Hoy"; same start and end -> one date
+export function formatPeriod(start, end, lang, present) {
+    if (end === start) return formatMonth(start, lang);
+    return `${formatMonth(start, lang)} – ${end ? formatMonth(end, lang) : present}`;
+}
