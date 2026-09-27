@@ -5,9 +5,7 @@ import {
   SiRasa, SiReact, SiRedis, SiRender, SiSelenium, SiSocketdotio, SiStripe, SiTypescript, SiVercel,
 } from "react-icons/si";
 import { BsCashCoin, BsFillGearFill } from "react-icons/bs";
-
-// Case- and space-insensitive keys, so "MySQL", "Mysql" or "Mercado Pago" all match
-export const normalize = (name) => name.toLowerCase().replace(/[\s.]/g, "");
+import { normalize } from "../../../utils/text";
 
 // Every technology shown on the site: its icon and brand colors [on light backgrounds, on dark backgrounds].
 // Importing icons one by one keeps the bundle small (the full Simple Icons set is ~2,400 icons).

@@ -14,7 +14,7 @@ const Bold = ({ text }) => (
 
 const STATS = [
   { key: "years", value: yearsOfExperience, prefix: "+" },
-  { key: "companies", value: new Set(positions.map((p) => p.company.name)).size },
+  { key: "companies", value: new Set(positions.map((p) => p.company)).size },
   { key: "projects", value: projects.length },
   { key: "countries", value: new Set(positions.map((p) => p.country)).size },
 ];

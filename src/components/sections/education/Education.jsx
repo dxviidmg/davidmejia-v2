@@ -1,14 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 import certifications from "../../../data/certifications.json";
-import institutions from "../../../data/institutions.json";
 import { useLang } from "../../../utils/LangContext";
 import { useInView } from "../../../utils/useInView";
 import { SectionHeader } from "../../commons/section/SectionHeader";
+import { getOrganization } from "../../../utils/organizations";
 import "./education.css";
 
-// Case-insensitive lookup ("FixterGeek" and "Fixtergeek" share a logo)
-const LOGOS = Object.fromEntries(Object.entries(institutions).map(([name, logo]) => [name.toLowerCase(), logo]));
-const logoFor = (institution) => LOGOS[(institution || "").toLowerCase()];
+const logoFor = (institution) => getOrganization(institution).logo;
 
 const EntryList = ({ title, entries, delay = 0 }) => {
   const [ref, visible] = useInView();

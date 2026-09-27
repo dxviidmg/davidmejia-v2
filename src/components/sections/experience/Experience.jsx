@@ -5,6 +5,7 @@ import { useLang } from "../../../utils/LangContext";
 import { useInView } from "../../../utils/useInView";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { WorkMap } from "./WorkMap";
+import { getOrganization } from "../../../utils/organizations";
 import "./experience.css";
 
 const VISIBLE_HIGHLIGHTS = 3;
@@ -18,20 +19,21 @@ const TimelineItem = ({ pos, tp, t, index }) => {
   const highlights = tp.highlights || [];
   const shown = expanded ? highlights : highlights.slice(0, VISIBLE_HIGHLIGHTS);
   const hidden = highlights.length - VISIBLE_HIGHLIGHTS;
+  const org = getOrganization(pos.company);
   return (
     <article className={`timeline-item fade-left ${visible ? "visible" : ""} ${index === 0 ? "is-current" : ""}`} ref={ref}>
       <div className="timeline-dot" />
       <div className="timeline-head">
         <div className="timeline-logo" aria-hidden="true">
-          {pos.company.logo
-            ? <img src={process.env.PUBLIC_URL + pos.company.logo} alt="" loading="lazy" />
-            : <span className="timeline-logo-initials">{initials(pos.company.name)}</span>}
+          {org.logo
+            ? <img src={process.env.PUBLIC_URL + org.logo} alt="" loading="lazy" />
+            : <span className="timeline-logo-initials">{initials(org.name)}</span>}
         </div>
         <p className="timeline-period">{pos.current ? `${pos.period} ${t.experience.present}` : pos.period}</p>
         <h3 className="timeline-company">
-          {pos.company.url ? (
-            <a href={pos.company.url} target="_blank" rel="noreferrer">{pos.company.name}<span className="timeline-link-icon" aria-hidden="true">↗</span></a>
-          ) : pos.company.name}
+          {org.url ? (
+            <a href={org.url} target="_blank" rel="noreferrer">{org.name}<span className="timeline-link-icon" aria-hidden="true">↗</span></a>
+          ) : org.name}
         </h3>
         <p className="timeline-position">{tp.position}</p>
         <p className="timeline-industry"><span>{t.experience.industryLabel}</span> {tp.industry}</p>
