@@ -20,11 +20,17 @@
   },
   "about": {
     "title": "Professional Summary",
-    "intro": "Senior Software Engineer with **10 years of experience** in backend and web systems development, specializing in **Python**, **Django**, **Django REST Framework**, **REST APIs**, **databases**, and **system integrations**. I have developed and maintained transactional systems for **education**, **insurance**, **finance**, and **government**, including platforms serving approximately **80,000 students** and **23 million historical payments**.",
+    "intro": "Senior Software Engineer with **{years} years of experience** in backend and web systems development, specializing in **Python**, **Django**, **Django REST Framework**, **REST APIs**, **databases**, and **system integrations**. I have developed and maintained transactional systems for **education**, **insurance**, **finance**, and **government**, including platforms serving approximately **80,000 students** and **23 million historical payments**. Currently working as a **Full Stack Developer** at **Entropia**.",
     "highlights": [
       "Specialized in **payment integrations**, **database optimization**, **asynchronous processing**, **legacy system modernization**, **microservices**, and **process automation**",
       "Additional experience with **React**, **AWS**, **GCP**, **PostgreSQL**, **MySQL**, **MongoDB**, **Celery**, and **Redis**"
-    ]
+    ],
+    "stats": {
+      "years": "years of experience",
+      "companies": "companies",
+      "projects": "projects",
+      "countries": "countries"
+    }
   },
   "experience": {
     "title": "Professional Experience",
