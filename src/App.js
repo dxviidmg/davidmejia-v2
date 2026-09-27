@@ -10,7 +10,6 @@ const About = lazy(() => import('./components/sections/about/About').then(m => (
 const Experience = lazy(() => import('./components/sections/experience/Experience').then(m => ({ default: m.Experience })));
 const Skills = lazy(() => import('./components/sections/skills/Skills').then(m => ({ default: m.Skills })));
 const Projects = lazy(() => import('./components/sections/projects/Projects').then(m => ({ default: m.Projects })));
-const Certifications = lazy(() => import('./components/sections/certifications/Certifications').then(m => ({ default: m.Certifications })));
 const Education = lazy(() => import('./components/sections/education/Education').then(m => ({ default: m.Education })));
 const Services = lazy(() => import('./components/sections/services/Services').then(m => ({ default: m.Services })));
 const Footer = lazy(() => import('./components/commons/footer/Footer').then(m => ({ default: m.Footer })));
@@ -28,7 +27,6 @@ function App() {
           <Skills />
           <Projects />
           <Education />
-          <Certifications />
           <Footer />
         </Suspense>
       </div>
