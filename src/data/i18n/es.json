@@ -1,13 +1,11 @@
 {
   "nav": {
-    "home": "Inicio",
     "about": "Sobre mí",
     "experience": "Experiencia",
     "skills": "Habilidades",
-    "certifications": "Certificaciones",
     "projects": "Proyectos",
-    "education": "Educación",
-    "services": "Servicios"
+    "education": "Formación",
+    "contact": "Contacto"
   },
   "banner": {
     "greeting": "Bienvenido a mi portafolio",
@@ -319,6 +317,11 @@
       }
     ]
   },
+  "footer": {
+    "contact": "¿Tienes un proyecto en mente? Hablemos.",
+    "cta": "Contáctame",
+    "rights": "Todos los derechos reservados."
+  },
   "services": {
     "title": "Servicios",
     "items": [
@@ -343,10 +346,5 @@
         "description": "Configuración y despliegue en AWS, GCP, Heroku y Render"
       }
     ]
-  },
-  "footer": {
-    "contact": "¿Tienes un proyecto en mente? Hablemos.",
-    "cta": "Contáctame",
-    "rights": "Todos los derechos reservados."
   }
 }

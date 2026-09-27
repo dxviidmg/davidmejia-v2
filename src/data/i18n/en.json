@@ -1,13 +1,11 @@
 {
   "nav": {
-    "home": "Home",
     "about": "About",
     "experience": "Experience",
     "skills": "Skills",
-    "certifications": "Certifications",
     "projects": "Projects",
     "education": "Education",
-    "services": "Services"
+    "contact": "Contact"
   },
   "banner": {
     "greeting": "Welcome to my portfolio",
@@ -319,6 +317,11 @@
       }
     ]
   },
+  "footer": {
+    "contact": "Got a project in mind? Let's talk.",
+    "cta": "Get in touch",
+    "rights": "All rights reserved."
+  },
   "services": {
     "title": "Services",
     "items": [
@@ -343,10 +346,5 @@
         "description": "Setup and deployment on AWS, GCP, Heroku and Render"
       }
     ]
-  },
-  "footer": {
-    "contact": "Got a project in mind? Let's talk.",
-    "cta": "Get in touch",
-    "rights": "All rights reserved."
   }
 }
