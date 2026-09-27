@@ -1,71 +1,73 @@
 .project-tabs {
-    margin-bottom: 30px;
-    gap: 8px;
+    display: inline-flex;
+    gap: 32px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid var(--line);
 }
 
 .project-tabs .nav-link {
-    color: #555;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 6px 20px;
-    font-size: 0.85rem;
+    padding: 0 0 14px;
+    color: var(--text-2);
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 0;
+    transition: color 200ms;
+}
+
+.project-tabs .nav-link:hover {
+    color: var(--text);
 }
 
 .project-tabs .nav-link.active {
-    background: #1a1a1a;
-    color: white;
-    border-color: #1a1a1a;
+    color: var(--text);
+    background: none;
+    box-shadow: inset 0 -2px 0 var(--accent);
 }
 
 .project-card {
-    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 300ms;
+}
+
+.project-card:hover {
+    border-top-color: var(--accent);
 }
 
 .project-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 4px;
-}
-
-.project-name {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #eee;
-    margin: 0;
-}
-
-.project-period {
-    font-size: 0.75rem;
-    color: #666;
-    white-space: nowrap;
+    gap: 12px;
+    margin-bottom: 14px;
 }
 
 .project-company {
-    font-size: 0.85rem;
-    color: #6c9bcf;
-    margin-bottom: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin: 0;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 12px;
 }
 
 .project-desc {
-    font-size: 0.85rem;
-    color: #aaa;
-    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--text-2);
+    margin-bottom: 24px;
 }
 
 .project-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-}
-
-.stack-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    background: #333;
-    border-radius: 14px;
-    padding: 4px 10px;
-    font-size: 0.75rem;
-    color: #aaa;
+    gap: 6px;
+    margin-top: auto;
 }

@@ -368,7 +368,9 @@
         "description": "Website for a rock band with content management and media gallery",
         "company": "Independent"
       }
-    ]
+    ],
+    "showAll": "Show all",
+    "showLess": "Show less"
   },
   "education": {
     "title": "Education",

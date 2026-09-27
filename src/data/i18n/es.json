@@ -368,7 +368,9 @@
         "description": "Sitio web para una banda de rock con gestión de contenido y galería multimedia",
         "company": "Independiente"
       }
-    ]
+    ],
+    "showAll": "Ver todos",
+    "showLess": "Ver menos"
   },
   "education": {
     "title": "Educación",

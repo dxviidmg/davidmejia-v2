@@ -1,24 +1,28 @@
+import { useState } from "react";
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projects from "../../../data/projects.json";
-import { GetCustomIcon } from "../../commons/icons/Icons";
+import { GetCustomIcon, brandColor } from "../../commons/icons/Icons";
 import { useLang } from "../../../utils/LangContext";
 import { useInView } from "../../../utils/useInView";
+import { SectionHeader } from "../../commons/section/SectionHeader";
 import "./projects.css";
 
-const ProjectCard = ({ project, tp }) => {
+const INITIAL_COUNT = 6;
+
+const ProjectCard = ({ project, tp, index }) => {
   const [ref, visible] = useInView();
   return (
-    <div ref={ref} className={`dark-card dark-card-hover project-card fade-up ${visible ? "visible" : ""}`}>
+    <div ref={ref} className={`card-dm project-card fade-up ${visible ? "visible" : ""}`} style={{ transitionDelay: `${(index % 3) * 0.12}s` }}>
       <div className="project-header">
-        <h5 className="project-name">{tp.name}</h5>
-        <span className="project-period">{project.period}</span>
+        <p className="project-company">{tp.company}</p>
+        <span className="card-meta">{project.period}</span>
       </div>
-      <p className="project-company">{tp.company}</p>
+      <h3 className="project-name">{tp.name}</h3>
       <p className="project-desc">{tp.description}</p>
       <div className="project-stack">
         {project.stack.map((s, i) => (
-          <span key={i} className="stack-chip">
-            <GetCustomIcon name={s.icon || "Si" + s.name} color={s.color} />
+          <span key={i} className="chip">
+            <GetCustomIcon name={s.icon || "Si" + s.name} color={brandColor(s.name, true)} />
             {s.name}
           </span>
         ))}
@@ -27,30 +31,41 @@ const ProjectCard = ({ project, tp }) => {
   );
 };
 
-const ProjectList = ({ category, t }) => (
-  <Row>
-    {projects
-      .filter((p) => !category || p.categories.includes(category))
-      .map((project, i) => {
-        const idx = projects.indexOf(project);
-        return (
-          <Col xs={12} sm={6} lg={4} key={i} className="col-gap">
-            <ProjectCard project={project} tp={t.projects.items[idx]} />
-          </Col>
-        );
-      })}
-  </Row>
-);
+const ProjectList = ({ category, t }) => {
+  const [expanded, setExpanded] = useState(false);
+  const list = projects.filter((p) => !category || p.categories.includes(category));
+  const shown = expanded ? list : list.slice(0, INITIAL_COUNT);
+  return (
+    <>
+      <Row>
+        {shown.map((project, i) => {
+          const idx = projects.indexOf(project);
+          return (
+            <Col xs={12} md={6} lg={4} key={idx} className="col-gap">
+              <ProjectCard project={project} tp={t.projects.items[idx]} index={i} />
+            </Col>
+          );
+        })}
+      </Row>
+      {list.length > INITIAL_COUNT && (
+        <div className="text-center mt-3">
+          <button className="btn-dm btn-dm-ghost" onClick={() => setExpanded(!expanded)} aria-expanded={expanded}>
+            {expanded ? t.projects.showLess : `${t.projects.showAll} (${list.length})`}
+          </button>
+        </div>
+      )}
+    </>
+  );
+};
 
 export const Projects = () => {
   const { t } = useLang();
-  const [ref, visible] = useInView();
   return (
-    <section className="section-light paddings" id="projects">
+    <section className="section" id="projects">
       <Container>
-        <h2 ref={ref} className={`fade-up ${visible ? "visible" : ""}`}>{t.projects.title}</h2>
+        <SectionHeader index={4} eyebrow={t.nav.projects} title={t.projects.title} />
         <Tab.Container defaultActiveKey="all">
-          <Nav variant="pills" className="justify-content-center project-tabs">
+          <Nav className="project-tabs">
             <Nav.Item><Nav.Link eventKey="all">{t.projects.tabs.all}</Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link eventKey="web">{t.projects.tabs.web}</Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link eventKey="data">{t.projects.tabs.data}</Nav.Link></Nav.Item>
