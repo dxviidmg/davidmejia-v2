@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
 import projects from "../../../data/projects.json";
-import { GetCustomIcon, brandColor } from "../../commons/icons/Icons";
+import { TechIcon } from "../../commons/icons/Icons";
 import { useLang } from "../../../utils/LangContext";
 import { useInView } from "../../../utils/useInView";
 import { SectionHeader } from "../../commons/section/SectionHeader";
@@ -22,7 +22,7 @@ const ProjectCard = ({ project, tp, index }) => {
       <div className="project-stack">
         {project.stack.map((s, i) => (
           <span key={i} className="chip">
-            <GetCustomIcon name={s.icon || "Si" + s.name} color={brandColor(s.name, true)} />
+            <TechIcon name={s.name} onDark />
             {s.name}
           </span>
         ))}

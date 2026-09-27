@@ -1,5 +1,5 @@
 import skills from "../../../data/skills.json";
-import { GetCustomIcon, brandColor } from "../icons/Icons";
+import { TechIcon } from "../icons/Icons";
 import "./marquee.css";
 
 const CATEGORIES = ["Backend", "Frontend", "Databases", "Payments", "Cloud & DevOps", "Processing"];
@@ -13,7 +13,7 @@ export const Marquee = () => (
         <div className="marquee-group" key={copy}>
           {ITEMS.map((skill) => (
             <span className="marquee-item" key={skill.name}>
-              <span className="marquee-logo"><GetCustomIcon name={skill.icon || "Si" + skill.name} color={brandColor(skill.name, true)} /></span>
+              <span className="marquee-logo"><TechIcon name={skill.name} onDark /></span>
               {skill.name}
               <span className="marquee-sep" />
             </span>

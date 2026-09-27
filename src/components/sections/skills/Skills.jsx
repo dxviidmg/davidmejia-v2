@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import skills from "../../../data/skills.json";
-import { GetCustomIcon, brandColor } from "../../commons/icons/Icons";
+import { TechIcon } from "../../commons/icons/Icons";
 import { calcExperience } from "../../../utils/dateUtils";
 import { useLang } from "../../../utils/LangContext";
 import { useInView } from "../../../utils/useInView";
@@ -23,7 +23,7 @@ const SkillCard = ({ label, items, index }) => {
           return (
             <div key={i} className="skill-row">
               <div className="skill-info">
-                <span className="skill-icon"><GetCustomIcon name={skill.icon || "Si" + skill.name} color={brandColor(skill.name)} /></span>
+                <span className="skill-icon"><TechIcon name={skill.name} /></span>
                 <span className="skill-name">{skill.name}</span>
                 <span className="skill-exp">{label}</span>
               </div>
