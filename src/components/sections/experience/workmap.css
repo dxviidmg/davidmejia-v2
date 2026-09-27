@@ -1,0 +1,237 @@
+.work-map {
+    margin-bottom: 120px;
+}
+
+.work-map-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 24px;
+}
+
+/* View tabs: one question at a time */
+.work-map-tabs {
+    display: inline-flex;
+    gap: 32px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+}
+
+.work-map-tabs button {
+    background: none;
+    border: none;
+    padding: 0 0 14px;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-2);
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.work-map-tabs button:hover {
+    color: var(--text);
+}
+
+.work-map-tabs button.is-active {
+    color: var(--text);
+    box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+.work-map-desc {
+    font-size: 1rem;
+    color: var(--text-2);
+    margin-bottom: 40px;
+}
+
+.work-map-desc span {
+    color: var(--text);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.work-map-grid {
+    display: grid;
+    /* 2:1 makes both maps the same height (their aspect ratios are ~1.5 and ~0.75) */
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 48px;
+    align-items: end;
+}
+
+.work-map-figure {
+    margin: 0;
+}
+
+.work-map-figure svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.work-map-figure figcaption {
+    margin-top: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-3);
+}
+
+/* Base map: neutral, not interactive */
+.map-region {
+    fill: #18181B;
+    stroke: var(--line);
+    stroke-width: 0.8;
+}
+
+/* City dots */
+.map-dot {
+    cursor: pointer;
+    outline: none;
+}
+
+.map-dot-hit {
+    fill: transparent;
+}
+
+.map-dot-ring {
+    fill: rgba(59, 130, 246, 0.2);
+    stroke: var(--accent);
+    stroke-width: 1;
+    transition: fill 200ms;
+}
+
+.map-dot-core {
+    fill: var(--accent);
+    stroke: var(--bg);
+    stroke-width: 1.5;
+}
+
+.map-dot:hover .map-dot-ring,
+.map-dot:focus-visible .map-dot-ring,
+.map-dot.is-active .map-dot-ring {
+    fill: rgba(59, 130, 246, 0.45);
+    stroke: #FFFFFF;
+}
+
+.map-dot:hover .map-dot-core,
+.map-dot:focus-visible .map-dot-core,
+.map-dot.is-active .map-dot-core {
+    fill: #FFFFFF;
+}
+
+/* Remote dots are white, on-site dots blue */
+.map-dot.kind-remote .map-dot-ring {
+    fill: rgba(255, 255, 255, 0.16);
+    stroke: #FFFFFF;
+}
+
+.map-dot.kind-remote .map-dot-core {
+    fill: #FFFFFF;
+}
+
+.map-dot.kind-mixed .map-dot-ring {
+    fill: rgba(255, 255, 255, 0.1);
+    stroke: var(--text-2);
+}
+
+.map-dot-half.kind-onsite { fill: var(--accent); }
+.map-dot-half.kind-remote { fill: #FFFFFF; }
+
+.work-map-kinds {
+    display: flex;
+    gap: 24px;
+    margin: -24px 0 32px;
+    font-size: 0.9rem;
+    color: var(--text-2);
+}
+
+.work-map-kinds span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.kind-swatch {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+    vertical-align: 0.05em;
+}
+
+.work-map-kinds .kind-swatch {
+    margin-right: 0;
+}
+
+.kind-swatch.kind-onsite { background: var(--accent); }
+.kind-swatch.kind-remote { background: #FFFFFF; }
+
+/* Detail under the maps (hover / tap / keyboard focus) */
+.work-map-detail {
+    min-height: 3.4em;
+    margin: 28px 0 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 0.95rem;
+    color: var(--text-2);
+}
+
+.work-map-detail p {
+    margin: 0 0 4px;
+}
+
+.work-map-detail strong,
+.work-map-list strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* Full list of the current view */
+.work-map-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 3;
+    column-gap: 40px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-2);
+}
+
+.work-map-list li {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .work-map-grid {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .work-map-list {
+        columns: 2;
+    }
+}
+
+@media (max-width: 575px) {
+    .work-map-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .work-map-figure:last-child {
+        max-width: 220px;
+    }
+
+    .work-map-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .work-map-list {
+        columns: 1;
+    }
+}

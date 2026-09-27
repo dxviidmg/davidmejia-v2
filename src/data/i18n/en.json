@@ -128,7 +128,69 @@
           "Learned Python in a self-taught way"
         ]
       }
-    ]
+    ],
+    "map": {
+      "title": "Work map",
+      "hint": "Hover or tap a point to see the details.",
+      "mexico": "Mexico",
+      "americas": "Americas",
+      "views": {
+        "work": {
+          "tab": "Where I've worked",
+          "desc": "Places where I've worked, in person or remotely."
+        },
+        "visits": {
+          "tab": "Work trips",
+          "desc": "Places I've gone to in person for work, outside my own office."
+        },
+        "team": {
+          "tab": "Teams",
+          "desc": "Where the people I've worked with are from."
+        }
+      },
+      "notes": {
+        "onsite": "on-site",
+        "hybrid": "hybrid",
+        "training": "training sessions",
+        "visits": "frequent visits",
+        "remote": "remote"
+      },
+      "countries": {
+        "MX": "Mexico",
+        "US": "United States",
+        "CO": "Colombia",
+        "AR": "Argentina"
+      },
+      "cities": {
+        "pachuca": "Pachuca",
+        "merida": "Mérida",
+        "atizapan": "Atizapán",
+        "naucalpan": "Naucalpan",
+        "tuxtla": "Tuxtla Gutiérrez",
+        "oaxaca": "Oaxaca",
+        "durango": "Durango",
+        "zacatecas": "Zacatecas",
+        "puebla": "Puebla",
+        "slp": "San Luis Potosí",
+        "morelia": "Morelia",
+        "monterrey": "Monterrey",
+        "boston": "Boston",
+        "austin": "Austin",
+        "cdmx": "Mexico City",
+        "buenosaires": "Buenos Aires",
+        "medellin": "Medellín",
+        "zumpango": "Zumpango",
+        "guadalajara": "Guadalajara"
+      },
+      "cityOne": "city",
+      "cityMany": "cities",
+      "inOne": "in",
+      "countryMany": "countries",
+      "kinds": {
+        "onsite": "On-site",
+        "remote": "Remote"
+      }
+    }
   },
   "skills": {
     "title": "Core Skills",

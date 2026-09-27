@@ -128,7 +128,69 @@
           "Aprendí Python de forma autodidacta"
         ]
       }
-    ]
+    ],
+    "map": {
+      "title": "Mapa de trabajo",
+      "hint": "Pasa el cursor o toca un punto para ver el detalle.",
+      "mexico": "México",
+      "americas": "Continente",
+      "views": {
+        "work": {
+          "tab": "Donde he trabajado",
+          "desc": "Lugares donde he trabajado, en persona o a distancia."
+        },
+        "visits": {
+          "tab": "Visitas de trabajo",
+          "desc": "Lugares a los que he ido físicamente por trabajo, fuera de mi oficina."
+        },
+        "team": {
+          "tab": "Equipos",
+          "desc": "De dónde son las personas con las que he colaborado."
+        }
+      },
+      "notes": {
+        "onsite": "presencial",
+        "hybrid": "híbrido",
+        "training": "capacitaciones",
+        "visits": "visitas frecuentes",
+        "remote": "remoto"
+      },
+      "countries": {
+        "MX": "México",
+        "US": "Estados Unidos",
+        "CO": "Colombia",
+        "AR": "Argentina"
+      },
+      "cities": {
+        "pachuca": "Pachuca",
+        "merida": "Mérida",
+        "atizapan": "Atizapán",
+        "naucalpan": "Naucalpan",
+        "tuxtla": "Tuxtla Gutiérrez",
+        "oaxaca": "Oaxaca",
+        "durango": "Durango",
+        "zacatecas": "Zacatecas",
+        "puebla": "Puebla",
+        "slp": "San Luis Potosí",
+        "morelia": "Morelia",
+        "monterrey": "Monterrey",
+        "boston": "Boston",
+        "austin": "Austin",
+        "cdmx": "Ciudad de México",
+        "buenosaires": "Buenos Aires",
+        "medellin": "Medellín",
+        "zumpango": "Zumpango",
+        "guadalajara": "Guadalajara"
+      },
+      "cityOne": "ciudad",
+      "cityMany": "ciudades",
+      "inOne": "en",
+      "countryMany": "países",
+      "kinds": {
+        "onsite": "Presencial",
+        "remote": "Remoto"
+      }
+    }
   },
   "skills": {
     "title": "Competencias Clave",
