@@ -2,6 +2,7 @@ import { useState } from "react";
 import maps from "../../../data/geo/maps.json";
 import places from "../../../data/places.json";
 import { useInView } from "../../../utils/useInView";
+import { Tabs } from "../../commons/tabs/Tabs";
 import "./workmap.css";
 
 // One question per view, one unit (the city) everywhere
@@ -100,19 +101,13 @@ export const WorkMap = ({ t }) => {
     <div ref={ref} className={`work-map fade-up ${visible ? "visible" : ""}`}>
       <h3 className="work-map-title">{m.title}</h3>
 
-      <div className="work-map-tabs" role="tablist" aria-label={m.title}>
-        {VIEWS.map((v) => (
-          <button
-            key={v}
-            role="tab"
-            aria-selected={view === v}
-            className={view === v ? "is-active" : ""}
-            onClick={() => selectView(v)}
-          >
-            {m.views[v].tab}
-          </button>
-        ))}
-      </div>
+      <Tabs
+        className="work-map-tabs"
+        label={m.title}
+        tabs={VIEWS.map((v) => ({ id: v, label: m.views[v].tab }))}
+        active={view}
+        onChange={selectView}
+      />
 
       <p className="work-map-desc">{m.views[view].desc} <span>{summary}</span></p>
       {hasKinds && (
