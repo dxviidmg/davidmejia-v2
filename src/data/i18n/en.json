@@ -37,7 +37,15 @@
     "at": "—",
     "positions": [
       {
+        "position": "Full Stack Developer",
+        "industry": "Artificial intelligence",
+        "modality": "Remote",
+        "lineOfBusiness": "Mexico City, Mexico",
+        "highlights": []
+      },
+      {
         "position": "Backend Web Developer, Finance Department",
+        "industry": "Online education",
         "modality": "Remote",
         "lineOfBusiness": "Naucalpan, State of Mexico, Mexico",
         "highlights": [
@@ -52,6 +60,7 @@
       },
       {
         "position": "Full Stack Web Developer / Technical Lead",
+        "industry": "Software development · insurance",
         "modality": "Remote",
         "lineOfBusiness": "Mexico City, Mexico",
         "highlights": [
@@ -64,6 +73,7 @@
       },
       {
         "position": "Backend Web Developer",
+        "industry": "IT services",
         "modality": "Remote",
         "lineOfBusiness": "Boston, Massachusetts, USA",
         "highlights": [
@@ -77,6 +87,7 @@
       },
       {
         "position": "Backend Web Developer / Data Analyst",
+        "industry": "Software development · insurance",
         "modality": "Remote",
         "lineOfBusiness": "Mexico City, Mexico",
         "highlights": [
@@ -90,6 +101,7 @@
       },
       {
         "position": "Data Science & AI Trainee",
+        "industry": "Software & data science",
         "modality": "On-site",
         "lineOfBusiness": "Mérida, Yucatán, Mexico",
         "highlights": [
@@ -99,6 +111,7 @@
       },
       {
         "position": "Full Stack Web Developer / Technology Coordinator",
+        "industry": "Construction",
         "modality": "On-site",
         "lineOfBusiness": "Pachuca, Hidalgo, Mexico",
         "highlights": [
@@ -110,6 +123,7 @@
       },
       {
         "position": "Full Stack Web Developer",
+        "industry": "Government · science & technology",
         "modality": "On-site",
         "lineOfBusiness": "Pachuca, Hidalgo, Mexico",
         "highlights": [
@@ -121,6 +135,7 @@
       },
       {
         "position": "Research Assistant (Professional Internship)",
+        "industry": "Education · research",
         "modality": "Hybrid",
         "lineOfBusiness": "Education",
         "highlights": [
@@ -129,6 +144,11 @@
         ]
       }
     ],
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "present": "Present",
+    "justStarted": "Just getting started. More to tell soon.",
+    "industryLabel": "industry",
     "map": {
       "title": "Work map",
       "hint": "Hover or tap a point to see the details.",

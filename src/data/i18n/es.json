@@ -37,7 +37,15 @@
     "at": "—",
     "positions": [
       {
+        "position": "Desarrollador Full Stack",
+        "industry": "Inteligencia artificial",
+        "modality": "Remoto",
+        "lineOfBusiness": "Ciudad de México, México",
+        "highlights": []
+      },
+      {
         "position": "Desarrollador Web Backend, Departamento de Finanzas",
+        "industry": "Educación en línea",
         "modality": "Remoto",
         "lineOfBusiness": "Naucalpan, Estado de México, México",
         "highlights": [
@@ -52,6 +60,7 @@
       },
       {
         "position": "Desarrollador Web Full Stack / Líder Técnico",
+        "industry": "Desarrollo de software · seguros",
         "modality": "Remoto",
         "lineOfBusiness": "Ciudad de México, México",
         "highlights": [
@@ -64,6 +73,7 @@
       },
       {
         "position": "Desarrollador Web Backend",
+        "industry": "Servicios de TI",
         "modality": "Remoto",
         "lineOfBusiness": "Boston, Massachusetts, EE. UU.",
         "highlights": [
@@ -77,6 +87,7 @@
       },
       {
         "position": "Desarrollador Web Backend / Analista de Datos",
+        "industry": "Desarrollo de software · seguros",
         "modality": "Remoto",
         "lineOfBusiness": "Ciudad de México, México",
         "highlights": [
@@ -90,6 +101,7 @@
       },
       {
         "position": "Trainee de Ciencia de Datos y AI",
+        "industry": "Software y ciencia de datos",
         "modality": "Presencial",
         "lineOfBusiness": "Mérida, Yucatán, México",
         "highlights": [
@@ -99,6 +111,7 @@
       },
       {
         "position": "Desarrollador Web Full Stack / Coordinador de Tecnología",
+        "industry": "Construcción",
         "modality": "Presencial",
         "lineOfBusiness": "Pachuca, Hidalgo, México",
         "highlights": [
@@ -110,6 +123,7 @@
       },
       {
         "position": "Desarrollador Web Full Stack",
+        "industry": "Gobierno · ciencia y tecnología",
         "modality": "Presencial",
         "lineOfBusiness": "Pachuca, Hidalgo, México",
         "highlights": [
@@ -121,6 +135,7 @@
       },
       {
         "position": "Asistente de Investigación (Prácticas Profesionales)",
+        "industry": "Educación · investigación",
         "modality": "Híbrido",
         "lineOfBusiness": "Educación",
         "highlights": [
@@ -129,6 +144,11 @@
         ]
       }
     ],
+    "showMore": "Ver más",
+    "showLess": "Ver menos",
+    "present": "Hoy",
+    "justStarted": "Recién empezando. Pronto habrá más que contar.",
+    "industryLabel": "giro",
     "map": {
       "title": "Mapa de trabajo",
       "hint": "Pasa el cursor o toca un punto para ver el detalle.",

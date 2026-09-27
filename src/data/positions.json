@@ -1,8 +1,21 @@
 [
     {
         "company": {
+            "name": "Entropia",
+            "url": "https://entropia.ai",
+            "logo": "/logos/entropia.png"
+        },
+        "period": "Sep 2026 –",
+        "current": true,
+        "location": "Ciudad de México",
+        "country": "MX"
+    },
+    {
+        "company": {
             "name": "UTEL",
-            "url": "https://utel.edu.mx"
+            "url": "https://utel.edu.mx",
+            "color": "#43A814",
+            "logo": "/logos/utel.png"
         },
         "period": "Ene 2024 – Ago 2026",
         "location": "Naucalpan, Estado de México",
@@ -11,7 +24,9 @@
     {
         "company": {
             "name": "Ixulabs",
-            "url": "https://ixulabs.com"
+            "url": "https://ixulabs.com",
+            "color": "#F0708A",
+            "logo": "/logos/ixulabs.svg"
         },
         "period": "Jun 2023 – Ene 2024",
         "location": "Ciudad de México",
@@ -20,7 +35,8 @@
     {
         "company": {
             "name": "GenOne Technologies LLC",
-            "url": "https://genonetechnologies.com"
+            "color": "#3D8BFD",
+            "logo": "/logos/genone.png"
         },
         "period": "Mar 2022 – Oct 2022",
         "location": "Boston, Massachusetts",
@@ -29,7 +45,9 @@
     {
         "company": {
             "name": "Ixulabs",
-            "url": "https://ixulabs.com"
+            "url": "https://ixulabs.com",
+            "color": "#F0708A",
+            "logo": "/logos/ixulabs.svg"
         },
         "period": "May 2019 – Feb 2022",
         "location": "Ciudad de México",
@@ -38,7 +56,9 @@
     {
         "company": {
             "name": "Plenumsoft",
-            "url": "https://plenumsoft.com"
+            "url": "https://plenumsoft.com",
+            "color": "#0A7F52",
+            "logo": "/logos/plenumsoft.png"
         },
         "period": "Nov 2018 – May 2019",
         "location": "Mérida",
@@ -47,7 +67,8 @@
     {
         "company": {
             "name": "Grupo Constructor CARSEV",
-            "url": "https://carsev.com"
+            "url": "https://carsev.com",
+            "color": "#722F37"
         },
         "period": "May 2017 – Nov 2018",
         "location": "Pachuca",
@@ -56,7 +77,9 @@
     {
         "company": {
             "name": "Gobierno del Estado de Hidalgo - CITNOVA",
-            "url": "https://citnova.hidalgo.gob.mx"
+            "url": "https://citnova.hidalgo.gob.mx",
+            "color": "#A4D233",
+            "logo": "/logos/hidalgo.png"
         },
         "period": "Nov 2016 – May 2017",
         "location": "Pachuca",
@@ -65,7 +88,9 @@
     {
         "company": {
             "name": "ITESM-CEM",
-            "url": "https://cefir.itesm.mx"
+            "url": "https://cefir.itesm.mx",
+            "color": "#5B8DEF",
+            "logo": "/logos/tec.png"
         },
         "period": "2014",
         "location": "México",
