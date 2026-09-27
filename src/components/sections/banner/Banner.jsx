@@ -6,6 +6,7 @@ import { useLang } from "../../../utils/LangContext";
 import { yearsOfExperience } from "../../../utils/dateUtils";
 import { CONTACT } from "../../../utils/contact";
 import { useScroll } from "../../../utils/useScroll";
+import { AccentEnd } from "../../commons/text/AccentEnd";
 import "./banner.css";
 
 export function Banner() {
@@ -38,7 +39,7 @@ export function Banner() {
         <div className="banner-statement banner-enter banner-enter-delay-2">
           <p className="banner-quote">
             <span className="quiet">{t.banner.quiet}</span>
-            <span className="loud">{t.banner.loud.replace(/\.$/, "")}<span className="dot">.</span></span>
+            <span className="loud"><AccentEnd text={t.banner.loud} className="blink" /></span>
           </p>
           <p className="banner-lead">{t.banner.lead.replace("{years}", yearsOfExperience)}</p>
           <div className="banner-actions">

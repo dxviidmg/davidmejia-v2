@@ -41,6 +41,11 @@ h1, h2, h3, h4, h5 {
   color: var(--text);
 }
 
+/* Accent on a phrase's closing punctuation (see AccentEnd) */
+.accent-end {
+    color: var(--accent);
+}
+
 /* Section header: "01 — Sobre mí" + title */
 .section-header {
   margin-bottom: 72px;
