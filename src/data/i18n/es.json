@@ -8,34 +8,15 @@
     "contact": "Contacto"
   },
   "banner": {
-    "greeting": "Bienvenido a mi portafolio",
-    "name": "Hola, soy David Mejía",
-    "cta": "Ver mis proyectos",
-    "titles": [
-      "Backend Engineer",
-      "Senior Software Engineer",
-      "Desarrollador Python",
-      "Desarrollador Django",
-      "Desarrollador Full Stack",
-      "Analista de Datos"
-    ],
-    "stats": [
-      {
-        "value": "+9",
-        "label": "Años de experiencia",
-        "computed": "yearsOfExperience"
-      },
-      {
-        "value": "+20",
-        "label": "Proyectos entregados",
-        "computed": "projectsDelivered"
-      },
-      {
-        "value": "8",
-        "label": "Empresas",
-        "computed": "companies"
-      }
-    ]
+    "label": "Desarrollador Full Stack — Entropia, CDMX",
+    "name": "David Mejía",
+    "quiet": "Backend sólido,",
+    "loud": "producto completo.",
+    "lead": "{years} años construyendo sistemas transaccionales: integraciones de pago, APIs y bases de datos para educación, seguros, finanzas y gobierno. Hoy desarrollo producto full stack con Python, Django y React en Entropia.",
+    "ctaCv": "Descargar CV",
+    "scroll": "Scroll",
+    "ctaEmail": "E-mail",
+    "ctaWhatsapp": "WhatsApp"
   },
   "about": {
     "title": "Resumen Profesional",
