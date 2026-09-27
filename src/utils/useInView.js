@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
-export const useInView = (options = {}) => {
+// Becomes true once the element enters the viewport, then stops observing.
+// `threshold` is a number (not an options object) so the effect doesn't re-run on every render.
+export const useInView = (threshold = 0.15) => {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -11,14 +13,14 @@ export const useInView = (options = {}) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(el);
+          observer.disconnect();
         }
       },
-      { threshold: 0.15, ...options }
+      { threshold }
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, [options]);
+  }, [threshold]);
 
   return [ref, isVisible];
 };
