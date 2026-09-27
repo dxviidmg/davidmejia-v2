@@ -236,7 +236,6 @@ h1, h2, h3, h4, h5 {
   animation: bannerIn 1s ease forwards;
 }
 
-.banner-enter-delay-1 { animation-delay: 0.2s; }
 .banner-enter-delay-2 { animation-delay: 0.5s; }
 .banner-enter-delay-3 { animation-delay: 0.8s; }
 
