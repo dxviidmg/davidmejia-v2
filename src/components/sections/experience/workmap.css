@@ -198,6 +198,7 @@
 
     .work-map-figure:last-child {
         max-width: 220px;
+        margin: 0 auto;
     }
 
     .work-map-list {
