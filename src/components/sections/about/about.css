@@ -70,3 +70,14 @@
     font-weight: 500;
     color: var(--text-3);
 }
+
+@media (max-width: 575px) {
+    .about-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px 20px;
+    }
+
+    .about-stat-value {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+    }
+}
