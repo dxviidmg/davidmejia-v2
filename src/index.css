@@ -21,6 +21,10 @@
   --radius: 4px;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-feature-settings: "tnum" 1;

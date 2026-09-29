@@ -11,9 +11,9 @@
 /* Years of experience as a faint outline behind the hero */
 .banner-ghost {
     position: absolute;
-    right: -2vw;
+    right: 0;
     top: 50%;
-    transform: translateY(calc(-55% + var(--parallax, 0px)));
+    transform: translateY(calc(-55% + var(--parallax, 0px))) translateX(30%);
     font-family: var(--font-sans);
     font-weight: 800;
     font-size: min(90vh, 56vw);
@@ -230,14 +230,56 @@
 }
 
 @media (max-width: 767px) {
+    .banner-inner {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 100px;
+        gap: 32px;
+    }
+
+    #banner .banner-name {
+        font-size: clamp(2.5rem, 9vw, 3.5rem);
+    }
+
+    .banner-quote {
+        font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    }
+
+    .banner-statement {
+        max-width: 100%;
+    }
+
+    .banner-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner-actions > * {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
     .banner-bar {
         height: auto;
         padding-top: 20px;
         padding-bottom: 20px;
+        flex-direction: column;
+        gap: 16px;
     }
 
     .banner-scroll {
         display: none;
+    }
+
+    .banner-social {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .banner-social a {
+        justify-content: center;
+        width: 100%;
     }
 }
 
