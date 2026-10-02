@@ -9,9 +9,6 @@
                 "name": "FastAPI"
             },
             {
-                "name": "SQLAlchemy"
-            },
-            {
                 "name": "Alembic"
             },
             {
@@ -22,9 +19,6 @@
             },
             {
                 "name": "React 19"
-            },
-            {
-                "name": "Vite"
             },
             {
                 "name": "Tailwind"

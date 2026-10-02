@@ -35,15 +35,6 @@
                     "end": null
                 }
             ]
-        },
-        {
-            "name": "SQLAlchemy",
-            "periods": [
-                {
-                    "start": "2026-09-21",
-                    "end": null
-                }
-            ]
         }
     ],
     "Frontend": [
@@ -115,15 +106,6 @@
             "periods": [
                 {
                     "start": "2026-02",
-                    "end": null
-                }
-            ]
-        },
-        {
-            "name": "Vite",
-            "periods": [
-                {
-                    "start": "2026-09-21",
                     "end": null
                 }
             ]

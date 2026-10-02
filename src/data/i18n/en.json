@@ -43,8 +43,8 @@
         "highlights": [
           "Evolved a multi-tenant access control MVP for private security companies, implementing differentiated portals for operators and administrators",
           "Designed and implemented RBAC authorization architecture with granular permissions for CCO, Superadmin, and Tenant Admin",
-          "Developed and refactored backend with FastAPI and SQLAlchemy, structuring services and endpoints under maintainability and separation of concerns principles",
-          "Developed frontend with React 19, Vite, and Tailwind CSS, implementing verification flows, visitor registration, access control, and visit history"
+          "Developed and refactored backend with FastAPI, structuring services and endpoints under maintainability and separation of concerns principles",
+          "Developed frontend with React 19 and Tailwind CSS, implementing verification flows, visitor registration, access control, and visit history"
         ]
       },
       {
