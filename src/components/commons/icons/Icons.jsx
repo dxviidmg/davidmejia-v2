@@ -3,6 +3,7 @@ import {
   SiFiles, SiGit, SiGithub, SiGitlab, SiGooglecloud, SiHeroku, SiHtml5, SiJavascript, SiJira, SiJupyter, SiLinux,
   SiMercadopago, SiMongodb, SiMui, SiMysql, SiNumpy, SiPandas, SiPlaywright, SiPostgresql, SiPostman, SiPython,
   SiRasa, SiReact, SiRedis, SiRender, SiSelenium, SiSocketdotio, SiStripe, SiTypescript, SiVercel,
+  SiFastapi, SiSqlalchemy, SiTailwindcss, SiVite, SiDocker, SiGithubactions, SiAlembic,
 } from "react-icons/si";
 import { BsCashCoin, BsFillGearFill } from "react-icons/bs";
 import { normalize } from "../../../utils/text";
@@ -62,6 +63,17 @@ const TECH = {
   websockets: { icon: SiSocketdotio },
   sftp: { icon: SiFiles },
   webhooks: { icon: SiConventionalcommits },
+  fastapi: { icon: SiFastapi, colors: ["#009688", "#26D07C"] },
+  sqlalchemy: { icon: SiSqlalchemy, colors: ["#9C3839", "#E74B5A"] },
+  tailwind: { icon: SiTailwindcss, colors: ["#0F766E", "#14B8A6"] },
+  tailwindcss: { icon: SiTailwindcss, colors: ["#0F766E", "#14B8A6"] },
+  vite: { icon: SiVite, colors: ["#6C4A7D", "#A78BFA"] },
+  docker: { icon: SiDocker, colors: ["#2496ED", "#5DADE2"] },
+  cicd: { icon: BsFillGearFill, colors: ["#6B7280", "#9CA3AF"] },
+  githubactions: { icon: SiGithubactions },
+  alembic: { icon: SiAlembic, colors: ["#4A5568", "#A0AEC0"] },
+  kiro: { icon: BsFillGearFill, colors: ["#2D3748", "#718096"] },
+  claudecode: { icon: SiConventionalcommits, colors: ["#1B1C1D", "#666"] },
 };
 
 const FALLBACK = { icon: SiConventionalcommits };
