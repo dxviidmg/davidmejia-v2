@@ -1,3 +1,5 @@
+'use client';
+
 import { useInView } from "../../../utils/useInView";
 import { useLang } from "../../../utils/LangContext";
 import { sectionNumber, sectionOf } from "../../../sections";

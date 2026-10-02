@@ -1,3 +1,5 @@
+'use client';
+
 import { Container, Row, Col } from "react-bootstrap";
 import { useLang } from "../../../utils/LangContext";
 import { yearsOfExperience } from "../../../utils/dateUtils";

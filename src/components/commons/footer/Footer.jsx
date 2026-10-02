@@ -1,3 +1,5 @@
+'use client';
+
 import { Container } from "react-bootstrap";
 import { BsLinkedin, BsGithub, BsEnvelope, BsWhatsapp } from "react-icons/bs";
 import { useLang } from "../../../utils/LangContext";

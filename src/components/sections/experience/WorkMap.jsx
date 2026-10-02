@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from "react";
 import maps from "../../../data/geo/maps.json";
 import places from "../../../data/places.json";

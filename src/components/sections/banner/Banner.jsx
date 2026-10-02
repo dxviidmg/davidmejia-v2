@@ -1,3 +1,5 @@
+'use client';
+
 import { useRef } from "react";
 import { Container } from "react-bootstrap";
 import { BsLinkedin, BsGithub, BsEnvelope, BsWhatsapp } from "react-icons/bs";

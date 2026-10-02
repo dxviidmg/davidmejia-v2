@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import skills from "../../../data/skills.json";

@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from "react";
 
 // Counts from 0 to `target` once `start` becomes true
