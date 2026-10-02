@@ -37,10 +37,15 @@
     "positions": [
       {
         "position": "Full Stack Developer",
-        "industry": "Artificial intelligence",
+        "industry": "Digital security",
         "modality": "Remote",
         "location": "Mexico City, Mexico",
-        "highlights": []
+        "highlights": [
+          "Evolved a multi-tenant access control MVP for private security companies, implementing differentiated portals for operators and administrators",
+          "Designed and implemented RBAC authorization architecture with granular permissions for CCO, Superadmin, and Tenant Admin",
+          "Developed and refactored backend with FastAPI and SQLAlchemy, structuring services and endpoints under maintainability and separation of concerns principles",
+          "Developed frontend with React 19, Vite, and Tailwind CSS, implementing verification flows, visitor registration, access control, and visit history"
+        ]
       },
       {
         "position": "Backend Web Developer, Finance Department",
@@ -235,6 +240,11 @@
       "data": "Data"
     },
     "items": [
+      {
+        "name": "Multi-role access control portal",
+        "description": "Enhanced authorization architecture and operator-specific portals for a real-time access and visitor management system with dynamic QR passes",
+        "company": "Entropia"
+      },
       {
         "name": "University management platform",
         "description": "Maintenance and development of new features for an online payment platform in the education sector",

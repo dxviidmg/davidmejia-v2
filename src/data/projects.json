@@ -1,5 +1,43 @@
 [
     {
+        "period": "2026-09-21",
+        "categories": [
+            "Web"
+        ],
+        "stack": [
+            {
+                "name": "FastAPI"
+            },
+            {
+                "name": "SQLAlchemy"
+            },
+            {
+                "name": "Alembic"
+            },
+            {
+                "name": "PostgreSQL"
+            },
+            {
+                "name": "React"
+            },
+            {
+                "name": "React 19"
+            },
+            {
+                "name": "Vite"
+            },
+            {
+                "name": "Tailwind"
+            },
+            {
+                "name": "Typescript"
+            },
+            {
+                "name": "Github"
+            }
+        ]
+    },
+    {
         "period": "2024-2026",
         "categories": [
             "Web"

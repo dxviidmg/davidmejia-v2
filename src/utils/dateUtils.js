@@ -8,8 +8,10 @@ export function calcExperience(periods) {
     let totalMonths = 0;
     const now = new Date();
     for (const p of periods) {
-        const start = new Date(p.start + "-01");
-        const end = p.end ? new Date(p.end + "-01") : now;
+        const startStr = p.start.length === 7 ? p.start + "-01" : p.start;
+        const endStr = p.end ? (p.end.length === 7 ? p.end + "-01" : p.end) : null;
+        const start = new Date(startStr);
+        const end = endStr ? new Date(endStr) : now;
         const months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
         totalMonths += Math.max(months, 1);
     }
