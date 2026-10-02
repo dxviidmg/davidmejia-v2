@@ -1,7 +1,7 @@
 :root {
   /* Surfaces (dark is the default; .section-light inverts these tokens) */
-  --bg: #0A0A0A;
-  --line: #27272A;
+  --bg: #000000;
+  --line: #1F1F22;
   --line-strong: #3F3F46;
 
   /* Text */
@@ -14,11 +14,13 @@
   --accent: #3B82F6;        /* fills, rules, dots, indicators */
   --accent-text: #3B82F6;   /* links and small text (5.4:1 on black) */
   --accent-hover: #60A5FA;
-  --on-accent: #0A0A0A;     /* text on blue fills: white fails contrast on #3B82F6 */
+  --accent-rgb: 59, 130, 246;
+  --on-accent: #000000;     /* text on blue fills: white fails contrast on #3B82F6 */
 
-  --font-sans: 'Manrope', system-ui, sans-serif;
+  --font-sans: 'Public Sans', system-ui, sans-serif;
 
-  --radius: 4px;
+  --radius: 999px;
+  --radius-card: 16px;
 }
 
 *, *::before, *::after {

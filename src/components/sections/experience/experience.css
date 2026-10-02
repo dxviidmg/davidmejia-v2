@@ -46,7 +46,7 @@
 .is-current .timeline-dot {
     background: var(--accent);
     border-color: var(--accent);
-    box-shadow: 0 0 0 5px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 0 5px rgba(var(--accent-rgb), 0.2);
 }
 
 .timeline-logo {
