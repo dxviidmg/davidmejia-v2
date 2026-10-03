@@ -69,7 +69,7 @@
 }
 
 .map-dot-ring {
-    fill: rgba(59, 130, 246, 0.2);
+    fill: rgba(var(--accent-rgb), 0.2);
     stroke: var(--accent);
     stroke-width: 1;
     transition: fill 200ms;
@@ -84,7 +84,7 @@
 .map-dot:hover .map-dot-ring,
 .map-dot:focus-visible .map-dot-ring,
 .map-dot.is-active .map-dot-ring {
-    fill: rgba(59, 130, 246, 0.45);
+    fill: rgba(var(--accent-rgb), 0.45);
     stroke: #FFFFFF;
 }
 

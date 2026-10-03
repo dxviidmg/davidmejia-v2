@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { useLang } from "../../../utils/LangContext";

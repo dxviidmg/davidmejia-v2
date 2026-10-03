@@ -1,3 +1,5 @@
+'use client';
+
 import { useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import positions from "../../../data/positions.json";

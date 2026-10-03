@@ -8,7 +8,7 @@ const initials = (name) => name.split(/\s+/).filter((w) => w.length > 2).slice(0
 export const LogoPlate = ({ logo, name, fixed = false, className = "" }) => (
   <span className={`logo-plate ${fixed ? "logo-plate-fixed" : ""} ${className}`} aria-hidden="true">
     {logo
-      ? <img src={process.env.PUBLIC_URL + logo} alt="" loading="lazy" />
+      ? <img src={logo} alt="" loading="lazy" />
       : <span className="logo-plate-initials">{initials(name || "")}</span>}
   </span>
 );

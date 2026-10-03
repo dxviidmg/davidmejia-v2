@@ -4,7 +4,10 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: var(--bg);
+    background:
+        radial-gradient(1200px 520px at 10% 10%, rgba(var(--accent-rgb), 0.045), transparent 55%),
+        radial-gradient(900px 420px at 92% 40%, rgba(255, 255, 255, 0.03), transparent 55%),
+        #000000;
     color: var(--text);
 }
 
@@ -65,7 +68,7 @@
     height: 8px;
     border-radius: 50%;
     background: var(--accent);
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.18);
+    box-shadow: 0 0 0 4px rgba(var(--accent-rgb), 0.18);
 }
 
 #banner .banner-name {
@@ -238,15 +241,32 @@
     }
 
     #banner .banner-name {
-        font-size: clamp(2.5rem, 9vw, 3.5rem);
+        font-size: clamp(3.25rem, 17vw, 5rem);
     }
 
     .banner-quote {
         font-size: clamp(1.25rem, 2.5vw, 1.75rem);
     }
 
+    .banner-name-block,
+    .banner-statement {
+        text-align: center;
+    }
+
+    .banner-label {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
     .banner-statement {
         max-width: 100%;
+        align-items: center;
+    }
+
+    .banner-lead {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .banner-actions {

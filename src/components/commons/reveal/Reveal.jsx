@@ -1,3 +1,5 @@
+'use client';
+
 import { useInView } from "../../../utils/useInView";
 
 // Fades its element in when it enters the viewport.

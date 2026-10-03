@@ -5,7 +5,7 @@
             "periods": [
                 {
                     "start": "2016-07",
-                    "end": "2026-08"
+                    "end": null
                 }
             ]
         },
@@ -24,6 +24,15 @@
                 {
                     "start": "2019-05",
                     "end": "2026-08"
+                }
+            ]
+        },
+        {
+            "name": "FastAPI",
+            "periods": [
+                {
+                    "start": "2026-09-21",
+                    "end": null
                 }
             ]
         }
@@ -48,6 +57,15 @@
             ]
         },
         {
+            "name": "TypeScript",
+            "periods": [
+                {
+                    "start": "2024-01",
+                    "end": null
+                }
+            ]
+        },
+        {
             "name": "HTML",
             "periods": [
                 {
@@ -61,6 +79,15 @@
             "periods": [
                 {
                     "start": "2024-01",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "Tailwind",
+            "periods": [
+                {
+                    "start": "2026-09-21",
                     "end": null
                 }
             ]
@@ -91,6 +118,10 @@
                 {
                     "start": "2017-05",
                     "end": "2024-01"
+                },
+                {
+                    "start": "2026-09-21",
+                    "end": null
                 }
             ]
         },
@@ -213,6 +244,10 @@
                 {
                     "start": "2019-05",
                     "end": "2024-01"
+                },
+                {
+                    "start": "2026-09-21",
+                    "end": null
                 }
             ]
         },
@@ -270,11 +305,38 @@
             ]
         },
         {
+            "name": "Docker",
+            "periods": [
+                {
+                    "start": "2026-09-21",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "CI/CD",
+            "periods": [
+                {
+                    "start": "2026-09-21",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "GitHub Actions",
+            "periods": [
+                {
+                    "start": "2026-09-21",
+                    "end": null
+                }
+            ]
+        },
+        {
             "name": "Linux",
             "periods": [
                 {
                     "start": "2016-11",
-                    "end": "2026-08"
+                    "end": null
                 }
             ]
         }
@@ -410,6 +472,33 @@
             "periods": [
                 {
                     "start": "2024-01",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "Alembic",
+            "periods": [
+                {
+                    "start": "2026-09-21",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "Kiro",
+            "periods": [
+                {
+                    "start": "2026-01-01",
+                    "end": null
+                }
+            ]
+        },
+        {
+            "name": "Claude Code",
+            "periods": [
+                {
+                    "start": "2026-09-21",
                     "end": null
                 }
             ]

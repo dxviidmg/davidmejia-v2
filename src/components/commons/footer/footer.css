@@ -61,3 +61,28 @@
 .footer-icons .social-github:hover { color: #FFFFFF; }
 .footer-icons .social-whatsapp,
 .footer-icons .social-whatsapp:hover { color: #25D366; }
+
+@media (max-width: 767px) {
+    #footer .section-eyebrow,
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-contact {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-actions {
+        flex-direction: column;
+    }
+
+    .footer-actions .btn-dm {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        margin-top: 64px;
+    }
+}

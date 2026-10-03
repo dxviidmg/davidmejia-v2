@@ -1,3 +1,5 @@
+'use client';
+
 import { Container, Row, Col } from "react-bootstrap";
 import certifications from "../../../data/certifications.json";
 import { useLang } from "../../../utils/LangContext";

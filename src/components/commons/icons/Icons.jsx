@@ -3,8 +3,10 @@ import {
   SiFiles, SiGit, SiGithub, SiGitlab, SiGooglecloud, SiHeroku, SiHtml5, SiJavascript, SiJira, SiJupyter, SiLinux,
   SiMercadopago, SiMongodb, SiMui, SiMysql, SiNumpy, SiPandas, SiPlaywright, SiPostgresql, SiPostman, SiPython,
   SiRasa, SiReact, SiRedis, SiRender, SiSelenium, SiSocketdotio, SiStripe, SiTypescript, SiVercel,
+  SiTailwindcss, SiDocker, SiGithubactions, SiFastapi,
 } from "react-icons/si";
 import { BsCashCoin, BsFillGearFill } from "react-icons/bs";
+import { MdAutoAwesome } from "react-icons/md";
 import { normalize } from "../../../utils/text";
 
 // Every technology shown on the site: its icon and brand colors [on light backgrounds, on dark backgrounds].
@@ -59,9 +61,17 @@ const TECH = {
   efecty: { icon: BsCashCoin, colors: ["#957A00", "#FFD100"] },
   restapis: { icon: BsFillGearFill },
   apirest: { icon: BsFillGearFill },
-  websockets: { icon: SiSocketdotio },
+  websockets: { icon: SiSocketdotio, colors: ["#010101", "#FFFFFF"] },
   sftp: { icon: SiFiles },
-  webhooks: { icon: SiConventionalcommits },
+  webhooks: { icon: SiSocketdotio, colors: ["#6366F1", "#818CF8"] },
+  fastapi: { icon: SiFastapi, colors: ["#009688", "#26D07C"] },
+  tailwind: { icon: SiTailwindcss, colors: ["#0F766E", "#14B8A6"] },
+  tailwindcss: { icon: SiTailwindcss, colors: ["#0F766E", "#14B8A6"] },
+  docker: { icon: SiDocker, colors: ["#2496ED", "#5DADE2"] },
+  cicd: { icon: MdAutoAwesome, colors: ["#7C3AED", "#A78BFA"] },
+  githubactions: { icon: SiGithubactions },
+  kiro: { icon: BsFillGearFill, colors: ["#2D3748", "#718096"] },
+  claudecode: { icon: SiConventionalcommits, colors: ["#1B1C1D", "#666"] },
 };
 
 const FALLBACK = { icon: SiConventionalcommits };
