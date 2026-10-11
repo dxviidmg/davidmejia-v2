@@ -6,7 +6,7 @@ import {
   SiTailwindcss, SiDocker, SiGithubactions, SiFastapi,
 } from "react-icons/si";
 import { BsCashCoin, BsFillGearFill } from "react-icons/bs";
-import { MdAutoAwesome } from "react-icons/md";
+import { IoInfinite } from "react-icons/io5";
 import { normalize } from "../../../utils/text";
 
 // Every technology shown on the site: its icon and brand colors [on light backgrounds, on dark backgrounds].
@@ -68,7 +68,7 @@ const TECH = {
   tailwind: { icon: SiTailwindcss, colors: ["#0F766E", "#14B8A6"] },
   tailwindcss: { icon: SiTailwindcss, colors: ["#0F766E", "#14B8A6"] },
   docker: { icon: SiDocker, colors: ["#2496ED", "#5DADE2"] },
-  cicd: { icon: MdAutoAwesome, colors: ["#7C3AED", "#A78BFA"] },
+  cicd: { icon: IoInfinite, colors: ["#3730A3", "#818CF8"] },
   githubactions: { icon: SiGithubactions },
   kiro: { icon: BsFillGearFill, colors: ["#2D3748", "#718096"] },
   claudecode: { icon: SiConventionalcommits, colors: ["#1B1C1D", "#666"] },
