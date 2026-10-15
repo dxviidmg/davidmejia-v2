@@ -10,12 +10,13 @@
   --text-3: #A1A1AA;
   --ghost: #52525B; /* only for display-size text */
 
-  /* Electric blue: the only strong color, used for accents only */
-  --accent: #3B82F6;        /* fills, rules, dots, indicators */
-  --accent-text: #3B82F6;   /* links and small text (5.4:1 on black) */
-  --accent-hover: #60A5FA;
-  --accent-rgb: 59, 130, 246;
-  --on-accent: #000000;     /* text on blue fills: white fails contrast on #3B82F6 */
+  /* Indigo: the only strong color, used for accents only.
+     #3730A3 is too dark for text on black, so text and glows use a lighter tint. */
+  --accent: #3730A3;        /* fills, rules, dots, indicators */
+  --accent-text: #818CF8;   /* links and small text (6.6:1 on black) */
+  --accent-hover: #A5B4FC;
+  --accent-rgb: 129, 140, 248; /* tints and glows: lighter than --accent so they show on black */
+  --on-accent: #FFFFFF;     /* text on indigo fills: black fails contrast on #3730A3 */
 
   --font-sans: 'Public Sans', system-ui, sans-serif;
 

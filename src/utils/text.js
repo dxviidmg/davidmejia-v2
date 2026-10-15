@@ -1,2 +1,2 @@
-// Case- and space-insensitive key, so "MySQL", "Mysql" or "Mercado Pago" all match
-export const normalize = (name) => name.toLowerCase().replace(/[\s.]/g, "");
+// Case-, space- and slash-insensitive key, so "MySQL", "Mysql", "Mercado Pago" or "CI/CD" all match
+export const normalize = (name) => name.toLowerCase().replace(/[\s./]/g, "");

@@ -9,16 +9,10 @@
                 "name": "FastAPI"
             },
             {
-                "name": "Alembic"
-            },
-            {
                 "name": "PostgreSQL"
             },
             {
                 "name": "React"
-            },
-            {
-                "name": "React 19"
             },
             {
                 "name": "Tailwind"
@@ -28,6 +22,9 @@
             },
             {
                 "name": "Github"
+            },
+            {
+                "name": "CI/CD"
             }
         ]
     },
