@@ -12,7 +12,7 @@
     "name": "David Mejía",
     "quiet": "Solid backend,",
     "loud": "complete product.",
-    "lead": "{years} years building transactional systems: payment integrations, APIs and databases for education, insurance, finance and government. Today I build full stack product with Python, Django and React at Entropia.",
+    "lead": "I build software that makes people's lives easier, always focused on business rules, code and data quality, and a good user experience. Whatever the industry.",
     "ctaCv": "Download CV",
     "scroll": "Scroll",
     "ctaEmail": "Email",
@@ -20,10 +20,11 @@
   },
   "about": {
     "title": "Professional Summary",
-    "intro": "Senior Software Engineer with **{years} years of experience** in backend and web systems development, specializing in **Python**, **Django**, **Django REST Framework**, **REST APIs**, **databases**, and **system integrations**. I have developed and maintained transactional systems for **education**, **insurance**, **finance**, and **government**, including platforms serving approximately **80,000 students** and **23 million historical payments**. Currently working as a **Full Stack Developer** at **Entropia**.",
+    "intro": "IT engineer with **{years} years of professional experience**. I started with systems for **government** and **construction** in **Python** and **Django**; then came data, **insurance**, connected vending machines and payments for an online university. Also **finance**, **education** and **embedded systems**, often improving existing systems.",
     "highlights": [
-      "Specialized in **payment integrations**, **database optimization**, **asynchronous processing**, **legacy system modernization**, **microservices**, and **process automation**",
-      "Additional experience with **React**, **AWS**, **GCP**, **PostgreSQL**, **MySQL**, **MongoDB**, **Celery**, and **Redis**"
+      "**Payment implementation:** integrated **Mercado Pago**, **Nequi**, **PayU**, **Banco Pichincha** and **Efecty** into a platform of **80,000 students** and fixed transactions across a history of **23 million**",
+      "**Import and ETL:** cut Excel and CSV import time by **66%** (24 hours to 8)",
+      "**Full lifecycle:** from requirements analysis and data modeling to development, code reviews and deployment on **AWS** and **Linux** servers"
     ],
     "stats": {
       "years": "years of experience",
@@ -372,8 +373,8 @@
     "section": "Education"
   },
   "footer": {
-    "contact": "Shall we build something together?",
-    "ctaEmail": "Send me an email",
-    "ctaWhatsapp": "Message me on WhatsApp"
+    "contact": "Thanks for making it this far. Let's chat?",
+    "ctaEmail": "Email",
+    "ctaWhatsapp": "WhatsApp"
   }
 }

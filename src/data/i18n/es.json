@@ -12,7 +12,7 @@
     "name": "David Mejía",
     "quiet": "Backend sólido,",
     "loud": "producto completo.",
-    "lead": "{years} años construyendo sistemas transaccionales: integraciones de pago, APIs y bases de datos para educación, seguros, finanzas y gobierno. Hoy desarrollo producto full stack con Python, Django y React en Entropia.",
+    "lead": "Construyo software que le hace la vida más fácil a las personas, siempre enfocado en las reglas del negocio, la calidad del código y de los datos, y una buena experiencia de uso. Sin importar la industria.",
     "ctaCv": "Descargar CV",
     "scroll": "Scroll",
     "ctaEmail": "E-mail",
@@ -20,10 +20,11 @@
   },
   "about": {
     "title": "Resumen Profesional",
-    "intro": "Ingeniero de Software Senior con **{years} años de experiencia** en desarrollo backend y sistemas web, especializado en **Python**, **Django**, **Django REST Framework**, **REST APIs**, **bases de datos** e **integraciones de sistemas**. He desarrollado y mantenido sistemas transaccionales para **educación**, **seguros**, **finanzas** y **gobierno**, incluyendo plataformas con aproximadamente **80,000 alumnos** y **23 millones de pagos históricos**. Actualmente trabajo como **Desarrollador Full Stack** en **Entropia**.",
+    "intro": "Ingeniero en TI con **{years} años de experiencia profesional**. Empecé con sistemas para **gobierno** y **construcción** en **Python** y **Django**; después vinieron datos, **seguros**, máquinas expendedoras conectadas y pagos para una universidad en línea. También en **finanzas**, **educación** y **sistemas embebidos**, muchas veces mejorando sistemas existentes.",
     "highlights": [
-      "Especializado en **integraciones de pagos**, **optimización de bases de datos**, **procesamiento asíncrono**, **modernización de sistemas legacy**, **microservicios** y **automatización de procesos**",
-      "Experiencia adicional en **React**, **AWS**, **GCP**, **PostgreSQL**, **MySQL**, **MongoDB**, **Celery** y **Redis**"
+      "**Implementación de pagos:** integré **Mercado Pago**, **Nequi**, **PayU**, **Banco Pichincha** y **Efecty** en una plataforma de **80,000 alumnos** y corregí transacciones sobre un histórico de **23 millones**",
+      "**Importación y ETL:** reduje **66%** el tiempo de importaciones de Excel y CSV (de 24 a 8 horas)",
+      "**Ciclo de vida completo:** del análisis de requerimientos y el modelo de datos al desarrollo, los code reviews y el despliegue en **AWS** y servidores **Linux**"
     ],
     "stats": {
       "years": "años de experiencia",
@@ -372,8 +373,8 @@
     "section": "Formación"
   },
   "footer": {
-    "contact": "¿Construimos algo juntos?",
-    "ctaEmail": "Mándame un e-mail",
-    "ctaWhatsapp": "Mándame un WhatsApp"
+    "contact": "Gracias por llegar hasta aquí. ¿Platicamos?",
+    "ctaEmail": "E-mail",
+    "ctaWhatsapp": "WhatsApp"
   }
 }
