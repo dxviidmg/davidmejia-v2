@@ -9,9 +9,9 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: #0A0A0A;
-    border: 1px solid var(--line-strong);
-    color: #25D366;
+    background: #25D366;
+    border: 1px solid #25D366;
+    color: #fff;
     font-size: 1.5rem;
     opacity: 0;
     transform: translateY(16px);
@@ -26,9 +26,9 @@
 }
 
 .whatsapp-float:hover {
-    background: #25D366;
-    border-color: #25D366;
-    color: #0A0A0A;
+    background: #1EBE5A;
+    border-color: #1EBE5A;
+    color: #fff;
 }
 
 @media (max-width: 575px) {
