@@ -16,8 +16,16 @@
     gap: 12px;
 }
 
-.footer-actions .social-whatsapp {
-    color: #25D366;
+.footer-actions .btn-whatsapp,
+.footer-actions .btn-whatsapp:hover {
+    background: #25D366;
+    border-color: #25D366;
+    color: #fff;
+}
+
+.footer-actions .btn-whatsapp:hover {
+    background: #1EBE5A;
+    border-color: #1EBE5A;
 }
 
 .footer-bottom {

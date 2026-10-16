@@ -21,8 +21,8 @@ export function Footer() {
           <a href={CONTACT.email} target="_blank" rel="noreferrer" className="btn-dm">
             <BsEnvelope /> {t.footer.ctaEmail}
           </a>
-          <a href={CONTACT.whatsapp} target="_blank" rel="noreferrer" className="btn-dm btn-dm-ghost">
-            <BsWhatsapp className="social-whatsapp" /> {t.footer.ctaWhatsapp}
+          <a href={CONTACT.whatsapp} target="_blank" rel="noreferrer" className="btn-dm btn-whatsapp">
+            <BsWhatsapp /> {t.footer.ctaWhatsapp}
           </a>
         </Reveal>
         <div className="footer-bottom">
