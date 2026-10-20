@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5 {
   position: relative;
   background: var(--bg);
   color: var(--text);
-  padding: 144px 0;
+  padding: 72px 0;
 }
 
 /* Light section: same components, inverted tokens.
@@ -246,7 +246,7 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 767px) {
   .section {
-    padding: 96px 0;
+    padding: 48px 0;
   }
 
   /* Bootstrap's g-5 gutter (-1.5rem margins) overflows the container's 12px padding */
