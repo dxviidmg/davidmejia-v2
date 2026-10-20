@@ -35,6 +35,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p, li {
+  text-align: justify;
+  hyphens: auto;
+}
+
 ::selection {
   background: var(--accent);
   color: var(--on-accent);

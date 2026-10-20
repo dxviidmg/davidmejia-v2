@@ -79,7 +79,7 @@ export const Projects = () => {
       <Container>
         <SectionHeader title={t.projects.title} />
         <Tabs
-          className="project-tabs"
+          className="tabs-full project-tabs"
           label={t.projects.title}
           tabs={Object.keys(FILTERS).map((id) => ({ id, label: t.projects.tabs[id] }))}
           active={filter}

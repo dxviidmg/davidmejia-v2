@@ -8,16 +8,13 @@
     margin-bottom: 24px;
 }
 
-.tabs.work-map-tabs {
-    display: flex;
-    gap: 0;
-    width: 100%;
+.tabs.work-map-tabs,
+.tabs.work-map-map-tabs {
     margin-bottom: 20px;
 }
 
-.tabs.work-map-tabs button {
-    flex: 1;
-    text-align: center;
+.work-map .tabs.work-map-map-tabs {
+    display: none;
 }
 
 .work-map-desc {
@@ -215,8 +212,16 @@
         grid-template-columns: minmax(0, 1fr);
     }
 
+    .work-map .tabs.work-map-map-tabs {
+        display: flex;
+    }
+
+    .work-map-figure.is-hidden-mobile {
+        display: none;
+    }
+
     .work-map-figure:last-child {
-        max-width: 220px;
+        max-width: 260px;
         margin: 0 auto;
     }
 

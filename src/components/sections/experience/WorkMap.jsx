@@ -28,7 +28,7 @@ const cluster = (points, radius) => {
   });
 };
 
-const MapFigure = ({ map, entries, radius, caption, active, onSelect, label, only, collapseMexico }) => {
+const MapFigure = ({ map, entries, radius, caption, active, onSelect, label, only, collapseMexico, shown }) => {
   const inFrame = ([x, y]) => x >= 0 && y >= 0 && x <= map.width && y <= map.height;
   const points = entries
     .filter((e) => (!only || only(e)) && map.points[e.city] && inFrame(map.points[e.city]))
@@ -40,7 +40,7 @@ const MapFigure = ({ map, entries, radius, caption, active, onSelect, label, onl
     : points;
   const regions = map.states || map.countries;
   return (
-    <figure className="work-map-figure">
+    <figure className={`work-map-figure ${shown ? "" : "is-hidden-mobile"}`}>
       <svg viewBox={`0 0 ${map.width} ${map.height}`} role="group" aria-label={caption}>
         {regions.map((r) => <path key={r.id} d={r.d} className="map-region" />)}
         {cluster(placed, radius).map((g) => (
@@ -75,6 +75,7 @@ export const WorkMap = ({ t }) => {
   const m = t.experience.map;
   const [view, setView] = useState(VIEWS[0]);
   const [active, setActive] = useState(null);
+  const [mapTab, setMapTab] = useState("mexico");
   const entries = places.views[view];
 
   const regionName = (region) => (region.startsWith("MX-") ? STATE_NAMES[region] : m.countries[region]);
@@ -105,7 +106,7 @@ export const WorkMap = ({ t }) => {
       <h3 className="work-map-title">{m.title}</h3>
 
       <Tabs
-        className="work-map-tabs"
+        className="tabs-full work-map-tabs"
         label={m.title}
         tabs={VIEWS.map((v) => ({ id: v, label: m.views[v].tab }))}
         active={view}
@@ -119,11 +120,20 @@ export const WorkMap = ({ t }) => {
         ))}
       </p>
 
+      {/* Phones show one map at a time; CSS hides this bar and shows both maps on larger screens */}
+      <Tabs
+        className="tabs-full work-map-map-tabs"
+        label={m.title}
+        tabs={[{ id: "mexico", label: m.tabNational }, { id: "americas", label: m.tabInternational }]}
+        active={mapTab}
+        onChange={(id) => { setMapTab(id); setActive(null); }}
+      />
+
       <div className="work-map-grid" onMouseLeave={() => setActive(null)}>
         <MapFigure map={maps.mexico} entries={entries} radius={8} caption={m.mexico}
-          active={active?.key} onSelect={setActive} label={label} only={(e) => e.region.startsWith("MX-")} />
+          active={active?.key} onSelect={setActive} label={label} only={(e) => e.region.startsWith("MX-")} shown={mapTab === "mexico"} />
         <MapFigure map={maps.americas} entries={entries} radius={6} caption={m.americas}
-          active={active?.key} onSelect={setActive} label={label} collapseMexico />
+          active={active?.key} onSelect={setActive} label={label} collapseMexico shown={mapTab === "americas"} />
       </div>
 
       <div className="work-map-detail" aria-live="polite">

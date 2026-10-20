@@ -161,6 +161,8 @@
       "hint": "Hover or tap a point to see the details.",
       "mexico": "Mexico",
       "americas": "Americas",
+      "tabNational": "National",
+      "tabInternational": "International",
       "views": {
         "work": {
           "tab": "Where I've worked",
