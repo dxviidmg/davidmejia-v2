@@ -22,9 +22,11 @@
     "title": "Professional Summary",
     "intro": "IT engineer with **{years} years of professional experience**. I have worked in **government**, **construction**, **insurance**, **finance**, **education** and **retail**.",
     "highlights": [
-      "**Payment implementation:** integrated **Mercado Pago**, **Nequi**, **PayU**, **Banco Pichincha** and **Efecty** into a platform of **80,000 students** and fixed transactions across a history of **23 million**",
-      "**Import and ETL:** cut Excel and CSV import time by **66%** (24 hours to 8)",
-      "**Full lifecycle:** from requirements analysis and data modeling to development, code reviews and deployment on **AWS** and **Linux** servers"
+      "**Payment gateways:** hands-on experience integrating **Mercado Pago**, **Nequi**, **PayU**, **Banco Pichincha**, **Efecty** and **Stripe**",
+      "**New product development:** I have built products from idea to production",
+      "**Legacy systems:** updates and new features on existing systems and **legacy** code",
+      "**Data import:** integrating data from other sources",
+      "**Databases:** design, optimization and refactoring"
     ],
     "stats": {
       "years": "years of experience",
@@ -219,6 +221,8 @@
   },
   "skills": {
     "title": "Core Skills",
+    "prev": "Previous",
+    "next": "Next",
     "categories": {
       "Backend": "Backend",
       "Frontend": "Frontend",
