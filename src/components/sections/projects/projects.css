@@ -41,6 +41,7 @@
     font-size: 1.5rem;
     line-height: 1.2;
     color: var(--text);
+    text-align: left;
     margin-bottom: 12px;
 }
 
@@ -79,4 +80,15 @@
 
 .project-stack-wrap.is-open .project-stack {
     padding-top: 16px;
+}
+
+/* Reserve two title lines and three description lines so cards in a row line up */
+@media (min-width: 768px) {
+    .project-name {
+        min-height: 2.4em;
+    }
+
+    .project-desc {
+        min-height: calc(0.95rem * 1.65 * 3);
+    }
 }
