@@ -142,14 +142,20 @@ export const WorkMap = ({ t }) => {
         )) : <p>{m.hint}</p>}
       </div>
 
-      {/* Text version of the current view (also what screen readers get) */}
-      <ul className="work-map-list">
-        {entries.map((e) => (
-          <li key={e.city}>
+      {/* Text version of the current view (also what screen readers get); on phones it replaces the maps as a lineup-style poster */}
+      <ul className="work-map-list" data-map={mapTab}>
+        {entries.map((e, i) => {
+          const national = e.region.startsWith("MX-");
+          // The last city of each group, so the phone lineup can drop its trailing separator
+          const isLast = !entries.slice(i + 1).some((o) => o.region.startsWith("MX-") === national);
+          return (
+            <li key={e.city} className={`${national ? "is-national" : "is-international"} ${isLast ? "is-last" : ""}`}>
             {e.kind && <i className={`kind-swatch kind-${e.kind}`} />}
-            <strong>{place(e)}</strong>{what(e) && <span> — {what(e)}</span>}
+            <strong>{place(e)}</strong>
+            {what(e) && <span className="work-map-what"><span className="work-map-dash"> — </span>{what(e)}</span>}
           </li>
-        ))}
+          );
+        })}
       </ul>
     </Reveal>
   );

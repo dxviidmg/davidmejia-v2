@@ -207,6 +207,7 @@
     }
 }
 
+/* Phones: one map at a time via tabs, and the list becomes a run-in concert-poster lineup, separated by asterisks */
 @media (max-width: 575px) {
     .work-map-grid {
         grid-template-columns: minmax(0, 1fr);
@@ -214,6 +215,10 @@
 
     .work-map .tabs.work-map-map-tabs {
         display: flex;
+    }
+
+    .work-map-kinds {
+        justify-content: center;
     }
 
     .work-map-figure.is-hidden-mobile {
@@ -226,6 +231,42 @@
     }
 
     .work-map-list {
+        display: block;
         columns: 1;
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: left;
+        hyphens: none;
+    }
+
+    .work-map-list li {
+        display: inline;
+        margin: 0;
+    }
+
+    /* Same filter as the map tabs: Nacional = Mexican cities, Internacional = the rest */
+    .work-map-list[data-map="mexico"] .is-international,
+    .work-map-list[data-map="americas"] .is-national {
+        display: none;
+    }
+
+    .work-map-list li::after {
+        content: "*";
+        margin: 0 0.35em;
+        color: var(--text-3);
+    }
+
+    .work-map-list li.is-last::after {
+        content: none;
+    }
+
+    .work-map-list strong {
+        color: var(--text-2);
+        font-weight: 600;
+    }
+
+    .work-map-list .kind-swatch,
+    .work-map-what {
+        display: none;
     }
 }
