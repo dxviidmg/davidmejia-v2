@@ -39,3 +39,26 @@
         gap: 14px;
     }
 }
+
+/* Larger institution logos (the shared plate is sized for compact lists) */
+.edu-item .logo-plate-fixed {
+    width: 132px;
+    height: 76px;
+    padding: 10px 12px;
+}
+
+.edu-item .logo-plate-fixed img {
+    max-height: 52px;
+}
+
+@media (max-width: 575px) {
+    .edu-item .logo-plate-fixed {
+        width: 84px;
+        height: 56px;
+        padding: 8px;
+    }
+
+    .edu-item .logo-plate-fixed img {
+        max-height: 38px;
+    }
+}
