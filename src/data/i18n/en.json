@@ -8,7 +8,7 @@
     "contact": "Contact"
   },
   "banner": {
-    "label": "Full Stack Developer — Entropia, Mexico City",
+    "label": "Full Stack Developer",
     "name": "David Mejía",
     "quiet": "Solid backend,",
     "loud": "complete product.",
@@ -20,7 +20,7 @@
   },
   "about": {
     "title": "Professional Summary",
-    "intro": "IT engineer with **{years} years of professional experience**. I started with systems for **government** and **construction** in **Python** and **Django**; then came data, **insurance**, connected vending machines and payments for an online university. Also **finance**, **education** and **embedded systems**, often improving existing systems.",
+    "intro": "IT engineer with **{years} years of professional experience**. I have worked in **government**, **construction**, **insurance**, **finance**, **education** and **retail**.",
     "highlights": [
       "**Payment implementation:** integrated **Mercado Pago**, **Nequi**, **PayU**, **Banco Pichincha** and **Efecty** into a platform of **80,000 students** and fixed transactions across a history of **23 million**",
       "**Import and ETL:** cut Excel and CSV import time by **66%** (24 hours to 8)",

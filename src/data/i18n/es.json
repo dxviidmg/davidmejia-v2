@@ -8,7 +8,7 @@
     "contact": "Contacto"
   },
   "banner": {
-    "label": "Desarrollador Full Stack — Entropia, CDMX",
+    "label": "Desarrollador Full Stack",
     "name": "David Mejía",
     "quiet": "Backend sólido,",
     "loud": "producto completo.",
@@ -20,7 +20,7 @@
   },
   "about": {
     "title": "Resumen Profesional",
-    "intro": "Ingeniero en TI con **{years} años de experiencia profesional**. Empecé con sistemas para **gobierno** y **construcción** en **Python** y **Django**; después vinieron datos, **seguros**, máquinas expendedoras conectadas y pagos para una universidad en línea. También en **finanzas**, **educación** y **sistemas embebidos**, muchas veces mejorando sistemas existentes.",
+    "intro": "Ingeniero en TI con **{years} años de experiencia profesional**. He trabajado en **gobierno**, **construcción**, **seguros**, **finanzas**, **educación** y **retail**.",
     "highlights": [
       "**Implementación de pagos:** integré **Mercado Pago**, **Nequi**, **PayU**, **Banco Pichincha** y **Efecty** en una plataforma de **80,000 alumnos** y corregí transacciones sobre un histórico de **23 millones**",
       "**Importación y ETL:** reduje **66%** el tiempo de importaciones de Excel y CSV (de 24 a 8 horas)",
