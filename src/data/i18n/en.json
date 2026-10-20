@@ -239,6 +239,8 @@
   },
   "projects": {
     "title": "Projects",
+    "showTech": "Show technologies",
+    "hideTech": "Hide technologies",
     "tabs": {
       "all": "All",
       "web": "Web",

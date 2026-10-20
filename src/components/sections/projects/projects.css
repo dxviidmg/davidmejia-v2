@@ -51,9 +51,32 @@
     margin-bottom: 24px;
 }
 
+.project-tech {
+    margin-top: auto;
+    margin-bottom: 14px;
+}
+
+/* Grid-rows trick: animates height from 0 to content without knowing it */
+.project-stack-wrap {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 0.4s ease, opacity 0.4s ease;
+}
+
+.project-stack-wrap.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
 .project-stack {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-top: auto;
+    overflow: hidden;
+    min-height: 0;
+}
+
+.project-stack-wrap.is-open .project-stack {
+    padding-top: 16px;
 }
