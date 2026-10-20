@@ -6,7 +6,6 @@ import { useLang } from "../../../utils/LangContext";
 import { LogoMark } from "../logo/Logo";
 import { CONTACT } from "../../../utils/contact";
 import { Reveal } from "../reveal/Reveal";
-import { SectionEyebrow } from "../section/SectionHeader";
 import "./footer.css";
 
 export function Footer() {
@@ -14,7 +13,6 @@ export function Footer() {
   return (
     <footer id="footer" className="section">
       <Container>
-        <Reveal as="p"><SectionEyebrow id="footer" /></Reveal>
         <Reveal as="h2" className="footer-contact" delay={0.1}>{t.footer.contact}</Reveal>
         <Reveal className="footer-actions" delay={0.2}>
           <a href={CONTACT.email} target="_blank" rel="noreferrer" className="btn-dm">

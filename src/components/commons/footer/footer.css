@@ -71,7 +71,6 @@
 .footer-icons .social-whatsapp:hover { color: #25D366; }
 
 @media (max-width: 767px) {
-    #footer .section-eyebrow,
     .footer-contact {
         text-align: center;
     }

@@ -69,7 +69,7 @@ export const Projects = () => {
   return (
     <section className="section" id="projects">
       <Container>
-        <SectionHeader id="projects" title={t.projects.title} />
+        <SectionHeader title={t.projects.title} />
         <Tabs
           className="project-tabs"
           label={t.projects.title}
