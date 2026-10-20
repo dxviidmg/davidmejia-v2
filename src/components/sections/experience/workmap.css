@@ -3,6 +3,7 @@
 }
 
 .work-map-title {
+    text-align: center;
     font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 24px;
 }
