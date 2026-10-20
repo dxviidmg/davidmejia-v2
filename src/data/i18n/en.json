@@ -37,10 +37,10 @@
   },
   "experience": {
     "title": "Professional Experience",
-    "positions": [
-      {
+    "positions": {
+      "entropia": {
         "position": "Full Stack Developer",
-        "industry": "Digital security",
+        "industry": "Software development",
         "modality": "Remote",
         "location": "Mexico City, Mexico",
         "highlights": [
@@ -50,7 +50,7 @@
           "Developed frontend with React and Tailwind CSS, implementing verification flows, visitor registration, access control, and visit history"
         ]
       },
-      {
+      "utel": {
         "position": "Backend Web Developer, Finance Department",
         "industry": "Online education",
         "modality": "Remote",
@@ -65,7 +65,7 @@
           "Participated in code reviews and deployments, collaborating with technical and functional teams to identify inconsistencies and maintain financial system operations"
         ]
       },
-      {
+      "ixulabs-2023": {
         "position": "Full Stack Web Developer / Technical Lead",
         "industry": "Software development · insurance",
         "modality": "Remote",
@@ -78,7 +78,7 @@
           "Provided technical leadership for the recovery and evolution of the platform, making implementation decisions across backend, infrastructure, and component integration"
         ]
       },
-      {
+      "genone": {
         "position": "Backend Web Developer",
         "industry": "IT services",
         "modality": "Remote",
@@ -92,7 +92,7 @@
           "Managed application deployments and configuration on Heroku, operating the backend and asynchronous processes required for production"
         ]
       },
-      {
+      "ixulabs-2019": {
         "position": "Backend Web Developer / Data Analyst",
         "industry": "Software development · insurance",
         "modality": "Remote",
@@ -106,7 +106,7 @@
           "Automated data transformation and validation processes, integrating information from different systems and external data sources"
         ]
       },
-      {
+      "plenumsoft": {
         "position": "Data Science & AI Trainee",
         "industry": "Software & data science",
         "modality": "On-site",
@@ -116,7 +116,7 @@
           "Processed and analyzed datasets for Data Science and Machine Learning projects, applying exploratory data analysis and data transformation techniques"
         ]
       },
-      {
+      "carsev": {
         "position": "Full Stack Web Developer / Technology Coordinator",
         "industry": "Construction",
         "modality": "On-site",
@@ -128,7 +128,7 @@
           "Deployed the platform on AWS and administered Linux servers, DNS, and institutional email, maintaining the infrastructure required for system operation"
         ]
       },
-      {
+      "citnova": {
         "position": "Full Stack Web Developer",
         "industry": "Government · science & technology",
         "modality": "On-site",
@@ -140,7 +140,7 @@
           "Deployed the application on government infrastructure, configuring Linux, PostgreSQL, and the components required for production operation"
         ]
       },
-      {
+      "itesm": {
         "position": "Research Assistant (Professional Internship)",
         "industry": "Education · research",
         "modality": "Hybrid",
@@ -150,7 +150,7 @@
           "Learned Python in a self-taught way"
         ]
       }
-    ],
+    },
     "showMore": "Show more",
     "showLess": "Show less",
     "present": "Present",
@@ -248,118 +248,118 @@
       "web": "Web",
       "data": "Data"
     },
-    "items": [
-      {
+    "items": {
+      "access-control-portal": {
         "name": "Multi-role access control portal",
         "description": "Authorization and operator portals for a real-time visitor access system with QR passes",
         "company": "Entropia"
       },
-      {
+      "university-management-platform": {
         "name": "University management platform",
         "description": "Maintenance and new features for an online payment platform in the education sector",
         "company": "UTEL"
       },
-      {
+      "carsev-website": {
         "name": "CARSEV Website",
         "description": "Corporate website with a works portfolio and project gallery for a construction company",
         "company": "Grupo Constructor Carsev"
       },
-      {
+      "water-fountain-management-v2": {
         "name": "School water fountain management v2",
         "description": "Migration of a drinking water fountain management system to a modern React interface",
         "company": "Grupo Constructor Carsev"
       },
-      {
+      "clientify-chatbot-integration": {
         "name": "Chatbot-Clientify Integration",
         "description": "Integration of a Rasa chatbot with the Clientify CRM to automate lead capture using Python",
         "company": "Ixulabs"
       },
-      {
+      "interactive-map": {
         "name": "Interactive Map",
         "description": "Interactive map for a museum that allows visitors to explore its exhibits digitally",
         "company": "Ixulabs"
       },
-      {
+      "cloudwaremx-website-v2": {
         "name": "Cloudwaremx v2 Website",
         "description": "Redesign of the corporate website of a cloud services company, with a modern React interface to showcase its services",
         "company": "Digy Networks"
       },
-      {
+      "digy-website": {
         "name": "Digy Website",
         "description": "Corporate website with telecom service catalog and contact form, built with React",
         "company": "Digy Networks"
       },
-      {
+      "cloudwaremx-website": {
         "name": "Cloudwaremx Website",
         "description": "Website with a Django admin panel to manage content and cloud services for a company",
         "company": "Cloud Ware"
       },
-      {
+      "vending-machines-management": {
         "name": "Vending machines management",
         "description": "Web app for monitoring and managing vending machines with Stripe payments and live charts",
         "company": "Genone Tech"
       },
-      {
+      "car-data-analysis": {
         "name": "Data car analysis",
         "description": "Exploratory data analysis to identify patterns and clean data for training an AI model",
         "company": "Ixulabs"
       },
-      {
+      "car-data-download-scripts": {
         "name": "Car data download scripts",
         "description": "Optimization of 10 web scraping scripts to download vehicle data from multiple sources",
         "company": "Ixulabs"
       },
-      {
+      "insurance-platform": {
         "name": "Insurance platform",
         "description": "Maintenance and optimization of a Django web platform for managing insurance agencies",
         "company": "Ixulabs"
       },
-      {
+      "bank-data-analysis": {
         "name": "Bank data analysis",
         "description": "Analysis of multiple bank data sources to generate insights and support business decisions",
         "company": "Ixulabs"
       },
-      {
+      "insurance-database-refactoring": {
         "name": "Database refactoring for insurance platform",
         "description": "Restructuring of a 140-table database with a 15% reduction and better performance",
         "company": "Ixulabs"
       },
-      {
+      "insurance-data-import": {
         "name": "Data import for insurance platform",
         "description": "Data import system that cut execution time by 50% by optimizing the code of the platform",
         "company": "Ixulabs"
       },
-      {
+      "insurance-report-service": {
         "name": "Report-service for insurance platform",
         "description": "Microservice for asynchronous insurance report generation using Celery and Redis",
         "company": "Ixulabs"
       },
-      {
+      "medical-insurance-scraping": {
         "name": "Medical insurance data scraping",
         "description": "Automated extraction of health insurance quotes using Selenium for competitive analysis",
         "company": "Ixulabs"
       },
-      {
+      "kickstarter-analysis": {
         "name": "Kickstarter campaign success analysis",
         "description": "Machine learning model prototype to predict the success of Kickstarter campaigns using DataIKU",
         "company": "Plenumsoft"
       },
-      {
+      "water-fountain-management": {
         "name": "School water fountain management",
         "description": "Web app to manage construction and maintenance of drinking water fountains, deployed on AWS",
         "company": "Grupo Constructor Carsev"
       },
-      {
+      "public-funds-management": {
         "name": "Public funds management",
         "description": "Web application for tracking and managing the allocation of government public funds",
         "company": "CITNOVA"
       },
-      {
+      "jung-archetypes-website": {
         "name": "Los Arquetipos de Jung Website",
         "description": "Website for a rock band with content management and media gallery, built with Django",
         "company": "Independent"
       }
-    ],
+    },
     "showAll": "Show all",
     "showLess": "Show less"
   },

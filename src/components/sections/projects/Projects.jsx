@@ -8,6 +8,7 @@ import { useLang } from "../../../utils/LangContext";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { Tabs } from "../../commons/tabs/Tabs";
 import { Reveal } from "../../commons/reveal/Reveal";
+import { formatPeriod } from "../../../utils/dateUtils";
 import "./projects.css";
 
 const INITIAL_COUNT = 6;
@@ -15,13 +16,13 @@ const INITIAL_COUNT = 6;
 // Tab id -> category in projects.json (null = all)
 const FILTERS = { all: null, web: "Web", data: "Data" };
 
-const ProjectCard = ({ project, tp, t, index }) => {
+const ProjectCard = ({ project, tp, t, lang, index }) => {
   const [open, setOpen] = useState(false);
   return (
     <Reveal className="card-dm project-card" delay={(index % 3) * 0.12}>
       <div className="project-header">
         <p className="project-company">{tp.company}</p>
-        <span className="card-meta">{project.period}</span>
+        <span className="card-meta">{formatPeriod(project.start, project.end, lang, t.experience.present)}</span>
       </div>
       <h3 className="project-name">{tp.name}</h3>
       <p className="project-desc">{tp.description}</p>
@@ -31,10 +32,10 @@ const ProjectCard = ({ project, tp, t, index }) => {
         </button>
         <div className={`project-stack-wrap ${open ? "is-open" : ""}`}>
           <div className="project-stack" aria-hidden={!open}>
-            {project.stack.map((s, i) => (
-              <span key={i} className="chip">
-                <TechIcon name={s.name} onDark />
-                {s.name}
+            {project.stack.map((name) => (
+              <span key={name} className="chip">
+                <TechIcon name={name} onDark />
+                {name}
               </span>
             ))}
           </div>
@@ -44,21 +45,18 @@ const ProjectCard = ({ project, tp, t, index }) => {
   );
 };
 
-const ProjectList = ({ category, t }) => {
+const ProjectList = ({ category, t, lang }) => {
   const [expanded, setExpanded] = useState(false);
   const list = projects.filter((p) => !category || p.categories.includes(category));
   const shown = expanded ? list : list.slice(0, INITIAL_COUNT);
   return (
     <>
       <Row>
-        {shown.map((project, i) => {
-          const idx = projects.indexOf(project);
-          return (
-            <Col xs={12} md={6} lg={4} key={idx} className="col-gap">
-              <ProjectCard project={project} tp={t.projects.items[idx]} t={t} index={i} />
-            </Col>
-          );
-        })}
+        {shown.map((project, i) => (
+          <Col xs={12} md={6} lg={4} key={project.id} className="col-gap">
+            <ProjectCard project={project} tp={t.projects.items[project.id]} t={t} lang={lang} index={i} />
+          </Col>
+        ))}
       </Row>
       {list.length > INITIAL_COUNT && (
         <div className="text-center mt-3">
@@ -72,7 +70,7 @@ const ProjectList = ({ category, t }) => {
 };
 
 export const Projects = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const [filter, setFilter] = useState("all");
   return (
     <section className="section" id="projects">
@@ -86,7 +84,7 @@ export const Projects = () => {
           onChange={setFilter}
         />
         {/* One list; the key resets "show all" when the filter changes */}
-        <ProjectList key={filter} category={FILTERS[filter]} t={t} />
+        <ProjectList key={filter} category={FILTERS[filter]} t={t} lang={lang} />
       </Container>
     </section>
   );
