@@ -1,31 +1,20 @@
 'use client';
 
-import { useRef } from "react";
 import { Container } from "react-bootstrap";
 import { BsLinkedin, BsGithub, BsEnvelope, BsWhatsapp } from "react-icons/bs";
 import { NavBar } from "../../commons/navbar/Navbar";
 import { useLang } from "../../../utils/LangContext";
 import { yearsOfExperience } from "../../../utils/dateUtils";
 import { CONTACT } from "../../../utils/contact";
-import { useScroll } from "../../../utils/useScroll";
 import { AccentEnd } from "../../commons/text/AccentEnd";
 import "./banner.css";
 
 export function Banner() {
   const { t, cvUrl } = useLang();
-  const ghostRef = useRef(null);
-
-  // Slow parallax on the ghost number while the hero is on screen
-  useScroll(() => {
-    if (!ghostRef.current || window.scrollY > window.innerHeight * 1.2) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    ghostRef.current.style.setProperty("--parallax", `${window.scrollY * 0.35}px`);
-  });
 
   return (
     <section id="banner">
       <NavBar />
-      <span className="banner-ghost" aria-hidden="true" ref={ghostRef}>{String(yearsOfExperience).padStart(2, "0")}</span>
       <Container className="banner-inner">
         <div className="banner-name-block">
           <p className="banner-label banner-enter"><span className="banner-status" />{t.banner.label}</p>
