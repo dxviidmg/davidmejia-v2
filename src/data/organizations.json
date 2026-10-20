@@ -1,15 +1,15 @@
 {
-    "Entropia": { "url": "https://entropia.ai", "logo": "/logos/entropia.png" },
-    "UTEL": { "url": "https://utel.edu.mx", "logo": "/logos/utel.png" },
-    "Ixulabs": { "url": "https://ixulabs.com", "logo": "/logos/ixulabs.svg" },
-    "GenOne Technologies LLC": { "logo": "/logos/genone.avif" },
-    "Plenumsoft": { "url": "https://plenumsoft.com", "logo": "/logos/plenumsoft.png" },
-    "Grupo Constructor CARSEV": { "url": "https://carsev.vercel.app/" },
-    "Gobierno del Estado de Hidalgo - CITNOVA": { "url": "https://citnova.hidalgo.gob.mx", "logo": "/logos/hidalgo.png" },
-    "ITESM-CEM": { "url": "https://tec.mx/es/estado-de-mexico", "logo": "/logos/tec.png" },
-    "Instituto Tecnológico de Pachuca": { "logo": "/logos/itpachuca.png" },
-    "Udemy": { "logo": "/logos/udemy.png" },
-    "Actumlogos": { "logo": "/logos/actumlogos.png" },
-    "Dataiku": { "logo": "/logos/dataiku.png" },
-    "Fixtergeek": { "logo": "/logos/fixtergeek.png" }
+    "entropia": {"name": "Entropia", "url": "https://entropia.ai", "logo": "/logos/entropia.png"},
+    "utel": {"name": "UTEL", "url": "https://utel.edu.mx", "logo": "/logos/utel.png"},
+    "ixulabs": {"name": "Ixulabs", "url": "https://ixulabs.com", "logo": "/logos/ixulabs.svg"},
+    "genone": {"name": "GenOne Technologies LLC", "short": "GenOne", "logo": "/logos/genone.avif"},
+    "plenumsoft": {"name": "Plenumsoft", "url": "https://plenumsoft.com", "logo": "/logos/plenumsoft.png"},
+    "carsev": {"name": "Grupo Constructor CARSEV", "short": "CARSEV", "url": "https://carsev.vercel.app/"},
+    "citnova": {"name": "Gobierno del Estado de Hidalgo - CITNOVA", "short": "CITNOVA", "url": "https://citnova.hidalgo.gob.mx", "logo": "/logos/hidalgo.png"},
+    "itesm": {"name": "ITESM-CEM", "short": "ITESM", "url": "https://tec.mx/es/estado-de-mexico", "logo": "/logos/tec.png"},
+    "itpachuca": {"name": "Instituto Tecnológico de Pachuca", "logo": "/logos/itpachuca.png"},
+    "udemy": {"name": "Udemy", "logo": "/logos/udemy.png"},
+    "actumlogos": {"name": "Actumlogos", "logo": "/logos/actumlogos.png"},
+    "dataiku": {"name": "Dataiku", "logo": "/logos/dataiku.png"},
+    "fixtergeek": {"name": "Fixtergeek", "logo": "/logos/fixtergeek.png"}
 }

@@ -1,27 +1,27 @@
 [
     {
         "name": "RESTful API with Python using Django REST Framework",
-        "institution": "Udemy",
+        "org": "udemy",
         "date": "2021"
     },
     {
         "name": "Python for Artificial Intelligence",
-        "institution": "Actumlogos",
+        "org": "actumlogos",
         "date": "2020-06"
     },
     {
         "name": "Certified User Level #1",
-        "institution": "Dataiku",
+        "org": "dataiku",
         "date": "2019-05"
     },
     {
         "name": "Backend and Servers Path",
-        "institution": "Fixtergeek",
+        "org": "fixtergeek",
         "date": "2017-03"
     },
     {
         "name": "Backend Django Path",
-        "institution": "Fixtergeek",
+        "org": "fixtergeek",
         "date": "2016-09"
     }
 ]

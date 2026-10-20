@@ -5,6 +5,7 @@ import maps from "../../../data/geo/maps.json";
 import places from "../../../data/places.json";
 import { Tabs } from "../../commons/tabs/Tabs";
 import { Reveal } from "../../commons/reveal/Reveal";
+import { getShortName } from "../../../utils/organizations";
 import "./workmap.css";
 
 // One question per view, one unit (the city) everywhere
@@ -86,7 +87,7 @@ export const WorkMap = ({ t }) => {
   };
   // "Presencial (híbrido)": the note qualifies the kind when both exist
   const how = (e) => (e.kind && e.note ? `${m.kinds[e.kind]} (${m.notes[e.note]})` : (e.kind && m.kinds[e.kind]) || (e.note && m.notes[e.note]));
-  const what = (e) => [e.companies && e.companies.join(", "), how(e)].filter(Boolean).join(" · ");
+  const what = (e) => [e.companies && e.companies.map(getShortName).join(", "), how(e)].filter(Boolean).join(" · ");
   // Counts come from the view that has kinds, so the legend keeps its numbers while it fades out
   const kindEntries = places.views[VIEWS.find((v) => places.views[v].some((e) => e.kind))];
   const kindCount = (k) => kindEntries.filter((e) => e.kind === k).length;
