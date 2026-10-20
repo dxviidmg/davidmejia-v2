@@ -31,7 +31,7 @@
             "name": "FastAPI",
             "periods": [
                 {
-                    "start": "2026-09-21",
+                    "start": "2026-09",
                     "end": null
                 }
             ]
@@ -87,7 +87,7 @@
             "name": "Tailwind",
             "periods": [
                 {
-                    "start": "2026-09-21",
+                    "start": "2026-09",
                     "end": null
                 }
             ]
@@ -120,7 +120,7 @@
                     "end": "2024-01"
                 },
                 {
-                    "start": "2026-09-21",
+                    "start": "2026-09",
                     "end": null
                 }
             ]
@@ -246,7 +246,7 @@
                     "end": "2024-01"
                 },
                 {
-                    "start": "2026-09-21",
+                    "start": "2026-09",
                     "end": null
                 }
             ]
@@ -308,7 +308,7 @@
             "name": "Docker",
             "periods": [
                 {
-                    "start": "2026-09-21",
+                    "start": "2026-09",
                     "end": null
                 }
             ]
@@ -317,7 +317,7 @@
             "name": "CI/CD",
             "periods": [
                 {
-                    "start": "2026-09-21",
+                    "start": "2026-09",
                     "end": null
                 }
             ]
@@ -326,7 +326,7 @@
             "name": "GitHub Actions",
             "periods": [
                 {
-                    "start": "2026-09-21",
+                    "start": "2026-09",
                     "end": null
                 }
             ]
@@ -480,7 +480,7 @@
             "name": "Kiro",
             "periods": [
                 {
-                    "start": "2026-01-01",
+                    "start": "2026-01",
                     "end": null
                 }
             ]
@@ -489,7 +489,7 @@
             "name": "Claude Code",
             "periods": [
                 {
-                    "start": "2026-09-21",
+                    "start": "2026-09",
                     "end": null
                 }
             ]
