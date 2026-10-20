@@ -1,14 +1,23 @@
 .work-map {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 .work-map-title {
+    text-align: center;
     font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 24px;
 }
 
-.work-map-tabs {
+.tabs.work-map-tabs {
+    display: flex;
+    gap: 0;
+    width: 100%;
     margin-bottom: 20px;
+}
+
+.tabs.work-map-tabs button {
+    flex: 1;
+    text-align: center;
 }
 
 .work-map-desc {
@@ -115,9 +124,19 @@
 .work-map-kinds {
     display: flex;
     gap: 24px;
-    margin: -24px 0 32px;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
     font-size: 0.9rem;
     color: var(--text-2);
+    transition: opacity 0.4s ease, max-height 0.4s ease, margin 0.4s ease;
+}
+
+.work-map-kinds.is-visible {
+    margin: -24px 0 32px;
+    max-height: 3rem;
+    opacity: 1;
 }
 
 .work-map-kinds span {

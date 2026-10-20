@@ -9,12 +9,15 @@ body {
   font-size: 16px;
   background: var(--bg);
   color: var(--text);
+  text-align: justify;
+  hyphens: auto;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: var(--font-sans);
   font-weight: 800;
   letter-spacing: -0.035em;
+  hyphens: manual;
 }
 
 /* Sections: full-bleed bands that alternate black / white, no borders between them */
@@ -22,7 +25,7 @@ h1, h2, h3, h4, h5 {
   position: relative;
   background: var(--bg);
   color: var(--text);
-  padding: 144px 0;
+  padding: 72px 0;
 }
 
 /* Light section: same components, inverted tokens.
@@ -51,21 +54,8 @@ h1, h2, h3, h4, h5 {
 
 /* Section header: "01 — Sobre mí" + title */
 .section-header {
-  margin-bottom: 72px;
-}
-
-.section-eyebrow {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-3);
-  margin-bottom: 16px;
-}
-
-.section-eyebrow .num {
-  color: var(--accent-text);
+  margin-bottom: 36px;
+  text-align: center;
 }
 
 .section-title {
@@ -89,29 +79,8 @@ h1, h2, h3, h4, h5 {
   transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s;
 }
 
-.section-header .section-eyebrow {
-  opacity: 0;
-  transition: opacity 0.6s ease;
-}
-
-.section-rule {
-  display: block;
-  width: 48px;
-  height: 2px;
-  margin-top: 28px;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.5s;
-}
-
-.section-header.visible .section-title-inner,
-.section-header.visible .section-rule {
+.section-header.visible .section-title-inner {
   transform: none;
-}
-
-.section-header.visible .section-eyebrow {
-  opacity: 1;
 }
 
 /* Items: soft rounded cards with a hairline border */
@@ -265,12 +234,8 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .section-title-inner, .section-rule {
+  .section-title-inner {
     transform: none;
-  }
-
-  .section-header .section-eyebrow {
-    opacity: 1;
   }
 
   .fade-up, .fade-left, .banner-enter {
@@ -281,7 +246,7 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 767px) {
   .section {
-    padding: 96px 0;
+    padding: 48px 0;
   }
 
   /* Bootstrap's g-5 gutter (-1.5rem margins) overflows the container's 12px padding */
@@ -291,16 +256,5 @@ h1, h2, h3, h4, h5 {
 
   .section {
     overflow-x: clip;
-  }
-
-  /* Section headers: eyebrow, title and rule centered */
-  .section-header {
-    text-align: center;
-  }
-
-  .section-rule {
-    margin-left: auto;
-    margin-right: auto;
-    transform-origin: center;
   }
 }

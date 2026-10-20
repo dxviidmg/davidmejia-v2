@@ -1,20 +1,21 @@
 'use client';
 
-import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
+import { Container } from "react-bootstrap";
 import certifications from "../../../data/certifications.json";
 import { useLang } from "../../../utils/LangContext";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { getOrganization } from "../../../utils/organizations";
 import { LogoPlate } from "../../commons/logo/LogoPlate";
 import { Reveal } from "../../commons/reveal/Reveal";
+import { Tabs } from "../../commons/tabs/Tabs";
 import { formatMonth } from "../../../utils/dateUtils";
 import "./education.css";
 
 
-const EntryList = ({ title, entries, delay = 0 }) => {
+const EntryList = ({ entries }) => {
   return (
-    <Reveal delay={delay}>
-      <h3 className="edu-heading">{title}</h3>
+    <Reveal>
       <ul className="edu-list">
         {entries.map((e, i) => (
           <li key={i} className="edu-item">
@@ -34,6 +35,7 @@ const EntryList = ({ title, entries, delay = 0 }) => {
 
 export const Education = () => {
   const { t, lang } = useLang();
+  const [tab, setTab] = useState("degrees");
   const degrees = t.education.items.map((item) => ({
     title: item.degree, subtitle: item.institution, date: item.period, note: item.note,
   }));
@@ -43,11 +45,18 @@ export const Education = () => {
   return (
     <section className="section section-light" id="education">
       <Container>
-        <SectionHeader id="education" title={t.education.section} />
-        <Row className="g-5">
-          <Col lg={5}><EntryList title={t.education.title} entries={degrees} /></Col>
-          <Col lg={7}><EntryList title={t.certifications.title} entries={certs} delay={0.1} /></Col>
-        </Row>
+        <SectionHeader title={t.education.section} />
+        <Tabs
+          className="edu-tabs"
+          label={t.education.section}
+          tabs={[
+            { id: "degrees", label: t.education.title },
+            { id: "certs", label: t.certifications.title },
+          ]}
+          active={tab}
+          onChange={setTab}
+        />
+        <EntryList key={tab} entries={tab === "degrees" ? degrees : certs} />
       </Container>
     </section>
   );

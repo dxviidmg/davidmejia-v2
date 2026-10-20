@@ -86,7 +86,9 @@ export const WorkMap = ({ t }) => {
   // "Presencial (híbrido)": the note qualifies the kind when both exist
   const how = (e) => (e.kind && e.note ? `${m.kinds[e.kind]} (${m.notes[e.note]})` : (e.kind && m.kinds[e.kind]) || (e.note && m.notes[e.note]));
   const what = (e) => [e.companies && e.companies.join(", "), how(e)].filter(Boolean).join(" · ");
-  const kindCount = (k) => entries.filter((e) => e.kind === k).length;
+  // Counts come from the view that has kinds, so the legend keeps its numbers while it fades out
+  const kindEntries = places.views[VIEWS.find((v) => places.views[v].some((e) => e.kind))];
+  const kindCount = (k) => kindEntries.filter((e) => e.kind === k).length;
   const hasKinds = entries.some((e) => e.kind);
   const label = (e) => [place(e), what(e)].filter(Boolean).join(" — ");
 
@@ -111,13 +113,11 @@ export const WorkMap = ({ t }) => {
       />
 
       <p className="work-map-desc">{m.views[view].desc} <span>{summary}</span></p>
-      {hasKinds && (
-        <p className="work-map-kinds">
-          {["onsite", "remote"].map((k) => (
-            <span key={k}><i className={`kind-swatch kind-${k}`} />{m.kinds[k]} ({kindCount(k)})</span>
-          ))}
-        </p>
-      )}
+      <p className={`work-map-kinds ${hasKinds ? "is-visible" : ""}`} aria-hidden={!hasKinds}>
+        {["onsite", "remote"].map((k) => (
+          <span key={k}><i className={`kind-swatch kind-${k}`} />{m.kinds[k]} ({kindCount(k)})</span>
+        ))}
+      </p>
 
       <div className="work-map-grid" onMouseLeave={() => setActive(null)}>
         <MapFigure map={maps.mexico} entries={entries} radius={8} caption={m.mexico}

@@ -11,30 +11,6 @@
     color: var(--text);
 }
 
-/* Years of experience as a faint outline behind the hero */
-.banner-ghost {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(calc(-55% + var(--parallax, 0px))) translateX(30%);
-    font-family: var(--font-sans);
-    font-weight: 800;
-    font-size: min(90vh, 56vw);
-    line-height: 1;
-    letter-spacing: -0.06em;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--line);
-    pointer-events: none;
-    user-select: none;
-    opacity: 0;
-    animation: ghostIn 2.6s cubic-bezier(0.2, 0.7, 0.2, 1) 0.4s forwards;
-}
-
-@keyframes ghostIn {
-    from { opacity: 0; scale: 1.08; }
-    to { opacity: 1; scale: 1; }
-}
-
 .banner-inner {
     position: relative;
     flex-grow: 1;
@@ -48,6 +24,7 @@
 
 .banner-name-block {
     align-self: center;
+    text-align: center;
 }
 
 .banner-label {
@@ -107,7 +84,8 @@
     max-width: 560px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 24px;
 }
 
@@ -146,12 +124,13 @@
     line-height: 1.7;
     color: var(--text-2);
     max-width: 48ch;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .banner-actions {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 16px 28px;
     margin-top: 8px;
@@ -304,10 +283,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .banner-ghost {
-        opacity: 1;
-    }
-
     .reveal-inner {
         transform: none;
     }

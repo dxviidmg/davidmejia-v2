@@ -47,6 +47,8 @@
 .about-stat {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
     padding: 20px 0 28px;
     border-top: 1px solid var(--line-strong);
 }
@@ -69,13 +71,6 @@
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--text-3);
-}
-
-@media (max-width: 767px) {
-    .about-stat {
-        align-items: center;
-        text-align: center;
-    }
 }
 
 @media (max-width: 575px) {

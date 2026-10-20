@@ -15,7 +15,8 @@ const INITIAL_COUNT = 6;
 // Tab id -> category in projects.json (null = all)
 const FILTERS = { all: null, web: "Web", data: "Data" };
 
-const ProjectCard = ({ project, tp, index }) => {
+const ProjectCard = ({ project, tp, t, index }) => {
+  const [open, setOpen] = useState(false);
   return (
     <Reveal className="card-dm project-card" delay={(index % 3) * 0.12}>
       <div className="project-header">
@@ -24,13 +25,20 @@ const ProjectCard = ({ project, tp, index }) => {
       </div>
       <h3 className="project-name">{tp.name}</h3>
       <p className="project-desc">{tp.description}</p>
-      <div className="project-stack">
-        {project.stack.map((s, i) => (
-          <span key={i} className="chip">
-            <TechIcon name={s.name} onDark />
-            {s.name}
-          </span>
-        ))}
+      <div className="project-tech">
+        <button className="link-more" onClick={() => setOpen(!open)} aria-expanded={open}>
+          {open ? `− ${t.projects.hideTech}` : `+ ${t.projects.showTech}`}
+        </button>
+        <div className={`project-stack-wrap ${open ? "is-open" : ""}`}>
+          <div className="project-stack" aria-hidden={!open}>
+            {project.stack.map((s, i) => (
+              <span key={i} className="chip">
+                <TechIcon name={s.name} onDark />
+                {s.name}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </Reveal>
   );
@@ -47,7 +55,7 @@ const ProjectList = ({ category, t }) => {
           const idx = projects.indexOf(project);
           return (
             <Col xs={12} md={6} lg={4} key={idx} className="col-gap">
-              <ProjectCard project={project} tp={t.projects.items[idx]} index={i} />
+              <ProjectCard project={project} tp={t.projects.items[idx]} t={t} index={i} />
             </Col>
           );
         })}
@@ -69,7 +77,7 @@ export const Projects = () => {
   return (
     <section className="section" id="projects">
       <Container>
-        <SectionHeader id="projects" title={t.projects.title} />
+        <SectionHeader title={t.projects.title} />
         <Tabs
           className="project-tabs"
           label={t.projects.title}

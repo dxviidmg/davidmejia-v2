@@ -76,7 +76,7 @@ export const Experience = () => {
   return (
     <section id="experience" className="section">
       <Container>
-        <SectionHeader id="experience" title={t.experience.title} />
+        <SectionHeader title={t.experience.title} />
         <WorkMap t={t} />
         <div className="timeline" ref={timelineRef}>
           {positions.map((pos, index) => (

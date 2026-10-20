@@ -1,5 +1,13 @@
-.project-tabs {
+.tabs.project-tabs {
+    display: flex;
+    gap: 0;
+    width: 100%;
     margin-bottom: 48px;
+}
+
+.tabs.project-tabs button {
+    flex: 1;
+    text-align: center;
 }
 
 .project-card {
@@ -33,6 +41,7 @@
     font-size: 1.5rem;
     line-height: 1.2;
     color: var(--text);
+    text-align: left;
     margin-bottom: 12px;
 }
 
@@ -43,9 +52,43 @@
     margin-bottom: 24px;
 }
 
+.project-tech {
+    margin-top: auto;
+    margin-bottom: 14px;
+}
+
+/* Grid-rows trick: animates height from 0 to content without knowing it */
+.project-stack-wrap {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 0.4s ease, opacity 0.4s ease;
+}
+
+.project-stack-wrap.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
 .project-stack {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-top: auto;
+    overflow: hidden;
+    min-height: 0;
+}
+
+.project-stack-wrap.is-open .project-stack {
+    padding-top: 16px;
+}
+
+/* Reserve two title lines and three description lines so cards in a row line up */
+@media (min-width: 768px) {
+    .project-name {
+        min-height: 2.4em;
+    }
+
+    .project-desc {
+        min-height: calc(0.95rem * 1.65 * 3);
+    }
 }

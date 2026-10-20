@@ -61,3 +61,75 @@
     background: var(--text);
     transition: width 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), background 200ms;
 }
+
+/* Carousel: 4 cards per view on desktop, 2 on tablet, 1 on phone */
+.skills-carousel {
+    position: relative;
+}
+
+.skills-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 4px 0;
+}
+
+.skills-track::-webkit-scrollbar {
+    display: none;
+}
+
+.skills-slide {
+    flex: 0 0 calc((100% - 72px) / 4);
+    scroll-snap-align: start;
+    min-width: 0;
+}
+
+.skills-slide .card-dm {
+    height: 100%;
+}
+
+.skills-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    background: #0A0A0A;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: opacity 0.3s ease, background 200ms, color 200ms;
+}
+
+.skills-arrow:hover:not(:disabled) {
+    background: #27272A;
+}
+
+.skills-arrow:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.skills-arrow-prev { left: -22px; }
+.skills-arrow-next { right: -22px; }
+
+@media (max-width: 991px) {
+    .skills-slide {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
+
+@media (max-width: 575px) {
+    .skills-slide {
+        flex-basis: 100%;
+    }
+
+    .skills-arrow-prev { left: -8px; }
+    .skills-arrow-next { right: -8px; }
+}
