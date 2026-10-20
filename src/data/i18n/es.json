@@ -247,12 +247,12 @@
     "items": [
       {
         "name": "Portal de control de accesos multi-rol",
-        "description": "Mejora de arquitectura de autorización y portales específicos por operador para un sistema de gestión de accesos y visitantes en tiempo real con pases dinámicos QR",
+        "description": "Autorización y portales por operador para un sistema de control de accesos y visitantes con pases QR",
         "company": "Entropia"
       },
       {
         "name": "Plataforma de gestión universitaria",
-        "description": "Mantenimiento y desarrollo de nuevas funcionalidades para una plataforma de pagos en línea del sector educativo",
+        "description": "Mantenimiento y nuevas funcionalidades para una plataforma de pagos en línea del sector educativo",
         "company": "UTEL"
       },
       {
@@ -262,12 +262,12 @@
       },
       {
         "name": "Gestión de bebederos escolares v2",
-        "description": "Migración de un sistema de gestión de bebederos de agua potable a una interfaz moderna en React",
+        "description": "Migración de un sistema de gestión de bebederos de agua potable a una interfaz moderna",
         "company": "Grupo Constructor Carsev"
       },
       {
         "name": "Integración Chatbot-Clientify",
-        "description": "Integración de un chatbot Rasa con el CRM Clientify para automatizar la captura de leads",
+        "description": "Integración de un chatbot hecho con Rasa y Python con el CRM Clientify para automatizar la captura de leads",
         "company": "Ixulabs"
       },
       {
@@ -277,7 +277,7 @@
       },
       {
         "name": "Sitio web Cloudwaremx v2",
-        "description": "Rediseño del sitio web corporativo de una empresa de servicios en la nube",
+        "description": "Rediseño del sitio web corporativo de una empresa de servicios en la nube, con una interfaz moderna",
         "company": "Digy Networks"
       },
       {
@@ -287,12 +287,12 @@
       },
       {
         "name": "Sitio web Cloudwaremx",
-        "description": "Sitio web con panel de administración para gestionar contenido y servicios en la nube",
+        "description": "Sitio web con panel de administración en Django para gestionar contenido y servicios en la nube",
         "company": "Cloud Ware"
       },
       {
         "name": "Gestión de máquinas expendedoras",
-        "description": "Aplicación web para monitoreo y gestión de máquinas expendedoras con pagos Stripe y gráficas en tiempo real",
+        "description": "Aplicación web para monitoreo y gestión de máquinas expendedoras con pagos Stripe y gráficas en vivo",
         "company": "Genone Tech"
       },
       {
@@ -307,7 +307,7 @@
       },
       {
         "name": "Plataforma de seguros",
-        "description": "Mantenimiento y optimización de una plataforma web para la gestión de seguros",
+        "description": "Mantenimiento y optimización de una plataforma web en Django para la gestión de agencias de seguros",
         "company": "Ixulabs"
       },
       {
@@ -317,17 +317,17 @@
       },
       {
         "name": "Refactorización de BD para plataforma de seguros",
-        "description": "Reestructuración de una base de datos de 140 tablas, logrando una reducción del 15% mejorando calidad y rendimiento",
+        "description": "Reestructuración de una base de datos de 140 tablas con una reducción del 15% y mejor rendimiento",
         "company": "Ixulabs"
       },
       {
         "name": "Importación de datos para plataforma de seguros",
-        "description": "Sistema de importación de datos que redujo el tiempo de ejecución en un 50% mediante optimización de código",
+        "description": "Sistema de importación de datos que redujo el tiempo de ejecución un 50% optimizando el código",
         "company": "Ixulabs"
       },
       {
         "name": "Servicio de reportes para plataforma de seguros",
-        "description": "Microservicio para generación asíncrona de reportes usando Celery y Redis",
+        "description": "Microservicio para generación asíncrona de reportes de la plataforma de seguros usando Celery y Redis",
         "company": "Ixulabs"
       },
       {
@@ -342,7 +342,7 @@
       },
       {
         "name": "Gestión de bebederos escolares",
-        "description": "Desarrollo completo de una aplicación web para gestión de construcción y mantenimiento de bebederos de agua potable, desplegada en AWS",
+        "description": "Aplicación web para gestionar la construcción y el mantenimiento de bebederos de agua, en AWS",
         "company": "Grupo Constructor Carsev"
       },
       {
@@ -352,7 +352,7 @@
       },
       {
         "name": "Sitio web Los Arquetipos de Jung",
-        "description": "Sitio web para una banda de rock con gestión de contenido y galería multimedia",
+        "description": "Sitio web para una banda de rock con gestión de contenido y galería multimedia, hecho en Django",
         "company": "Independiente"
       }
     ],

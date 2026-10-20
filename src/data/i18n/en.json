@@ -247,17 +247,17 @@
     "items": [
       {
         "name": "Multi-role access control portal",
-        "description": "Enhanced authorization architecture and operator-specific portals for a real-time access and visitor management system with dynamic QR passes",
+        "description": "Authorization and operator portals for a real-time visitor access system with QR passes",
         "company": "Entropia"
       },
       {
         "name": "University management platform",
-        "description": "Maintenance and development of new features for an online payment platform in the education sector",
+        "description": "Maintenance and new features for an online payment platform in the education sector",
         "company": "UTEL"
       },
       {
         "name": "CARSEV Website",
-        "description": "Corporate website with project portfolio and gallery for a construction company",
+        "description": "Corporate website with a works portfolio and project gallery for a construction company",
         "company": "Grupo Constructor Carsev"
       },
       {
@@ -267,32 +267,32 @@
       },
       {
         "name": "Chatbot-Clientify Integration",
-        "description": "Integration of a Rasa chatbot with the Clientify CRM to automate lead capture",
+        "description": "Integration of a Rasa chatbot with the Clientify CRM to automate lead capture using Python",
         "company": "Ixulabs"
       },
       {
         "name": "Interactive Map",
-        "description": "Interactive map for a museum allowing visitors to explore exhibits digitally",
+        "description": "Interactive map for a museum that allows visitors to explore its exhibits digitally",
         "company": "Ixulabs"
       },
       {
         "name": "Cloudwaremx v2 Website",
-        "description": "Redesign of a corporate website for a cloud services company",
+        "description": "Redesign of the corporate website of a cloud services company, with a modern React interface to showcase its services",
         "company": "Digy Networks"
       },
       {
         "name": "Digy Website",
-        "description": "Corporate website with service catalog and contact form for a telecom company",
+        "description": "Corporate website with telecom service catalog and contact form, built with React",
         "company": "Digy Networks"
       },
       {
         "name": "Cloudwaremx Website",
-        "description": "Website with admin panel for managing content and cloud services",
+        "description": "Website with a Django admin panel to manage content and cloud services for a company",
         "company": "Cloud Ware"
       },
       {
         "name": "Vending machines management",
-        "description": "Web application for monitoring and managing vending machines with Stripe payments and real-time charts",
+        "description": "Web app for monitoring and managing vending machines with Stripe payments and live charts",
         "company": "Genone Tech"
       },
       {
@@ -307,7 +307,7 @@
       },
       {
         "name": "Insurance platform",
-        "description": "Maintenance and optimization of a web platform for insurance management",
+        "description": "Maintenance and optimization of a Django web platform for managing insurance agencies",
         "company": "Ixulabs"
       },
       {
@@ -317,17 +317,17 @@
       },
       {
         "name": "Database refactoring for insurance platform",
-        "description": "Restructuring of a 140-table database, achieving a 15% reduction while improving quality and performance",
+        "description": "Restructuring of a 140-table database with a 15% reduction and better performance",
         "company": "Ixulabs"
       },
       {
         "name": "Data import for insurance platform",
-        "description": "Data import system that reduced execution time by 50% through code optimization",
+        "description": "Data import system that cut execution time by 50% by optimizing the code of the platform",
         "company": "Ixulabs"
       },
       {
         "name": "Report-service for insurance platform",
-        "description": "Microservice for asynchronous report generation using Celery and Redis",
+        "description": "Microservice for asynchronous insurance report generation using Celery and Redis",
         "company": "Ixulabs"
       },
       {
@@ -342,17 +342,17 @@
       },
       {
         "name": "School water fountain management",
-        "description": "Full development of a web application for managing construction and maintenance of drinking water fountains, deployed on AWS",
+        "description": "Web app to manage construction and maintenance of drinking water fountains, deployed on AWS",
         "company": "Grupo Constructor Carsev"
       },
       {
         "name": "Public funds management",
-        "description": "Web application for tracking and managing government public funds allocation",
+        "description": "Web application for tracking and managing the allocation of government public funds",
         "company": "CITNOVA"
       },
       {
         "name": "Los Arquetipos de Jung Website",
-        "description": "Website for a rock band with content management and media gallery",
+        "description": "Website for a rock band with content management and media gallery, built with Django",
         "company": "Independent"
       }
     ],
