@@ -8,8 +8,16 @@
     margin-bottom: 24px;
 }
 
-.work-map-tabs {
+.tabs.work-map-tabs {
+    display: flex;
+    gap: 0;
+    width: 100%;
     margin-bottom: 20px;
+}
+
+.tabs.work-map-tabs button {
+    flex: 1;
+    text-align: center;
 }
 
 .work-map-desc {
