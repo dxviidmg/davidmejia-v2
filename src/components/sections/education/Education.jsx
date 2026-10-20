@@ -47,7 +47,7 @@ export const Education = () => {
       <Container>
         <SectionHeader title={t.education.section} />
         <Tabs
-          className="edu-tabs"
+          className="tabs-full edu-tabs"
           label={t.education.section}
           tabs={[
             { id: "degrees", label: t.education.title },

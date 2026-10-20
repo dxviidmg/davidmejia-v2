@@ -8,19 +8,12 @@
     margin-bottom: 24px;
 }
 
-.tabs.work-map-tabs {
-    display: flex;
-    gap: 0;
-    width: 100%;
+.tabs.work-map-tabs,
+.tabs.work-map-map-tabs {
     margin-bottom: 20px;
 }
 
-.tabs.work-map-tabs button {
-    flex: 1;
-    text-align: center;
-}
-
-.tabs.work-map-map-tabs {
+.work-map .tabs.work-map-map-tabs {
     display: none;
 }
 
@@ -219,16 +212,8 @@
         grid-template-columns: minmax(0, 1fr);
     }
 
-    .tabs.work-map-map-tabs {
+    .work-map .tabs.work-map-map-tabs {
         display: flex;
-        gap: 0;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .tabs.work-map-map-tabs button {
-        flex: 1;
-        text-align: center;
     }
 
     .work-map-figure.is-hidden-mobile {

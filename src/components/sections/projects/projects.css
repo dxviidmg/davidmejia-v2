@@ -1,13 +1,5 @@
 .tabs.project-tabs {
-    display: flex;
-    gap: 0;
-    width: 100%;
     margin-bottom: 48px;
-}
-
-.tabs.project-tabs button {
-    flex: 1;
-    text-align: center;
 }
 
 .project-card {

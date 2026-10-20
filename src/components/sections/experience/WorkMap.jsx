@@ -106,7 +106,7 @@ export const WorkMap = ({ t }) => {
       <h3 className="work-map-title">{m.title}</h3>
 
       <Tabs
-        className="work-map-tabs"
+        className="tabs-full work-map-tabs"
         label={m.title}
         tabs={VIEWS.map((v) => ({ id: v, label: m.views[v].tab }))}
         active={view}
@@ -122,7 +122,7 @@ export const WorkMap = ({ t }) => {
 
       {/* Phones show one map at a time; CSS hides this bar and shows both maps on larger screens */}
       <Tabs
-        className="work-map-map-tabs"
+        className="tabs-full work-map-map-tabs"
         label={m.title}
         tabs={[{ id: "mexico", label: m.tabNational }, { id: "americas", label: m.tabInternational }]}
         active={mapTab}
