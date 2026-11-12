@@ -16,5 +16,8 @@
     "start": "next start",
     "lint": "next lint",
     "validate:data": "node scripts/validate-data.js"
+  },
+  "devDependencies": {
+    "sass": "^1.108.2"
   }
 }

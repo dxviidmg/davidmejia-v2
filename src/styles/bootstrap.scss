@@ -1,0 +1,23 @@
+// Trimmed Bootstrap: only the parts the site uses (reboot, containers, grid, nav, navbar, collapse,
+// fixed-top and the few utilities referenced from JSX). Replaces the full bootstrap.min.css import.
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// Keep only these utilities: align-items-*, mt-*/mb-*, ms-auto, text-center, visible
+$utilities: map-get-multiple(
+  $utilities,
+  ("align-items", "margin-top", "margin-bottom", "margin-start", "text-align", "visibility")
+);
+
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/helpers/position";
+@import "bootstrap/scss/utilities/api";
