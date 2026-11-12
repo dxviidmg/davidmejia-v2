@@ -1,5 +1,5 @@
 import { Public_Sans } from 'next/font/google';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/styles/bootstrap.scss';
 import '../src/index.css';
 import '../src/App.css';
 
