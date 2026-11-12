@@ -1,9 +1,9 @@
 {
     "entropia": {"name": "Entropia", "url": "https://entropia.ai", "logo": "/logos/entropia.png"},
-    "utel": {"name": "UTEL", "url": "https://utel.edu.mx", "logo": "/logos/utel.png"},
+    "utel": {"name": "UTEL", "url": "https://utel.edu.mx", "logo": "/logos/utel.webp"},
     "ixulabs": {"name": "Ixulabs", "url": "https://ixulabs.com", "logo": "/logos/ixulabs.svg"},
     "genone": {"name": "GenOne Technologies LLC", "short": "GenOne", "logo": "/logos/genone.avif"},
-    "plenumsoft": {"name": "Plenumsoft", "url": "https://plenumsoft.com", "logo": "/logos/plenumsoft.png"},
+    "plenumsoft": {"name": "Plenumsoft", "url": "https://plenumsoft.com", "logo": "/logos/plenumsoft.webp"},
     "carsev": {"name": "Grupo Constructor CARSEV", "short": "CARSEV", "url": "https://carsev.vercel.app/"},
     "citnova": {"name": "Gobierno del Estado de Hidalgo - CITNOVA", "short": "CITNOVA", "url": "https://citnova.hidalgo.gob.mx", "logo": "/logos/hidalgo.png"},
     "itesm": {"name": "ITESM-CEM", "short": "ITESM", "url": "https://tec.mx/es/estado-de-mexico", "logo": "/logos/tec.png"},
