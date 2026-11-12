@@ -17,14 +17,18 @@ export default function Home() {
   return (
     <LangProvider>
       <div className="App">
-        <Banner />
-        <Marquee />
+        <main>
+          <Banner />
+          <Marquee />
+          <Suspense fallback={null}>
+            <About />
+            <Experience />
+            <Skills />
+            <Projects />
+            <Education />
+          </Suspense>
+        </main>
         <Suspense fallback={null}>
-          <About />
-          <Experience />
-          <Skills />
-          <Projects />
-          <Education />
           <Footer />
         </Suspense>
         <WhatsAppFloat />
