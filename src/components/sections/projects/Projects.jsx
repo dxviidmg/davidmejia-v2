@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import projects from "../../../data/projects.json";
 import { TechIcon } from "../../commons/icons/Icons";
@@ -8,33 +9,69 @@ import { useLang } from "../../../utils/LangContext";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { Tabs } from "../../commons/tabs/Tabs";
 import { Reveal } from "../../commons/reveal/Reveal";
+import { formatPeriod } from "../../../utils/dateUtils";
 import "./projects.css";
 
 const INITIAL_COUNT = 6;
-
 // Tab id -> category in projects.json (null = all)
-const FILTERS = { all: null, web: "Web", data: "Data" };
+const FILTERS = { all: null, fullstack: "Fullstack", landing: "Landing", data: "Data" };
 
-const ProjectCard = ({ project, tp, t, index }) => {
+// "Visit site" link that shows a live, non-interactive preview (75% of the screen) while hovered/focused.
+// The iframe loads on first hover so the page doesn't fetch external sites up front. It renders in a portal:
+// the card's reveal animation uses a transform, which would otherwise trap position: fixed inside the card.
+const VisitLink = ({ url, title, t }) => {
+  const [armed, setArmed] = useState(false);
+  const [show, setShow] = useState(false);
+  const on = () => { setArmed(true); setShow(true); };
+  const off = () => setShow(false);
+  return (
+    <>
+      <a
+        className="link-more"
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        onMouseEnter={on}
+        onMouseLeave={off}
+        onFocus={on}
+        onBlur={off}
+      >
+        {t.projects.visit} ↗
+      </a>
+      {armed &&
+        createPortal(
+          <div className={`project-preview ${show ? "is-visible" : ""}`} aria-hidden="true">
+            <iframe src={url} title={`${t.projects.preview} ${title}`} tabIndex={-1} sandbox="allow-scripts allow-same-origin" />
+          </div>,
+          document.body
+        )}
+    </>
+  );
+};
+
+const ProjectCard = ({ project, tp, t, lang, index }) => {
   const [open, setOpen] = useState(false);
   return (
     <Reveal className="card-dm project-card" delay={(index % 3) * 0.12}>
       <div className="project-header">
         <p className="project-company">{tp.company}</p>
-        <span className="card-meta">{project.period}</span>
+        <span className="card-meta">{formatPeriod(project.start, project.end, lang, t.experience.present)}</span>
       </div>
       <h3 className="project-name">{tp.name}</h3>
       <p className="project-desc">{tp.description}</p>
       <div className="project-tech">
-        <button className="link-more" onClick={() => setOpen(!open)} aria-expanded={open}>
-          {open ? `− ${t.projects.hideTech}` : `+ ${t.projects.showTech}`}
-        </button>
+        <div className="project-actions">
+          <button className="link-more" onClick={() => setOpen(!open)} aria-expanded={open}>
+            {open ? `− ${t.projects.hideTech}` : `+ ${t.projects.showTech}`}
+          </button>
+          {project.url && <VisitLink url={project.url} title={tp.name} t={t} />}
+        </div>
         <div className={`project-stack-wrap ${open ? "is-open" : ""}`}>
           <div className="project-stack" aria-hidden={!open}>
-            {project.stack.map((s, i) => (
-              <span key={i} className="chip">
-                <TechIcon name={s.name} onDark />
-                {s.name}
+            {project.stack.map((name) => (
+              <span key={name} className="chip">
+                <TechIcon name={name} onDark />
+                {name}
               </span>
             ))}
           </div>
@@ -44,21 +81,18 @@ const ProjectCard = ({ project, tp, t, index }) => {
   );
 };
 
-const ProjectList = ({ category, t }) => {
+const ProjectList = ({ category, t, lang }) => {
   const [expanded, setExpanded] = useState(false);
   const list = projects.filter((p) => !category || p.categories.includes(category));
   const shown = expanded ? list : list.slice(0, INITIAL_COUNT);
   return (
     <>
       <Row>
-        {shown.map((project, i) => {
-          const idx = projects.indexOf(project);
-          return (
-            <Col xs={12} md={6} lg={4} key={idx} className="col-gap">
-              <ProjectCard project={project} tp={t.projects.items[idx]} t={t} index={i} />
-            </Col>
-          );
-        })}
+        {shown.map((project, i) => (
+          <Col xs={12} md={6} lg={4} key={project.id} className="col-gap">
+            <ProjectCard project={project} tp={t.projects.items[project.id]} t={t} lang={lang} index={i} />
+          </Col>
+        ))}
       </Row>
       {list.length > INITIAL_COUNT && (
         <div className="text-center mt-3">
@@ -72,7 +106,7 @@ const ProjectList = ({ category, t }) => {
 };
 
 export const Projects = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const [filter, setFilter] = useState("all");
   return (
     <section className="section" id="projects">
@@ -86,7 +120,7 @@ export const Projects = () => {
           onChange={setFilter}
         />
         {/* One list; the key resets "show all" when the filter changes */}
-        <ProjectList key={filter} category={FILTERS[filter]} t={t} />
+        <ProjectList key={filter} category={FILTERS[filter]} t={t} lang={lang} />
       </Container>
     </section>
   );

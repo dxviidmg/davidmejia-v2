@@ -40,7 +40,7 @@ export const Education = () => {
     title: item.degree, subtitle: item.institution, date: item.period, note: item.note,
   }));
   const certs = certifications.map((c) => ({
-    title: c.name, subtitle: c.institution, date: formatMonth(c.date, lang), note: c.id && `ID: ${c.id}`,
+    title: c.name, subtitle: getOrganization(c.org).name, date: formatMonth(c.date, lang), note: c.id && `ID: ${c.id}`,
   }));
   return (
     <section className="section section-light" id="education">

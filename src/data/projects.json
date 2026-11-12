@@ -1,509 +1,159 @@
 [
     {
-        "period": "2026-09-21",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "FastAPI"
-            },
-            {
-                "name": "PostgreSQL"
-            },
-            {
-                "name": "React"
-            },
-            {
-                "name": "Tailwind"
-            },
-            {
-                "name": "Typescript"
-            },
-            {
-                "name": "Github"
-            },
-            {
-                "name": "CI/CD"
-            }
-        ]
+        "id": "access-control-portal",
+        "start": "2026-09",
+        "end": null,
+        "categories": ["Fullstack"],
+        "stack": ["FastAPI", "PostgreSQL", "React", "Tailwind", "TypeScript", "GitHub", "CI/CD"]
     },
     {
-        "period": "2024-2026",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Django REST Framework"
-            },
-            {
-                "name": "Mysql"
-            },
-            {
-                "name": "Celery"
-            },
-            {
-                "name": "Redis"
-            },
-            {
-                "name": "Mercadopago"
-            },
-            {
-                "name": "PayU"
-            },
-            {
-                "name": "Nequi"
-            },
-            {
-                "name": "Efecty"
-            },
-            {
-                "name": "SFTP"
-            },
-            {
-                "name": "Github"
-            },
-            {
-                "name": "Gitlab"
-            }
-        ]
+        "id": "university-management-platform",
+        "start": "2024",
+        "end": "2026",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Django", "Django REST Framework", "MySQL", "Celery", "Redis", "Mercado Pago", "PayU", "Nequi", "Efecty", "SFTP", "GitHub", "GitLab"]
     },
     {
-        "period": "2024",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Javascript"
-            },
-            {
-                "name": "React"
-            },
-            {
-                "name": "Github"
-            }
-        ]
+        "id": "carsev-website",
+        "url": "https://carsev.vercel.app/",
+        "start": "2026",
+        "end": "2026",
+        "categories": ["Landing"],
+        "stack": ["Next.js", "React", "JavaScript", "GitHub"]
     },
     {
-        "period": "2023-24",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Javascript"
-            },
-            {
-                "name": "React"
-            },
-            {
-                "name": "Github"
-            }
-        ]
+        "id": "water-fountain-management-v2",
+        "start": "2023",
+        "end": "2024",
+        "categories": ["Fullstack"],
+        "stack": ["JavaScript", "React", "GitHub"]
     },
     {
-        "period": "2023",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Rasa"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "clientify-chatbot-integration",
+        "start": "2023",
+        "end": "2023",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Rasa", "Bitbucket"]
     },
     {
-        "period": "2023",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Typescript"
-            },
-            {
-                "name": "React"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "interactive-map",
+        "start": "2023",
+        "end": "2023",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Django", "TypeScript", "React", "Bitbucket"]
     },
     {
-        "period": "2023",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Javascript"
-            },
-            {
-                "name": "React"
-            },
-            {
-                "name": "Github"
-            }
-        ]
+        "id": "cloudwaremx-website",
+        "url": "https://cloudwaremx.vercel.app/",
+        "start": "2026",
+        "end": "2026",
+        "categories": ["Landing"],
+        "stack": ["Next.js", "React", "JavaScript", "GitHub"]
     },
     {
-        "period": "2023",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Javascript"
-            },
-            {
-                "name": "React"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "flickers-website",
+        "url": "https://flickersband.vercel.app/",
+        "start": "2026",
+        "end": "2026",
+        "categories": ["Landing"],
+        "stack": ["Next.js", "React", "JavaScript", "Vercel", "GitHub"]
     },
     {
-        "period": "2022",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "Heroku"
-            },
-            {
-                "name": "Github"
-            }
-        ]
+        "id": "digy-website",
+        "start": "2023",
+        "end": "2023",
+        "categories": ["Landing"],
+        "stack": ["JavaScript", "React", "Bitbucket"]
     },
     {
-        "period": "2022",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "Heroku"
-            },
-            {
-                "name": "Chart.js"
-            },
-            {
-                "name": "Stripe"
-            },
-            {
-                "name": "Celery"
-            },
-            {
-                "name": "Redis"
-            },
-            {
-                "name": "Github"
-            }
-        ]
+        "id": "vending-machines-management",
+        "start": "2022",
+        "end": "2022",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Django", "PostgreSQL", "Heroku", "Chart.js", "Stripe", "Celery", "Redis", "GitHub"]
     },
     {
-        "period": "2021-2022",
-        "categories": [
-            "Data"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Pandas"
-            },
-            {
-                "name": "Jupyter"
-            },
-            {
-                "name": "Matplotlib"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "car-data-analysis",
+        "start": "2021",
+        "end": "2022",
+        "categories": ["Data"],
+        "stack": ["Python", "Pandas", "Jupyter", "Matplotlib", "Bitbucket"]
     },
     {
-        "period": "2021-2022",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "car-data-download-scripts",
+        "start": "2021",
+        "end": "2022",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "PostgreSQL", "Bitbucket"]
     },
     {
-        "period": "2019-2022",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "API REST"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "insurance-platform",
+        "start": "2019",
+        "end": "2022",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Django", "PostgreSQL", "REST APIs", "Bitbucket"]
     },
     {
-        "period": "2021",
-        "categories": [
-            "Data"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Pandas"
-            },
-            {
-                "name": "Jupyter"
-            },
-            {
-                "name": "Matplotlib"
-            },
-            {
-                "name": "Mongodb"
-            },
-            {
-                "name": "GCP"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "bank-data-analysis",
+        "start": "2021",
+        "end": "2021",
+        "categories": ["Data"],
+        "stack": ["Python", "Pandas", "Jupyter", "Matplotlib", "MongoDB", "GCP", "Bitbucket"]
     },
     {
-        "period": "2021",
-        "categories": [
-            "Web",
-            "Data"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "Pandas"
-            },
-            {
-                "name": "Jupyter"
-            },
-            {
-                "name": "Matplotlib"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "insurance-database-refactoring",
+        "start": "2021",
+        "end": "2021",
+        "categories": ["Fullstack", "Data"],
+        "stack": ["Python", "Django", "PostgreSQL", "Pandas", "Jupyter", "Matplotlib", "Bitbucket"]
     },
     {
-        "period": "2019-2021",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "insurance-data-import",
+        "start": "2019",
+        "end": "2021",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Django", "PostgreSQL", "Bitbucket"]
     },
     {
-        "period": "2020",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "Celery"
-            },
-            {
-                "name": "Redis"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "insurance-report-service",
+        "start": "2020",
+        "end": "2020",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Django", "PostgreSQL", "Celery", "Redis", "Bitbucket"]
     },
     {
-        "period": "2020",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Selenium"
-            },
-            {
-                "name": "Bitbucket"
-            }
-        ]
+        "id": "medical-insurance-scraping",
+        "start": "2020",
+        "end": "2020",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Selenium", "Bitbucket"]
     },
     {
-        "period": "2018-2019",
-        "categories": [
-            "Data"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Dataiku"
-            }
-        ]
+        "id": "kickstarter-analysis",
+        "start": "2018",
+        "end": "2019",
+        "categories": ["Data"],
+        "stack": ["Python", "Dataiku"]
     },
     {
-        "period": "2017-18",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "AWS"
-            },
-            {
-                "name": "Github"
-            }
-        ]
+        "id": "water-fountain-management",
+        "start": "2017",
+        "end": "2018",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Django", "PostgreSQL", "AWS", "GitHub"]
     },
     {
-        "period": "2016-17",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "Github"
-            }
-        ]
+        "id": "public-funds-management",
+        "start": "2016",
+        "end": "2017",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Django", "PostgreSQL", "GitHub"]
     },
     {
-        "period": "2016",
-        "categories": [
-            "Web"
-        ],
-        "stack": [
-            {
-                "name": "Python"
-            },
-            {
-                "name": "Django"
-            },
-            {
-                "name": "Postgresql"
-            },
-            {
-                "name": "AWS"
-            },
-            {
-                "name": "Github"
-            }
-        ]
+        "id": "jung-archetypes-website",
+        "start": "2016",
+        "end": "2016",
+        "categories": ["Fullstack"],
+        "stack": ["Python", "Django", "PostgreSQL", "AWS", "GitHub"]
     }
 ]
