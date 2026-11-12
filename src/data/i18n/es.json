@@ -241,11 +241,14 @@
   },
   "projects": {
     "title": "Proyectos",
+    "visit": "Ver sitio",
+    "preview": "Vista previa de",
     "showTech": "Ver tecnologías",
     "hideTech": "Ocultar tecnologías",
     "tabs": {
       "all": "Todos",
-      "web": "Web",
+      "fullstack": "Fullstack",
+      "landing": "Landing page",
       "data": "Datos"
     },
     "items": {
@@ -260,7 +263,7 @@
         "company": "UTEL"
       },
       "carsev-website": {
-        "name": "Sitio web CARSEV",
+        "name": "CARSEV",
         "description": "Sitio web corporativo con portafolio de obras y galería de proyectos para una empresa constructora",
         "company": "Grupo Constructor Carsev"
       },
@@ -279,20 +282,20 @@
         "description": "Mapa interactivo para un museo que permite a los visitantes explorar exhibiciones digitalmente",
         "company": "Ixulabs"
       },
-      "cloudwaremx-website-v2": {
-        "name": "Sitio web Cloudwaremx v2",
-        "description": "Rediseño del sitio web corporativo de una empresa de servicios en la nube, con una interfaz moderna",
-        "company": "Digy Networks"
+      "cloudwaremx-website": {
+        "name": "Cloudwaremx",
+        "description": "Rebranding del sitio web corporativo de una empresa de servicios en la nube y migración a Next.js, con una interfaz moderna",
+        "company": "Cloudware"
+      },
+      "flickers-website": {
+        "name": "Flickers",
+        "description": "Sitio web de una banda de punk rock con presentación del grupo y calendario de próximos y pasados shows",
+        "company": "Flickers"
       },
       "digy-website": {
-        "name": "Sitio web Digy",
+        "name": "Digy Networks",
         "description": "Sitio web corporativo con catálogo de servicios de telecomunicaciones y formulario de contacto",
         "company": "Digy Networks"
-      },
-      "cloudwaremx-website": {
-        "name": "Sitio web Cloudwaremx",
-        "description": "Sitio web con panel de administración en Django para gestionar contenido y servicios en la nube",
-        "company": "Cloud Ware"
       },
       "vending-machines-management": {
         "name": "Gestión de máquinas expendedoras",

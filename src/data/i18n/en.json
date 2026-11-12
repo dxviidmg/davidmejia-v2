@@ -241,11 +241,14 @@
   },
   "projects": {
     "title": "Projects",
+    "visit": "Visit site",
+    "preview": "Live preview of",
     "showTech": "Show technologies",
     "hideTech": "Hide technologies",
     "tabs": {
       "all": "All",
-      "web": "Web",
+      "fullstack": "Fullstack",
+      "landing": "Landing page",
       "data": "Data"
     },
     "items": {
@@ -260,7 +263,7 @@
         "company": "UTEL"
       },
       "carsev-website": {
-        "name": "CARSEV Website",
+        "name": "CARSEV",
         "description": "Corporate website with a works portfolio and project gallery for a construction company",
         "company": "Grupo Constructor Carsev"
       },
@@ -279,20 +282,20 @@
         "description": "Interactive map for a museum that allows visitors to explore its exhibits digitally",
         "company": "Ixulabs"
       },
-      "cloudwaremx-website-v2": {
-        "name": "Cloudwaremx v2 Website",
-        "description": "Redesign of the corporate website of a cloud services company, with a modern React interface to showcase its services",
-        "company": "Digy Networks"
+      "cloudwaremx-website": {
+        "name": "Cloudwaremx",
+        "description": "Rebranding of the corporate website of a cloud services company and migration to Next.js, with a modern interface",
+        "company": "Cloudware"
+      },
+      "flickers-website": {
+        "name": "Flickers",
+        "description": "Website for a punk rock band with a band introduction and a calendar of upcoming and past shows",
+        "company": "Flickers"
       },
       "digy-website": {
-        "name": "Digy Website",
+        "name": "Digy Networks",
         "description": "Corporate website with telecom service catalog and contact form, built with React",
         "company": "Digy Networks"
-      },
-      "cloudwaremx-website": {
-        "name": "Cloudwaremx Website",
-        "description": "Website with a Django admin panel to manage content and cloud services for a company",
-        "company": "Cloud Ware"
       },
       "vending-machines-management": {
         "name": "Vending machines management",

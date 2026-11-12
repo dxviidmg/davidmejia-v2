@@ -1,7 +1,7 @@
 import {
   SiAmazonaws, SiBitbucket, SiBootstrap, SiCelery, SiChartdotjs, SiConventionalcommits, SiCss3, SiDataiku, SiDjango,
   SiFiles, SiGit, SiGithub, SiGitlab, SiGooglecloud, SiHeroku, SiHtml5, SiJavascript, SiJira, SiJupyter, SiLinux,
-  SiMercadopago, SiMongodb, SiMui, SiMysql, SiNumpy, SiPandas, SiPlaywright, SiPostgresql, SiPostman, SiPython,
+  SiMercadopago, SiMongodb, SiMui, SiMysql, SiNextdotjs, SiNumpy, SiPandas, SiPlaywright, SiPostgresql, SiPostman, SiPython,
   SiRasa, SiReact, SiRedis, SiRender, SiSelenium, SiSocketdotio, SiStripe, SiTypescript, SiVercel,
   SiTailwindcss, SiDocker, SiGithubactions, SiFastapi,
 } from "react-icons/si";
@@ -45,6 +45,7 @@ const TECH = {
   heroku: { icon: SiHeroku, colors: ["#430098", "#9E7CC1"] },
   render: { icon: SiRender, colors: ["#0F8A68", "#46E3B7"] },
   vercel: { icon: SiVercel },
+  nextjs: { icon: SiNextdotjs },
   linux: { icon: SiLinux, colors: ["#1B1B1B", "#FCC624"] },
   git: { icon: SiGit, colors: ["#E0411F", "#F05032"] },
   github: { icon: SiGithub },
