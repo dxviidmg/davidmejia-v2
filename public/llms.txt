@@ -1,0 +1,10 @@
+# David Mejía
+
+> Full Stack Developer con 10+ años de experiencia en backend y sistemas web transaccionales. Python, Django, FastAPI, React, PostgreSQL, AWS, GCP. Basado en Ciudad de México. Actualmente en Entropia.
+
+Portafolio de una sola página, disponible en español e inglés.
+
+## Sitio
+
+- [Portafolio](https://dmejia.vercel.app/): Sobre mí, experiencia, proyectos, habilidades y educación.
+- [Sitemap](https://dmejia.vercel.app/sitemap.xml): Mapa del sitio.
