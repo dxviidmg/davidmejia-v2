@@ -6,10 +6,12 @@ import { useLang } from "../../../utils/LangContext";
 import { LogoMark } from "../logo/Logo";
 import { CONTACT } from "../../../utils/contact";
 import { Reveal } from "../reveal/Reveal";
+import { useNow } from "../../../utils/useNow";
 import "./footer.css";
 
 export function Footer() {
   const { t } = useLang();
+  const now = useNow();
   return (
     <footer id="footer" className="section">
       <Container>
@@ -23,7 +25,7 @@ export function Footer() {
           </a>
         </Reveal>
         <div className="footer-bottom">
-          <span className="footer-brand"><LogoMark size={18} className="nav-logo" /> © {new Date().getFullYear()} David Mejía</span>
+          <span className="footer-brand"><LogoMark size={18} className="nav-logo" /> © {now.getFullYear()} David Mejía</span>
           <div className="footer-icons">
             <a href={CONTACT.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="social-linkedin"><BsLinkedin /></a>
             <a href={CONTACT.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="social-github"><BsGithub /></a>
