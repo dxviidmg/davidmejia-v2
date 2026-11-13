@@ -30,7 +30,7 @@ const SkillCard = ({ label, items, index }) => {
           return (
             <div key={i} className="skill-row">
               <div className="skill-info">
-                <span className="skill-icon"><TechIcon name={skill.name} /></span>
+                <span className="skill-icon" aria-hidden="true"><TechIcon name={skill.name} /></span>
                 <span className="skill-name">{skill.name}</span>
                 <span className="skill-exp">{label}</span>
               </div>
