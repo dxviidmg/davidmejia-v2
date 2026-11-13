@@ -10,14 +10,14 @@ body {
   background: var(--bg);
   color: var(--text);
   text-align: justify;
-  hyphens: auto;
+  hyphens: none;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: var(--font-sans);
   font-weight: 800;
   letter-spacing: -0.035em;
-  hyphens: manual;
+  hyphens: none;
 }
 
 /* Sections: full-bleed bands that alternate black / white, no borders between them */
