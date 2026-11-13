@@ -6,12 +6,15 @@ import { Banner } from '../src/components/sections/banner/Banner';
 import { Marquee } from '../src/components/commons/marquee/Marquee';
 import { WhatsAppFloat } from '../src/components/commons/whatsapp/WhatsAppFloat';
 
-const About = lazy(() => import('../src/components/sections/about/About').then(m => ({ default: m.About })));
-const Experience = lazy(() => import('../src/components/sections/experience/Experience').then(m => ({ default: m.Experience })));
-const Skills = lazy(() => import('../src/components/sections/skills/Skills').then(m => ({ default: m.Skills })));
-const Projects = lazy(() => import('../src/components/sections/projects/Projects').then(m => ({ default: m.Projects })));
-const Education = lazy(() => import('../src/components/sections/education/Education').then(m => ({ default: m.Education })));
-const Footer = lazy(() => import('../src/components/commons/footer/Footer').then(m => ({ default: m.Footer })));
+// Sections below the fold load on demand; each file exports a named component
+const lazySection = (load, name) => lazy(() => load().then((m) => ({ default: m[name] })));
+
+const About = lazySection(() => import('../src/components/sections/about/About'), 'About');
+const Experience = lazySection(() => import('../src/components/sections/experience/Experience'), 'Experience');
+const Skills = lazySection(() => import('../src/components/sections/skills/Skills'), 'Skills');
+const Projects = lazySection(() => import('../src/components/sections/projects/Projects'), 'Projects');
+const Education = lazySection(() => import('../src/components/sections/education/Education'), 'Education');
+const Footer = lazySection(() => import('../src/components/commons/footer/Footer'), 'Footer');
 
 export default function Home() {
   return (

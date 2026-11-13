@@ -1,5 +1,5 @@
 // Page sections in display order: drives the menu.
-// Keep App.js rendering them in this same order.
+// Keep app/page.js rendering them in this same order.
 export const SECTIONS = [
   { id: "about-me", nav: "about" },
   { id: "experience", nav: "experience" },
