@@ -12,7 +12,6 @@ export const metadata = {
   authors: [{ name: 'David Mejía', url: 'https://dmejia.vercel.app' }],
   creator: 'David Mejía',
   publisher: 'David Mejía',
-  canonical: 'https://dmejia.vercel.app/',
   openGraph: {
     type: 'website',
     title: 'David Mejía | Full Stack Developer · FastAPI, Django, React',
@@ -44,6 +43,7 @@ export const metadata = {
     'max-video-preview': -1,
   },
   alternates: {
+    canonical: 'https://dmejia.vercel.app/',
     languages: {
       es: 'https://dmejia.vercel.app/es',
       en: 'https://dmejia.vercel.app/en',
@@ -57,6 +57,9 @@ export const metadata = {
     apple: '/logo192.png',
   },
   manifest: '/manifest.json',
+};
+
+export const viewport = {
   themeColor: '#0A0A0A',
 };
 
@@ -64,7 +67,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

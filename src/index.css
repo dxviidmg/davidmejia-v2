@@ -37,7 +37,7 @@ body {
 
 p, li {
   text-align: justify;
-  hyphens: auto;
+  hyphens: none;
 }
 
 ::selection {

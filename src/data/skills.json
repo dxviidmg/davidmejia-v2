@@ -39,6 +39,15 @@
     ],
     "Frontend": [
         {
+            "name": "Next.js",
+            "periods": [
+                {
+                    "start": "2026-09",
+                    "end": null
+                }
+            ]
+        },
+        {
             "name": "React",
             "periods": [
                 {

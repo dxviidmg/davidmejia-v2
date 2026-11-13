@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import skills from "../../../data/skills.json";
 import { TechIcon } from "../../commons/icons/Icons";
 import { calcExperience } from "../../../utils/dateUtils";
+import { useNow } from "../../../utils/useNow";
 import { useLang } from "../../../utils/LangContext";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { Reveal } from "../../commons/reveal/Reveal";
@@ -15,9 +16,10 @@ const MAX_VISIBLE = 5;
 
 const SkillCard = ({ label, items, index }) => {
   const { t } = useLang();
+  const now = useNow();
   const [expanded, setExpanded] = useState(false);
   const sorted = [...items].sort(
-    (a, b) => calcExperience(b.periods).months - calcExperience(a.periods).months
+    (a, b) => calcExperience(b.periods, now).months - calcExperience(a.periods, now).months
   );
   const shown = expanded ? sorted : sorted.slice(0, MAX_VISIBLE);
   const hidden = sorted.length - MAX_VISIBLE;
@@ -26,7 +28,7 @@ const SkillCard = ({ label, items, index }) => {
       <Reveal className="card-dm" delay={(index % 4) * 0.08}>{(visible) => (<>
         <h3 className="skill-card-title">{label}</h3>
         {shown.map((skill, i) => {
-          const { label, months } = calcExperience(skill.periods);
+          const { label, months } = calcExperience(skill.periods, now);
           return (
             <div key={i} className="skill-row">
               <div className="skill-info">

@@ -3,6 +3,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useLang } from "../../../utils/LangContext";
 import { yearsOfExperience } from "../../../utils/dateUtils";
+import { useNow } from "../../../utils/useNow";
 import { SectionHeader } from "../../commons/section/SectionHeader";
 import { CountUp } from "../../commons/countup/CountUp";
 import { Reveal } from "../../commons/reveal/Reveal";
@@ -13,8 +14,7 @@ import './about.css'
 // "**Python**" -> <strong>Python</strong>, built as React nodes instead of injected HTML
 const Bold = ({ text }) => text.split(/\*\*(.*?)\*\*/g).map((part, i) => (i % 2 ? <strong key={i}>{part}</strong> : part));
 
-const STATS = [
-  { key: "years", value: yearsOfExperience, prefix: "+" },
+const STATIC_STATS = [
   { key: "companies", value: new Set(positions.map((p) => p.company)).size },
   { key: "projects", value: projects.length },
   { key: "countries", value: new Set(positions.map((p) => p.country)).size },
@@ -22,13 +22,15 @@ const STATS = [
 
 export const About = () => {
   const { t } = useLang();
+  const years = yearsOfExperience(useNow());
+  const STATS = [{ key: "years", value: years, prefix: "+" }, ...STATIC_STATS];
   return (
     <section id="about-me" className="section section-light">
       <Container>
         <SectionHeader title={t.about.title} />
         <Row className="g-5 align-items-start">
           <Col lg={7} className="about-body">
-            <Reveal as="p" className="about-intro"><Bold text={t.about.intro.replace("{years}", yearsOfExperience)} /></Reveal>
+            <Reveal as="p" className="about-intro"><Bold text={t.about.intro.replace("{years}", years)} /></Reveal>
             <Reveal as="ul" className="about-highlights" delay={0.1}>
               {t.about.highlights.map((h, i) => <li key={i}><Bold text={h} /></li>)}
             </Reveal>

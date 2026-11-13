@@ -1,12 +1,11 @@
-export const yearsOfExperience = Math.floor((new Date() - new Date("2016-11-03")) / 31557600000);
+export const yearsOfExperience = (now) => Math.floor((now - new Date("2016-11-03")) / 31557600000);
 
 function capitalizeString(str) {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }
 
-export function calcExperience(periods) {
+export function calcExperience(periods, now) {
     let totalMonths = 0;
-    const now = new Date();
     for (const p of periods) {
         const startStr = p.start.length === 7 ? p.start + "-01" : p.start;
         const endStr = p.end ? (p.end.length === 7 ? p.end + "-01" : p.end) : null;

@@ -6,10 +6,19 @@ import { useLang } from "../../../utils/LangContext";
 import { LogoMark } from "../logo/Logo";
 import { CONTACT } from "../../../utils/contact";
 import { Reveal } from "../reveal/Reveal";
+import { useNow } from "../../../utils/useNow";
 import "./footer.css";
+
+const ICONS = [
+  { href: CONTACT.linkedin, label: "LinkedIn", Icon: BsLinkedin, className: "social-linkedin" },
+  { href: CONTACT.github, label: "GitHub", Icon: BsGithub, className: "social-github" },
+  { href: CONTACT.email, label: "Email", Icon: BsEnvelope },
+  { href: CONTACT.whatsapp, label: "WhatsApp", Icon: BsWhatsapp, className: "social-whatsapp" },
+];
 
 export function Footer() {
   const { t } = useLang();
+  const now = useNow();
   return (
     <footer id="footer" className="section">
       <Container>
@@ -23,12 +32,11 @@ export function Footer() {
           </a>
         </Reveal>
         <div className="footer-bottom">
-          <span className="footer-brand"><LogoMark size={18} className="nav-logo" /> © {new Date().getFullYear()} David Mejía</span>
+          <span className="footer-brand"><LogoMark size={18} className="nav-logo" /> © {now.getFullYear()} David Mejía</span>
           <div className="footer-icons">
-            <a href={CONTACT.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="social-linkedin"><BsLinkedin /></a>
-            <a href={CONTACT.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="social-github"><BsGithub /></a>
-            <a href={CONTACT.email} target="_blank" rel="noreferrer" aria-label="Email"><BsEnvelope /></a>
-            <a href={CONTACT.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="social-whatsapp"><BsWhatsapp /></a>
+            {ICONS.map(({ href, label, Icon, className }) => (
+              <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} className={className}><Icon /></a>
+            ))}
           </div>
         </div>
       </Container>

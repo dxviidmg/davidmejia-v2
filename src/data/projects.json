@@ -60,6 +60,7 @@
     },
     {
         "id": "digy-website",
+        "url": "https://digy-networks.vercel.app/",
         "start": "2023",
         "end": "2023",
         "categories": ["Landing"],

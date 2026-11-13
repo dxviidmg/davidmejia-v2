@@ -5,12 +5,14 @@ import { BsLinkedin, BsGithub, BsEnvelope, BsWhatsapp } from "react-icons/bs";
 import { NavBar } from "../../commons/navbar/Navbar";
 import { useLang } from "../../../utils/LangContext";
 import { yearsOfExperience } from "../../../utils/dateUtils";
+import { useNow } from "../../../utils/useNow";
 import { CONTACT } from "../../../utils/contact";
 import { AccentEnd } from "../../commons/text/AccentEnd";
 import "./banner.css";
 
 export function Banner() {
   const { t, cvUrl } = useLang();
+  const now = useNow();
 
   return (
     <section id="banner">
@@ -32,7 +34,7 @@ export function Banner() {
             <span className="quiet">{t.banner.quiet}</span>
             <span className="loud"><AccentEnd text={t.banner.loud} className="blink" /></span>
           </p>
-          <p className="banner-lead">{t.banner.lead.replace("{years}", yearsOfExperience)}</p>
+          <p className="banner-lead">{t.banner.lead.replace("{years}", yearsOfExperience(now))}</p>
           <div className="banner-actions">
             <a href={cvUrl} target="_blank" rel="noreferrer" className="btn-dm">{t.banner.ctaCv} ↓</a>
             <a href={CONTACT.email} target="_blank" rel="noreferrer" className="banner-link"><BsEnvelope /> {t.banner.ctaEmail}</a>
